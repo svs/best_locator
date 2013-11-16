@@ -1,0 +1,8 @@
+= javascript_include_tag "trips"
+
+#app{:"ng-app" => "bestLocatorApp"}
+  #trip{:"ng-controller" => "TripsCtrl"}
+    %h3 Your current location is {{current_location.lat}},{{current_location.lon}}
+    #start_form{:"ng-show" => "trip.new = true"}
+      %h3 Which bus stop are you at?
+      Trip

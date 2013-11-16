@@ -13,8 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require angular.min
+//= require angular/angular.min
+//= require lodash/lodash
+//= require restangular/src/restangular.js
 //= require bootstrap.min
+//= require moment/moment
 //= require_self
 
-var bestLocatorApp = angular.module('bestLocatorApp', []);
+var bestLocatorApp = angular.module('bestLocatorApp', ['restangular']);
