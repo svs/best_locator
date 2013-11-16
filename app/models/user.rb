@@ -7,6 +7,8 @@ class User < ActiveRecord::Base
 
   before_validation :verify_token_exists
 
+  has_many :trips
+
   def self.from_omniauth(auth)
     where(auth.slice(:provider, :uid)).first_or_create do |user|
       user.provider = auth.provider

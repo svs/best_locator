@@ -54,3 +54,7 @@ group :development, :test do
   gem 'awesome_print'
   gem "selenium-webdriver"
 end
+
+group :test do
+  gem "shoulda-matchers"
+end

@@ -7,6 +7,7 @@ class CreateTrips < ActiveRecord::Migration
       t.integer :end_stop_id
       t.datetime :started_at
       t.datetime :ended_at
+      t.string :status, :default => "new"
       t.timestamps
     end
   end

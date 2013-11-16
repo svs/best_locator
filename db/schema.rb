@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20131116080902) do
     t.integer  "end_stop_id"
     t.datetime "started_at"
     t.datetime "ended_at"
+    t.string   "status",        default: "new"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
