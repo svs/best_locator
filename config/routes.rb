@@ -14,6 +14,8 @@ BestLocator::Application.routes.draw do
     end
   end
 
+  resources :users
+
   root "home#index"
 
 end

@@ -1,0 +1,34 @@
+= javascript_include_tag "users"
+#app{"ng-app" => "bestLocatorApp"}
+  #user{:"ng-controller" => "UsersCtrl"}
+    .row
+      .col-md-2
+        = profile_pic type: "large"
+      .col-md-6
+        %h2
+          {{user.name}}
+        %h3
+          {{trips.length}} trips
+
+    %table.table.table-striped
+      %thead
+        %tr
+          %th Id
+          %th From
+          %th To
+          %th status
+          %th kms
+      %tbody
+        %tr{:"ng-repeat" => "t in trips" }
+          %td
+            {{t.id}}
+          %td
+            {{t.from}}
+            {{t.start_time}}
+          %td
+            {{t.to}}
+            {{t.end_time}}
+          %td
+            {{td.status}}
+          %td
+            {{td.kms}}

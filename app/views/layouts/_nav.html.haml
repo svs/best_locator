@@ -17,7 +17,7 @@
       -  if current_user
         %li.dropdown
           %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
-            = image_tag "http://graph.facebook.com/#{current_user.uid}/picture?type=square", :style => "border-radius: 50%"
+            = profile_pic(style: "border-radius:50%;")
             = current_user.name
             %b.caret
           %ul.dropdown-menu
