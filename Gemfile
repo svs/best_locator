@@ -52,4 +52,5 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'awesome_print'
+  gem "selenium-webdriver"
 end
