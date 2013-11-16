@@ -1,0 +1,9 @@
+class Api::V1::BusStopsController < ApplicationController
+
+  def index
+    respond_to do |format|
+      format.json { RestClient.get("http://chalobest.in/1.0/stops_near/?center_lat=#{params[:lat]}&center_lon={params[:lon]}")}
+    end
+  end
+
+end

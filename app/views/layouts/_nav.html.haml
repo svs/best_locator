@@ -1,0 +1,33 @@
+%nav.navbar.navbar-default{role: "navigation"}
+  / Brand and toggle get grouped for better mobile display
+  .navbar-header
+    %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", type: "button"}
+      %span.sr-only Toggle navigation
+      %span.icon-bar
+      %span.icon-bar
+      %span.icon-bar
+    %a.navbar-brand{href: "#"} Best Locator
+  / Collect the nav links, forms, and other content for toggling
+  #bs-example-navbar-collapse-1.collapse.navbar-collapse
+    %ul.nav.navbar-nav.navbar-right
+      %form.navbar-form.navbar-left{role: "search"}
+        .form-group
+          %input.form-control{placeholder: "Search", type: "text"}/
+        %button.btn.btn-default{type: "submit"} Submit
+      -  if current_user
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+            = image_tag "http://graph.facebook.com/#{current_user.uid}/picture?type=square", :style => "border-radius: 50%"
+            = current_user.name
+            %b.caret
+          %ul.dropdown-menu
+            %li
+              %a{href: "#"} Profile
+            %li
+              = link_to "Log out", destroy_user_session_path, :method => :delete
+      - else
+        %ul.nav.navbar-nav.navbar-right
+          %li
+            = link_to "Sign In", new_user_session_path
+
+  / /.navbar-collapse
