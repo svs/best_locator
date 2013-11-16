@@ -1,8 +1,13 @@
 class Api::V1::BaseController < ActionController::Base
 
   class NotAuthenticated < StandardError; end
+  class NotAuthorized < StandardError; end
 
   rescue_from ActiveRecord::RecordNotFound do
+    render json: "Not found", :status => 404
+  end
+
+  rescue_from NotAuthorized do
     render json: "Not found", :status => 404
   end
 

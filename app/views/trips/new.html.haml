@@ -2,7 +2,29 @@
 
 #app{:"ng-app" => "bestLocatorApp"}
   #trip{:"ng-controller" => "TripsCtrl"}
-    %h3 Your current location is {{current_location.lat}},{{current_location.lon}}
-    #start_form{:"ng-show" => "trip.new = true"}
-      %h3 Which bus stop are you at?
-      Trip
+    .row
+      .col-md-4
+        {{status}}
+        %h3 Your current location is {{current_location.lat}},{{current_location.lon}}
+        #start_form{:"ng-show" => "trip.new = true"}
+          %h3 Which bus stop are you at?
+          %ul{"ng-show" => "bus_stops.length > 0"}
+            %li{"ng-repeat" => "b in bus_stops"}
+              %a{:"ng-click" => "bus_stop = makeBusStop(b)"}
+                {{b.properties.official_name}}
+      .col-md-4
+        {{bus_stop.properties.display_name}}
+        {{bus_stop.geography.coordinates[1]}}
+        {{bus_stop.geography.coordinates[0]}}
+        %ul
+          %li{"ng-repeat" => "r in bus_stop.routes track by $index"}
+            %a{"ng-click" => "chooseRoute(r.trim())"}
+              {{r.trim()}}
+      .col-md-4
+        {{route.display_name}}
+        %button.btn.btn-large{:type => "button", "ng-click" => "startTrip()"}
+          Start
+        %ul
+          %li{"ng-repeat" => "s in route.stops track by $index"}
+            %a{"ng-click" => "makeBusStop(s)"}
+              {{s.properties.display_name}}

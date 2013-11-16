@@ -36,7 +36,7 @@ class Api::V1::TripsController < Api::V1::BaseController
   private
 
   def trip_params
-    ps = params.permit("trip")
+    ps = params.require("trip").permit("bus_number", "start_stop_id")
     ps["user_id"] = current_user.id
     ps
   end
