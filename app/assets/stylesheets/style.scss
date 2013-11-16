@@ -1,0 +1,26 @@
+#trip {
+  h3 { margin: 0px;}
+  overflow: scroll;
+  font-size: 1.2em;
+  table {
+      height: 20px;
+      overflow: scroll;
+  }
+  tbody {
+    tr:nth-child(2n) {
+	background: #C9FFC9;
+    }
+    tr:nth-child(2n+1) {
+	background: lightyellow;
+    }
+    td {
+	padding: 4px 4px 4px 42px;
+	border-bottom: 1px solid beige;
+	a {
+	    color: #222;
+	    text-shadow: 1px 1px 1px white;
+	    cursor: pointer;
+	}
+    }
+  }
+}

@@ -1,8 +1,7 @@
 angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular',function($scope, Restangular) {
-    $scope.trip = {
-	new: true
-    }
     $scope.status = "ready"
+    $scope.route = null;
+    $scope.bus_stop = null;
 
     var updateLocation = function(position) {
 	$scope.status = "updating location...."
@@ -32,7 +31,6 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
 	    $scope.bus_stops = bs;
 	});
     };
-    $scope.bus_stop = {name: "No stop chosen", routes: []}
 
     $scope.makeBusStop = function(bus_stop_data){
 	$scope.bus_stop = bus_stop_data;
@@ -41,6 +39,8 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
 	    $scope.bus_stop.routes = r;
 	});
     }
+
+
 
     $scope.chooseRoute = function(name) {
 	Restangular.one('api/v1/routes/').get({q: name}).then(function(data) {
