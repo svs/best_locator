@@ -1,4 +1,4 @@
-class Api::V1::BusStopsController < ApplicationController
+class Api::V1::BusStopsController < Api::V1::BaseController
 
   def index
     lat_lon_params = params.select{|k,v| ["center_lat", "center_lon"].include?(k) && !v.nil?}
