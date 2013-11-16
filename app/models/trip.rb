@@ -37,4 +37,5 @@ class Trip < ActiveRecord::Base
     status == "stopped"
   end
 
+
 end

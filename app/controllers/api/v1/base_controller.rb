@@ -12,6 +12,7 @@ class Api::V1::BaseController < ActionController::Base
     if user && Devise.secure_compare(user.auth_token, params[:user_token])
       sign_in user, store: false
     end
+    authenticate_user!
   end
 
 end

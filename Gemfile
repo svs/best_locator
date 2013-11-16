@@ -53,6 +53,7 @@ group :development, :test do
   gem 'capybara'
   gem 'awesome_print'
   gem "selenium-webdriver"
+  gem "factory_girl"
 end
 
 group :test do

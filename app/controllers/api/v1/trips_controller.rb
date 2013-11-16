@@ -1,13 +1,13 @@
 class Api::V1::TripsController < Api::V1::BaseController
 
-  before_filter :authenticate_user_from_token
+  before_filter :authenticate_user_from_token!
 
   def index
     @trips = current_user.trips.as_json
   end
 
   def create
-    @trip = Trip.create(params[:trip].merge(:user_id => current_user))
+    @trip = Trip.create(trip_params)
     respond_to do |format|
       format.json do
         if @trip.persisted?
@@ -27,6 +27,14 @@ class Api::V1::TripsController < Api::V1::BaseController
     respond_to do |format|
       format.json { render json: @trip }
     end
+  end
+
+  private
+
+  def trip_params
+    ps = params.permit("trip")
+    ps["user_id"] = current_user.id
+    ps
   end
 
 end
