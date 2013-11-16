@@ -3,6 +3,8 @@ require 'spec_helper'
 describe Api::V1::TripsController do
 
   let!(:user) { FactoryGirl.create(:user) }
+  let!(:my_trip) { Trip.create(valid_params["trip"].merge(:user_id => user.id)) }
+  let!(:others_trip) { FactoryGirl.create(:trip) }
   let(:valid_params) { {"trip" => {}, :format => "json"}}
 
   context "unauthenticated" do
@@ -30,10 +32,21 @@ describe Api::V1::TripsController do
     end
 
     it "should index" do
-      t = Trip.create(valid_params["trip"].merge(:user_id => user.id))
       get(:index)
       r = JSON.load(response.body)
       r[0].should be_a Hash
+    end
+
+    describe "show" do
+      it "is allowed for own trip" do
+        get(:show, :id => my_trip.id)
+        response.status.should == 200
+      end
+    end
+
+    it "raises 404 for others trip" do
+      get(:show, :id => others_trip.id)
+      response.status.should == 404
     end
 
   end

@@ -6,4 +6,8 @@ FactoryGirl.define do
     password "123456"
     password_confirmation "123456"
   end
+
+  factory :trip do
+    association :user
+  end
 end

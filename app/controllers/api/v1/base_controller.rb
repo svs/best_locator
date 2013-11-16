@@ -2,6 +2,10 @@ class Api::V1::BaseController < ActionController::Base
 
   class NotAuthenticated < StandardError; end
 
+  rescue_from ActiveRecord::RecordNotFound do
+    render json: "Not found", :status => 404
+  end
+
   def authenticate_user_from_token!
     user_email = params[:user_email].presence
     user       = user_email && User.find_by_email(user_email)
@@ -13,6 +17,10 @@ class Api::V1::BaseController < ActionController::Base
       sign_in user, store: false
     end
     authenticate_user!
+  end
+
+  def observed_user
+    current_user
   end
 
 end
