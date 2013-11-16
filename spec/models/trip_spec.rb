@@ -11,6 +11,7 @@ describe Trip do
     t.should be_startable
     t.start!
     t.should be_started
+    t.started_at.should_not be_nil
     t.should be_stoppable
     t.stop!
     t.should be_stopped

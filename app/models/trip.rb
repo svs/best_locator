@@ -8,6 +8,7 @@ class Trip < ActiveRecord::Base
   def start!
     return false unless startable?
     self.status = "started"
+    self.started_at = Time.zone.now
     self.save
   end
 

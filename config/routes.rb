@@ -4,6 +4,7 @@ BestLocator::Application.routes.draw do
 
   namespace 'api' do
     namespace 'v1' do
+      resources :bus_stops
       resources :trips do
         member do
           put 'stop'

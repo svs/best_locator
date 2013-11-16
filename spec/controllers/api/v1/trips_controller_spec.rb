@@ -27,7 +27,7 @@ describe Api::V1::TripsController do
 
     it "should create a trip" do
       expect {
-        post(:create, {"trip" => {}, :format => "json"})
+        post(:create, {"trip" => {}})
       }.to change(Trip, :count).by(1)
     end
 
