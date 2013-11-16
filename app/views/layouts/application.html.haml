@@ -9,7 +9,13 @@
     = render "layouts/nav"
     .container
       - if flash[:notice]
-        .alert.alert-success= flash[:notice]
+        .alert.alert-success.alert-dismissable
+          %button{:type => "button", :class =>"close", :"data-dismiss" =>"alert", :"aria-hidden" => "true"}
+            &times;
+          = flash[:notice]
       - if flash[:error]
-        .alert.alert-danger= flash[:error]
+        .alert.alert-danger.alert-dismissable
+          %button{:type => "button", :class =>"close", :"data-dismiss" =>"alert", :"aria-hidden" => "true"}
+            &times;
+          = flash[:error]
       = yield
