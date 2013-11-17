@@ -1,4 +1,4 @@
-require 'puma/capistrano'
+require 'capistrano/rails'
 set :application, 'best_locator'
 set :repo_url, 'git@github.com:svs/best_locator.git'
 
@@ -21,17 +21,20 @@ set :bundle_flags, '--deployment --quiet --binstubs'
 
 namespace :deploy do
 
+  after :update_code do
+    run "cp #{shared_path}/*yml #{current_path}/config/"
+  end
+
+
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
-      execute 'bundle exec cap puma:start'
     end
   end
 
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
-      execute 'bundle exec cap puma:restart'
-    end
+     end
   end
 
   after :finishing, 'deploy:cleanup'

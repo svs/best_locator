@@ -45,6 +45,7 @@ gem 'puma'
 
 # Use Capistrano for deployment
 gem 'capistrano', group: :development
+gem 'capistrano-rails', '~> 1.1.0', group: :development
 
 
 group :development, :test do
