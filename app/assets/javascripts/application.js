@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require angular/angular.min
 //= require lodash/lodash
 //= require restangular/src/restangular.js
