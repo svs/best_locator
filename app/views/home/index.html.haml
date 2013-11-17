@@ -2,13 +2,17 @@
 - unless @user
   #splash
     .row.container
-      #tagline.col-md-3
-        %h1 Mumbai commutes don't have to be stressful!
-      #tagline2.col-md-offset-1.col-md-5
-        %h1 Join Mumbai's crowd-sourced BEST bus locator.
-        %h3{:style => "font-family: 'Waiting for the Sunrise'"}
+      #tagline2.col-md-offset-2.col-md-5
+        %h1
+          Join Mumbai's
+          %span.highlight crowd-sourced, real-time
+          BEST bus locator.
+        %h3#scrawl
           Get realtime bus updates and alerts, help your fellow commuters and win prizes!
-      #android.col-md-3
+        %div{:style => "text-align: center"}
+          = link_to (image_tag 'fb-login.png'), user_omniauth_authorize_path("facebook")
+
+      #android.col-md-3.col-md-offset-1
         = image_tag 'android.png'
 - else
   %h3

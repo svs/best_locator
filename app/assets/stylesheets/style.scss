@@ -1,5 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Sintony);
+@import url(http://fonts.googleapis.com/css?family=Lilita+One);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
 @import url(http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise);
+
+@mixin bluebg {
+  background: rgba(32,43,66,0.8);
+}
 
 html, body { height: 100%; }
 
@@ -10,7 +15,7 @@ html, body { height: 100%; }
 }
 .navbar {
   margin-bottom: 0px;
-  background: rgba(38,41,48,0.9);
+  @include bluebg;
   border: 0px;
   border-radius: 0px;
 }
@@ -45,4 +50,8 @@ html, body { height: 100%; }
 
 #app {
   padding-top: 20px;
+}
+
+.highlight {
+  color: darkorange;
 }

@@ -1,3 +1,7 @@
+@mixin bluebg {
+  background: rgba(32,43,66,0.8);
+}
+
 body {
   background-image: image-url('splash2.jpg');
   background-size: cover;
@@ -10,18 +14,19 @@ body {
     position: relative;
     left: 20px;
     border-radius: 0px 0px 10px 10px;
-    /* background: #262930; */
-    background: rgba(38,41,48,0.8);
+    @include bluebg;
     color: #ccc;
   }
   #tagline2 {
     color: #eee;
+    @include bluebg;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px;
   }
 }
 
-#_android {
-  position: absolute;
-  left: 950px;
-  top: 80px;
-  width: 200px;
+#scrawl {
+  font-family: 'Waiting for the Sunrise';
+  padding:10px;
+  border-radius: 10px;
 }
