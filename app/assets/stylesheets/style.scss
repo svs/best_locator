@@ -1,14 +1,24 @@
 @import url(http://fonts.googleapis.com/css?family=Sintony);
+@import url(http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise);
 
 html, body { height: 100%; }
+
 #content, .container-fluid, .span9
 {
-    border: 1px solid #000;
     overflow-y:auto;
     height:100%;
 }
 .navbar {
   margin-bottom: 0px;
+  background: rgba(38,41,48,0.9);
+  border: 0px;
+  border-radius: 0px;
+}
+.navbar-default {
+    .navbar-brand {
+	color: #ccc;
+	font-weight: bold;
+    }
 }
 
 #trip {
@@ -31,4 +41,8 @@ html, body { height: 100%; }
 	}
     }
   }
+}
+
+#app {
+  padding-top: 20px;
 }

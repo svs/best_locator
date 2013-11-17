@@ -1,7 +1,9 @@
 class HomeController < ActionController::Base
 
   def index
-    @user = current_user
+    if current_user
+      redirect_to profile_path and return
+    end
     render :layout => "application"
   end
 

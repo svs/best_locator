@@ -10,10 +10,6 @@
   / Collect the nav links, forms, and other content for toggling
   #bs-example-navbar-collapse-1.collapse.navbar-collapse
     %ul.nav.navbar-nav.navbar-right
-      %form.navbar-form.navbar-left{role: "search"}
-        .form-group
-          %input.form-control{placeholder: "Search", type: "text"}/
-        %button.btn.btn-default{type: "submit"} Submit
       -  if current_user
         %li.dropdown
           %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
@@ -28,6 +24,6 @@
       - else
         %ul.nav.navbar-nav.navbar-right
           %li
-            = link_to "Sign In", new_user_session_path
+            = link_to (image_tag 'fb-login.png'), user_omniauth_authorize_path("facebook")
 
   / /.navbar-collapse
