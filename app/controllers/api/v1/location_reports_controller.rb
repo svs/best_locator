@@ -12,7 +12,7 @@ class Api::V1::LocationReportsController < Api::V1::BaseController
   private
 
   def location_report_params
-    params.require("location_report").permit("trip_id","lat","lon")
+    params.require("location_report").permit("trip_id","lat","lon","heading","accuracy","speed")
   end
 
 end

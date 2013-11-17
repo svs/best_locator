@@ -1,4 +1,18 @@
+@import url(http://fonts.googleapis.com/css?family=Sintony);
+
+html, body { height: 100%; }
+#content, .container-fluid, .span9
+{
+    border: 1px solid #000;
+    overflow-y:auto;
+    height:100%;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+
 #trip {
+  font-family: "Georgia";
   h3 { margin: 0px;}
   overflow: scroll;
   font-size: 1.2em;
@@ -7,19 +21,13 @@
       overflow: scroll;
   }
   tbody {
-    tr:nth-child(2n) {
-	background: #C9FFC9;
-    }
-    tr:nth-child(2n+1) {
-	background: lightyellow;
-    }
     td {
 	padding: 4px 4px 4px 42px;
-	border-bottom: 1px solid beige;
 	a {
 	    color: #222;
 	    text-shadow: 1px 1px 1px white;
 	    cursor: pointer;
+	    text-transform: capitalize;
 	}
     }
   }

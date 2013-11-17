@@ -27,16 +27,20 @@ class Api::V1::TripsController < Api::V1::BaseController
 
   def stop
     @trip = Trip.find(params[:id])
+    raise NotAuthorized unless @trip.user == current_user
     @trip.stop!
-    respond_to do |format|
-      format.json { render json: @trip }
-    end
+    render json: @trip
+  end
+
+  def live
+    @trips = current_user.trips.live
+    render json: @trips
   end
 
   private
 
   def trip_params
-    ps = params.require("trip").permit("bus_number", "start_stop_id")
+    ps = params.require("trip").permit("bus_number", "start_stop_id", "start_stop_code","start_stop_name","end_stop_id","end_stop_code","end_stop_name")
     ps["user_id"] = current_user.id
     ps
   end

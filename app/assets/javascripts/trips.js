@@ -1,13 +1,31 @@
-angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular',function($scope, Restangular) {
+angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular','$window',function($scope, Restangular, $window) {
     $scope.status = "ready"
     $scope.route = null;
-    $scope.bus_stop = null;
+    $scope.start_bus_stop = null;
+    $scope.end_bus_stop = null;
+    $scope.trip = null;
+    $scope.points = [];
+
+    var initialize = function() {
+	Restangular.one('api/v1/trips/live').get().then(function(live_trips) {
+	    if (live_trips.length > 0) {
+		$scope.trip = live_trips[0];
+		navigator.geolocation.watchPosition(updateLocation, failedLocation, {timeout: 5000});
+	    }
+	});
+    }
+
+
+    initialize();
+
 
     var updateLocation = function(position) {
 	$scope.status = "updating location...."
-	Restangular.all('api/v1/location_reports').post({location_report: {trip_id: $scope.trip.id, lat: position.coords.latitude, lon: position.coords.longitude}}
+	var c = position.coords
+	Restangular.all('api/v1/location_reports').post({location_report: {trip_id: $scope.trip.id, lat: c.latitude, lon: c.longitude, accuracy: c.accuracy, heading: c.heading, speed: c.speed }}
 	).then(function(d) {
-	    $scope.status = "ready"
+	    $scope.points.push(position);
+	    $scope.status = "ready";
 	});
     }
     var gotLocation = function(position) {
@@ -33,10 +51,14 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
     };
 
     $scope.makeBusStop = function(bus_stop_data){
-	$scope.bus_stop = bus_stop_data;
+	if (arguments[1] === "end") {
+	    $scope.end_bus_stop = bus_stop_data;
+	} else {
+	    $scope.start_bus_stop = bus_stop_data;
+	}
 	Restangular.one('api/v1/bus_stops/' + bus_stop_data.properties.slug).get().then(function(data) {
 	    r = data.properties.routes.split(",");
-	    $scope.bus_stop.routes = r;
+	    $scope.start_bus_stop.routes = r;
 	});
     }
 
@@ -52,13 +74,37 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
     };
 
     $scope.startTrip = function() {
-	Restangular.all('api/v1/trips').post({trip: {bus_number: $scope.route.code, start_stop_id: $scope.bus_stop.properties.id}}).then(function(r) {
+	var sp = $scope.start_bus_stop.properties
+	var ep = $scope.end_bus_stop.properties
+	Restangular.all('api/v1/trips').post(
+	    {trip:
+	     {bus_number: $scope.route.code,
+	      start_stop_id: sp.id,
+	      start_stop_name: sp.display_name,
+	      start_stop_code: sp.code,
+	      end_stop_id: ep.id,
+	      end_stop_name: ep.display_name,
+	      end_stop_code: ep.code,
+	     }
+	    }
+	).then(function(r) {
 	    $scope.trip = r;
 	    navigator.geolocation.watchPosition(updateLocation, failedLocation, {timeout: 5000});
 	});
     }
 
+    $scope.stopTrip = function() {
+	if ($scope.trip === null) {
+	    return false
+	}
+	Restangular.one('api/v1/trips/' + $scope.trip.id + '/stop').put().then(
+	    function(d) {
+		$window.location.href = "/";
+	    });
+    }
 
-
+    $scope.clear = function() {
+	$scope.trip = null; $scope.route = null; $scope.points = []; $scope.end_bus_stop = null;
+    }
 
 }]);

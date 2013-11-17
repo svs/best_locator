@@ -4,8 +4,8 @@
 #app{:"ng-app" => "bestLocatorApp"}
   #trip{:"ng-controller" => "TripsCtrl"}
     .row_
-      #choose_stop{"ng-show" => "bus_stop === null"}
-        %table.table
+      #choose_stop{"ng-show" => "start_bus_stop === null && trip === null"}
+        %table.table.table-striped
           %thead
             %tr
               %th
@@ -13,37 +13,85 @@
           %tbody
             %tr{"ng-repeat" => "b in bus_stops", "ng-class-odd" => "odd"}
               %td
-                %a{:"ng-click" => "bus_stop = makeBusStop(b)"}
+                %a{:"ng-click" => "start_bus_stop = makeBusStop(b)"}
                   {{b.properties.official_name}}
-      #choose_route{"ng-show" => "bus_stop !== null && route === null"}
-        %table.table
+      #choose_route{"ng-show" => "start_bus_stop !== null && route === null"}
+        %table.table.table-striped
           %thead
             %tr
               %th
                 %h3{:style => "float:left; padding-right: 20px;"}
-                  {{bus_stop.properties.display_name}}
+                  {{start_bus_stop.properties.display_name}}
                 Please choose a route
-                %button.btn.btn-danger{:type => "button", "ng-click" => "bus_stop = null;", "style" => "float: right"}
+                %button.btn.btn-danger{:type => "button", "ng-click" => "start_bus_stop = null;", "style" => "float: right"}
                   Clear
           %tbody
-            %tr{"ng-repeat" => "r in bus_stop.routes track by $index"}
+            %tr{"ng-repeat" => "r in start_bus_stop.routes track by $index"}
               %td
                 %a{"ng-click" => "chooseRoute(r.trim())"}
                   {{r.trim()}}
-      #start_route{"ng-show" => "route !== null"}
-        %table.table
+      #start_route{"ng-show" => "route !== null && trip === null"}
+        %table.table.table-striped
           %thead
             %tr
               %th
                 %h3{:style => "float:left; padding-right: 20px;"}
-                  {{bus_stop.properties.display_name}} | {{route.display_name}}
+                  {{start_bus_stop.properties.display_name}} to
+                  %span{"ng-show" => "end_bus_stop !== null"}
+                    {{end_bus_stop.properties.display_name}}
+                  | {{route.display_name}}
+                %span{"ng-show" => "end_bus_stop === null"}
+                  [please choose a destination]
+
                 %div{:style => "float:right"}
-                  %button.btn.btn-large.btn-info{:type => "button", "ng-click" => "startTrip()"}
+                  %button.btn.btn-large.btn-info{:type => "button", "ng-click" => "startTrip()", "ng-show" => "end_bus_stop !== null"}
                     Start
-                  %button.btn.btn-danger{:type => "button", "ng-click" => "route = null"}
+                  %button.btn.btn-danger{:type => "button", "ng-click" => "clear();"}
                     Clear
           %tbody
             %tr{"ng-repeat" => "s in route.stops track by $index"}
               %td
-                %a{"ng-click" => "makeBusStop(s)"}
+                %a{"ng-click" => "makeBusStop(s, 'end')"}
                   {{s.properties.display_name}}
+      #tracking{"ng-show" => "trip !== null"}
+        %table.table
+          %thead
+            %tr
+              %td{:colspan => "2"}
+                %h3{:style => "float:left; padding-right: 20px;"}
+                  Trip Details
+                %div{:style => "float:right"}
+                  %button.btn.btn-large.btn-danger{:type => "button", "ng-click" => "stopTrip()"}
+                    Stop!
+            %tr
+              %th Route
+              %th {{route.display_name}}
+            %tr
+              %th Start
+              %th
+                {{trip.start_stop_name}} ({{trip.created_at}})
+            %tr
+              %th End
+              %th
+                {{trip.end_stop_name}}
+            %tr
+              %th Kms
+              %th {{trip.kms}}
+        %br
+        %table.table.table-striped
+          %thead
+            %tr
+              %th Lat
+              %th Lon
+              %th At
+              %th Accuracy
+              %th Speed
+              %th Heading
+          %tbody
+            %tr{"ng-repeat" => "p in points track by $index"}
+              %td {{p.coords.latitude}}
+              %td {{p.coords.longitude}}
+              %td {{p.created_at}}
+              %td {{p.coords.accuracy}}
+              %td {{p.coords.speed}}
+              %td {{p.coords.heading}}

@@ -5,6 +5,10 @@ class Trip < ActiveRecord::Base
 
   validates_presence_of :user_id
 
+  def self.live
+    where(:status => "started")
+  end
+
   def start!
     return false unless startable?
     self.status = "started"
@@ -15,6 +19,7 @@ class Trip < ActiveRecord::Base
   def stop!
     return false unless stoppable?
     self.status = "stopped"
+    self.ended_at = Time.zone.now
     self.save
   end
 

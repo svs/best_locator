@@ -10,12 +10,18 @@ BestLocator::Application.routes.draw do
       resources :trips do
         member do
           put 'stop'
+          put 'start'
+        end
+        collection do
+          get 'live'
         end
       end
       resources :users
     end
   end
 
+
+  resources :trips
   resources :users do
     resources :trips
   end
