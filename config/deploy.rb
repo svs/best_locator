@@ -1,3 +1,6 @@
+load 'deploy'
+# Uncomment if you are using Rails' asset pipeline
+load 'deploy/assets'
 set :application, 'best_locator'
 set :repo_url, 'git@github.com:svs/best_locator.git'
 

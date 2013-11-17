@@ -4,12 +4,12 @@
     .row.container
       #tagline.col-md-3
         %h1 Mumbai commutes don't have to be stressful!
-      #tagline2.col-md-offset-2.col-md-5
+      #tagline2.col-md-offset-1.col-md-5
         %h1 Join Mumbai's crowd-sourced BEST bus locator.
         %h3{:style => "font-family: 'Waiting for the Sunrise'"}
           Get realtime bus updates and alerts, help your fellow commuters and win prizes!
-    #android
-      = image_tag 'android.png'
+      #android.col-md-3
+        = image_tag 'android.png'
 - else
   %h3
     == welcome #{@user.name} (#{@user.email})
