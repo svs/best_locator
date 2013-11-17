@@ -221,7 +221,7 @@ DEPENDENCIES
   awesome_print
   bower-rails
   capistrano
-  capistrano-rails (~> 1.1.0)
+  capistrano-rails
   capybara
   coffee-rails (~> 4.0.0)
   devise
