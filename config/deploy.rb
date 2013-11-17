@@ -1,8 +1,7 @@
-require 'capistrano/rails'
 set :application, 'best_locator'
 set :repo_url, 'git@github.com:svs/best_locator.git'
 
-ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
+set :branch, "master"
 
 set :deploy_to, '/home/svs/best_locator'
 # set :scm, :git
@@ -21,8 +20,12 @@ set :bundle_flags, '--deployment --quiet --binstubs'
 
 namespace :deploy do
 
-  after :update_code do
-    run "cp #{shared_path}/*yml #{current_path}/config/"
+  after :updated, 'deploy:copy_configs'
+
+  desc 'Copy configuration files'
+  task :copy_configs do
+    sh "ln -s #{shared_path}/application.yml #{current_path}/config/application.yml"
+    sh "ln -s #{shared_path}/database.yml #{current_path}/config/database.yml"
   end
 
 
@@ -32,10 +35,6 @@ namespace :deploy do
     end
   end
 
-  after :restart, :clear_cache do
-    on roles(:web), in: :groups, limit: 3, wait: 10 do
-     end
-  end
 
   after :finishing, 'deploy:cleanup'
 
