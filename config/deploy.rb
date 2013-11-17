@@ -24,8 +24,11 @@ namespace :deploy do
 
   desc 'Copy configuration files'
   task :copy_configs do
-    sh "ln -s #{shared_path}/application.yml #{current_path}/config/application.yml"
-    sh "ln -s #{shared_path}/database.yml #{current_path}/config/database.yml"
+    on roles(:app) do
+      puts shared_path
+      execute :cp, "#{shared_path}/database.yml", "#{current_path}/config/database.yml"
+      execute :cp, "#{shared_path}/application.yml", "#{current_path}/config/application.yml"
+    end
   end
 
 

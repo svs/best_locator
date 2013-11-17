@@ -1,0 +1,1 @@
+angular.module("bestLocatorApp").controller("UsersCtrl",["$scope",function(t){t.trips=[{id:1,from:"Dongri Pada",to:"Kalva",start_time:"",end_time:"",status:"complete",kms:21}],t.user={name:"Sid Sharma"}}]);
