@@ -18,20 +18,17 @@
           %tr
             %th Id
             %th From
+            %th at
             %th To
+            %th at
             %th status
             %th kms
         %tbody
           %tr{:"ng-repeat" => "t in trips" }
-            %td
-              {{t.id}}
-            %td
-              {{t.from}}
-              {{t.start_time}}
-            %td
-              {{t.to}}
-              {{t.end_time}}
-            %td
-              {{td.status}}
-            %td
-              {{td.kms}}
+            %td {{t.id}}
+            %td {{t.start_stop_name}}
+            %td {{t.started_at}}
+            %td {{t.end_stop_name}}
+            %td {{t.ended_at}}
+            %td {{t.status}}
+            %td {{t.kms}}

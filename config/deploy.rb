@@ -1,6 +1,4 @@
-load 'deploy'
 # Uncomment if you are using Rails' asset pipeline
-load 'deploy/assets'
 set :application, 'best_locator'
 set :repo_url, 'git@github.com:svs/best_locator.git'
 
@@ -34,6 +32,15 @@ namespace :deploy do
     end
   end
 
+  task :precompile do
+    on roles(:app) do
+      within fetch(:latest_release_directory) do
+        with rails_env: fetch(:rails_env) do
+          execute :bundle, :exec, :rake, 'assets:precompile'
+        end
+      end
+    end
+  end
 
   desc 'Restart application'
   task :restart do
