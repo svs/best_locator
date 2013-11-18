@@ -11,6 +11,14 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
 	    if (live_trips.length > 0) {
 		$scope.trip = live_trips[0];
 		navigator.geolocation.watchPosition(updateLocation, failedLocation, {timeout: 5000});
+	    } else {
+		if (navigator.geolocation) {
+		    navigator.geolocation.getCurrentPosition(gotLocation, failedLocation);
+		} else {
+		    error('not supported');
+	}
+
+
 	    }
 	});
     }
@@ -35,12 +43,6 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
 
     var failedLocation = function(msg) {
 	console.log('failed to get position');
-    }
-
-    if (navigator.geolocation) {
-	navigator.geolocation.getCurrentPosition(gotLocation, failedLocation);
-    } else {
-	error('not supported');
     }
 
     var busStops = Restangular.all('api/v1/bus_stops');

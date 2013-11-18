@@ -1,4 +1,4 @@
-
+require 'capistrano/rails'
 # Uncomment if you are using Rails' asset pipeline
 set :application, 'best_locator'
 set :repo_url, 'git@github.com:svs/best_locator.git'
@@ -33,7 +33,7 @@ namespace :deploy do
     end
   end
 
-  after :updated, 'deploy:compile_assets'
+  after :copy_configs, 'deploy:compile_assets'
 
   desc 'Restart application'
   task :restart do
