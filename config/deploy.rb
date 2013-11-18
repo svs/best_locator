@@ -1,4 +1,5 @@
 require 'capistrano/rails'
+require 'capistrano/rbenv'
 # Uncomment if you are using Rails' asset pipeline
 set :application, 'best_locator'
 set :repo_url, 'git@github.com:svs/best_locator.git'
@@ -8,8 +9,12 @@ set :branch, "master"
 set :deploy_to, '/home/svs/best_locator'
 # set :scm, :git
 
+set :rbenv_type, :user # or :system, depends on your rbenv setup
+set :rbenv_ruby, '2.0.0-p247'
+
+
 set :format, :pretty
-set :log_level, :info
+set :log_level, :debug
 # set :pty, true
 
 # set :linked_files, %w{config/database.yml}

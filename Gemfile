@@ -41,8 +41,9 @@ end
 gem 'puma'
 
 # Use Capistrano for deployment
-gem 'capistrano', group: :development
+gem 'capistrano', '~> 3.0.0', group: :development
 gem 'capistrano-rails', group: :development
+gem 'capistrano-rbenv', github: "capistrano/rbenv"
 
 
 group :development, :test do
