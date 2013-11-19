@@ -91,7 +91,7 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
 	    }
 	).then(function(r) {
 	    $scope.trip = r;
-	    navigator.geolocation.watchPosition(updateLocation, failedLocation, {timeout: 5000});
+	    navigator.geolocation.watchPosition(updateLocation, failedLocation, {timeout: 5000, enableHighAccuracy: true});
 	});
     }
 
