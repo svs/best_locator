@@ -5,6 +5,13 @@ GIT
     capistrano-rbenv (0.0.1)
       capistrano
 
+GIT
+  remote: git://github.com/seuros/capistrano-puma.git
+  revision: f024ddd33d4d0a74ce743016b9a57d551893fd20
+  specs:
+    capistrano-puma (0.0.6)
+      capistrano (~> 3.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -229,6 +236,7 @@ DEPENDENCIES
   bower-rails
   capistrano (~> 3.0.0)
   capistrano-bundler
+  capistrano-puma!
   capistrano-rails
   capistrano-rbenv!
   capybara
