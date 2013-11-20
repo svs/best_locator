@@ -46,8 +46,7 @@ set :puma_env, fetch(:rack_env, fetch(:rails_env, 'production'))
 set :puma_threads, [0, 16]
 set :puma_workers, 0
 set :puma_conf, "#{shared_path}/config/puma.rb"
-set :puma_cmd, "#{fetch(:bundle_cmd, 'bundle')} exec puma"
-set :pumactl_cmd, "#{fetch(:bundle_cmd, 'bundle')} exec pumactl"
+
 # set :keep_releases, 5
 
 namespace :deploy do
