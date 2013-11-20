@@ -4,7 +4,7 @@ require 'capistrano/bundler'
 require 'capistrano/rails/assets'
 require 'capistrano/rails/migrations'
 require 'capistrano/puma'
-require 'capistrano/puma/jungle' #if you need the jungle tasks
+# require 'capistrano/puma/jungle' #if you need the jungle tasks
 
 set :application, 'best_locator'
 set :repo_url, 'git@github.com:svs/best_locator.git'
@@ -21,7 +21,7 @@ set :format, :pretty
 set :log_level, :info
 # set :pty, true
 
-set :linked_files, %w{config/database.yml config/application.yml}
+set :linked_files, %w{config/database.yml config/application.yml config/puma.rb}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 set :bundle_gemfile, -> { release_path.join('Gemfile') }
@@ -36,6 +36,7 @@ set :migration_role, 'db'
 set :default_env, {   'PATH' => "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH" }
 
 
+set :puma_conf, "#{shared_path}/config/puma.rb"
 set :puma_state, "#{shared_path}/tmp/pids/puma.state"
 set :puma_pid, "#{shared_path}/tmp/pids/puma.pid"
 set :puma_bind, "unix://#{shared_path}/tmp/sockets/puma.sock"
@@ -45,7 +46,6 @@ set :puma_error_log, "#{shared_path}/log/puma_access.log"
 set :puma_env, fetch(:rack_env, fetch(:rails_env, 'production'))
 set :puma_threads, [0, 16]
 set :puma_workers, 0
-set :puma_conf, "#{shared_path}/config/puma.rb"
 
 # set :keep_releases, 5
 
