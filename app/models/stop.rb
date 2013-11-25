@@ -3,9 +3,9 @@ class Stop < ActiveRecord::Base
   has_and_belongs_to_many :routes
 
   def self.attrs_from_chalo_best(json)
-    json["properties"].slice(*self.attribute_names).except("id").
+    json["properties"].slice(*self.attribute_names).except("id", "routes").
       merge("lat" => json["geometry"]["coordinates"][1], "lon" => json["geometry"]["coordinates"][0]).tap do |attrs|
-      attrs["routes"] = JSON.dump("ids" => attrs["routes"])
+      attrs["route_names"] = JSON.dump("ids" => json["properties"]["routes"])
     end
   end
 
