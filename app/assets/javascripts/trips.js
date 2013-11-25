@@ -38,6 +38,7 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
     }
     var gotLocation = function(position) {
 	$scope.current_location = {lon:position.coords.longitude, lat:position.coords.latitude}
+	console.log($scope.current_location);
 	load_stops();
     }
 
