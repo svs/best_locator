@@ -7,8 +7,8 @@ class Api::V1::RoutesController < ApplicationController
   end
 
   def show
-    route = JSON.load(RestClient.get("http://chalobest.in/1.0/route/#{params[:id]}"))["stops"]["features"]
-    render json: route
+    route = Route.find(params[:id])
+    render json: route.attributes.merge(:stops => route.stops.map(&:attributes))
   end
 
 end

@@ -59,26 +59,22 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
 	} else {
 	    $scope.start_bus_stop = bus_stop_data;
 	}
-	Restangular.one('api/v1/bus_stops/' + bus_stop_data.properties.slug).get().then(function(data) {
-	    r = data.properties.routes.split(",");
-	    $scope.start_bus_stop.routes = r;
+	Restangular.one('api/v1/bus_stops/' + bus_stop_data.slug).get().then(function(data) {
+	    $scope.start_bus_stop.routes = data;
 	});
     }
 
 
 
-    $scope.chooseRoute = function(name) {
-	Restangular.one('api/v1/routes/').get({q: name}).then(function(data) {
+    $scope.chooseRoute = function(id) {
+	Restangular.one('api/v1/routes/' + id).get().then(function(data) {
 	    $scope.route = data;
-	    Restangular.one('api/v1/routes/' + data.code).get().then(function(d) {
-		$scope.route.stops = d;
-	    });
 	});
     };
 
     $scope.startTrip = function() {
-	var sp = $scope.start_bus_stop.properties
-	var ep = $scope.end_bus_stop.properties
+	var sp = $scope.start_bus_stop
+	var ep = $scope.end_bus_stop
 	Restangular.all('api/v1/trips').post(
 	    {trip:
 	     {bus_number: $scope.route.code,

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131116080902) do
+ActiveRecord::Schema.define(version: 20131125203337) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,41 @@ ActiveRecord::Schema.define(version: 20131116080902) do
     t.float    "speed"
     t.float    "accuracy"
     t.datetime "reported_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "routes", force: true do |t|
+    t.string   "code"
+    t.string   "end_area"
+    t.string   "start_stop"
+    t.string   "start_area"
+    t.string   "display_name"
+    t.string   "url"
+    t.string   "slug"
+    t.string   "end_stop"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "routes_stops", id: false, force: true do |t|
+    t.integer "route_id", null: false
+    t.integer "stop_id",  null: false
+  end
+
+  add_index "routes_stops", ["route_id"], name: "index_routes_stops_on_route_id", using: :btree
+  add_index "routes_stops", ["stop_id"], name: "index_routes_stops_on_stop_id", using: :btree
+
+  create_table "stops", force: true do |t|
+    t.string   "name"
+    t.float    "lat"
+    t.float    "lon"
+    t.string   "code"
+    t.string   "official_name"
+    t.string   "display_name"
+    t.string   "url"
+    t.json     "route_names"
+    t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

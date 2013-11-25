@@ -13,31 +13,33 @@
             %tr{"ng-repeat" => "b in bus_stops", "ng-class-odd" => "odd"}
               %td
                 %a{:"ng-click" => "start_bus_stop = makeBusStop(b)"}
-                  {{b.properties.official_name}}
+                  {{b.official_name}}
       #choose_route{"ng-show" => "start_bus_stop !== null && route === null"}
         %table.table.table-striped
           %thead
             %tr
               %th
                 %h3{:style => "float:left; padding-right: 20px;"}
-                  {{start_bus_stop.properties.display_name}}
+                  {{start_bus_stop.display_name}}
                 Please choose a route
                 %button.btn.btn-danger{:type => "button", "ng-click" => "start_bus_stop = null;", "style" => "float: right"}
                   Clear
           %tbody
             %tr{"ng-repeat" => "r in start_bus_stop.routes track by $index"}
               %td
-                %a{"ng-click" => "chooseRoute(r.trim())"}
-                  {{r.trim()}}
+                %a{"ng-click" => "chooseRoute(r.id)"}
+                  {{r.display_name}}
+              %td
+                {{r.start_stop}} - {{r.end_stop}}
       #start_route{"ng-show" => "route !== null && trip === null"}
         %table.table.table-striped
           %thead
             %tr
               %th
                 %h3{:style => "float:left; padding-right: 20px;"}
-                  {{start_bus_stop.properties.display_name}} to
+                  {{start_bus_stop.display_name}} to
                   %span{"ng-show" => "end_bus_stop !== null"}
-                    {{end_bus_stop.properties.display_name}}
+                    {{end_bus_stop.display_name}}
                   | {{route.display_name}}
                 %span{"ng-show" => "end_bus_stop === null"}
                   [please choose a destination]
@@ -51,7 +53,7 @@
             %tr{"ng-repeat" => "s in route.stops track by $index"}
               %td
                 %a{"ng-click" => "makeBusStop(s, 'end')"}
-                  {{s.properties.display_name}}
+                  {{s.display_name}}
       #tracking{"ng-show" => "trip !== null"}
         %table.table
           %thead
