@@ -6,7 +6,8 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
     $scope.trip = null;
     $scope.points = [];
     $scope.geocode_accurate = false;
-    var geolocation;
+    var busStopLocationWatch;
+    var geolocationWatch;
 
     var initialize = function() {
 	Restangular.one('api/v1/trips/live').get().then(function(live_trips) {
@@ -15,7 +16,7 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
 		getGeoLocation();
 	    } else {
 		if (navigator.geolocation) {
-		    $scope.getPosition();
+		    $scope.getBusStopLocation();
 		} else {
 		    error('not supported');
 	}
@@ -29,19 +30,24 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
     initialize();
 
     var getGeoLocation = function() {
-	geolocation = navigator.geolocation.watchPosition(updateLocation, failedLocation, {timeout: 5000, enableHighAccuracy: true});
+	console.log('Updating location...')
+	geoLocationWatch = navigator.geolocation.watchPosition(updateLocation, failedLocation, {timeout: 5000, enableHighAccuracy: true});
     };
 
-    $scope.getPosition = function() {
-	navigator.geolocation.getCurrentPosition(gotLocation, failedLocation, {maximumAge: 0, enableHighAccuracy: true});
+    $scope.getBusStopLocation = function() {
+	busStopLocationWatch = navigator.geolocation.watchPosition(
+	    gotLocation, failedLocation, { maximumAge: 0, enableHighAccuracy: true}
+	);
     };
 
     var updateLocation = function(position) {
 	var c = position.coords
 	if (c.accuracy > 100) {
 	    $scope.geocodeAccurate = false;
+	    console.log("Accuracy is poor (" + c.accuracy + "). Ignoring")
 	} else {
-	    $scope.status = "updating location...."
+	    $scope.geocodeAccurate = false;
+	    $scope.status = "sending update...."
 	    Restangular.all('api/v1/location_reports').post(
 		{
 		    location_report: {
@@ -56,17 +62,21 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
 		    $scope.points.push(position);
 		    $scope.status = "ready";
 		});
-	    window.navigator.geolocation.clearWatch( geolocation )
+	    window.navigator.geolocation.clearWatch( geoLocationWatch )
 	    window.setTimeout( getGeoLocation, 60000 );
 	}
     }
 
 
     var gotLocation = function(position) {
-	$scope.current_location = {lon:position.coords.longitude, lat:position.coords.latitude}
-	console.log(position);
-	console.log(new Date(position.timestamp));
-	load_stops();
+	var c = position.coords;
+	if (c.accuracy < 100) {
+	    $scope.current_location = {lon:c.longitude, lat:c.latitude}
+	    console.log(position);
+	    console.log(new Date(position.timestamp));
+	    window.navigator.geolocation.clearWatch( busStopLocationWatch );
+	    load_stops();
+	}
     }
 
     var failedLocation = function(msg) {
