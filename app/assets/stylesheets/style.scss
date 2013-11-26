@@ -27,28 +27,72 @@ html, body { height: 100%; }
     }
 }
 
-#trip {
-  font-family: "Georgia";
-  h3 { margin: 0px;}
-  overflow: scroll;
-  font-size: 1.2em;
-  table {
-      height: 20px;
-      overflow: scroll;
+#trip{
+  h3.title {
+      margin: 5px;
+      float: left;
   }
-  tbody {
-    td {
-	padding: 4px 4px 4px 42px;
-	a {
-	    color: #222;
-	    text-shadow: 1px 1px 1px white;
-	    cursor: pointer;
-	    text-transform: capitalize;
-	}
-    }
+  h3 {
+      font-weight: normal;
+      font-size: 1.4em;
+      text-transform: capitalize;
+  }
+  font-size: 1.2em;
+  table.table-list {
+      color: #444;
+      overflow: scroll;
+      height: 80%;
+      thead {
+	  height: 45px;
+	  background: #fff;
+      }
+      tbody {
+	  margin-top: 40px;
+	  overflow: auto;
+	  tr {
+	      cursor: pointer;
+	  }
+	  td {
+	      padding: 10px;
+	      a {
+		  color: #222;
+		  text-shadow: 1px 1px 1px white;
+		  cursor: pointer;
+		  text-transform: capitalize;
+	      }
+	  }
+	  tr:hover {
+	      background: #dadada;
+	  }
+      }
   }
 }
 
+
+#choose_route {
+    table {
+	color: #444;
+	h3 {
+	    font-size: 1.4em;
+	}
+	span.route-detail {
+	    color: #777;
+	}
+	tbody {
+	    tr {
+		cursor: pointer;
+	    }
+	    td {
+		border-right: solid 1px #efefef;
+	    }
+	    td.bus-status {
+		width: 13%;
+		text-align: center;
+		padding: 5px;
+	    }
+	}
+    }
+}
 #app {
   padding-top: 20px;
 }

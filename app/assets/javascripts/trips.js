@@ -70,7 +70,7 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
 
     var gotLocation = function(position) {
 	var c = position.coords;
-	if (c.accuracy < 100) {
+	if (true) {
 	    $scope.current_location = {lon:c.longitude, lat:c.latitude}
 	    console.log(position);
 	    console.log(new Date(position.timestamp));

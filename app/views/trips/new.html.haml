@@ -4,39 +4,43 @@
   #trip{:"ng-controller" => "TripsCtrl"}
     .row_
       #choose_stop{"ng-show" => "start_bus_stop === null && trip === null"}
-        %table.table.table-striped
-          %thead
-            %tr
-              %th
-                %h3
-                  Which bus stop are you at?
-                %button.btn.btn-primary{:"ng-click" => "getPosition()"}
-                  %i{:class => "icon-refresh"} &nbsp;
+        %h3.title
+          Which bus stop are you at?
+        %button.btn.btn-primary{:"ng-click" => "getPosition()"}
+          %i{:class => "glyphicon glyphicon-refresh"}
 
+        %table.table.table-list
           %tbody
             %tr{"ng-repeat" => "b in bus_stops", "ng-class-odd" => "odd"}
-              %td
-                %a{:"ng-click" => "start_bus_stop = makeBusStop(b)"}
-                  {{b.official_name}}
+              %td{:"ng-click" => "start_bus_stop = makeBusStop(b)"}
+                %h3{:style => "padding-left: 40px"}
+                  {{b.official_name | lowercase}}
       #choose_route{"ng-show" => "start_bus_stop !== null && route === null"}
-        %table.table.table-striped
+        %table.table.table-list
           %thead
             %tr
-              %th
-                %h3{:style => "float:left; padding-right: 20px;"}
+              %th{:colspan => "5"}
+                %h3.title
                   {{start_bus_stop.display_name}}
-                Please choose a route
-                %button.btn.btn-danger{:type => "button", "ng-click" => "start_bus_stop = null;", "style" => "float: right"}
+                %button.btn.btn-danger{:type => "button", "ng-click" => "start_bus_stop = null;"}
                   Clear
           %tbody
-            %tr{"ng-repeat" => "r in start_bus_stop.routes track by $index"}
+            %tr{"ng-repeat" => "r in start_bus_stop.routes track by $index", "ng-click" => "chooseRoute(r.id)"}
               %td
-                %a{"ng-click" => "chooseRoute(r.id)"}
+                %h3.title
                   {{r.display_name}}
-              %td
-                {{r.start_stop}} - {{r.end_stop}}
+              %td{:width => "55%"}
+                %span.route-detail
+                  {{r.start_stop}} -
+                  {{r.end_stop}}
+              %td.bus-status
+                = image_tag 'bus-grey.png', :style => "width: 45px"
+                %br
+                No info
+              %td.bus-status &nbsp;
+              %td.bus-status &nbsp;
       #start_route{"ng-show" => "route !== null && trip === null"}
-        %table.table.table-striped
+        %table.table.table-list
           %thead
             %tr
               %th
@@ -54,9 +58,9 @@
                   %button.btn.btn-danger{:type => "button", "ng-click" => "clear();"}
                     Clear
           %tbody
-            %tr{"ng-repeat" => "s in route.stops track by $index"}
+            %tr{"ng-repeat" => "s in route.stops track by $index", "ng-click" => "makeBusStop(s, 'end')"}
               %td
-                %a{"ng-click" => "makeBusStop(s, 'end')"}
+                %a
                   {{s.display_name}}
       #tracking{"ng-show" => "trip !== null"}
         %table.table
