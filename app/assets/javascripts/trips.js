@@ -5,15 +5,17 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
     $scope.end_bus_stop = null;
     $scope.trip = null;
     $scope.points = [];
+    $scope.geocode_accurate = false;
+    var geolocation;
 
     var initialize = function() {
 	Restangular.one('api/v1/trips/live').get().then(function(live_trips) {
 	    if (live_trips.length > 0) {
 		$scope.trip = live_trips[0];
-		navigator.geolocation.watchPosition(updateLocation, failedLocation, {timeout: 5000});
+		getGeoLocation();
 	    } else {
 		if (navigator.geolocation) {
-		    navigator.geolocation.getCurrentPosition(gotLocation, failedLocation);
+		    $scope.getPosition();
 		} else {
 		    error('not supported');
 	}
@@ -26,19 +28,44 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
 
     initialize();
 
+    var getGeoLocation = function() {
+	geolocation = navigator.geolocation.watchPosition(updateLocation, failedLocation, {timeout: 5000, enableHighAccuracy: true});
+    };
+
+    $scope.getPosition = function() {
+	navigator.geolocation.getCurrentPosition(gotLocation, failedLocation, {maximumAge: 0, enableHighAccuracy: true});
+    };
 
     var updateLocation = function(position) {
-	$scope.status = "updating location...."
 	var c = position.coords
-	Restangular.all('api/v1/location_reports').post({location_report: {trip_id: $scope.trip.id, lat: c.latitude, lon: c.longitude, accuracy: c.accuracy, heading: c.heading, speed: c.speed }}
-	).then(function(d) {
-	    $scope.points.push(position);
-	    $scope.status = "ready";
-	});
+	if (c.accuracy > 100) {
+	    $scope.geocodeAccurate = false;
+	} else {
+	    $scope.status = "updating location...."
+	    Restangular.all('api/v1/location_reports').post(
+		{
+		    location_report: {
+			trip_id: $scope.trip.id,
+			lat: c.latitude,
+			lon: c.longitude,
+			accuracy: c.accuracy,
+			heading: c.heading,
+			speed: c.speed
+		    }
+		}).then(function(d) {
+		    $scope.points.push(position);
+		    $scope.status = "ready";
+		});
+	    window.navigator.geolocation.clearWatch( geolocation )
+	    window.setTimeout( getGeoLocation, 60000 );
+	}
     }
+
+
     var gotLocation = function(position) {
 	$scope.current_location = {lon:position.coords.longitude, lat:position.coords.latitude}
-	console.log($scope.current_location);
+	console.log(position);
+	console.log(new Date(position.timestamp));
 	load_stops();
     }
 
@@ -88,7 +115,7 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
 	    }
 	).then(function(r) {
 	    $scope.trip = r;
-	    navigator.geolocation.watchPosition(updateLocation, failedLocation, {timeout: 5000, enableHighAccuracy: true});
+	    getGeoLocation();
 	});
     }
 

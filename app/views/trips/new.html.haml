@@ -8,7 +8,11 @@
           %thead
             %tr
               %th
-                %h3 Which bus stop are you at?
+                %h3
+                  Which bus stop are you at?
+                %button.btn.btn-primary{:"ng-click" => "getPosition()"}
+                  %i{:class => "icon-refresh"} &nbsp;
+
           %tbody
             %tr{"ng-repeat" => "b in bus_stops", "ng-class-odd" => "odd"}
               %td

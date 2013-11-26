@@ -35,6 +35,10 @@ class User < ActiveRecord::Base
     super && provider.blank?
   end
 
+  def has_live_trip?
+    self.trips.where(:status => "started").count > 0
+  end
+
 
   private
 
