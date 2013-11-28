@@ -3,7 +3,7 @@ class Api::V1::BusStopsController < Api::V1::BaseController
   def index
     lat = params[:center_lat].to_f
     lon = params[:center_lon].to_f
-    bus_stops = Stop.order('abs(lat - 19.1860802) + abs(lon - 72.8323032)').limit(10)
+    bus_stops = Stop.order("abs(lat - #{lat}) + abs(lon - #{lon})").limit(10)
     render  json: bus_stops.as_json
   end
 
