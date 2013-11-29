@@ -35,5 +35,12 @@ class Stop < ActiveRecord::Base
     Stop.where('(lat between ? and ?) and (lon between ? and ?)', lat1, lat2, lon1, lon2)
   end
 
+  def inspect
+    display_name || super
+  end
+
+  def self.inspect
+    self.to_s
+  end
 
 end

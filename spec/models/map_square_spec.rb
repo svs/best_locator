@@ -15,5 +15,9 @@ describe MapSquare do
     map_square.stops(sort: :lat).should == [malad, bandra]
   end
 
+  it "should have correct areas" do
+    map_square.areas.should == ["B", "M"]
+    map_square.areas(sort: :lat).should == ["M", "B"]
+  end
 
 end

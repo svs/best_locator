@@ -39,9 +39,10 @@ describe Stop do
 
 
   describe "searching stops" do
-    before(:all) { Rake::Task['db:data:load'].invoke}
+    let!(:malad) { FactoryGirl.create(:stop, :display_name => "Malad", :area => "M", :lat => 10, :lon => 10) }
+    let!(:bandra) { FactoryGirl.create(:stop, :display_name => "Bandra", :area => "B", :lat => 1, :lon => 1) }
 
-    specify { Stop.count.should == 200 }
+    specify { Stop.search_by(:center_lat => 2, :center_lon => 2).should == [bandra, malad] }
 
   end
 
