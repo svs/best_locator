@@ -6,7 +6,7 @@ describe Trip do
   its(:status) { should == "new" }
 
   it "should start and stop" do
-    t = Trip.new
+    t = FactoryGirl.create(:trip)
     t.should be_fresh
     t.should be_startable
     t.user.should_not have_live_trip

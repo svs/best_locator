@@ -5,7 +5,7 @@ describe Api::V1::TripsController do
   let!(:user) { FactoryGirl.create(:user) }
   let!(:my_trip) { Trip.create(valid_params["trip"].merge(:user_id => user.id)) }
   let!(:others_trip) { FactoryGirl.create(:trip) }
-  let(:valid_params) { {"trip" => {}, :format => "json"}}
+  let(:valid_params) { {"trip" => {"bus_number" => 1}, :format => "json"}}
 
   context "unauthenticated" do
 
@@ -27,7 +27,7 @@ describe Api::V1::TripsController do
 
     it "should create a trip" do
       expect {
-        post(:create, {"trip" => {}})
+        post(:create, valid_params)
       }.to change(Trip, :count).by(1)
     end
 

@@ -23,6 +23,8 @@ class Stop < ActiveRecord::Base
       Stop.order("abs(lat - #{lat}) + abs(lon - #{lon})").limit(10)
     elsif params[:map_square_id]
       MapSquare.find(params[:map_square_id]).stops(params[:sort])
+    elsif params[:lat1] && params[:lat2] && params[:lon1] && params[:lon2]
+      Stop.in_square(params[:lat1], params[:lon1], params[:lat2], params[:lon2])
     elsif params[:area]
       Stop.where(:area => params[:area])
     end

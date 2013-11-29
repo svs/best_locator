@@ -43,6 +43,7 @@ describe Stop do
     let!(:bandra) { FactoryGirl.create(:stop, :display_name => "Bandra", :area => "B", :lat => 1, :lon => 1) }
 
     specify { Stop.search_by(:center_lat => 2, :center_lon => 2).should == [bandra, malad] }
+    specify { Stop.search_by(:lat1 => 0, :lon1 => 0, :lat2 => 2, :lon2 => 2).should == [bandra] }
 
   end
 

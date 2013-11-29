@@ -3,6 +3,7 @@ class Api::V1::TripsController < Api::V1::BaseController
   before_filter :authenticate_user_from_token!
 
   def index
+
     @trips = observed_user.trips
     render json: @trips.to_json
   end
