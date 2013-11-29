@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 require 'spec_helper'
+require 'rake'
 
 describe Stop do
   let(:json) {
@@ -34,6 +35,14 @@ describe Stop do
       bus_stop.official_name.should == "R.C.CHURCH"
       bus_stop.id.should_not == "abc"
     }
+  end
+
+
+  describe "searching stops" do
+    before(:all) { Rake::Task['db:data:load'].invoke}
+
+    specify { Stop.count.should == 200 }
+
   end
 
 end

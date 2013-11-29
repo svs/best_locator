@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131125203337) do
+ActiveRecord::Schema.define(version: 20131129131505) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,17 @@ ActiveRecord::Schema.define(version: 20131125203337) do
     t.float    "speed"
     t.float    "accuracy"
     t.datetime "reported_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "map_squares", force: true do |t|
+    t.float    "lat1"
+    t.float    "lon1"
+    t.float    "lat2"
+    t.float    "lon2"
+    t.string   "index"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -59,6 +70,7 @@ ActiveRecord::Schema.define(version: 20131125203337) do
     t.string   "url"
     t.json     "route_names"
     t.string   "slug"
+    t.string   "area"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

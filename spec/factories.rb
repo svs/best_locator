@@ -10,4 +10,19 @@ FactoryGirl.define do
   factory :trip do
     association :user
   end
+
+  factory :stop do
+    sequence(:name) { |n| "Stop#{n}" }
+    lat 1
+    lon 1
+    sequence(:area) { |n| "Area#{100-n}" }
+  end
+
+  factory :map_square do
+    lat1 0
+    lon1 0
+    lat2 2
+    lon2 0
+  end
+
 end

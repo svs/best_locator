@@ -16,5 +16,24 @@ class Stop < ActiveRecord::Base
     }
   end
 
+  def self.search_by(params)
+    if params[:center_lat] && params[:center_lon]
+      lat = params[:center_lat].to_f
+      lon = params[:center_lon].to_f
+      Stop.order("abs(lat - #{lat}) + abs(lon - #{lon})").limit(10)
+    elsif params[:map_square_id]
+      MapSquare.find(params[:map_square_id]).stops(params[:sort])
+    elsif params[:area]
+      Stop.where(:area => params[:area])
+    end
+  end
+
+
+  def self.in_square(lat1, lon1, lat2, lon2)
+    lon1, lon2 = lon2, lon1 if lon2 < lon1
+    lat1, lat2 = lat2, lat1 if lat2 < lat1
+    Stop.where('(lat between ? and ?) and (lon between ? and ?)', lat1, lat2, lon1, lon2)
+  end
+
 
 end
