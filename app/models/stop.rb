@@ -26,7 +26,7 @@ class Stop < ActiveRecord::Base
     elsif params[:lat1] && params[:lat2] && params[:lon1] && params[:lon2]
       Stop.in_square(params[:lat1], params[:lon1], params[:lat2], params[:lon2])
     elsif params[:area]
-      Stop.where(:area => params[:area])
+      Stop.where(:area => params[:area]).order(:display_name)
     end
   end
 

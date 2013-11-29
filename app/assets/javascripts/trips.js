@@ -1,8 +1,10 @@
 angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular','$window',function($scope, Restangular, $window) {
     $scope.status = "ready"
     $scope.route = null;
+    $scope.routes = null;
     $scope.start_bus_stop = null;
     $scope.end_bus_stop = null;
+    $scope.end_area = null;
     $scope.trip = null;
     $scope.points = [];
     $scope.geocode_accurate = false;
@@ -90,26 +92,42 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
 	});
     };
 
+    var load_map_squares = function() {
+	Restangular.one('api/v1/browse/map_squares').get().then(function(data) {
+	    $scope.map_squares = data
+	});
+    }
+
+    $scope.markEndMapSquare = function(map_square) {
+	$scope.end_map_square = map_square;
+	Restangular.one('api/v1/browse/areas?map_square_id=' + map_square.id + '&sort=alpha' ).get().then(function(data) {
+	    $scope.end_areas = data;
+	});
+    }
+
+    $scope.chooseEndArea = function(area) {
+	$scope.end_area = area;
+	Restangular.one('api/v1/browse/bus_stops?area=' + area ).get().then(function(data) {
+	    $scope.end_bus_stops = data;
+	});
+    }
+
     $scope.makeBusStop = function(bus_stop_data){
 	if (arguments[1] === "end") {
 	    $scope.end_bus_stop = bus_stop_data;
+	    Restangular.one('api/v1/browse/route?start_bus_stop=' + $scope.start_bus_stop.display_name + '&end_bus_stop=' + $scope.end_bus_stop.display_name).get().then(function(data) {
+		$scope.routes = data;
+	    });
 	} else {
 	    $scope.start_bus_stop = bus_stop_data;
+	    load_map_squares();
 	}
-	Restangular.one('api/v1/bus_stops/' + bus_stop_data.slug).get().then(function(data) {
-	    $scope.start_bus_stop.routes = data;
-	});
     }
 
 
 
-    $scope.chooseRoute = function(id) {
-	Restangular.one('api/v1/routes/' + id).get().then(function(data) {
-	    $scope.route = data;
-	});
-    };
-
-    $scope.startTrip = function() {
+    $scope.startTrip = function(r) {
+	$scope.route = r;
 	var sp = $scope.start_bus_stop
 	var ep = $scope.end_bus_stop
 	Restangular.all('api/v1/trips').post(

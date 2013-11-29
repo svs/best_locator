@@ -17,6 +17,14 @@ BestLocator::Application.routes.draw do
         end
       end
       resources :users
+      resources :browse do
+        collection do
+          get 'map_squares'
+          get 'areas'
+          get 'bus_stops'
+          get 'route'
+        end
+      end
     end
   end
 
