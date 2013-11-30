@@ -14,7 +14,7 @@ class Route < ActiveRecord::Base
 
   def update!(overwrite = false)
     stops_array.each do |sa|
-      self.stops << Stop.create_from_chalo_best(sa)
+      self.stops << Stop.create_from_chalo_best(sa, overwrite)
     end
   end
 
