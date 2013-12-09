@@ -3,6 +3,9 @@ class Trip < ActiveRecord::Base
   belongs_to :user
   has_many :location_reports
 
+  belongs_to :start_stop, :class_name => Stop
+  belongs_to :end_stop, :class_name => Stop
+
   validates_presence_of :user_id
 
   def self.live

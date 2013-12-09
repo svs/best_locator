@@ -2,6 +2,11 @@ class Stop < ActiveRecord::Base
 
   has_and_belongs_to_many :routes
 
+  has_many :start_trips, :foreign_key => :start_stop_id, :class_name => Trip
+  has_many :end_trips, :foreign_key => :end_stop_id, :class_name => Trip
+
+
+
   def self.attrs_from_chalo_best(json)
     json["properties"].slice(*self.attribute_names).except("id", "routes").
       merge("lat" => json["geometry"]["coordinates"][1], "lon" => json["geometry"]["coordinates"][0]).tap do |attrs|
@@ -27,6 +32,13 @@ class Stop < ActiveRecord::Base
       Stop.in_square(params[:lat1], params[:lon1], params[:lat2], params[:lon2])
     elsif params[:area]
       Stop.where(:area => params[:area]).order(:display_name)
+    elsif params[:faves]
+      Stop.where(:id => Stop.joins('join trips on trips.start_stop_id = stops.id or trips.end_stop_id = stops.id').
+                 select('stops.id as id,count(trips.id) as ct').
+                 group('stops.id').
+                 order('ct desc').
+                 limit(5).
+                 map(&:id))
     end
   end
 
@@ -37,9 +49,9 @@ class Stop < ActiveRecord::Base
     Stop.where('(lat between ? and ?) and (lon between ? and ?)', lat1, lat2, lon1, lon2)
   end
 
-  def inspect
-    display_name || super
-  end
+  #def inspect
+    #display_name || super
+  #end
 
   def self.inspect
     self.to_s

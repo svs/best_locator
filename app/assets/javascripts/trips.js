@@ -5,6 +5,7 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
     $scope.start_bus_stop = null;
     $scope.end_bus_stop = null;
     $scope.end_area = null;
+    $scope.end_areas = null;
     $scope.trip = null;
     $scope.points = [];
     $scope.geocode_accurate = false;
@@ -96,6 +97,15 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
 	Restangular.one('api/v1/browse/map_squares').get().then(function(data) {
 	    $scope.map_squares = data
 	});
+    }
+
+    $scope.getFaves = function() {
+	Restangular.one('api/v1/browse/bus_stops?faves=' + true ).get().then(function(data) {
+	    $scope.end_area = 'foo';
+	    $scope.end_areas = 'bar';
+	    $scope.end_bus_stops = data;
+	});
+
     }
 
     $scope.markEndMapSquare = function(map_square) {

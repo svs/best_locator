@@ -16,8 +16,10 @@
                 %h3{:style => "padding-left: 40px"}
                   {{b.official_name | lowercase}}
       #choose_end_map_square{"ng-show" => "(start_bus_stop !== null) && end_areas == null"}
+        %h3.title Where are you going?
+        %button.btn.btn-danger{:"ng-click" => "start_bus_stop = null"} Back
         %table.table.table-list
-          %tr
+          %tr{"ng-click" => "getFaves()"}
             %td
               %h3 Favorites
           %tr{"ng-repeat" => "ms in map_squares", "ng-click" => "markEndMapSquare(ms)"}
@@ -25,12 +27,16 @@
               %h3
                 {{ms.name}}
       #choose_end_area{"ng-show" => "end_areas !== null && end_area === null"}
+        %h3.title Choose a destination area
+        %button.btn.btn-danger{"ng-click" => "end_areas = null;end_area = null;"} Back
         %table.table.table-list
           %tr{"ng-repeat" => "area in end_areas", "ng-click" => "chooseEndArea(area)"}
             %td
               %h3 {{ area }}
 
       #choose_destination{"ng-show" => "end_area !== null && routes === null"}
+        %h3.title Choose a destination stop
+        %button.btn.btn-danger{"ng-click" => "end_areas = null;end_area = null; routes = null; bus_stops = null"} Back
         %table.table.table-list
           %tbody
             %tr{"ng-repeat" => "s in end_bus_stops track by $index", "ng-click" => "makeBusStop(s, 'end')"}
@@ -39,15 +45,12 @@
                   {{s.display_name}} ({{s.id}})
 
       #choose_route{"ng-show" => "routes !== null && trip === null"}
+        %h3.title
+          {{start_bus_stop.display_name}} to
+          %span{"ng-show" => "end_bus_stop !== null"}
+            {{end_bus_stop.display_name}}
+        %button.btn.btn-danger{"ng-click" => "end_bus_stop = null; routes = null; end_area = null; end_areas = null"} Back
         %table.table.table-list
-          %thead
-            %tr
-              %th{:colspan => 5}
-                %h3{:style => "float:left; padding-right: 20px;"}
-                  {{start_bus_stop.display_name}} to
-                  %span{"ng-show" => "end_bus_stop !== null"}
-                    {{end_bus_stop.display_name}}
-                    | {{route.display_name}}
           %tbody
             %tr{"ng-repeat" => "r in routes track by $index", "ng-click" => "startTrip(r)"}
               %td
