@@ -3,7 +3,7 @@ class Api::V1::SessionsController < Api::V1::BaseController
   before_filter :authenticate_user!, :except => [:create, :destroy]
   include Devise::Controllers::Helpers
 
-  before_filter :ensure_params_exist
+  before_filter :ensure_params_exist, only: [:create]
 
   respond_to :json
 
@@ -20,7 +20,8 @@ class Api::V1::SessionsController < Api::V1::BaseController
   end
 
   def destroy
-    sign_out(resource_name)
+    sign_out(:user)
+    render json: 'ok'
   end
 
   protected
