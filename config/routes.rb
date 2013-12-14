@@ -17,6 +17,7 @@ BestLocator::Application.routes.draw do
         end
       end
       resources :users
+      resources :sessions, only: [:create, :destroy]
       resources :browse do
         collection do
           get 'map_squares'
