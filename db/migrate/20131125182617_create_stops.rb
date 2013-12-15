@@ -10,7 +10,7 @@ class CreateStops < ActiveRecord::Migration
       t.string :url
       t.json :routes
       t.string :slug
-      t.string :area
+
       t.timestamps
     end
   end

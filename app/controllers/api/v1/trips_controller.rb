@@ -1,6 +1,7 @@
 class Api::V1::TripsController < Api::V1::BaseController
 
   before_filter :authenticate_user_from_token!
+  protect_from_forgery except: [:create, :stop]
 
   def index
 
