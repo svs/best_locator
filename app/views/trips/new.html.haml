@@ -90,6 +90,16 @@
             %tr
               %th Kms
               %th {{trip.kms}}
+            %tr
+              %th Fullness
+              %th
+                %a{"ng-click" => "updateTrip({fullness: 'low'})"} Low
+            %tr
+              %th License Number
+              %th
+                %input{"ng-model" => "trip.license_number"}
+                %btn.btn-success{"ng-click" => "updateTrip({license_number: trip.license_number})"} update
+
         %br
         %table.table.table-striped
           %thead

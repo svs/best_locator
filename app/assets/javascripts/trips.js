@@ -171,4 +171,11 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
     $scope.trip = null; $scope.route = null; $scope.points = []; $scope.end_bus_stop = null;
   };
 
+  $scope.updateTrip = function(params) {
+    console.log(params);
+    var t = Restangular.one('api/v1/trips/' + $scope.trip.id).customPUT({trip: params}).then( function() {
+      console.log("trip updated");
+    });
+  };
+
 }]);

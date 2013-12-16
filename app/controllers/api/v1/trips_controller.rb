@@ -1,7 +1,7 @@
 class Api::V1::TripsController < Api::V1::BaseController
 
   before_filter :authenticate_user_from_token!
-  protect_from_forgery except: [:create, :stop]
+  protect_from_forgery except: [:create, :stop, :update]
 
   def index
 
@@ -27,6 +27,13 @@ class Api::V1::TripsController < Api::V1::BaseController
   end
 
 
+  def update
+    @trip = Trip.find(params[:id])
+    raise NotAuthorized unless @trip.user == current_user
+    @trip.update_attributes(trip_params)
+    render json: @trip
+  end
+
   def stop
     @trip = Trip.find(params[:id])
     raise NotAuthorized unless @trip.user == current_user
@@ -42,7 +49,7 @@ class Api::V1::TripsController < Api::V1::BaseController
   private
 
   def trip_params
-    ps = params.require("trip").permit("bus_number", "start_stop_id", "start_stop_code","start_stop_name","end_stop_id","end_stop_code","end_stop_name")
+    ps = params.require("trip").permit("bus_number", "start_stop_id", "start_stop_code","start_stop_name","end_stop_id","end_stop_code","end_stop_name", "fullness", "license_number")
     ps["user_id"] = current_user.id
     ps
   end

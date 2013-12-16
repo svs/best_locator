@@ -13,8 +13,4 @@ describe "Sign up and sign in", :js => true do
     page.should have_content 'success'
   end
 
-
-
-
-
 end
