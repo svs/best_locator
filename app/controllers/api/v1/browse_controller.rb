@@ -15,7 +15,7 @@ class Api::V1::BrowseController < ApplicationController
   def route
     routes = Route.joins(:stops).where('stops.display_name' => params[:start_bus_stop]) &
     Route.joins(:stops).where('stops.display_name' => params[:end_bus_stop])
-    render json: routes
+    render json: routes.map{|r| r.attributes.merge(:next_bus_time => nil, :next_bus_fullness => nil)}
   end
 
 end
