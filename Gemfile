@@ -18,6 +18,7 @@ gem 'haml-rails'
 gem 'figaro'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
 gem 'rest-client'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
