@@ -17,7 +17,7 @@ class Api::V1::UsersController < Api::V1::BaseController
     if @user.save
       render json: @user.to_json
     else
-      render json: @user.errors
+      render json: @user.errors, status: 422
     end
   end
 

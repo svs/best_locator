@@ -17,7 +17,7 @@ class User < ActiveRecord::Base
       user.username = auth.info.nickname
       user.email = auth.info.email
       user.name = [auth.info.first_name, auth.info.last_name].join(" ")
-      user.password = user.password_confirmation = Digest::SHA1.hexdigest("#{auth.uid}--#{ENV['OAUTH_PASSWORD_SALT']}")[0..9]
+      user.set_oauth_password
     end
   end
 
@@ -39,6 +39,10 @@ class User < ActiveRecord::Base
 
   def has_live_trip?
     self.trips.where(:status => "started").count > 0
+  end
+
+  def set_oauth_password
+    self.password = self.password_confirmation = Digest::SHA1.hexdigest("#{u.uid}--#{ENV['OAUTH_PASSWORD_SALT']}")[0..9]
   end
 
 
