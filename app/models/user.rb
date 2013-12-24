@@ -10,7 +10,6 @@ class User < ActiveRecord::Base
   has_many :trips
 
   def self.from_omniauth(auth)
-    binding.pry
     where(auth.slice(:provider, :uid)).first_or_create do |user|
       user.provider = auth.provider
       user.uid = auth.uid
@@ -42,7 +41,9 @@ class User < ActiveRecord::Base
   end
 
   def set_oauth_password
-    self.password = self.password_confirmation = Digest::SHA1.hexdigest("#{u.uid}--#{ENV['OAUTH_PASSWORD_SALT']}")[0..9]
+    return nil unless uid
+    return nil if self.encrypted_password
+    self.password = self.password_confirmation = Digest::SHA1.hexdigest("#{self.uid}--#{ENV['OAUTH_PASSWORD_SALT']}")[0..9]
   end
 
 
