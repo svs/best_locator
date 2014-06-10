@@ -1,7 +1,7 @@
 class Route < ActiveRecord::Base
 
   has_many :routes_stops
-  has_many :stops, through: :routes_stops, order: ['routes_stops.order']
+  has_many :stops, -> {order 'routes_stops.order'}, through: :routes_stops
 
   def self.update!
     JSON.load(RestClient.get("http://chalobest.in/1.0/routes")).each do |ra|
@@ -19,9 +19,21 @@ class Route < ActiveRecord::Base
     end
   end
 
-  def from_chalo_best
-
+  def order_stops!
+    stops_array.each_with_index do |bs,i|
+      n = bs["properties"]["official_name"]
+      s = Stop.find_by_official_name(n)
+      ap [n,s.official_name]
+      rs = RoutesStop.where(route_id: id, stop_id: s.id).first
+      if rs
+        rs.order = i + 1
+        rs.save
+        p "set order #{i} on RoutesStop #{rs.id}"
+      end
+    end
   end
+
+
 
   private
 
