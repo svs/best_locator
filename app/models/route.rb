@@ -21,9 +21,9 @@ class Route < ActiveRecord::Base
 
   def order_stops!
     stops_array.each_with_index do |bs,i|
-      n = bs["properties"]["official_name"]
-      s = Stop.find_by_official_name(n)
-      ap [n,s.official_name]
+      n = bs["properties"]["slug"]
+      s = Stop.find_by_slug(n)
+      p [n,s.official_name]
       rs = RoutesStop.where(route_id: id, stop_id: s.id).first
       if rs
         rs.order = i + 1
