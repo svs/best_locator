@@ -1,6 +1,7 @@
 class Stop < ActiveRecord::Base
 
-  has_and_belongs_to_many :routes
+  has_many :routes_stops
+  has_many :routes, through: :routes_stops
 
   has_many :start_trips, :foreign_key => :start_stop_id, :class_name => Trip
   has_many :end_trips, :foreign_key => :end_stop_id, :class_name => Trip

@@ -1,6 +1,7 @@
 class Route < ActiveRecord::Base
 
-  has_and_belongs_to_many :stops
+  has_many :routes_stops
+  has_many :stops, through: :routes_stops, order: ['routes_stops.order']
 
   def self.update!
     JSON.load(RestClient.get("http://chalobest.in/1.0/routes")).each do |ra|
@@ -16,6 +17,10 @@ class Route < ActiveRecord::Base
     stops_array.each do |sa|
       self.stops << Stop.create_from_chalo_best(sa, overwrite)
     end
+  end
+
+  def from_chalo_best
+
   end
 
   private

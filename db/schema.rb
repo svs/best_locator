@@ -11,10 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131216192223) do
+ActiveRecord::Schema.define(version: 20140610181604) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "postgis"
 
   create_table "location_reports", force: true do |t|
     t.integer  "trip_id"
@@ -50,15 +51,25 @@ ActiveRecord::Schema.define(version: 20131216192223) do
     t.string   "end_stop"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "geometry",     limit: 0
   end
 
-  create_table "routes_stops", id: false, force: true do |t|
+  create_table "routes_stops", force: true do |t|
     t.integer "route_id", null: false
     t.integer "stop_id",  null: false
+    t.integer "order"
   end
 
   add_index "routes_stops", ["route_id"], name: "index_routes_stops_on_route_id", using: :btree
   add_index "routes_stops", ["stop_id"], name: "index_routes_stops_on_stop_id", using: :btree
+
+  create_table "spatial_ref_sys", id: false, force: true do |t|
+    t.integer "srid",                   null: false
+    t.string  "auth_name", limit: 256
+    t.integer "auth_srid"
+    t.string  "srtext",    limit: 2048
+    t.string  "proj4text", limit: 2048
+  end
 
   create_table "stops", force: true do |t|
     t.string   "name"
