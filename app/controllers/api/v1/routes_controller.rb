@@ -1,9 +1,14 @@
 class Api::V1::RoutesController < ApplicationController
 
   def index
-    routes = JSON.load(RestClient.get("http://chalobest.in/1.0/routes/", params: {:q => params[:q]}))
-    route = routes.select{|b| b["display_name"] == CGI.unescape(params[:q])}[0]
-    render json: route
+    routes = Route.all(offset: params[:offset], limit: params[:limit])
+    if params[:q]
+      route = routes.select{|b| b["display_name"] == CGI.unescape(params[:q])}[0]
+      render json: route
+    else
+      render json: routes
+    end
+
   end
 
   def show

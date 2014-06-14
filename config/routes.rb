@@ -31,6 +31,7 @@ BestLocator::Application.routes.draw do
 
 
   resources :trips
+  resources :routes
   resources :users do
     resources :trips
   end

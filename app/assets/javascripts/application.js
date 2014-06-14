@@ -19,4 +19,4 @@
 //= require moment/moment
 //= require_self
 
-var bestLocatorApp = angular.module('bestLocatorApp', ['restangular']);
+var bestLocatorApp = angular.module('bestLocatorApp', ['restangular','google-maps']);

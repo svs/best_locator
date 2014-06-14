@@ -48,7 +48,7 @@ group :development do
   gem 'capistrano-rbenv', github: 'capistrano/rbenv'
   gem 'capistrano-bundler'
   gem 'capistrano-puma', github: "seuros/capistrano-puma"
-  gem 'pry'
+  gem 'pry-rails'
   gem 'pry-doc'
 end
 

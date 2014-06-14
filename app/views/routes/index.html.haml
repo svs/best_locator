@@ -1,0 +1,28 @@
+= javascript_include_tag :routes
+%script{:src => "http://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyAua_bhuj4kOzFFX1UtgpqpvrO-ntx9czA"}
+= javascript_include_tag "angular-google-maps/dist/angular-google-maps.min"
+.container
+  #app{"ng-app" => "bestLocatorApp"}
+    #routes{:"ng-controller" => "RoutesCtrl"}
+      %h1 Routes
+      %select{"ng-options" => "route.id as route.display_name for route in routes", "ng-model" => "selectedRoute", "ng-change" => "loadRoute()"}
+
+      .col-md-5
+        %table.table.table-striped
+          %thead
+            %tr
+              %th No.
+              %th From
+              %th To
+          %tbody
+            %tr{:"ng-repeat" => "route in routes"}
+              %td
+                {{route.display_name}}
+              %td
+                {{ route.start_stop }}
+              %td
+                {{ route.end_stop }}
+              %td
+                %a{:"ng-click" => "loadRoute(route.id)"} Load
+      .col-md-7#map
+        %google-map{:center => "map.center", :zoom => "map.zoom", :events => "map.events"}

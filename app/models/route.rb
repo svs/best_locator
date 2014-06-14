@@ -33,6 +33,9 @@ class Route < ActiveRecord::Base
     end
   end
 
+  def points
+    binding.pry
+  end
 
 
   private
