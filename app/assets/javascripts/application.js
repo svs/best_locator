@@ -19,6 +19,7 @@
 //= require moment/moment
 //= require select2/select2
 //= require angular-ui-select2/src/select2.js
+//= require angular-google-maps/dist/angular-google-maps.min.js
 //= require_self
 
 

@@ -8,7 +8,7 @@ class Api::V1::RoutesController < ApplicationController
       routes = Route.near(params[:lat], params[:lon], 2000)
       render json: routes
     else
-      routes = Route.all(offset: params[:offset], limit: params[:limit])
+      routes = Route.all(offset: params[:offset], limit: params[:limit], order: :display_name)
       render json: routes
     end
 
