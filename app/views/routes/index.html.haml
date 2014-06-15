@@ -4,8 +4,13 @@
 .container
   #app{"ng-app" => "bestLocatorApp"}
     #routes{:"ng-controller" => "RoutesCtrl"}
-      %h1 Routes
-      %select{"ng-options" => "route.id as route.display_name for route in routes", "ng-model" => "selectedRoute", "ng-change" => "loadRoute()"}
+      .row
+        .col-md-1
+          %strong Routes
+        .col-md-1
+          %select{"ui-select2" => true, "ng-model" => "selectedRoute", "ng-change" => "loadRoute()", "data-placeholder" => "Choose a route", "multiple" => "multiple", "style" => "width: 20em"}
+            %option{"ng-repeat" => "route in routes", "value" => "{{route.id}}"}
+              {{route.display_name}}
 
       .col-md-5
         %table.table.table-striped

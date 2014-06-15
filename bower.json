@@ -1,5 +1,6 @@
 {
   "name": "bestlocator",
+  "directory": "vendor/assets/bower_components",
   "lib": {
     "name": "bower-rails generated lib assets",
     "dependencies": {

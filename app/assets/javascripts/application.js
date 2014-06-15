@@ -17,6 +17,9 @@
 //= require restangular/src/restangular.js
 //= require bootstrap.min
 //= require moment/moment
+//= require select2/select2
+//= require angular-ui-select2/src/select2.js
 //= require_self
 
-var bestLocatorApp = angular.module('bestLocatorApp', ['restangular','google-maps']);
+
+var bestLocatorApp = angular.module('bestLocatorApp', ['restangular','google-maps','ui.select2']);

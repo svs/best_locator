@@ -10,6 +10,7 @@
  *
  *= require 'bootstrap.min'
  *= require 'style'
+ *= require 'select2/select2'
  *= require_self
  */
 
