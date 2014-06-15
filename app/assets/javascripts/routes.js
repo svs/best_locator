@@ -4,6 +4,8 @@ angular.module('bestLocatorApp').controller('RoutesCtrl',['$scope', 'Restangular
   });
 
   $scope.selectedRoute = null;
+  var selectedRoutes = [];
+  var loadedRoutes = {};
   var directionsService = new google.maps.DirectionsService();
 
   var getDirections = function(request) {
@@ -17,34 +19,48 @@ angular.module('bestLocatorApp').controller('RoutesCtrl',['$scope', 'Restangular
     });
   };
 
-  $scope.loadRoute = function(id) {
-    console.log($scope.selectedRoute);
-    Restangular.one('api/v1/routes/', $scope.selectedRoute).get().then(function(r) {
-      var map = $scope.mapInstance;
-      var points = [];
-      _.each(r.stops, function(stop, i) {
-	var lat = stop.lat;
-	var lon = stop.lon;
-	var position = new google.maps.LatLng(lat, lon);
-	points.push(position);
-      });
-      new google.maps.Polyline({
-	path: points,
-	geodesic: true,
-	strokeOpacity: 1.0,
-	strokeWeight: 2,
-	map: map
-      });
-
+  $scope.loadRoute = function(ids) {
+    var routesToLoad = _.difference($scope.selectedRoutes, _.keys(loadedRoutes));
+    console.log("selectedRoutes", $scope.selectedRoutes, "loadedRoutes", _.keys(loadedRoutes), "routesToLoad", routesToLoad);
+    _.each(routesToLoad, function(id) {
+      if (loadedRoutes[id]) {
+	loadedRoutes[id].map = $scope.mapInstance;
+      } else {
+        Restangular.one('api/v1/routes', id).get().then(function(r) {
+	  var map = $scope.mapInstance;
+	  var points = [];
+	  _.each(r.stops, function(stop, i) {
+	    var lat = stop.lat;
+	    var lon = stop.lon;
+	    var position = new google.maps.LatLng(lat, lon);
+	    points.push(position);
+	  });
+	  var p = new google.maps.Polyline({
+	    path: points,
+	    geodesic: true,
+	    strokeOpacity: 1.0,
+	    strokeWeight: 2,
+	    map: map
+	  });
+	  loadedRoutes[id] = p;
+	});
+      };
     });
+    var routesToUnload = _.difference(_.keys(loadedRoutes), $scope.selectedRoutes);
+    console.log(routesToUnload);
+    _.each(routesToUnload, function(id) {
+      loadedRoutes[id].map = null;
+    });
+
   };
 
   $scope.map = {
     center: {
-        latitude: 19,
-        longitude: 72.8
+      latitude: 19,
+      longitude: 72.9
     },
-    zoom: 12,
+    draggable: true,
+    zoom: 11,
     events: {
       tilesloaded: function (map) {
         $scope.$apply(function () {

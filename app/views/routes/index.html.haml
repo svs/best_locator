@@ -8,7 +8,7 @@
         .col-md-1
           %strong Routes
         .col-md-1
-          %select{"ui-select2" => true, "ng-model" => "selectedRoute", "ng-change" => "loadRoute()", "data-placeholder" => "Choose a route", "multiple" => "multiple", "style" => "width: 20em"}
+          %select{"ui-select2" => true, "ng-model" => "selectedRoutes", "ng-change" => "loadRoute()", "data-placeholder" => "Choose a route", "multiple" => "multiple", "style" => "width: 20em"}
             %option{"ng-repeat" => "route in routes", "value" => "{{route.id}}"}
               {{route.display_name}}
 
