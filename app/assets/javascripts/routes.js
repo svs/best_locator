@@ -40,6 +40,7 @@ angular.module('bestLocatorApp').controller('RoutesCtrl',['$scope', 'Restangular
 	    geodesic: true,
 	    strokeOpacity: 1.0,
 	    strokeWeight: 2,
+	    strokeColor: '#' + ('00000'+(Math.random()*(1<<24)|0).toString(16)).slice(-6),
 	    map: map
 	  });
 	  loadedRoutes[id] = p;
@@ -49,6 +50,7 @@ angular.module('bestLocatorApp').controller('RoutesCtrl',['$scope', 'Restangular
     var routesToUnload = _.difference(_.keys(loadedRoutes), $scope.selectedRoutes);
     console.log(routesToUnload);
     _.each(routesToUnload, function(id) {
+
       loadedRoutes[id].map = null;
     });
 
