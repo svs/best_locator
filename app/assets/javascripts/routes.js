@@ -3,8 +3,8 @@ angular.module('bestLocatorApp').controller('RoutesCtrl',['$scope', 'Restangular
     $scope.routes = r;
   });
 
-  $scope.selectedRoute = null;
-  var selectedRoutes = [];
+  $scope.selectedRoutes = [];
+  $scope.selectedRouteInfo = {};
   var loadedRoutes = {};
   var directionsService = new google.maps.DirectionsService();
 
@@ -43,7 +43,9 @@ angular.module('bestLocatorApp').controller('RoutesCtrl',['$scope', 'Restangular
 	    strokeColor: '#' + ('00000'+(Math.random()*(1<<24)|0).toString(16)).slice(-6),
 	    map: map
 	  });
+	  $scope.selectedRouteInfo[id] = r;
 	  loadedRoutes[id] = p;
+	  console.log($scope.selectedRoutesInfo);
 	});
       };
     });
@@ -56,10 +58,18 @@ angular.module('bestLocatorApp').controller('RoutesCtrl',['$scope', 'Restangular
 
   };
 
+  $scope.toggleTrip = function(id) {
+    if (loadedRoutes[id].map) {
+      loadedRoutes[id].setMap(null);
+    } else {
+      loadedRoutes[id].setMap($scope.mapInstance);
+    }
+  };
+
   $scope.map = {
     center: {
-      latitude: 19,
-      longitude: 72.9
+      latitude: 19.1,
+      longitude: 73
     },
     draggable: true,
     refresh: true,
@@ -69,7 +79,21 @@ angular.module('bestLocatorApp').controller('RoutesCtrl',['$scope', 'Restangular
         $scope.$apply(function () {
           $scope.mapInstance = map;
         });
+      },
+      click: function(map, event, event_data) {
+	console.log(event_data);
+	var lat = event_data[0].latLng.lat();
+	var lon = event_data[0].latLng.lng();
+	console.log(lat,lon);
+	Restangular.all('api/v1/routes?lat=' + lat + '&lon=' + lon).getList().then(function(r) {
+	  console.log(r);
+	  _.each(r, function(route) {
+	    $scope.selectedRoutes.push(route.id);
+	  });
+	  $scope.loadRoute();
+	});
       }
+
     }
   };
 }]);

@@ -20,7 +20,8 @@ class Route < ActiveRecord::Base
   end
 
   def order_stops!
-    line = GeoRuby::SimpleFeatures::LineString.new(4236)
+    factory = RGeo::Geos.factory(srid: 4326)
+    points = []
     stops_array.each_with_index do |bs,i|
       n = bs["properties"]["slug"]
       s = Stop.find_by_slug(n)
@@ -31,9 +32,9 @@ class Route < ActiveRecord::Base
         rs.save
         p "set order #{i} on RoutesStop #{rs.id}"
       end
-      line.points << GeoRuby::SimpleFeatures::Point.from_x_y(s.lon,s.lat)
+      points << factory.point(s.lon, s.lat)
     end
-    self.geom = line
+    self.geometry = factory.line_string(points)
     save
 
   end
@@ -41,6 +42,11 @@ class Route < ActiveRecord::Base
   def points
     binding.pry
   end
+
+  def self.near(lat, lon, dist = 100)
+    Route.where('ST_DWithin(ST_Transform(geometry,2136), ST_Transform(ST_SetSRID(ST_MakePoint(?,?), 4326),2136),?)',lon, lat, dist)
+  end
+
 
 
   private

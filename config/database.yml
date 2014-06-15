@@ -15,7 +15,7 @@
 # gem 'pg'
 #
 development:
-  adapter: postgresql
+  adapter: postgis
   encoding: unicode
   database: best_locator_dev
   pool: 5

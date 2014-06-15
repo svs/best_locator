@@ -8,26 +8,18 @@
         .col-md-1
           %strong Routes
         .col-md-1
-          %select{"ui-select2" => true, "ng-model" => "selectedRoutes", "ng-change" => "loadRoute()", "data-placeholder" => "Choose a route", "multiple" => "multiple", "style" => "width: 20em"}
+          %select{"ui-select2" => true, "ng-model" => "selectedRoutes", "ng-change" => "loadRoute()", "data-placeholder" => "Choose a route", "multiple" => "multiple", "style" => "width: 60em"}
             %option{"ng-repeat" => "route in routes", "value" => "{{route.id}}"}
               {{route.display_name}}
+      .row
+        .col-md-5
+          %table.table.table-striped
+            %tr{"ng-repeat" => "route in selectedRoutes"}
+              %td {{selectedRouteInfo[route].display_name}}
+              %td {{selectedRouteInfo[route].start_stop}}
+              %td {{selectedRouteInfo[route].end_stop}}
+              %td
+                %a{"ng-click" => "toggleTrip(route)"} Toggle
 
-      .col-md-5
-        %table.table.table-striped
-          %thead
-            %tr
-              %th No.
-              %th From
-              %th To
-          %tbody
-            %tr{:"ng-repeat" => "route in routes"}
-              %td
-                {{route.display_name}}
-              %td
-                {{ route.start_stop }}
-              %td
-                {{ route.end_stop }}
-              %td
-                %a{:"ng-click" => "loadRoute(route.id)"} Load
-      .col-md-7#map
-        %google-map{:center => "map.center", :zoom => "map.zoom", :events => "map.events"}
+        .col-md-7
+          %google-map{:center => "map.center", :zoom => "map.zoom", :events => "map.events"}
