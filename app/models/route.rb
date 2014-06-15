@@ -20,6 +20,7 @@ class Route < ActiveRecord::Base
   end
 
   def order_stops!
+    line = GeoRuby::SimpleFeatures::LineString.new(4236)
     stops_array.each_with_index do |bs,i|
       n = bs["properties"]["slug"]
       s = Stop.find_by_slug(n)
@@ -30,7 +31,11 @@ class Route < ActiveRecord::Base
         rs.save
         p "set order #{i} on RoutesStop #{rs.id}"
       end
+      line.points << GeoRuby::SimpleFeatures::Point.from_x_y(s.lon,s.lat)
     end
+    self.geom = line
+    save
+
   end
 
   def points

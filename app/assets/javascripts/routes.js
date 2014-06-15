@@ -50,8 +50,8 @@ angular.module('bestLocatorApp').controller('RoutesCtrl',['$scope', 'Restangular
     var routesToUnload = _.difference(_.keys(loadedRoutes), $scope.selectedRoutes);
     console.log(routesToUnload);
     _.each(routesToUnload, function(id) {
-
-      loadedRoutes[id].map = null;
+      console.log(loadedRoutes[id]);
+      loadedRoutes[id].setMap(null);
     });
 
   };
@@ -62,6 +62,7 @@ angular.module('bestLocatorApp').controller('RoutesCtrl',['$scope', 'Restangular
       longitude: 72.9
     },
     draggable: true,
+    refresh: true,
     zoom: 11,
     events: {
       tilesloaded: function (map) {
