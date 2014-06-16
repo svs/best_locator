@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140610181604) do
+ActiveRecord::Schema.define(version: 20140616022951) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(version: 20140610181604) do
     t.string   "end_stop"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "geometry",     limit: 0
+    t.spatial  "geometry",     limit: {:srid=>0, :type=>"geometry"}
   end
 
   create_table "routes_stops", force: true do |t|
@@ -60,16 +60,8 @@ ActiveRecord::Schema.define(version: 20140610181604) do
     t.integer "order"
   end
 
-  add_index "routes_stops", ["route_id"], name: "index_routes_stops_on_route_id", using: :btree
-  add_index "routes_stops", ["stop_id"], name: "index_routes_stops_on_stop_id", using: :btree
-
-  create_table "spatial_ref_sys", id: false, force: true do |t|
-    t.integer "srid",                   null: false
-    t.string  "auth_name", limit: 256
-    t.integer "auth_srid"
-    t.string  "srtext",    limit: 2048
-    t.string  "proj4text", limit: 2048
-  end
+  add_index "routes_stops", ["route_id"], :name => "index_routes_stops_on_route_id"
+  add_index "routes_stops", ["stop_id"], :name => "index_routes_stops_on_stop_id"
 
   create_table "stops", force: true do |t|
     t.string   "name"
@@ -124,7 +116,7 @@ ActiveRecord::Schema.define(version: 20140610181604) do
     t.string   "auth_token"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+  add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
 end
