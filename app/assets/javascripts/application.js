@@ -23,4 +23,4 @@
 //= require_self
 
 
-var bestLocatorApp = angular.module('bestLocatorApp', ['restangular','ui.select2']);
+var bestLocatorApp = angular.module('bestLocatorApp', ['restangular']);
