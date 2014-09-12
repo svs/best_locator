@@ -9,6 +9,7 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
   $scope.trip = null;
   $scope.points = [];
   $scope.geocode_accurate = false;
+  $scope.current_location = {lat: 0, lon: 0};
   var busStopLocationWatch;
   var geolocationWatch;
 
@@ -16,10 +17,13 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
     Restangular.one('api/v1/trips/live').get().then(function(live_trips) {
       if (live_trips.length > 0) {
 	$scope.trip = live_trips[0];
-	getGeoLocation();
+	//getGeoLocation();
       } else {
-	if (navigator.geolocation) {
-	  $scope.getBusStopLocation();
+	$scope.current_location.lat = 19.1860811;
+	$scope.current_location.lat = 72.8340963;
+	if (true) { //navigator.geolocation) {
+	  //$scope.getBusStopLocation();
+	  load_stops();
 	} else {
 	  error('not supported');
 	}
@@ -122,7 +126,14 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
     });
   };
 
+  var load_stop = function(id) {
+    Restangular.one('api/v1/bus_stops', id).get().then( function(r) {
+      $scope.routes = r;
+    });
+  };
+
   $scope.makeBusStop = function(bus_stop_data){
+    console.log("makeBusStop", arguments);
     if (arguments[1] === "end") {
       $scope.end_bus_stop = bus_stop_data;
       Restangular.one('api/v1/browse/route?start_bus_stop=' + $scope.start_bus_stop.display_name + '&end_bus_stop=' + $scope.end_bus_stop.display_name).get().then(function(data) {
@@ -130,6 +141,8 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
       });
     } else {
       $scope.start_bus_stop = bus_stop_data;
+      console.log("LoadingStops");
+      load_stop($scope.start_bus_stop.id);
       load_map_squares();
     }
   };

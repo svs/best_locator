@@ -15,6 +15,31 @@
               %td{:"ng-click" => "start_bus_stop = makeBusStop(b)"}
                 %h3{:style => "padding-left: 40px"}
                   {{b.official_name | lowercase}}
+      #bus_stop_info{"ng-show" => "start_bus_stop !== null"}
+        %h3.title
+          {{start_bus_stop.display_name}}
+      #choose_route{"ng-show" => "routes !== null && trip === null"}
+        %h3.title
+          {{start_bus_stop.display_name}} to
+          %span{"ng-show" => "end_bus_stop !== null"}
+            {{end_bus_stop.display_name}}
+        %button.btn.btn-danger{"ng-click" => "end_bus_stop = null; routes = null; end_area = null; end_areas = null"} Back
+        %table.table.table-list
+          %tbody
+            %tr{"ng-repeat" => "r in routes track by $index", "ng-click" => "startTrip(r)"}
+              %td
+                %h3.title
+                  {{r.display_name}}
+              %td{:width => "55%"}
+                %span.route-detail
+                  {{r.start_stop}} -
+                  {{r.end_stop}}
+              %td.bus-status
+                = image_tag 'bus-grey.png', :style => "width: 45px"
+                %br
+                No info
+              %td.bus-status &nbsp;
+              %td.bus-status &nbsp;
       #choose_end_map_square{"ng-show" => "(start_bus_stop !== null) && end_areas == null"}
         %h3.title Where are you going?
         %button.btn.btn-danger{:"ng-click" => "start_bus_stop = null"} Back
@@ -44,28 +69,6 @@
                 %a
                   {{s.display_name}} ({{s.id}})
 
-      #choose_route{"ng-show" => "routes !== null && trip === null"}
-        %h3.title
-          {{start_bus_stop.display_name}} to
-          %span{"ng-show" => "end_bus_stop !== null"}
-            {{end_bus_stop.display_name}}
-        %button.btn.btn-danger{"ng-click" => "end_bus_stop = null; routes = null; end_area = null; end_areas = null"} Back
-        %table.table.table-list
-          %tbody
-            %tr{"ng-repeat" => "r in routes track by $index", "ng-click" => "startTrip(r)"}
-              %td
-                %h3.title
-                  {{r.display_name}}
-              %td{:width => "55%"}
-                %span.route-detail
-                  {{r.start_stop}} -
-                  {{r.end_stop}}
-              %td.bus-status
-                = image_tag 'bus-grey.png', :style => "width: 45px"
-                %br
-                No info
-              %td.bus-status &nbsp;
-              %td.bus-status &nbsp;
       #tracking{"ng-show" => "trip !== null"}
         %table.table
           %thead

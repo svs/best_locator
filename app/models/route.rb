@@ -44,7 +44,7 @@ class Route < ActiveRecord::Base
   end
 
   def self.near(lat, lon, dist = 100)
-    Route.where('ST_DWithin(ST_Transform(geometry,2136), ST_Transform(ST_SetSRID(ST_MakePoint(?,?), 4326),2136),?)',lon, lat, dist)
+    Route.where('ST_Distance_Sphere(geometry, ST_SetSRID(ST_MakePoint(?,?), 4326)) < ?',lon.to_f, lat.to_f, dist)
   end
 
 

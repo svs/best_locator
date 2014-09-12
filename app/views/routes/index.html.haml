@@ -11,14 +11,25 @@
             %option{"ng-repeat" => "route in routes", "value" => "{{route.id}}"}
               {{route.display_name}}
       .row
+        :plain
+          <input type="text" ng-autocomplete ng-model="autocomplete" options= "options" details="details"/>
+        {{ lat }}
+        {{ lon }}
+      .row
         .col-md-5
-          %table.table.table-striped
-            %tr{"ng-repeat" => "route in selectedRoutes"}
-              %td {{selectedRouteInfo[route].display_name}}
-              %td {{selectedRouteInfo[route].start_stop}}
-              %td {{selectedRouteInfo[route].end_stop}}
-              %td
-                %a{"ng-click" => "toggleTrip(route)"} Toggle
+          %div{"style" => "height: 600px; overflow:scroll"}
+            %table.table.table-striped
+              %tr{"ng-repeat" => "route in selectedRoutes"}
+                %td {{selectedRouteInfo[route].display_name}}
+                %td {{selectedRouteInfo[route].start_stop}}
+                %td {{selectedRouteInfo[route].end_stop}}
+                %td
+                  %a{"ng-click" => "toggleTrip(route)", "style" => "color: {{loadedRoutes[route].strokeColor}};", "href" => "#"}
+                    %span{"ng-show" => "loadedRoutes[route].map"}
+                      Hide
+                    %span{"ng-hide" => "loadedRoutes[route].map"}
+                      Show
+
 
         .col-md-7
           %google-map{:center => "map.center", :zoom => "map.zoom", :events => "map.events"}

@@ -20,7 +20,8 @@
 //= require select2/select2
 //= require angular-ui-select2/src/select2.js
 //= require angular-google-maps/dist/angular-google-maps.min.js
+//= require ngAutocomplete.js
 //= require_self
 
 
-var bestLocatorApp = angular.module('bestLocatorApp', ['restangular','google-maps','ui.select2']);
+var bestLocatorApp = angular.module('bestLocatorApp', ['restangular','google-maps','ui.select2', 'ngAutocomplete']);
