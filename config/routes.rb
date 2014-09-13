@@ -38,6 +38,6 @@ BestLocator::Application.routes.draw do
 
   match '/profile', :to => 'users#profile', :via => "get"
 
-  root "home#index"
+  root "trips#new"
 
 end

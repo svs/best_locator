@@ -7,6 +7,9 @@ class Stop < ActiveRecord::Base
   has_many :end_trips, :foreign_key => :end_stop_id, :class_name => Trip
 
 
+  def as_json(include_root = false)
+    attributes.merge(routes: routes)
+  end
 
   def self.attrs_from_chalo_best(json)
     json["properties"].slice(*self.attribute_names).except("id", "routes").
@@ -43,16 +46,11 @@ class Stop < ActiveRecord::Base
     end
   end
 
-
   def self.in_square(lat1, lon1, lat2, lon2)
     lon1, lon2 = lon2, lon1 if lon2 < lon1
     lat1, lat2 = lat2, lat1 if lat2 < lat1
     Stop.where('(lat between ? and ?) and (lon between ? and ?)', lat1, lat2, lon1, lon2)
   end
-
-  #def inspect
-    #display_name || super
-  #end
 
   def self.inspect
     self.to_s

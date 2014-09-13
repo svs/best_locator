@@ -1,17 +1,37 @@
 angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular','$window',function($scope, Restangular, $window) {
-  $scope.status = "ready";
-  $scope.route = null;
-  $scope.routes = null;
-  $scope.start_bus_stop = null;
-  $scope.end_bus_stop = null;
-  $scope.end_area = null;
-  $scope.end_areas = null;
-  $scope.trip = null;
-  $scope.points = [];
-  $scope.geocode_accurate = false;
-  $scope.current_location = {lat: 0, lon: 0};
   var busStopLocationWatch;
   var geolocationWatch;
+
+  $scope.bounds = new google.maps.LatLngBounds(
+    new google.maps.LatLng(18, 71),
+    new google.maps.LatLng(19, 73));
+
+   $scope.mapOptions = {
+      bounds: $scope.bounds,
+      types: 'geocode',
+     country: 'in',
+      boundsEnabled: true,
+      componentEnabled: true,
+      watchEnter: true
+   };
+
+  $scope.start = function() {
+    $scope.status = "ready";
+    $scope.state = 'start';
+    $scope.route = null;
+    $scope.routes = null;
+    $scope.start_bus_stop = null;
+    $scope.end_bus_stop = null;
+    $scope.end_area = null;
+    $scope.end_areas = null;
+    $scope.trip = null;
+    $scope.points = [];
+    $scope.geocode_accurate = false;
+    $scope.current_location = {lat: 0, lon: 0};
+  }
+
+  $scope.start();
+
 
   var initialize = function() {
     Restangular.one('api/v1/trips/live').get().then(function(live_trips) {
@@ -20,16 +40,16 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
 	//getGeoLocation();
       } else {
 	$scope.current_location.lat = 19.1860811;
-	$scope.current_location.lat = 72.8340963;
+	$scope.current_location.lon = 72.8340963;
 	if (true) { //navigator.geolocation) {
 	  //$scope.getBusStopLocation();
 	  load_stops();
 	} else {
 	  error('not supported');
 	}
-
-
       }
+    }, function() {
+      load_stops();
     });
   };
 
@@ -97,9 +117,11 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
     });
   };
 
-  var load_map_squares = function() {
+  $scope.load_map_squares = function() {
+    console.log('loading map squares');
     Restangular.one('api/v1/browse/map_squares').get().then(function(data) {
       $scope.map_squares = data;
+      $scope.state = 'choose_last_square';
     });
   };
 
@@ -108,6 +130,7 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
       $scope.end_area = 'foo';
       $scope.end_areas = 'bar';
       $scope.end_bus_stops = data;
+      $scope.state = 'choose_last_stop';
     });
 
   };
@@ -116,6 +139,7 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
     $scope.end_map_square = map_square;
     Restangular.one('api/v1/browse/areas?map_square_id=' + map_square.id + '&sort=alpha' ).get().then(function(data) {
       $scope.end_areas = data;
+      $scope.state = 'choose_last_area';
     });
   };
 
@@ -123,12 +147,14 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
     $scope.end_area = area;
     Restangular.one('api/v1/browse/bus_stops?area=' + area ).get().then(function(data) {
       $scope.end_bus_stops = data;
+      $scope.state = 'choose_last_stop';
     });
   };
 
   var load_stop = function(id) {
     Restangular.one('api/v1/bus_stops', id).get().then( function(r) {
-      $scope.routes = r;
+      $scope.routes = r.routes;
+      $scope.state = 'choose_route';
     });
   };
 
@@ -138,12 +164,12 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
       $scope.end_bus_stop = bus_stop_data;
       Restangular.one('api/v1/browse/route?start_bus_stop=' + $scope.start_bus_stop.display_name + '&end_bus_stop=' + $scope.end_bus_stop.display_name).get().then(function(data) {
 	$scope.routes = data;
+	$scope.go_choose_route();
       });
     } else {
       $scope.start_bus_stop = bus_stop_data;
       console.log("LoadingStops");
       load_stop($scope.start_bus_stop.id);
-      load_map_squares();
     }
   };
 
@@ -190,5 +216,53 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
       console.log("trip updated");
     });
   };
+
+  $scope.showRoute = function(r) {
+    $scope.state = 'show_route';
+    Restangular.one('api/v1/routes', r.id).get().then(function(route) {
+      $scope.route = route;
+
+    });
+  };
+
+  $scope.showRouteOnMap = function() {
+    var route = _.map($scope.route.stops, function(stop) { return new google.maps.LatLng(stop.lat, stop.lon) });
+    var route_path = new google.maps.Polyline({path: route});
+    route_path.setMap($scope.mapInstance);
+    google.maps.event.trigger($scope.mapInstance, 'resize');
+  };
+
+  $scope.map = {
+    center: {
+      latitude: 19.22,
+      longitude: 72.75
+    },
+    draggable: true,
+    refresh: true,
+    zoom: 11,
+    events: {
+      idle: function(map) {
+	console.log('init');
+	google.maps.event.trigger(map, 'resize');
+        $scope.mapInstance = map;
+      },
+      tilesloaded: function (map) {
+        $scope.$apply(function () {
+        });
+      },
+      dragend: function(map) {
+	console.log(map.center);
+      },
+      resize: function(map) {
+	console.log('resize');
+      }
+    }
+  };
+
+  $scope.go_choose_route = function() {
+    $scope.state = 'choose_route';
+  };
+
+
 
 }]);

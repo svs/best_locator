@@ -1,6 +1,6 @@
 class Api::V1::TripsController < Api::V1::BaseController
 
-  before_filter :authenticate_user_from_token!
+  before_filter :authenticate_user_from_token!, except: [:live]
   protect_from_forgery except: [:create, :stop, :update]
 
   def index
@@ -42,8 +42,12 @@ class Api::V1::TripsController < Api::V1::BaseController
   end
 
   def live
-    @trips = current_user.trips.live
-    render json: @trips
+    if current_user
+      @trips = current_user.trips.live
+      render json: @trips
+    else
+      render json: []
+    end
   end
 
   private

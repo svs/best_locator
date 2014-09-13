@@ -3,73 +3,103 @@
 #app{:"ng-app" => "bestLocatorApp"}
   #trip{:"ng-controller" => "TripsCtrl"}
     .row_
-      #choose_stop{"ng-show" => "start_bus_stop === null && trip === null"}
-        %h3.title
-          Which bus stop are you at?
-        %button.btn.btn-primary{:"ng-click" => "getPosition()"}
-          %i{:class => "glyphicon glyphicon-refresh"}
+      #choose_stop{"ng-show" => "state === 'start'"}
+        .title
+          %h3 Which bus stop are you at?
+
+          %button.btn.btn-primary{:"ng-click" => "getPosition()"}
+            %i{:class => "glyphicon glyphicon-refresh"}
 
         %table.table.table-list
           %tbody
             %tr{"ng-repeat" => "b in bus_stops", "ng-class-odd" => "odd"}
               %td{:"ng-click" => "start_bus_stop = makeBusStop(b)"}
-                %h3{:style => "padding-left: 40px"}
+                %h4{:style => "padding-left: 40px"}
                   {{b.official_name | lowercase}}
-      #bus_stop_info{"ng-show" => "start_bus_stop !== null"}
-        %h3.title
-          {{start_bus_stop.display_name}}
-      #choose_route{"ng-show" => "routes !== null && trip === null"}
-        %h3.title
-          {{start_bus_stop.display_name}} to
-          %span{"ng-show" => "end_bus_stop !== null"}
-            {{end_bus_stop.display_name}}
-        %button.btn.btn-danger{"ng-click" => "end_bus_stop = null; routes = null; end_area = null; end_areas = null"} Back
-        %table.table.table-list
+      #choose_route{"ng-show" => "state === 'choose_route'"}
+        %table.table
+          %tr
+            %th From
+            %th {{start_bus_stop.display_name}}
+            %th{:rowspan => 2}
+              %button.btn.btn-danger{"ng-click" => "start()"}
+                Back
+          %tr
+            %th To
+            %th
+              %span{"ng-show" => "end_bus_stop !== null"}
+                {{end_bus_stop.display_name}}
+              %button.btn{"ng-click" => "load_map_squares()","ng-show" => "end_bus_stop === null"}
+                Choose Destination
+
+        %table.table.table-list#route_list
           %tbody
-            %tr{"ng-repeat" => "r in routes track by $index", "ng-click" => "startTrip(r)"}
-              %td
-                %h3.title
+            %tr{"ng-repeat" => "r in routes track by $index", "ng-click" => "showRoute(r)"}
+              %td.status{"width" => "10%"}
+                %h3
                   {{r.display_name}}
               %td{:width => "55%"}
                 %span.route-detail
                   {{r.start_stop}} -
                   {{r.end_stop}}
-              %td.bus-status
-                = image_tag 'bus-grey.png', :style => "width: 45px"
-                %br
-                No info
-              %td.bus-status &nbsp;
-              %td.bus-status &nbsp;
-      #choose_end_map_square{"ng-show" => "(start_bus_stop !== null) && end_areas == null"}
-        %h3.title Where are you going?
-        %button.btn.btn-danger{:"ng-click" => "start_bus_stop = null"} Back
-        %table.table.table-list
-          %tr{"ng-click" => "getFaves()"}
-            %td
-              %h3 Favorites
-          %tr{"ng-repeat" => "ms in map_squares", "ng-click" => "markEndMapSquare(ms)"}
-            %td
+      #show_route{"ng-if" => "state === 'show_route'"}
+        .row
+          .title
+            .col-xs-2
               %h3
-                {{ms.name}}
-      #choose_end_area{"ng-show" => "end_areas !== null && end_area === null"}
-        %h3.title Choose a destination area
-        %button.btn.btn-danger{"ng-click" => "end_areas = null;end_area = null;"} Back
-        %table.table.table-list
-          %tr{"ng-repeat" => "area in end_areas", "ng-click" => "chooseEndArea(area)"}
-            %td
-              %h3 {{ area }}
+                {{ route.display_name}}
+                %button.btn.btn-danger{"ng-click" => "go_choose_route()"} Back
+            .col-xs-9
+              %h3
+                {{route.start_stop}} - {{route.end_stop}}
+        %tabset
+          %tab{"heading" => "Stops"}
+            %table.table.table-list
+              %tbody
+                %tr{"ng-repeat" => "stop in route.stops"}
+                  %td {{stop.display_name}}
+          %tab{"heading" => "Map", "ng-click" => "showRouteOnMap();"}
+            .col-xs-12
+              %google-map{:center => "map.center", :zoom => "map.zoom", :events => "map.events", :draggable => "true", :options => "mapOptions", "ng-cloak" => true}
 
-      #choose_destination{"ng-show" => "end_area !== null && routes === null"}
-        %h3.title Choose a destination stop
-        %button.btn.btn-danger{"ng-click" => "end_areas = null;end_area = null; routes = null; bus_stops = null"} Back
+      #choose_end_map_square{"ng-show" => "state === 'choose_last_square'"}
+        .title
+          %h3
+            Where are you going?
+            %button.btn.btn-danger{:"ng-click" => "go_choose_route()"} Back
+        %table.table.table-list
+          %tbody
+            %tr{"ng-click" => "getFaves()"}
+              %td
+                %h4 Favorites
+            %tr{"ng-repeat" => "ms in map_squares", "ng-click" => "markEndMapSquare(ms)"}
+              %td
+                %h4
+                  {{ms.name}}
+      #choose_end_area{"ng-show" => "state === 'choose_last_area'"}
+        .title
+          %h3
+            Choose a destination area
+            %button.btn.btn-danger{"ng-click" => "state='choose_route'"} Back
+        %table.table.table-list
+          %tbody
+            %tr{"ng-repeat" => "area in end_areas", "ng-click" => "chooseEndArea(area)"}
+              %td
+                %h4 {{ area }}
+
+      #choose_destination{"ng-show" => "state === 'choose_last_stop'"}
+        .title
+          %h3
+            Choose a destination stop
+            %button.btn.btn-danger{"ng-click" => "go_choose_route()"} Back
         %table.table.table-list
           %tbody
             %tr{"ng-repeat" => "s in end_bus_stops track by $index", "ng-click" => "makeBusStop(s, 'end')"}
               %td
                 %a
-                  {{s.display_name}} ({{s.id}})
+                  {{s.display_name}}
 
-      #tracking{"ng-show" => "trip !== null"}
+      #tracking{"ng-show" => "false"}
         %table.table
           %thead
             %tr
