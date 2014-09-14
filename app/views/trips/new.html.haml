@@ -1,6 +1,17 @@
 = javascript_include_tag "trips"
 
 #app{:"ng-app" => "bestLocatorApp"}
+  %script{:type => "text/ng-template", :id => "busSpot.html"}
+    .modal-header
+      %h3.modal-title {{spottedRoute.display_name}}: {{spottedRoute.start_stop}} to {{spottedRoute.end_stop}}
+      Seen going towards
+      %select{"ng-model" => "spottedDirection"}
+        %option{"id" => "1"}
+          {{spottedRoute.end_stop}}
+        %option{"id" => -1}
+          {{spottedRoute.start_stop}}
+      %button.btn.btn-success{"ng-click" => "spotBus()"}
+        Submit
   #trip{:"ng-controller" => "TripsCtrl"}
     .row_
       #choose_stop{"ng-show" => "state === 'start'"}
@@ -33,14 +44,16 @@
 
         %table.table.table-list#route_list
           %tbody
-            %tr{"ng-repeat" => "r in routes track by $index", "ng-click" => "showRoute(r)"}
-              %td.status{"width" => "10%"}
+            %tr{"ng-repeat" => "r in routes track by $index"}
+              %td.status{"width" => "10%", "ng-click" => "showRoute(r)"}
                 %h3
                   {{r.display_name}}
-              %td{:width => "55%"}
+              %td{:width => "55%", "ng-click" => "showRoute(r)"}
                 %span.route-detail
                   {{r.start_stop}} -
                   {{r.end_stop}}
+              %td{:width => "5%"}
+                %i.glyphicon.glyphicon-eye-open{"ng-click" => "open(r)"}
       #show_route{"ng-if" => "state === 'show_route'"}
         .row
           .title

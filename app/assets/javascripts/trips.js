@@ -1,4 +1,4 @@
-angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular','$window',function($scope, Restangular, $window) {
+angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular','$window','$modal',function($scope, Restangular, $window, $modal) {
   var busStopLocationWatch;
   var geolocationWatch;
 
@@ -28,7 +28,8 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
     $scope.points = [];
     $scope.geocode_accurate = false;
     $scope.current_location = {lat: 0, lon: 0};
-  }
+    $scope.spottedRoute = null;
+  };
 
   $scope.start();
 
@@ -285,5 +286,31 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
    });
 
 
+  var ModalInstanceCtrl = function ($scope, $modalInstance, spottedRoute) {
+
+    $scope.spottedRoute = spottedRoute;
+
+    $scope.ok = function () {
+      $modalInstance.close($scope.selected.item);
+    };
+
+    $scope.cancel = function () {
+      $modalInstance.dismiss('cancel');
+    };
+  };
+
+  $scope.open = function (route,size) {
+    $scope.spottedRoute = route;
+    console.log(route);
+    var modalInstance = $modal.open({
+      templateUrl: 'busSpot.html',
+      controller: ModalInstanceCtrl,
+      resolve: {
+        spottedRoute: function () {
+          return $scope.spottedRoute;
+        }
+      }
+    });
+  };
 
 }]);
