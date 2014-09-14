@@ -9,8 +9,10 @@ class Api::V1::RoutesController < ApplicationController
     elsif params[:lat] && params[:lon]
       routes = Route.near(params[:lat], params[:lon], 200)
     elsif params[:lat1] && params[:lon1] && params[:lat2] && params[:lon2]
+      end_distance = (params[:lon1].to_f - params[:lon2].to_f).abs + (params[:lat1].to_f - params[:lat2].to_f).abs
+      Rails.logger.info("#Routes distance = #{end_distance}")
       starting_routes = Route.near(params[:lat1], params[:lon1], 200)
-      ending_routes = Route.near(params[:lat2], params[:lon2], 1000)
+      ending_routes = Route.near(params[:lat2], params[:lon2], [1000 * end_distance, 300].max)
       routes =  starting_routes & ending_routes
     else
       routes = Route.all(offset: params[:offset], limit: params[:limit], order: :display_name)
