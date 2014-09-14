@@ -8,7 +8,7 @@ class Stop < ActiveRecord::Base
 
 
   def as_json(include_root = false)
-    attributes.merge(routes: routes)
+    attributes.merge(routes: routes.uniq)
   end
 
   def self.attrs_from_chalo_best(json)
