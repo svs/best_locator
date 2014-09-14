@@ -23,9 +23,9 @@
 
    $scope.$watch($scope.watchDetails, function() {
      if ($scope.details.geometry) {
-       $scope.lat = $scope.details.geometry.location.lat();
-       $scope.lon = $scope.details.geometry.location.lng();
-       Restangular.all('api/v1/routes?lat=' + $scope.lat +  '&lon=' + $scope.lon).getList().then(function(r) {
+       $scope.end_lat = $scope.details.geometry.location.lat();
+       $scope.end_lon = $scope.details.geometry.location.lng();
+       Restangular.all('api/v1/routes?lat1=' + $scope.start_bus_stop.lat + '&lon1=' + $scope.start_bus_stop.lon + '&lat2' = $scope.end_lat +  '&lon2=' + $scope.end_lon).getList().then(function(r) {
 	  //console.log(r);
 	  _.each(r, function(route) {
 	    $scope.selectedRoutes.push(route.id);

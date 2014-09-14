@@ -29,8 +29,7 @@
             %th
               %span{"ng-show" => "end_bus_stop !== null"}
                 {{end_bus_stop.display_name}}
-              %button.btn{"ng-click" => "load_map_squares()","ng-show" => "end_bus_stop === null"}
-                Choose Destination
+              %input{"type"=>"text", "ng-autocomplete"=>true, "ng-model"=>"autocomplete", "options"=>"options", "details"=>"details"}
 
         %table.table.table-list#route_list
           %tbody

@@ -37,13 +37,12 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
     Restangular.one('api/v1/trips/live').get().then(function(live_trips) {
       if (live_trips.length > 0) {
 	$scope.trip = live_trips[0];
-	//getGeoLocation();
       } else {
 	$scope.current_location.lat = 19.1860811;
 	$scope.current_location.lon = 72.8340963;
-	if (true) { //navigator.geolocation) {
+	if (navigator.geolocation) {
 	  //$scope.getBusStopLocation();
-	  load_stops();
+	  load_stops(true);
 	} else {
 	  error('not supported');
 	}
@@ -111,9 +110,15 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
   };
 
   var busStops = Restangular.all('api/v1/bus_stops');
-  var load_stops = function() {
+  var load_stops = function(reset) {
     $scope.bus_stops = busStops.getList({center_lat: $scope.current_location.lat, center_lon: $scope.current_location.lon}).then(function(bs) {
       $scope.bus_stops = bs;
+      if(reset) {
+	$scope.start_bus_stop = bs[0];
+	$scope.routes = bs[0].routes;
+	$scope.state = 'choose_route';
+      }
+
     });
   };
 
@@ -262,6 +267,22 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
   $scope.go_choose_route = function() {
     $scope.state = 'choose_route';
   };
+
+
+   $scope.autocomplete = "";
+   $scope.details = {};
+   $scope.watchDetails = function() { return $scope.details };
+
+   $scope.$watch($scope.watchDetails, function() {
+     if ($scope.details.geometry) {
+       $scope.end_lat = $scope.details.geometry.location.lat();
+       $scope.end_lon = $scope.details.geometry.location.lng();
+       Restangular.all('api/v1/routes?lat1=' + $scope.start_bus_stop.lat + '&lon1=' + $scope.start_bus_stop.lon + '&lat2=' + $scope.end_lat +  '&lon2=' + $scope.end_lon).getList().then(function(r) {
+	 $scope.routes = r;
+
+       });
+     }
+   });
 
 
 
