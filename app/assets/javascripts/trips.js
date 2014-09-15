@@ -39,10 +39,8 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
       if (live_trips.length > 0) {
 	$scope.trip = live_trips[0];
       } else {
-	$scope.current_location.lat = 19.1860811;
-	$scope.current_location.lon = 72.8340963;
 	if (navigator.geolocation) {
-	  //$scope.getBusStopLocation();
+	  $scope.getBusStopLocation();
 	  load_stops(true);
 	} else {
 	  error('not supported');
