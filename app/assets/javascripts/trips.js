@@ -177,6 +177,12 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
     $scope.state = 'choose_route';
   };
 
+  $scope.to_start = function() {
+    console.log($scope.bus_stops);
+    $scope.state = 'start';
+  };
+
+
 
    $scope.autocomplete = "";
    $scope.details = {};
@@ -239,8 +245,6 @@ angular.module('bestLocatorApp').controller('ModalInstanceCtrl',['$scope', '$mod
 
 
   $scope.ready = function() {
-    console.log($scope.bus_stops);
-    $scope.state = 'start';
   };
 
   $scope.spotBus = function() {
