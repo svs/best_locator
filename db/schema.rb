@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140616022951) do
+ActiveRecord::Schema.define(version: 20140921051208) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20140616022951) do
     t.datetime "reported_at"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "route_id"
   end
 
   create_table "map_squares", force: true do |t|
@@ -40,8 +41,19 @@ ActiveRecord::Schema.define(version: 20140616022951) do
     t.datetime "updated_at"
   end
 
-# Could not dump table "routes" because of following StandardError
-#   Unknown type 'geometry' for column 'geometry'
+  create_table "routes", force: true do |t|
+    t.string   "code"
+    t.string   "end_area"
+    t.string   "start_stop"
+    t.string   "start_area"
+    t.string   "display_name"
+    t.string   "url"
+    t.string   "slug"
+    t.string   "end_stop"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.spatial  "geometry",     limit: {:srid=>0, :type=>"geometry"}
+  end
 
   create_table "routes_stops", force: true do |t|
     t.integer "route_id", null: false

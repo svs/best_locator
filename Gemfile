@@ -54,7 +54,7 @@ end
 
 
 group :development, :test do
-  gem 'pry_debug'
+  gem 'pry-byebug'
   gem 'rspec-rails'
   gem 'capybara'
   gem 'awesome_print'

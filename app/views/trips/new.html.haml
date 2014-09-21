@@ -5,15 +5,13 @@
     .modal-header
       %h3.modal-title {{spottedRoute.display_name}}: {{spottedRoute.start_stop}} to {{spottedRoute.end_stop}}
       Seen going towards
-      %select{"ng-model" => "spottedDirection"}
-        %option{"id" => "1"}
-          {{spottedRoute.end_stop}}
-        %option{"id" => -1}
-          {{spottedRoute.start_stop}}
+      %select{"ng-model" => "x.spottedDirection", "ng-options" => "o.direction as o.name for o in directions"}
       %button.btn.btn-success{"ng-click" => "spotBus()"}
         Submit
   #trip{:"ng-controller" => "TripsCtrl"}
     .row_
+      #splash{"ng-show" => "state === 'loading'"}
+        = image_tag 'splash_logo.png'
       #choose_stop{"ng-show" => "state === 'start'"}
         .title
           %h3 Which bus stop are you at?
@@ -33,7 +31,7 @@
             %th From
             %th {{start_bus_stop.display_name}}
             %th{:rowspan => 2}
-              %button.btn.btn-danger{"ng-click" => "start()"}
+              %button.btn.btn-danger{"ng-click" => "ready()"}
                 Back
           %tr
             %th To
