@@ -66,6 +66,7 @@ html, body { height: 100%; }
       tbody {
 	  margin-top: 40px;
 	  overflow: auto;
+	  background: #fafafa;
 	  tr {
 	      cursor: pointer;
 	      td {
@@ -79,7 +80,7 @@ html, body { height: 100%; }
 	      }
 	  }
 	  tr:hover {
-	      background: #dadada;
+	      background: lightyellow;
 	  }
       }
   }

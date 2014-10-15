@@ -41,12 +41,7 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
 	  //$scope.current_location.lon = 72.8340963;
 	  console.log('geolocation supported');
 	  //load_stops(true);
-	   navigator.geolocation.getCurrentPosition(function(p) {
-	     console.log(p);
-	     $scope.current_location = {lat: p.coords.latitude, lon: p.coords.longitude};
-	     $scope.position = p;
-	     load_stops(true);
-	   });
+	   navigator.geolocation.getCurrentPosition(gotLocation);
 	} else {
 	  error('not supported');
 	}
@@ -71,14 +66,17 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
   };
 
 
-  var gotLocation = function(position) {
+  var gotLocation = function(position, reset) {
     var c = position.coords;
+     if (angular.isUndefined(reset)) {
+	 reset = true;
+     }
     if (true) {
       $scope.current_location = {lon:c.longitude, lat:c.latitude};
       console.log('#gotLocation', position);
       console.log(new Date(position.timestamp));
       window.navigator.geolocation.clearWatch( busStopLocationWatch );
-      load_stops(true);
+      load_stops(reset);
     }
   };
 
@@ -185,13 +183,25 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
 
 
    $scope.autocomplete = "";
-   $scope.details = {};
-   $scope.watchDetails = function() { return $scope.details };
+   $scope.endDetails = {};
+   $scope.watchEndDetails = function() { return $scope.endDetails; };
+   $scope.startDetails = {};
+   $scope.watchStartDetails = function() { return $scope.startDetails; };
 
-   $scope.$watch($scope.watchDetails, function() {
-     if ($scope.details.geometry) {
-       $scope.end_lat = $scope.details.geometry.location.lat();
-       $scope.end_lon = $scope.details.geometry.location.lng();
+
+   $scope.$watch($scope.watchStartDetails, function() {
+       console.log('user chose location');
+     if ($scope.startDetails.geometry) {
+	 console.log($scope.startDetails);
+	 gotLocation({coords: {latitude: $scope.startDetails.geometry.location.lat(), longitude: $scope.startDetails.geometry.location.lng()}}, false);
+     }
+   });
+
+
+   $scope.$watch($scope.watchEndDetails, function() {
+     if ($scope.endDetails.geometry) {
+       $scope.end_lat = $scope.endDetails.geometry.location.lat();
+       $scope.end_lon = $scope.endDetails.geometry.location.lng();
        Restangular.all('api/v1/routes?lat1=' + $scope.start_bus_stop.lat + '&lon1=' + $scope.start_bus_stop.lon + '&lat2=' + $scope.end_lat +  '&lon2=' + $scope.end_lon).getList().then(function(r) {
 	 $scope.routes = r;
 
