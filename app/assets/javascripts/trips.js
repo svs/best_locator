@@ -248,7 +248,7 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
 	size: 'lg',
 	resolve: {
             data: function () {
-		return {spottedRoute: $scope.spottedRoute, position: $scope.position, trip: $scope.trip, direction: direction};
+		return {spottedRoute: $scope.spottedRoute, position: $scope.position, trip: $scope.trip, direction: direction, stopId: $scope.start_bus_stop.id};
             }
 	}
     });
@@ -270,7 +270,7 @@ angular.module('bestLocatorApp').controller('ModalInstanceCtrl',['$scope', '$mod
   $scope.position = data.position;
   $scope.directions = [{direction: "1", name: $scope.spottedRoute.end_stop}, {direction: "-1", name:$scope.spottedRoute.start_stop}];
   $scope.x = {busId: null, spottedDirection: data.direction + ""};
-
+  $scope.stopId = data.stopId;
   $scope.ok = function () {
     $modalInstance.close($scope.selected.item);
   };
@@ -302,7 +302,8 @@ angular.module('bestLocatorApp').controller('ModalInstanceCtrl',['$scope', '$mod
            accuracy: c.accuracy,
            heading: $scope.x.spottedDirection,
            speed: c.speed,
-	   bus_id: $scope.x.busId
+	   bus_id: $scope.x.busId,
+	   stop_id: $scope.stopId
          }
        }).then(function(d) {
          $modalInstance.close($scope.x.spottedDirection);
