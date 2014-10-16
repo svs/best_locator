@@ -45,17 +45,16 @@
               %input{"type"=>"text", "ng-autocomplete"=>true, "ng-model"=>"autocomplete", "options"=>"options", "details"=>"endDetails"}
 
         %table.table.table-list#route_list
+          %thead
+            %th From
+            %th To
+            %th Info
           %tbody
             %tr{"ng-repeat" => "r in routes track by $index"}
-              %td{:width => "300px", "ng-click" => "showRoute(r)"}
-                %span.route-detail
-                  .btn-group
-                    %button.btn.btn-success
-                      {{r.start_stop}}
-                  = "-"
-                  .btn-group
-                    %button.btn.btn-primary
-                      {{r.end_stop}}
+              %td{"ng-click" => "spotBus(r,1)", "style" => "font-size: 0.9em"}
+                {{r.start_stop}}
+              %td{"ng-click" => "spotBus(r,-1)", "style" => "font-size: 0.9em"}
+                {{r.end_stop}}
               %td.status{"width" => "10em", "style" => "text-align: center", "ng-click" => "showRoute(r)"}
                 %h3{"style" => "background: yellow; border-radius: 40px; padding: 10px; margin: 0px; background: #CFE29A; font-size: 0.9em"}
                   {{r.display_name}}

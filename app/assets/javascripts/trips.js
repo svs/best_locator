@@ -67,6 +67,7 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
 
 
   var gotLocation = function(position, reset) {
+    $scope.position = position;
     var c = position.coords;
      if (angular.isUndefined(reset)) {
 	 reset = true;
@@ -209,9 +210,31 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
      }
    });
 
-  $scope.spotBus = function() {
-    console.log('bus Spotted!');
+  $scope.spotBus = function(route, direction) {
+      console.log('bus Spotted!');
+      var c = $scope.position.coords;
+      if (c.accuracy > 1000000) {
+	  $scope.geocodeAccurate = false;
+	  console.log("Accuracy is poor (" + c.accuracy + "). Ignoring");
+      } else {
+	  $scope.geocodeAccurate = false;
+	  $scope.status = "sending update....";
+	  Restangular.all('api/v1/location_reports').post(
+	      {
+		  location_report: {
+		      route_id: route.id,
+		      lat: c.latitude,
+		      lon: c.longitude,
+		      accuracy: c.accuracy,
+		      heading: direction,
+		      speed: c.speed
+		  }
+	      }).then(function(d) {
+
+	      });
+      }
   };
+
 
   $scope.open = function (route,size) {
     console.log('opening modal');
@@ -257,29 +280,4 @@ angular.module('bestLocatorApp').controller('ModalInstanceCtrl',['$scope', '$mod
   $scope.ready = function() {
   };
 
-  $scope.spotBus = function() {
-    console.log('bus Spotted! at ', $scope.position, ' going', $scope.x.spottedDirection);
-
-    var c = $scope.position.coords;
-    if (c.accuracy > 1000000) {
-      $scope.geocodeAccurate = false;
-      console.log("Accuracy is poor (" + c.accuracy + "). Ignoring");
-    } else {
-      $scope.geocodeAccurate = false;
-      $scope.status = "sending update....";
-      Restangular.all('api/v1/location_reports').post(
-	{
-	  location_report: {
-	    route_id: data.spottedRoute.id,
-	    lat: c.latitude,
-	    lon: c.longitude,
-	    accuracy: c.accuracy,
-	    heading: $scope.x.spottedDirection,
-	    speed: c.speed
-	  }
-	}).then(function(d) {
-	  $modalInstance.close($scope.x.spottedDirection);
-	});
-    }
-  };
 }]);
