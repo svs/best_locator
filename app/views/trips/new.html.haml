@@ -47,9 +47,6 @@
         %table.table.table-list#route_list
           %tbody
             %tr{"ng-repeat" => "r in routes track by $index"}
-              %td.status{"width" => "10em", "style" => "text-align: center"}
-                %h3{"style" => "background: yellow; border-radius: 40px; padding: 10px; margin: 0px; background: #CFE29A; font-size: 0.9em"}
-                  {{r.display_name}}
               %td{:width => "300px", "ng-click" => "showRoute(r)"}
                 %span.route-detail
                   .btn-group
@@ -59,8 +56,10 @@
                   .btn-group
                     %button.btn.btn-primary
                       {{r.end_stop}}
-              %td{"ng-click" => "showRoute(r)", "style" => "width: 40px; text-align: center"}
-                %i.glyphicon.glyphicon-info-sign{:style => "font-size: 40px; color: darkorange"}
+              %td.status{"width" => "10em", "style" => "text-align: center", "ng-click" => "showRoute(r)"}
+                %h3{"style" => "background: yellow; border-radius: 40px; padding: 10px; margin: 0px; background: #CFE29A; font-size: 0.9em"}
+                  {{r.display_name}}
+
       #show_route{"ng-if" => "state === 'show_route'"}
         .row
           .title
