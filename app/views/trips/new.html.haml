@@ -1,23 +1,30 @@
 = javascript_include_tag "trips"
 
 #app{:"ng-app" => "bestLocatorApp"}
-  %script{:type => "text/ng-template", :id => "busSpot.html"}
-    .modal-header
-      .modal-title
-        %h4
-          {{spottedRoute.display_name}}: {{spottedRoute.start_stop}} to {{spottedRoute.end_stop}}
+  - if current_user
+    %script{:type => "text/ng-template", :id => "busSpot.html"}
+      .modal-header
+        .modal-title
+          %h4
+            {{spottedRoute.display_name}}: {{spottedRoute.start_stop}} to {{spottedRoute.end_stop}}
 
-      %h5
-        Seen going towards
-        %select{"ng-model" => "x.spottedDirection", "ng-options" => "o.direction as o.name for o in directions"}
+        %h5
+          Seen going towards
+          %select{"ng-model" => "x.spottedDirection", "ng-options" => "o.direction as o.name for o in directions"}
+          %br
+          Bus ID
+          %input{:type => "text", "ng-model" => "x.busId"}
         %br
-        Bus ID
-        %input{:type => "text", "ng-model" => "x.busId"}
-      %br
-      %button.btn.btn-success{"ng-click" => "spotBus()"}
-        Submit
-      %button.btn.btn-danger{"ng-click" => "cancel()"}
-        Cancel
+        %button.btn.btn-success{"ng-click" => "spotBus()"}
+          Submit
+        %button.btn.btn-danger{"ng-click" => "cancel()"}
+          Cancel
+  - else
+    %script{:type => "text/ng-template", :id => "busSpot.html"}
+      .modal-header
+        .modal-title
+          %h4 Please log in
+          = link_to (image_tag 'fb-login.png'), user_omniauth_authorize_path("facebook")
 
   #trip{:"ng-controller" => "TripsCtrl"}
     .row_
