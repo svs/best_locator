@@ -3,11 +3,22 @@
 #app{:"ng-app" => "bestLocatorApp"}
   %script{:type => "text/ng-template", :id => "busSpot.html"}
     .modal-header
-      %h3.modal-title {{spottedRoute.display_name}}: {{spottedRoute.start_stop}} to {{spottedRoute.end_stop}}
-      Seen going towards
-      %select{"ng-model" => "x.spottedDirection", "ng-options" => "o.direction as o.name for o in directions"}
+      .modal-title
+        %h4
+          {{spottedRoute.display_name}}: {{spottedRoute.start_stop}} to {{spottedRoute.end_stop}}
+
+      %h5
+        Seen going towards
+        %select{"ng-model" => "x.spottedDirection", "ng-options" => "o.direction as o.name for o in directions"}
+        %br
+        Bus ID
+        %input{:type => "text", "ng-model" => "x.busId"}
+      %br
       %button.btn.btn-success{"ng-click" => "spotBus()"}
         Submit
+      %button.btn.btn-danger{"ng-click" => "cancel()"}
+        Cancel
+
   #trip{:"ng-controller" => "TripsCtrl"}
     .row_
       #splash{"ng-show" => "state === 'loading'", :style => "width:100%"}
@@ -51,9 +62,9 @@
             %th Info
           %tbody
             %tr{"ng-repeat" => "r in routes track by $index"}
-              %td{"ng-click" => "spotBus(r,1)", "style" => "font-size: 0.9em"}
+              %td{"ng-click" => "open(r,-1)", "style" => "font-size: 0.9em"}
                 {{r.start_stop}}
-              %td{"ng-click" => "spotBus(r,-1)", "style" => "font-size: 0.9em"}
+              %td{"ng-click" => "open(r,1)", "style" => "font-size: 0.9em"}
                 {{r.end_stop}}
               %td.status{"width" => "10em", "style" => "text-align: center", "ng-click" => "showRoute(r)"}
                 %h3{"style" => "background: yellow; border-radius: 40px; padding: 10px; margin: 0px; background: #CFE29A; font-size: 0.9em"}

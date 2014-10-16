@@ -212,6 +212,7 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
 
   $scope.spotBus = function(route, direction) {
       console.log('bus Spotted!');
+
       var c = $scope.position.coords;
       if (c.accuracy > 1000000) {
 	  $scope.geocodeAccurate = false;
@@ -233,21 +234,23 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
 
 	      });
       }
+
   };
 
 
-  $scope.open = function (route,size) {
+  $scope.open = function (route,direction) {
     console.log('opening modal');
     $scope.spottedRoute = route;
     console.log(route);
     var modalInstance = $modal.open({
-      templateUrl: 'busSpot.html',
-      controller: 'ModalInstanceCtrl',
-      resolve: {
-        data: function () {
-          return {spottedRoute: $scope.spottedRoute, position: $scope.position, trip: $scope.trip};
-        }
-      }
+	templateUrl: 'busSpot.html',
+	controller: 'ModalInstanceCtrl',
+	size: 'lg',
+	resolve: {
+            data: function () {
+		return {spottedRoute: $scope.spottedRoute, position: $scope.position, trip: $scope.trip, direction: direction};
+            }
+	}
     });
     modalInstance.result.then(function(direction) {
       console.log($scope.spottedRoute, direction);
@@ -265,9 +268,9 @@ angular.module('bestLocatorApp').controller('ModalInstanceCtrl',['$scope', '$mod
 
   $scope.spottedRoute = data.spottedRoute;
   $scope.position = data.position;
-  $scope.directions = [{direction: "1", name: $scope.spottedRoute.end_stop}, {direction: -1, name:$scope.spottedRoute.start_stop}];
-  $scope.x = {};
-  $scope.x.spottedDirection = null;
+  $scope.directions = [{direction: "1", name: $scope.spottedRoute.end_stop}, {direction: "-1", name:$scope.spottedRoute.start_stop}];
+  $scope.x = {busId: null, spottedDirection: data.direction + ""};
+
   $scope.ok = function () {
     $modalInstance.close($scope.selected.item);
   };
@@ -278,6 +281,33 @@ angular.module('bestLocatorApp').controller('ModalInstanceCtrl',['$scope', '$mod
 
 
   $scope.ready = function() {
+  };
+
+  $scope.spotBus = function() {
+    console.log('bus Spotted! at ', $scope.position, ' going', $scope.x.spottedDirection);
+
+    var c = $scope.position.coords;
+    if (c.accuracy > 1000000) {
+      $scope.geocodeAccurate = false;
+      console.log("Accuracy is poor (" + c.accuracy + "). Ignoring");
+    } else {
+      $scope.geocodeAccurate = false;
+      $scope.status = "sending update....";
+      Restangular.all('api/v1/location_reports').post(
+       {
+         location_report: {
+           route_id: data.spottedRoute.id,
+           lat: c.latitude,
+           lon: c.longitude,
+           accuracy: c.accuracy,
+           heading: $scope.x.spottedDirection,
+           speed: c.speed,
+	   bus_id: $scope.x.busId
+         }
+       }).then(function(d) {
+         $modalInstance.close($scope.x.spottedDirection);
+       });
+    }
   };
 
 }]);
