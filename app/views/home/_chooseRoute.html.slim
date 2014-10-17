@@ -40,7 +40,7 @@ script type="text/ng-template" id="chooseRoute.html"
         tr ng-repeat="r in data.chosenStop.routes"
           td ng-click="open(r, -1)"
             | {{ r.start_stop }}
-          td
+          td ng-click="open(r, 1)"
             | {{ r.end_stop }}
           td
             a ui-sref="show_route({id: r.id})"
