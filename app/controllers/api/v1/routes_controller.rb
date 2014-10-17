@@ -23,7 +23,7 @@ class Api::V1::RoutesController < ApplicationController
 
   def show
     route = Route.find(params[:id])
-    render json: route.attributes.merge(:stops => route.stops.uniq.map(&:attributes))
+    render json: route.attributes.except("geometry").merge(:stops => route.stops.uniq.map(&:attributes))
   end
 
 end

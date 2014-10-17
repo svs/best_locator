@@ -30,23 +30,6 @@
     .row_
       #splash{"ng-show" => "state === 'loading'", :style => "width:100%"}
         = image_tag 'splash_logo.png', :style => "margin: auto; display: block;"
-      #choose_stop{"ng-show" => "state === 'start'"}
-        .title
-          %h3 Which bus stop are you at?
-
-          %button.btn.btn-primary{:"ng-click" => "getPosition()"}
-            %i{:class => "glyphicon glyphicon-refresh"}
-
-        %table.table.table-list
-          %tbody
-            %tr
-              %td
-                %input{"type"=>"text", "ng-autocomplete"=>true, "ng-model"=>"autocomplete", "options"=>"options", "details"=>"startDetails"}
-
-            %tr{"ng-repeat" => "b in bus_stops", "ng-class-odd" => "odd"}
-              %td{:"ng-click" => "start_bus_stop = makeBusStop(b)"}
-                %h4{:style => "padding-left: 40px"}
-                  {{b.official_name | lowercase}}
       #choose_route{"ng-show" => "state === 'choose_route'"}
         %table.table
           %tr
@@ -60,7 +43,7 @@
             %th
               %span{"ng-show" => "end_bus_stop !== null"}
                 {{end_bus_stop.display_name}}
-              %input{"type"=>"text", "ng-autocomplete"=>true, "ng-model"=>"autocomplete", "options"=>"options", "details"=>"endDetails"}
+              %input{"type"=>"text", "ng-autocomplete"=>true, "ng-model"=>"endAutocomplete", "options"=>"options", "details"=>"endDetails"}
 
         %table.table.table-list#route_list
           %thead

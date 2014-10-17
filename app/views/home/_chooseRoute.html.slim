@@ -1,0 +1,65 @@
+#app ng-app = "bestLocatorApp"
+  - if current_user
+    script type="text/ng-template" id="busSpot.html"
+      .modal-header
+        .modal-title
+          h4
+            | {{spottedRoute.display_name}}: {{spottedRoute.start_stop}} to {{spottedRoute.end_stop}}
+
+        h5
+          | Seen going towards
+          select ng-model="x.spottedDirection" ng-options="o.direction as o.name for o in directions"
+        h5
+          | Bus ID &nbsp;
+          input type="text" ng-model="x.busId"
+
+        button.btn.btn-success ng-click= "spotBus()"
+          | Submit
+        button.btn.btn-danger ng-click="cancel()"
+          | Cancel
+  - else
+    script type="text/ng-template" id="busSpot.html"
+      .modal-header
+        .modal-title
+          h4 Please log in
+          = link_to (image_tag 'fb-login.png'), user_omniauth_authorize_path("facebook")
+
+
+script type="text/ng-template" id="chooseRoute.html"
+  div ng-controller="chooseRouteController"
+    h3
+      | {{ data.chosenStop.display_name }}
+
+    table.table
+      thead
+        tr
+          th From
+          th To
+          th Info
+      tbody
+        tr ng-repeat="r in data.chosenStop.routes"
+          td ng-click="open(r, -1)"
+            | {{ r.start_stop }}
+          td
+            | {{ r.end_stop }}
+          td
+            a ui-sref="show_route({id: r.id})"
+              | {{ r.display_name }}
+
+script type="text/ng-template" id="showRoute.html"
+  div ng-controller="showRouteController"
+    .row
+      .col-xs-3
+        h3 style="margin: 5px"
+          | {{ data.chosenRoute.display_name }}
+      .col-xs-6
+        h4 style="line-height: 0.8em"
+          | {{ data.chosenRoute.start_stop }} to {{ data.chosenRoute.end_stop }}
+    table.table
+      tbody
+        tr ng-repeat="stop in data.chosenRoute.stops"
+          td
+            a ui-sref="choose_route({id: stop.id})"
+              | {{ stop.display_name }}
+          td
+            | {{ stop.area }}

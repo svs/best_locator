@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require angular/angular.min
+//= require angular-ui-router
 //= require lodash/lodash
 //= require restangular/src/restangular.js
 //= require bootstrap.min
@@ -25,4 +26,4 @@
 //= require_self
 
 
-var bestLocatorApp = angular.module('bestLocatorApp', ['restangular','google-maps','ui.select2', 'ngAutocomplete','ui.bootstrap']);
+var bestLocatorApp = angular.module('bestLocatorApp', ['restangular','google-maps','ui.select2', 'ngAutocomplete','ui.bootstrap','ui.router']);

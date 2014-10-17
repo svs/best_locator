@@ -47,7 +47,9 @@ class Route < ActiveRecord::Base
     Route.where('ST_Distance_Sphere(geometry, ST_SetSRID(ST_MakePoint(?,?), 4326)) < ?',lon.to_f, lat.to_f, dist)
   end
 
-
+  def as_json(include_root = false)
+    attributes.except("geometry")
+  end
 
   private
 

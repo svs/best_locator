@@ -1,4 +1,4 @@
-angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular','$window','$modal',function($scope, Restangular, $window, $modal) {
+angular.module('bestLocatorApp').controller('TripsCtrl',['$scope',, 'Restangular','$window','$modal','$location',function($scope, Restangular, $window, $modal, $location) {
   var busStopLocationWatch;
   var geoLocationWatch;
 
@@ -36,7 +36,7 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
       if (live_trips.length > 0) {
 	$scope.trip = live_trips[0];
       } else {
-	if (navigator.geolocation) {
+ if (navigator.geolocation) {
 	  //$scope.current_location.lat = 19.1860811;
 	  //$scope.current_location.lon = 72.8340963;
 	  console.log('geolocation supported');
@@ -181,9 +181,8 @@ angular.module('bestLocatorApp').controller('TripsCtrl',['$scope', 'Restangular'
     $scope.state = 'start';
   };
 
-
-
-   $scope.autocomplete = "";
+   $scope.startAutocomplete = "";
+   $scope.endAutocomplete = "";
    $scope.endDetails = {};
    $scope.watchEndDetails = function() { return $scope.endDetails; };
    $scope.startDetails = {};
