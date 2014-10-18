@@ -61,7 +61,6 @@ group :development, :test do
   gem 'awesome_print'
   gem "selenium-webdriver"
   gem "factory_girl"
-  gem "bower-rails"
 end
 
 group :test do

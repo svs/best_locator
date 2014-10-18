@@ -1,4 +1,0 @@
-assets_path "assets/javascripts"
-asset "angular"
-asset "restangular"
-asset "moment"

@@ -15,12 +15,10 @@
 //= require angular/angular.min
 //= require angular-ui-router
 //= require lodash/lodash
-//= require restangular/src/restangular.js
+//= require restangular/src/restangular.min.js
 //= require bootstrap.min
-//= require moment/moment
-//= require select2/select2
-//= require angular-ui-select2/src/select2.js
-//= require angular-google-maps/dist/angular-google-maps.min.js
+//= require moment.min
+//= require angular-google-maps.min.js
 //= require ngAutocomplete.js
 //= require ui-bs.js
 //= require_self
