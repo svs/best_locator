@@ -21,5 +21,6 @@
 //= require angular-google-maps.min.js
 //= require ngAutocomplete.js
 //= require ui-bs.js
+
 //= require home.js
 //= require_self
