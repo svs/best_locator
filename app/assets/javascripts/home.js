@@ -14,7 +14,7 @@ bestLocatorApp.config(function($stateProvider, $urlRouterProvider) {
 
 });
 
-bestLocatorApp.factory('State', function(Restangular) {
+bestLocatorApp.factory('State', ['Restangular', function(Restangular) {
     var _data = {
 	desiredLocation: null
     };
@@ -64,7 +64,7 @@ bestLocatorApp.factory('State', function(Restangular) {
     service.data = _data;
 
     return service;
-});
+}]);
 
 angular.module('bestLocatorApp').controller('indexController',['$scope', 'State',
   function($scope, State) {
