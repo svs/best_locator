@@ -1,4 +1,4 @@
-bestLocatorApp.config(function($stateProvider, $urlRouterProvider) {
+bestLocatorApp.config(["$stateProvider", "$urlRouterProvider", function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
 
     $stateProvider.
@@ -12,9 +12,9 @@ bestLocatorApp.config(function($stateProvider, $urlRouterProvider) {
 	      {url: '/routes/:id', templateUrl: "showRoute.html", controller: 'showRouteController'}
 	     );
 
-});
+}]);
 
-bestLocatorApp.factory('State', ['Restangular', function(Restangular) {
+bestLocatorApp.factory('State', ["Restangular", function(Restangular) {
     var _data = {
 	desiredLocation: null
     };
@@ -66,8 +66,7 @@ bestLocatorApp.factory('State', ['Restangular', function(Restangular) {
     return service;
 }]);
 
-angular.module('bestLocatorApp').controller('indexController',['$scope', 'State',
-  function($scope, State) {
+angular.module('bestLocatorApp').controller('indexController',["$scope", "State", function($scope, State) {
       $scope.state = State;
       var gotLocation = function(p,r){
 	  $scope.$apply(function() {
@@ -99,8 +98,7 @@ angular.module('bestLocatorApp').controller('indexController',['$scope', 'State'
   }]);
 
 
-angular.module('bestLocatorApp').controller('chooseRouteController',['$scope', 'State','$stateParams', '$modal',
-  function($scope, State, $stateParams, $modal) {
+angular.module('bestLocatorApp').controller('chooseRouteController',["$scope", "State", "$stateParams", "$modal", function($scope, State, $stateParams, $modal) {
       $scope.data = State.data;
       State.setBusStop($stateParams.id);
 
@@ -128,15 +126,14 @@ angular.module('bestLocatorApp').controller('chooseRouteController',['$scope', '
   }]);
 
 
-angular.module('bestLocatorApp').controller('showRouteController',['$scope', 'State','$stateParams',
-  function($scope, State, $stateParams) {
+angular.module('bestLocatorApp').controller('showRouteController',["$scope", "State", "$stateParams", function($scope, State, $stateParams) {
       $scope.data = State.data;
       State.setBusRoute($stateParams.id);
       $scope.route = State.data.chosenRoute;
   }]);
 
 
-angular.module('bestLocatorApp').controller('ModalInstanceCtrl',['$scope', '$modalInstance', 'data','Restangular',function ($scope, $modalInstance, data, Restangular) {
+angular.module('bestLocatorApp').controller('ModalInstanceCtrl',["$scope", "$modalInstance", "data", "Restangular", function ($scope, $modalInstance, data, Restangular) {
     console.log('data',data);
     $scope.spottedRoute = data.spottedRoute;
     $scope.position = data.position;
