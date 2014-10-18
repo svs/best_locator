@@ -24,6 +24,7 @@ module BestLocator
     config.assets.paths << "#{Rails.root}/vendor/assets/fonts"
     config.assets.paths << "#{Rails.root}/vendor/assets/stylesheets"
 
+    config.assets.precompile += %w(home.js)
     config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components')
 
     config.assets.precompile << Proc.new do |path|
