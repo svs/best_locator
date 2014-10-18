@@ -21,7 +21,5 @@
 //= require angular-google-maps.min.js
 //= require ngAutocomplete.js
 //= require ui-bs.js
+//= require home.js
 //= require_self
-
-
-var bestLocatorApp = angular.module('bestLocatorApp', ['restangular','google-maps', 'ngAutocomplete','ui.bootstrap','ui.router']);

@@ -1,3 +1,5 @@
+var bestLocatorApp = angular.module('bestLocatorApp', ['restangular','google-maps', 'ngAutocomplete','ui.bootstrap','ui.router']);
+
 bestLocatorApp.config(["$stateProvider", "$urlRouterProvider", function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
 
