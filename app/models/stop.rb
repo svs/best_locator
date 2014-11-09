@@ -6,6 +6,9 @@ class Stop < ActiveRecord::Base
   has_many :start_trips, :foreign_key => :start_stop_id, :class_name => Trip
   has_many :end_trips, :foreign_key => :end_stop_id, :class_name => Trip
 
+  has_many :location_reports
+  has_many :arrivals
+
 
   def as_json(include_root = false)
     attributes.merge(routes: routes.uniq.map{|r| r.attributes.except("geometry")})
@@ -55,5 +58,7 @@ class Stop < ActiveRecord::Base
   def self.inspect
     self.to_s
   end
+
+
 
 end

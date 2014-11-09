@@ -1,0 +1,6493 @@
+---
+routes_001:
+  id: '219'
+  code: '2490'
+  end_area: Versova
+  start_stop: Andheri Stn.(W) (Kumkum)
+  start_area: Andheri West
+  display_name: '249'
+  url: "/route/2490/"
+  slug: '249'
+  end_stop: Vesava-Yari Rd.Bus Stn.
+  created_at: '2013-11-25 21:19:23.812096'
+  updated_at: '2014-06-16 13:39:52.2358'
+routes_002:
+  id: '7'
+  code: '0032'
+  end_area: Byculla East
+  start_stop: Navy Ngr.
+  start_area: Colaba
+  display_name: '3'
+  url: "/route/0032/"
+  slug: 3-EXTRA
+  end_stop: Jijamata Udn.
+  created_at: '2013-11-25 21:19:23.095545'
+  updated_at: '2014-06-16 13:27:01.003444'
+routes_003:
+  id: '13'
+  code: '0057'
+  end_area: Thane West
+  start_stop: Bkc Tel.Exchange
+  start_area: Bandra-Kurla Complex
+  display_name: AS-5
+  url: "/route/0057/"
+  slug: AS-5
+  end_stop: Cadbury Jn.(Thane)
+  created_at: '2013-11-25 21:19:23.118202'
+  updated_at: '2014-06-16 13:27:16.572492'
+routes_004:
+  id: '20'
+  code: 0097
+  end_area: Ghatkopar East
+  start_stop: Dr.Shyamaprasad Mukherji Chk.
+  start_area: Colaba
+  display_name: AS-9
+  url: "/route/0097/"
+  slug: AS-9
+  end_stop: Ghatkopar Stn.(E)-1
+  created_at: '2013-11-25 21:19:23.136754'
+  updated_at: '2014-06-16 13:27:42.511474'
+routes_005:
+  id: '26'
+  code: 0139
+  end_area: Thane West
+  start_stop: Backbay Depot
+  start_area: Backbay
+  display_name: A-13 Exp
+  url: "/route/0139/"
+  slug: A-13EXP.EXT.
+  end_stop: Lodha Paradise (Complex)
+  created_at: '2013-11-25 21:19:23.152698'
+  updated_at: '2014-06-16 13:27:58.529754'
+routes_006:
+  id: '34'
+  code: '0211'
+  end_area: Trombay
+  start_stop: R.C.Church
+  start_area: Colaba
+  display_name: 21 Ltd
+  url: "/route/0211/"
+  slug: 21LTD
+  end_stop: Trombay
+  created_at: '2013-11-25 21:19:23.173504'
+  updated_at: '2014-06-16 13:28:31.144611'
+routes_007:
+  id: '43'
+  code: '0332'
+  end_area: Goregaon West
+  start_stop: Worli Depot
+  start_area: Worli
+  display_name: '33'
+  url: "/route/0332/"
+  slug: 33-EXTRA
+  end_stop: Goregaon Bus Stn(W)
+  created_at: '2013-11-25 21:19:23.196353'
+  updated_at: '2014-06-16 13:29:08.789842'
+routes_008:
+  id: '49'
+  code: '0410'
+  end_area: Walkeshwar
+  start_stop: Ferry Wharf
+  start_area: Mazgaon
+  display_name: '41'
+  url: "/route/0410/"
+  slug: '41'
+  end_stop: Kamla Nehru Park
+  created_at: '2013-11-25 21:19:23.211545'
+  updated_at: '2014-06-16 13:29:30.535313'
+routes_009:
+  id: '56'
+  code: '0440'
+  end_area: Worli
+  start_stop: Colaba Depot
+  start_area: Colaba
+  display_name: '44'
+  url: "/route/0440/"
+  slug: '44'
+  end_stop: Worli Village
+  created_at: '2013-11-25 21:19:23.229569'
+  updated_at: '2014-06-16 13:29:47.02883'
+routes_010:
+  id: '221'
+  code: '2510'
+  end_area: Versova
+  start_stop: Andheri Stn.(W) (Kumkum)
+  start_area: Andheri West
+  display_name: '251'
+  url: "/route/2510/"
+  slug: '251'
+  end_stop: Vesava-Yari Rd.Bus Stn.
+  created_at: '2013-11-25 21:19:23.817251'
+  updated_at: '2014-06-16 13:39:53.528888'
+routes_011:
+  id: '67'
+  code: '0520'
+  end_area: Kala Chowky
+  start_stop: Dharavi Depot
+  start_area: Dharavi
+  display_name: '52'
+  url: "/route/0520/"
+  slug: '0520'
+  end_stop: Shrawan Yeshwante Chk.
+  created_at: '2013-11-25 21:19:23.258015'
+  updated_at: '2014-06-16 13:31:59.220435'
+routes_012:
+  id: '72'
+  code: '0550'
+  end_area: Kala Chowky
+  start_stop: Worli Depot
+  start_area: Worli
+  display_name: '55'
+  url: "/route/0550/"
+  slug: '0550'
+  end_stop: Shrawan Yeshwante Chk.
+  created_at: '2013-11-25 21:19:23.270978'
+  updated_at: '2014-06-16 13:32:39.340321'
+routes_013:
+  id: '75'
+  code: 0580
+  end_area: Kurla East
+  start_stop: Wadala Truck Terminal
+  start_area: Anik
+  display_name: '58'
+  url: "/route/0580/"
+  slug: '58'
+  end_stop: Kurla Bus Stn (E)
+  created_at: '2013-11-25 21:19:23.2789'
+  updated_at: '2014-06-16 13:32:49.514121'
+routes_014:
+  id: '80'
+  code: '0616'
+  end_area: Mira Road East
+  start_stop: Mulund Depot
+  start_area: Mulund West
+  display_name: C-61 Exp
+  url: "/route/0616/"
+  slug: C-61
+  end_stop: Mira Rd.Stn.(E)
+  created_at: '2013-11-25 21:19:23.291765'
+  updated_at: '2014-06-16 13:33:14.240401'
+routes_015:
+  id: '88'
+  code: 0680
+  end_area: Worli
+  start_stop: Navy Ngr.
+  start_area: Colaba
+  display_name: '68'
+  url: "/route/0680/"
+  slug: '68'
+  end_stop: Worli Depot
+  created_at: '2013-11-25 21:19:23.313503'
+  updated_at: '2014-06-16 13:33:51.685997'
+routes_016:
+  id: '92'
+  code: '0710'
+  end_area: Shivaji Park
+  start_stop: Byculla Stn.(W)
+  start_area: Byculla West
+  display_name: '71'
+  url: "/route/0710/"
+  slug: '71'
+  end_stop: Ram Ganesh Gadkari Chk.
+  created_at: '2013-11-25 21:19:23.32353'
+  updated_at: '2014-06-16 13:33:58.084497'
+routes_017:
+  id: '97'
+  code: '0750'
+  end_area: Bandra East
+  start_stop: Antop Hill Bus Stn.
+  start_area: Antop Hill
+  display_name: '75'
+  url: "/route/0750/"
+  slug: '75'
+  end_stop: Tata Cly.
+  created_at: '2013-11-25 21:19:23.336257'
+  updated_at: '2014-06-16 13:34:08.263867'
+routes_018:
+  id: '105'
+  code: 0811
+  end_area: Santacruz West
+  start_stop: Mantralaya
+  start_area: Mantralaya
+  display_name: 81 Ltd
+  url: "/route/0811/"
+  slug: 81LTD
+  end_stop: Santacruz Depot
+  created_at: '2013-11-25 21:19:23.398279'
+  updated_at: '2014-06-16 13:34:32.037801'
+routes_019:
+  id: '113'
+  code: 0871
+  end_area: Bandra East
+  start_stop: Mantralaya
+  start_area: Mantralaya
+  display_name: 87 Ltd
+  url: "/route/0871/"
+  slug: 87LTD
+  end_stop: Bandra Cly.Bus Stn
+  created_at: '2013-11-25 21:19:23.422457'
+  updated_at: '2014-06-16 13:35:10.085238'
+routes_020:
+  id: '119'
+  code: '1004'
+  end_area: Churchgate
+  start_stop: Ahilyabai Holkar Chk. Eross Cinema
+  start_area: Mantralaya
+  display_name: '100'
+  url: "/route/1004/"
+  slug: 100RING
+  end_stop: Ahilyabai Holkar Chk.
+  created_at: '2013-11-25 21:19:23.442386'
+  updated_at: '2014-06-16 13:35:23.432312'
+routes_021:
+  id: '120'
+  code: '1010'
+  end_area: Walkeshwar
+  start_stop: Colaba Depot
+  start_area: Colaba
+  display_name: '101'
+  url: "/route/1010/"
+  slug: '101'
+  end_stop: Walkeshwar
+  created_at: '2013-11-25 21:19:23.446524'
+  updated_at: '2014-06-16 13:35:29.503279'
+routes_022:
+  id: '128'
+  code: '1100'
+  end_area: Antop Hill
+  start_stop: Com.P.K.Kurne Chk.
+  start_area: Worli
+  display_name: '110'
+  url: "/route/1100/"
+  slug: '110'
+  end_stop: Sangam Ngr.
+  created_at: '2013-11-25 21:19:23.478091'
+  updated_at: '2014-06-16 13:35:51.398284'
+routes_023:
+  id: '130'
+  code: '1200'
+  end_area: Opera House
+  start_stop: Dava Bazar(Kalbadevi)
+  start_area: Marine Lines
+  display_name: '120'
+  url: "/route/1200/"
+  slug: '120'
+  end_stop: Pt.Paluskar Chk.
+  created_at: '2013-11-25 21:19:23.483841'
+  updated_at: '2014-06-16 13:35:52.794608'
+routes_024:
+  id: '137'
+  code: '1300'
+  end_area: Tardeo
+  start_stop: Dr.Shyamaprasad Mukherji Chk.
+  start_area: Colaba
+  display_name: '130'
+  url: "/route/1300/"
+  slug: '130'
+  end_stop: Vasantrao Naik Chk.
+  created_at: '2013-11-25 21:19:23.504708'
+  updated_at: '2014-06-16 13:36:15.224144'
+routes_025:
+  id: '141'
+  code: '1350'
+  end_area: Nepean Sea Road
+  start_stop: Ferry Wharf
+  start_area: Mazgaon
+  display_name: '135'
+  url: "/route/1350/"
+  slug: '135'
+  end_stop: J.Mehta Marg
+  created_at: '2013-11-25 21:19:23.516815'
+  updated_at: '2014-06-16 13:36:23.302126'
+routes_026:
+  id: '144'
+  code: '1380'
+  end_area: Fort
+  start_stop: Backbay Depot
+  start_area: Backbay
+  display_name: '138'
+  url: "/route/1380/"
+  slug: '138'
+  end_stop: Chh. Shivaji Terminus(Bhatia)
+  created_at: '2013-11-25 21:19:23.525907'
+  updated_at: '2014-06-16 13:36:31.821984'
+routes_027:
+  id: '147'
+  code: '1554'
+  end_area: Grant Road West
+  start_stop: Grant Rd Stn.(W)
+  start_area: Grant Road West
+  display_name: '155'
+  url: "/route/1554/"
+  slug: 155RING
+  end_stop: Grant Rd Stn.(W)
+  created_at: '2013-11-25 21:19:23.535173'
+  updated_at: '2014-06-16 13:36:35.266413'
+routes_028:
+  id: '151'
+  code: '1620'
+  end_area: Worli
+  start_stop: P.Thakre Udn.Bus Stn.
+  start_area: Sewree
+  display_name: '162'
+  url: "/route/1620/"
+  slug: '162'
+  end_stop: Worli Village
+  created_at: '2013-11-25 21:19:23.548385'
+  updated_at: '2014-06-16 13:36:39.980319'
+routes_029:
+  id: '156'
+  code: '1672'
+  end_area: Worli
+  start_stop: Worli Depot
+  start_area: Worli
+  display_name: '167'
+  url: "/route/1672/"
+  slug: 167-EXT.RING
+  end_stop: Worli Depot
+  created_at: '2013-11-25 21:19:23.563311'
+  updated_at: '2014-06-16 13:36:48.852999'
+routes_030:
+  id: '160'
+  code: '1700'
+  end_area: Sion East
+  start_stop: Antop Hill Extn.
+  start_area: Antop Hill
+  display_name: '170'
+  url: "/route/1700/"
+  slug: '170'
+  end_stop: Rani Laxmibai Chk.
+  created_at: '2013-11-25 21:19:23.575032'
+  updated_at: '2014-06-16 13:36:53.303049'
+routes_031:
+  id: '163'
+  code: '1734'
+  end_area: Sion East
+  start_stop: Rani Laxmibai Chk.(Bus Stn.)
+  start_area: Sion East
+  display_name: '173'
+  url: "/route/1734/"
+  slug: 173RING
+  end_stop: Rani Laxmibai Chk.(Bus Stn.)
+  created_at: '2013-11-25 21:19:23.584035'
+  updated_at: '2014-06-16 13:36:57.972143'
+routes_032:
+  id: '164'
+  code: '1740'
+  end_area: Antop Hill
+  start_stop: Veer Kotwal Udn. (Plaza)
+  start_area: Dadar West
+  display_name: '174'
+  url: "/route/1740/"
+  slug: '174'
+  end_stop: Bharani Naka (Antop Hill)
+  created_at: '2013-11-25 21:19:23.587036'
+  updated_at: '2014-06-16 13:36:58.758141'
+routes_033:
+  id: '169'
+  code: '1830'
+  end_area: Bandra-Kurla Complex
+  start_stop: Kurla Stn (W)
+  start_area: Kurla West
+  display_name: '183'
+  url: "/route/1830/"
+  slug: BKC-2
+  end_stop: M.M.R.D.A./Family Court
+  created_at: '2013-11-25 21:19:23.605833'
+  updated_at: '2014-06-16 13:37:18.888264'
+routes_034:
+  id: '170'
+  code: '1840'
+  end_area: Marol
+  start_stop: Agarkar Chk.
+  start_area: Andheri East
+  display_name: '184'
+  url: "/route/1840/"
+  slug: '184'
+  end_stop: Marol Maroshi Bus Stn.
+  created_at: '2013-11-25 21:19:23.6108'
+  updated_at: '2014-06-16 13:37:19.777449'
+routes_035:
+  id: '179'
+  code: '2060'
+  end_area: Borivli West
+  start_stop: Poisar Depot
+  start_area: Kandivli West
+  display_name: '206'
+  url: "/route/2060/"
+  slug: '206'
+  end_stop: I.C.Cly.
+  created_at: '2013-11-25 21:19:23.639167'
+  updated_at: '2014-06-16 13:38:00.556228'
+routes_036:
+  id: '181'
+  code: '2080'
+  end_area: Dahisar East
+  start_stop: Borivli Stn.(W) Bus Stn.
+  start_area: Borivli West
+  display_name: '208'
+  url: "/route/2080/"
+  slug: '208'
+  end_stop: Saraswati Complex(Dahisar)
+  created_at: '2013-11-25 21:19:23.64527'
+  updated_at: '2014-06-16 13:38:03.488805'
+routes_037:
+  id: '299'
+  code: '3280'
+  end_area: Versova
+  start_stop: Bamandaya Pada
+  start_area: Marol
+  display_name: '328'
+  url: "/route/3280/"
+  slug: '328'
+  end_stop: Vesava-Yari Rd.Bus Stn.
+  created_at: '2013-11-25 21:19:24.027745'
+  updated_at: '2014-06-16 13:38:09.729499'
+routes_038:
+  id: '217'
+  code: '2474'
+  end_area: Borivli West
+  start_stop: Borivli Stn.(W) Bus Stn.
+  start_area: Borivli West
+  display_name: '247'
+  url: "/route/2474/"
+  slug: 247RING
+  end_stop: Borivli Bus Stn(W)
+  created_at: '2013-11-25 21:19:23.806879'
+  updated_at: '2014-06-16 13:39:50.909038'
+routes_039:
+  id: '218'
+  code: '2480'
+  end_area: Andheri West
+  start_stop: Andheri Bus Stn.(W)
+  start_area: Andheri West
+  display_name: '248'
+  url: "/route/2480/"
+  slug: '248'
+  end_stop: Ramesh Ngr.
+  created_at: '2013-11-25 21:19:23.809539'
+  updated_at: '2014-06-16 13:39:51.328252'
+routes_040:
+  id: '220'
+  code: '2500'
+  end_area: Andheri West
+  start_stop: Andheri Stn.(W) (M.A)
+  start_area: Andheri West
+  display_name: '250'
+  url: "/route/2500/"
+  slug: '250'
+  end_stop: Gilbert Hill(Pancham Scty.)
+  created_at: '2013-11-25 21:19:23.814652'
+  updated_at: '2014-06-16 13:39:52.638109'
+routes_041:
+  id: '224'
+  code: '2540'
+  end_area: Andheri West
+  start_stop: Andheri Stn.(W) (M.A)
+  start_area: Andheri West
+  display_name: '254'
+  url: "/route/2540/"
+  slug: '254'
+  end_stop: Veera Desai Rd.
+  created_at: '2013-11-25 21:19:23.824754'
+  updated_at: '2014-06-16 13:40:01.830547'
+routes_042:
+  id: '227'
+  code: '2572'
+  end_area: Andheri West
+  start_stop: Andheri Stn.(W) (M.A)
+  start_area: Andheri West
+  display_name: '257'
+  url: "/route/2572/"
+  slug: JVPD-2
+  end_stop: Andheri Stn.(W) (M.A)
+  created_at: '2013-11-25 21:19:23.832235'
+  updated_at: '2014-06-16 13:40:17.616488'
+routes_043:
+  id: '228'
+  code: '2574'
+  end_area: Andheri West
+  start_stop: Andheri Stn.(W) (M.A)
+  start_area: Andheri West
+  display_name: '257'
+  url: "/route/2574/"
+  slug: JVPD-1
+  end_stop: Andheri Stn.(W) (M.A)
+  created_at: '2013-11-25 21:19:23.834663'
+  updated_at: '2014-06-16 13:40:18.550452'
+routes_044:
+  id: '232'
+  code: '2610'
+  end_area: Goregaon West
+  start_stop: Jogeshwari Bus Stn
+  start_area: Jogeshwari West
+  display_name: '261'
+  url: "/route/2610/"
+  slug: '261'
+  end_stop: Goregaon Bus Stn(W)
+  created_at: '2013-11-25 21:19:23.844821'
+  updated_at: '2014-06-16 13:40:32.514959'
+routes_045:
+  id: '236'
+  code: '2640'
+  end_area: Jogeshwari East
+  start_stop: Sadbhakti Mandir
+  start_area: Jogeshwari East
+  display_name: '264'
+  url: "/route/2640/"
+  slug: '264'
+  end_stop: Samarth Ngr.
+  created_at: '2013-11-25 21:19:23.855236'
+  updated_at: '2014-06-16 13:40:41.954075'
+routes_046:
+  id: '237'
+  code: '2650'
+  end_area: Oshiwara
+  start_stop: Jogeshwari Bus Stn
+  start_area: Jogeshwari West
+  display_name: '265'
+  url: "/route/2650/"
+  slug: '265'
+  end_stop: Millat Ngr.
+  created_at: '2013-11-25 21:19:23.857924'
+  updated_at: '2014-06-16 13:40:42.714559'
+routes_047:
+  id: '434'
+  code: '4810'
+  end_area: Chembur East
+  start_stop: Ghatkopar Bus Stn./Gkd
+  start_area: Ghatkopar East
+  display_name: '481'
+  url: "/route/4810/"
+  slug: '481'
+  end_stop: Vashinaka M.M.R.D.A.Cly.
+  created_at: '2013-11-25 21:19:24.519795'
+  updated_at: '2014-06-16 13:50:49.174071'
+routes_048:
+  id: '188'
+  code: '2140'
+  end_area: Bandra West
+  start_stop: Bandra Bus Stn(W)
+  start_area: Bandra West
+  display_name: '214'
+  url: "/route/2140/"
+  slug: '214'
+  end_stop: Mount Mary Steps( Municipal Garden)
+  created_at: '2013-11-25 21:19:23.666201'
+  updated_at: '2014-06-16 13:38:28.160351'
+routes_049:
+  id: '189'
+  code: '2152'
+  end_area: Bandra West
+  start_stop: Father Agnel Ashram
+  start_area: Bandra West
+  display_name: '215'
+  url: "/route/2152/"
+  slug: 215 EXT BANDRA FAIR
+  end_stop: Father Agnel Ashram
+  created_at: '2013-11-25 21:19:23.669163'
+  updated_at: '2014-06-16 13:38:28.988091'
+routes_050:
+  id: '193'
+  code: '2190'
+  end_area: Santacruz East
+  start_stop: Bandra Rly.Terminus
+  start_area: Bandra East
+  display_name: '219'
+  url: "/route/2190/"
+  slug: '219'
+  end_stop: Santacruz Stn (E)
+  created_at: '2013-11-25 21:19:23.681337'
+  updated_at: '2014-06-16 13:38:48.896647'
+routes_051:
+  id: '202'
+  code: '2300'
+  end_area: Dahisar East
+  start_stop: P.Thakre Ngr Bus.Stn.
+  start_area: Charkop
+  display_name: '230'
+  url: "/route/2300/"
+  slug: '230'
+  end_stop: Sambhaji Ngr.(Dahisar-E)
+  created_at: '2013-11-25 21:19:23.764508'
+  updated_at: '2014-06-16 13:39:07.871649'
+routes_052:
+  id: '203'
+  code: '2310'
+  end_area: Juhu
+  start_stop: Santacruz Stn (W)
+  start_area: Santacruz West
+  display_name: '231'
+  url: "/route/2310/"
+  slug: '231'
+  end_stop: Juhu Bus Stn.
+  created_at: '2013-11-25 21:19:23.767022'
+  updated_at: '2014-06-16 13:39:08.553589'
+routes_053:
+  id: '207'
+  code: '2360'
+  end_area: Oshiwara
+  start_stop: Andheri Bus Stn.(W)
+  start_area: Andheri West
+  display_name: '236'
+  url: "/route/2360/"
+  slug: '236'
+  end_stop: S.R.A.Ram Mandir/Somanigram
+  created_at: '2013-11-25 21:19:23.777343'
+  updated_at: '2014-06-16 13:39:13.28981'
+routes_054:
+  id: '208'
+  code: '2370'
+  end_area: Borivli West
+  start_stop: P.Thakre Ngr Bus.Stn.
+  start_area: Charkop
+  display_name: '237'
+  url: "/route/2370/"
+  slug: '237'
+  end_stop: Borivli Stn.(W) Bus Stn.
+  created_at: '2013-11-25 21:19:23.780845'
+  updated_at: '2014-06-16 13:39:14.110197'
+routes_055:
+  id: '213'
+  code: '2430'
+  end_area: Malad West
+  start_stop: Malad Stn-W(Anand Marg Chky)
+  start_area: Malad West
+  display_name: '243'
+  url: "/route/2430/"
+  slug: '243'
+  end_stop: Jankalyan Ngr.
+  created_at: '2013-11-25 21:19:23.796878'
+  updated_at: '2014-06-16 13:39:27.339875'
+routes_056:
+  id: '245'
+  code: '2760'
+  end_area: Charkop
+  start_stop: Kandivli Stn.(W)
+  start_area: Kandivli West
+  display_name: '276'
+  url: "/route/2760/"
+  slug: '276'
+  end_stop: Charkop Sect.No.8
+  created_at: '2013-11-25 21:19:23.880534'
+  updated_at: '2014-06-16 13:41:02.401962'
+routes_057:
+  id: '249'
+  code: '2804'
+  end_area: Kandivli West
+  start_stop: Kandivli Stn.(W)
+  start_area: Kandivli West
+  display_name: '280'
+  url: "/route/2804/"
+  slug: 280RING
+  end_stop: Kandivli Stn.(W)
+  created_at: '2013-11-25 21:19:23.890139'
+  updated_at: '2014-06-16 13:41:07.718687'
+routes_058:
+  id: '251'
+  code: '2820'
+  end_area: Kandivli East
+  start_stop: Kandivli Bus Stn.( E )
+  start_area: Kandivli East
+  display_name: '282'
+  url: "/route/2820/"
+  slug: '282'
+  end_stop: Damu Ngr.Extn.
+  created_at: '2013-11-25 21:19:23.895049'
+  updated_at: '2014-06-16 13:41:09.644688'
+routes_059:
+  id: '255'
+  code: '2860'
+  end_area: Charkop
+  start_stop: Kandivli Stn.(W)
+  start_area: Kandivli West
+  display_name: '286'
+  url: "/route/2860/"
+  slug: '286'
+  end_stop: Charkop Village
+  created_at: '2013-11-25 21:19:23.904713'
+  updated_at: '2014-06-16 13:41:12.91404'
+routes_060:
+  id: '258'
+  code: '2894'
+  end_area: Kandivli East
+  start_stop: Kandivli Bus Stn.( E )
+  start_area: Kandivli East
+  display_name: '289'
+  url: "/route/2894/"
+  slug: 289RING
+  end_stop: Kandivli Bus Stn.( E )
+  created_at: '2013-11-25 21:19:23.912029'
+  updated_at: '2014-06-16 13:41:15.331257'
+routes_061:
+  id: '261'
+  code: '2930'
+  end_area: Borivli East
+  start_stop: Borivli Stn(E)
+  start_area: Borivli East
+  display_name: '293'
+  url: "/route/2930/"
+  slug: '293'
+  end_stop: Jagerdev Compound
+  created_at: '2013-11-25 21:19:23.919569'
+  updated_at: '2014-06-16 13:41:19.174186'
+routes_062:
+  id: '263'
+  code: '2950'
+  end_area: Kandivli West
+  start_stop: Kandivli Stn.(W)
+  start_area: Kandivli West
+  display_name: '295'
+  url: "/route/2950/"
+  slug: '295'
+  end_stop: Dattani Gram(Kandivli-W)
+  created_at: '2013-11-25 21:19:23.924742'
+  updated_at: '2014-06-16 13:41:21.092819'
+routes_063:
+  id: '265'
+  code: '2970'
+  end_area: Dahisar East
+  start_stop: Borivli Stn(E)
+  start_area: Borivli East
+  display_name: '297'
+  url: "/route/2970/"
+  slug: '297'
+  end_stop: Kokanipada Extn.
+  created_at: '2013-11-25 21:19:23.929989'
+  updated_at: '2014-06-16 13:41:33.739315'
+routes_064:
+  id: '269'
+  code: '3010'
+  end_area: Dahisar East
+  start_stop: Borivli Stn(E)
+  start_area: Borivli East
+  display_name: '301'
+  url: "/route/3010/"
+  slug: '301'
+  end_stop: Hanuman Tekdi
+  created_at: '2013-11-25 21:19:23.940678'
+  updated_at: '2014-06-16 13:41:41.534762'
+routes_065:
+  id: '275'
+  code: '3070'
+  end_area: Andheri East
+  start_stop: Vaishali Ngr.
+  start_area: Mulund West
+  display_name: '307'
+  url: "/route/3070/"
+  slug: '307'
+  end_stop: Marol Depot
+  created_at: '2013-11-25 21:19:23.956374'
+  updated_at: '2014-06-16 13:42:05.160787'
+routes_066:
+  id: '279'
+  code: '3100'
+  end_area: Bandra East
+  start_stop: Kurla Stn (W)
+  start_area: Kurla West
+  display_name: '310'
+  url: "/route/3100/"
+  slug: '310'
+  end_stop: Bandra Rly.Terminus
+  created_at: '2013-11-25 21:19:23.967605'
+  updated_at: '2014-06-16 13:42:12.773353'
+routes_067:
+  id: '282'
+  code: '3130'
+  end_area: Santacruz East
+  start_stop: Kurla Stn (W)
+  start_area: Kurla West
+  display_name: '313'
+  url: "/route/3130/"
+  slug: '313'
+  end_stop: Santacruz Stn (E)
+  created_at: '2013-11-25 21:19:23.977129'
+  updated_at: '2014-06-16 13:42:22.434534'
+routes_068:
+  id: '286'
+  code: '3160'
+  end_area: Bandra East
+  start_stop: Bandra Rly.Terminus
+  start_area: Bandra East
+  display_name: '316'
+  url: "/route/3160/"
+  slug: '316'
+  end_stop: Bandra Cly.Bus Stn
+  created_at: '2013-11-25 21:19:23.991957'
+  updated_at: '2014-06-16 13:42:28.027566'
+routes_069:
+  id: '288'
+  code: '3180'
+  end_area: Santacruz East
+  start_stop: Kurla Stn (W)
+  start_area: Kurla West
+  display_name: '318'
+  url: "/route/3180/"
+  slug: '318'
+  end_stop: Santacruz Stn (E)
+  created_at: '2013-11-25 21:19:23.998545'
+  updated_at: '2014-06-16 13:42:34.745699'
+routes_070:
+  id: '293'
+  code: '3224'
+  end_area: Vidyavihar West
+  start_stop: Vidya Vihar Bus Stn(W)
+  start_area: Vidyavihar West
+  display_name: '322'
+  url: "/route/3224/"
+  slug: 322 RING
+  end_stop: Vidya Vihar Bus Stn(W)
+  created_at: '2013-11-25 21:19:24.011286'
+  updated_at: '2014-06-16 13:42:47.863046'
+routes_071:
+  id: '298'
+  code: '3270'
+  end_area: Dindoshi
+  start_stop: Goregaon Stn(E)
+  start_area: Goregaon East
+  display_name: '327'
+  url: "/route/3270/"
+  slug: '327'
+  end_stop: Shivshai Prakalp/Mantri Park
+  created_at: '2013-11-25 21:19:24.024811'
+  updated_at: '2014-06-16 13:43:01.483374'
+routes_072:
+  id: '304'
+  code: '3340'
+  end_area: Andheri East
+  start_stop: Ghatkopar Stn.(W)
+  start_area: Ghatkopar East
+  display_name: '334'
+  url: "/route/3340/"
+  slug: '334'
+  end_stop: Marol Depot
+  created_at: '2013-11-25 21:19:24.042034'
+  updated_at: '2014-06-16 13:43:10.251184'
+routes_073:
+  id: '307'
+  code: '3380'
+  end_area: Andheri East
+  start_stop: Agarkar Chk.
+  start_area: Andheri East
+  display_name: '338'
+  url: "/route/3380/"
+  slug: '338'
+  end_stop: Sahar Cargo Complex
+  created_at: '2013-11-25 21:19:24.053536'
+  updated_at: '2014-06-16 13:43:13.888202'
+routes_074:
+  id: '310'
+  code: '3402'
+  end_area: Andheri East
+  start_stop: Barve Ngr.
+  start_area: Ghatkopar East
+  display_name: '340'
+  url: "/route/3402/"
+  slug: 340EXTRA
+  end_stop: Agarkar Chk.
+  created_at: '2013-11-25 21:19:24.065536'
+  updated_at: '2014-06-16 13:43:23.270708'
+routes_075:
+  id: '316'
+  code: '3460'
+  end_area: Dindoshi
+  start_stop: Goregaon Stn(E)
+  start_area: Goregaon East
+  display_name: '346'
+  url: "/route/3460/"
+  slug: '346'
+  end_stop: Shivshai Prakalp/Mantri Park
+  created_at: '2013-11-25 21:19:24.092097'
+  updated_at: '2014-06-16 13:43:40.943505'
+routes_076:
+  id: '321'
+  code: '3500'
+  end_area: Shivaji Nagar
+  start_stop: Kurla Bus Stn (E)
+  start_area: Kurla East
+  display_name: '350'
+  url: "/route/3500/"
+  slug: '350'
+  end_stop: Shivaji Ngr.Depot
+  created_at: '2013-11-25 21:19:24.110968'
+  updated_at: '2014-06-16 13:44:02.270853'
+routes_077:
+  id: '323'
+  code: '3520'
+  end_area: Sion East
+  start_stop: Trombay
+  start_area: Trombay
+  display_name: '352'
+  url: "/route/3520/"
+  slug: '352'
+  end_stop: Rani Laxmibai Chk.
+  created_at: '2013-11-25 21:19:24.119709'
+  updated_at: '2014-06-16 13:44:11.985895'
+routes_078:
+  id: '327'
+  code: '3561'
+  end_area: Santacruz West
+  start_stop: Tata Power Centre(Chembur)
+  start_area: Chembur East
+  display_name: 356 Ltd
+  url: "/route/3561/"
+  slug: 356LTD
+  end_stop: Santacruz Depot
+  created_at: '2013-11-25 21:19:24.133828'
+  updated_at: '2014-06-16 13:44:31.405816'
+routes_079:
+  id: '331'
+  code: '3610'
+  end_area: Kurla East
+  start_stop: Mahul Village
+  start_area: Mahul
+  display_name: '361'
+  url: "/route/3610/"
+  slug: '361'
+  end_stop: Kurla Bus Stn (E)
+  created_at: '2013-11-25 21:19:24.143921'
+  updated_at: '2014-06-16 13:44:38.531006'
+routes_080:
+  id: '335'
+  code: '3650'
+  end_area: Andheri East
+  start_stop: Kurla Stn (W)
+  start_area: Kurla West
+  display_name: '365'
+  url: "/route/3650/"
+  slug: '365'
+  end_stop: Sahar Cargo Complex
+  created_at: '2013-11-25 21:19:24.154546'
+  updated_at: '2014-06-16 13:44:48.737934'
+routes_081:
+  id: '339'
+  code: '3690'
+  end_area: Chembur East
+  start_stop: Kurla Bus Stn (E)
+  start_area: Kurla East
+  display_name: '369'
+  url: "/route/3690/"
+  slug: '369'
+  end_stop: Vashinaka M.M.R.D.A.Cly.
+  created_at: '2013-11-25 21:19:24.165732'
+  updated_at: '2014-06-16 13:44:54.462338'
+routes_082:
+  id: '342'
+  code: '3720'
+  end_area: Shivaji Nagar
+  start_stop: Shivaji Ngr.Terminus
+  start_area: Shivaji Nagar
+  display_name: '372'
+  url: "/route/3720/"
+  slug: '372'
+  end_stop: Shivaji Ngr.Depot
+  created_at: '2013-11-25 21:19:24.174381'
+  updated_at: '2014-06-16 13:45:06.919488'
+routes_083:
+  id: '346'
+  code: '3751'
+  end_area: Bandra West
+  start_stop: Shivaji Ngr.Depot
+  start_area: Shivaji Nagar
+  display_name: 375 Ltd
+  url: "/route/3751/"
+  slug: 375LTD
+  end_stop: Bandra Bus Stn(W)
+  created_at: '2013-11-25 21:19:24.186268'
+  updated_at: '2014-06-16 13:45:20.881483'
+routes_084:
+  id: '349'
+  code: '3780'
+  end_area: Mankhurd
+  start_stop: Trombay
+  start_area: Trombay
+  display_name: '378'
+  url: "/route/3780/"
+  slug: '378'
+  end_stop: Mankhurd Stn.(South)
+  created_at: '2013-11-25 21:19:24.195238'
+  updated_at: '2014-06-16 13:45:24.096679'
+routes_085:
+  id: '354'
+  code: '3830'
+  end_area: Shivaji Nagar
+  start_stop: Gadkari Quarry
+  start_area: Chembur West
+  display_name: '383'
+  url: "/route/3830/"
+  slug: '383'
+  end_stop: Shivaji Ngr.Depot
+  created_at: '2013-11-25 21:19:24.210508'
+  updated_at: '2014-06-16 13:45:35.250037'
+routes_086:
+  id: '416'
+  code: '4510'
+  end_area: Goregaon East
+  start_stop: Goregaon Stn(E)
+  start_area: Goregaon East
+  display_name: '451'
+  url: "/route/4510/"
+  slug: '451'
+  end_stop: Adarsh Ngr.
+  created_at: '2013-11-25 21:19:24.464757'
+  updated_at: '2014-06-16 13:45:53.148976'
+routes_087:
+  id: '362'
+  code: '3894'
+  end_area: Ghatkopar East
+  start_stop: Ghatkopar Stn.(W)
+  start_area: Ghatkopar East
+  display_name: '389'
+  url: "/route/3894/"
+  slug: 389RING
+  end_stop: Ghatkopar Stn.(W)
+  created_at: '2013-11-25 21:19:24.285815'
+  updated_at: '2014-06-16 13:46:05.365039'
+routes_088:
+  id: '366'
+  code: '3930'
+  end_area: Tilak Nagar
+  start_stop: Ghatkopar Bus Stn./Gkd
+  start_area: Ghatkopar East
+  display_name: '393'
+  url: "/route/3930/"
+  slug: '393'
+  end_stop: Aamchi Shala
+  created_at: '2013-11-25 21:19:24.297786'
+  updated_at: '2014-06-16 13:46:15.127583'
+routes_089:
+  id: '367'
+  code: '3940'
+  end_area: Vikhroli East
+  start_stop: Vikhroli Bus Stn.- E
+  start_area: Vikhroli East
+  display_name: '394'
+  url: "/route/3940/"
+  slug: '394'
+  end_stop: Kannamwar Ngr.No 2
+  created_at: '2013-11-25 21:19:24.301003'
+  updated_at: '2014-06-16 13:46:15.460172'
+routes_090:
+  id: '370'
+  code: '3970'
+  end_area: Vikhroli East
+  start_stop: Vikhroli Bus Stn.- E
+  start_area: Vikhroli East
+  display_name: '397'
+  url: "/route/3970/"
+  slug: '397'
+  end_stop: Kannamwar Ngr.Bldg.No.124
+  created_at: '2013-11-25 21:19:24.310263'
+  updated_at: '2014-06-16 13:46:20.157569'
+routes_091:
+  id: '373'
+  code: '4000'
+  end_area: Borivli East
+  start_stop: Samata Ngr.Bus Stn.(Kandivli-E)
+  start_area: Kandivli East
+  display_name: '400'
+  url: "/route/4000/"
+  slug: '400'
+  end_stop: Borivli Stn(E)
+  created_at: '2013-11-25 21:19:24.319647'
+  updated_at: '2014-06-16 13:46:27.39635'
+routes_092:
+  id: '376'
+  code: '4040'
+  end_area: Shivaji Nagar
+  start_stop: Ghatkopar Stn.(E)-1
+  start_area: Ghatkopar East
+  display_name: '404'
+  url: "/route/4040/"
+  slug: '404'
+  end_stop: Shivaji Ngr.Depot
+  created_at: '2013-11-25 21:19:24.329776'
+  updated_at: '2014-06-16 13:46:30.873858'
+routes_093:
+  id: '378'
+  code: '4060'
+  end_area: Ghatkopar East
+  start_stop: Ghatkopar Stn.(E)-1
+  start_area: Ghatkopar East
+  display_name: '406'
+  url: "/route/4060/"
+  slug: '406'
+  end_stop: Railway Police Cly.(Ghatkopar
+  created_at: '2013-11-25 21:19:24.33616'
+  updated_at: '2014-06-16 13:46:37.179427'
+routes_094:
+  id: '384'
+  code: '4120'
+  end_area: Mulund West
+  start_stop: Mulund Rly.Stn.(W)
+  start_area: Mulund West
+  display_name: '412'
+  url: "/route/4120/"
+  slug: '412'
+  end_stop: Ghati Pada
+  created_at: '2013-11-25 21:19:24.356578'
+  updated_at: '2014-06-16 13:46:57.803619'
+routes_095:
+  id: '385'
+  code: '4130'
+  end_area: Santacruz East
+  start_stop: Kunchi Kurve Ngr.
+  start_area: Kurla West
+  display_name: '413'
+  url: "/route/4130/"
+  slug: '413'
+  end_stop: Santacruz Stn (E)
+  created_at: '2013-11-25 21:19:24.359624'
+  updated_at: '2014-06-16 13:47:03.36987'
+routes_096:
+  id: '387'
+  code: '4150'
+  end_area: Jogeshwari East
+  start_stop: Agarkar Chk.
+  start_area: Andheri East
+  display_name: '415'
+  url: "/route/4150/"
+  slug: '415'
+  end_stop: Majas Depot/Shyam Ngr.
+  created_at: '2013-11-25 21:19:24.365946'
+  updated_at: '2014-06-16 13:47:11.643738'
+routes_097:
+  id: '389'
+  code: '4170'
+  end_area: Vikhroli West
+  start_stop: Vikhroli Park Site
+  start_area: Vikhroli West
+  display_name: '417'
+  url: "/route/4170/"
+  slug: '417'
+  end_stop: Surya Ngr.
+  created_at: '2013-11-25 21:19:24.373195'
+  updated_at: '2014-06-16 13:47:12.954498'
+routes_098:
+  id: '396'
+  code: '4250'
+  end_area: Andheri West
+  start_stop: Mangatram Petrolpump
+  start_area: Bhandup West
+  display_name: '425'
+  url: "/route/4250/"
+  slug: '425'
+  end_stop: Seven Bungalows Bus Stn.
+  created_at: '2013-11-25 21:19:24.396817'
+  updated_at: '2014-06-16 13:47:30.359645'
+routes_099:
+  id: '400'
+  code: '4290'
+  end_area: Ghatkopar East
+  start_stop: Ghatkopar Stn.(W)
+  start_area: Ghatkopar East
+  display_name: '429'
+  url: "/route/4290/"
+  slug: '429'
+  end_stop: Milind Ngr.
+  created_at: '2013-11-25 21:19:24.410507'
+  updated_at: '2014-06-16 13:47:39.29184'
+routes_100:
+  id: '402'
+  code: '4310'
+  end_area: Chembur East
+  start_stop: Kurla Bus Stn (E)
+  start_area: Kurla East
+  display_name: '431'
+  url: "/route/4310/"
+  slug: '431'
+  end_stop: Tata Power Centre(Chembur)
+  created_at: '2013-11-25 21:19:24.417218'
+  updated_at: '2014-06-16 13:47:41.779613'
+routes_101:
+  id: '405'
+  code: '4354'
+  end_area: Andheri East
+  start_stop: Agarkar Chk.
+  start_area: Andheri East
+  display_name: '435'
+  url: "/route/4354/"
+  slug: 435RING
+  end_stop: Agarkar Chk.
+  created_at: '2013-11-25 21:19:24.426745'
+  updated_at: '2014-06-16 13:47:44.945238'
+routes_102:
+  id: '409'
+  code: '4410'
+  end_area: Jogeshwari East
+  start_stop: Agarkar Chk.
+  start_area: Andheri East
+  display_name: '441'
+  url: "/route/4410/"
+  slug: '441'
+  end_stop: Majas Depot/Shyam Ngr.
+  created_at: '2013-11-25 21:19:24.440552'
+  updated_at: '2014-06-16 13:47:57.772719'
+routes_103:
+  id: '413'
+  code: '4460'
+  end_area: Marol
+  start_stop: Kurla Stn (W)
+  start_area: Kurla West
+  display_name: '446'
+  url: "/route/4460/"
+  slug: '446'
+  end_stop: Bamandaya Pada
+  created_at: '2013-11-25 21:19:24.454305'
+  updated_at: '2014-06-16 13:48:13.839728'
+routes_104:
+  id: '439'
+  code: '4921'
+  end_area: Thane West
+  start_stop: Seepz Bus Stn.
+  start_area: Andheri East
+  display_name: 492 Ltd
+  url: "/route/4921/"
+  slug: 492LTD
+  end_stop: Waghbilgaon
+  created_at: '2013-11-25 21:19:24.53583'
+  updated_at: '2014-06-16 13:51:37.054163'
+routes_105:
+  id: '442'
+  code: '4951'
+  end_area: Thane East
+  start_stop: Gawanpada Fire Brigade(Mulund-E)
+  start_area: Mulund East
+  display_name: 495 Ltd
+  url: "/route/4951/"
+  slug: 495 LTD
+  end_stop: Thane Stn.(E)
+  created_at: '2013-11-25 21:19:24.545368'
+  updated_at: '2014-06-16 13:52:01.455241'
+routes_106:
+  id: '447'
+  code: '5001'
+  end_area: Airoli
+  start_stop: Vikhroli Depot
+  start_area: Vikhroli West
+  display_name: 500 Ltd
+  url: "/route/5001/"
+  slug: 500LTD
+  end_stop: Airoli Bus Stn.
+  created_at: '2013-11-25 21:19:24.561757'
+  updated_at: '2014-06-16 13:52:47.642946'
+routes_107:
+  id: '454'
+  code: '5057'
+  end_area: Belapur
+  start_stop: Santacruz Depot
+  start_area: Santacruz West
+  display_name: AS-505
+  url: "/route/5057/"
+  slug: AS-505
+  end_stop: C.B.D. Belapur Bus Stn.
+  created_at: '2013-11-25 21:19:24.585817'
+  updated_at: '2014-06-16 13:53:28.593817'
+routes_108:
+  id: '461'
+  code: '5111'
+  end_area: Nerul East
+  start_stop: Maharana Pratap Chk.(Mulund)
+  start_area: Mulund West
+  display_name: 511 Ltd
+  url: "/route/5111/"
+  slug: 511LTD
+  end_stop: Nerul Bus Stn.
+  created_at: '2013-11-25 21:19:24.612147'
+  updated_at: '2014-06-16 13:54:11.100986'
+routes_109:
+  id: '468'
+  code: '5181'
+  end_area: Ghansoli
+  start_stop: Shivaji Ngr.Depot
+  start_area: Shivaji Nagar
+  display_name: 518 Ltd
+  url: "/route/5181/"
+  slug: 518LTD
+  end_stop: Ghansoli Village
+  created_at: '2013-11-25 21:19:24.637469'
+  updated_at: '2014-06-16 13:54:33.602698'
+routes_110:
+  id: '425'
+  code: '4617'
+  end_area: Borivli West
+  start_stop: Mulund-W Check Naka Bus Stn.
+  start_area: Mulund West
+  display_name: AS-461
+  url: "/route/4617/"
+  slug: AS-461
+  end_stop: Borivli Stn.(W) Bus Stn.
+  created_at: '2013-11-25 21:19:24.491575'
+  updated_at: '2014-06-16 13:49:00.180955'
+routes_111:
+  id: '431'
+  code: '4730'
+  end_area: Mahul
+  start_stop: Bandra Bus Stn(W)
+  start_area: Bandra West
+  display_name: '473'
+  url: "/route/4730/"
+  slug: '473'
+  end_stop: Mahul Village
+  created_at: '2013-11-25 21:19:24.510163'
+  updated_at: '2014-06-16 13:50:04.151331'
+routes_112:
+  id: '432'
+  code: '4770'
+  end_area: Borivli East
+  start_stop: Borivli Rly.Compound Rd(E)
+  start_area: Borivli East
+  display_name: '477'
+  url: "/route/4770/"
+  slug: '477'
+  end_stop: Rushivan
+  created_at: '2013-11-25 21:19:24.513281'
+  updated_at: '2014-06-16 13:50:19.735225'
+routes_113:
+  id: '481'
+  code: '5451'
+  end_area: Airoli
+  start_stop: Agarkar Chk.
+  start_area: Andheri East
+  display_name: 545 Ltd
+  url: "/route/5451/"
+  slug: 545LTD
+  end_stop: Airoli Bus Stn.
+  created_at: '2013-11-25 21:19:24.680378'
+  updated_at: '2014-06-16 13:55:22.929966'
+routes_114:
+  id: '485'
+  code: '6020'
+  end_area: Hiranandani
+  start_stop: Kanjur Marg Stn.(W)
+  start_area: Kanjurmarg West
+  display_name: '602'
+  url: "/route/6020/"
+  slug: '602'
+  end_stop: Hiranandani Powai Bus Stn.
+  created_at: '2013-11-25 21:19:24.693494'
+  updated_at: '2014-06-16 13:55:33.50496'
+routes_115:
+  id: '487'
+  code: '6040'
+  end_area: Bhandup West
+  start_stop: Kanjur Marg Stn.(W)
+  start_area: Kanjurmarg West
+  display_name: '604'
+  url: "/route/6040/"
+  slug: '604'
+  end_stop: Bhandup Stn.(W)
+  created_at: '2013-11-25 21:19:24.700524'
+  updated_at: '2014-06-16 13:55:36.974709'
+routes_116:
+  id: '490'
+  code: '6074'
+  end_area: Bhandup West
+  start_stop: Bhandup Stn.(W)
+  start_area: Bhandup West
+  display_name: '607'
+  url: "/route/6074/"
+  slug: 607RING
+  end_stop: Bhandup Stn.(W)
+  created_at: '2013-11-25 21:19:24.710891'
+  updated_at: '2014-06-16 13:55:39.013964'
+routes_117:
+  id: '493'
+  code: '6100'
+  end_area: Kurla East
+  start_stop: Kurla Bus Stn (E)
+  start_area: Kurla East
+  display_name: '610'
+  url: "/route/6100/"
+  slug: '610'
+  end_stop: Buntara Bhavan
+  created_at: '2013-11-25 21:19:24.72142'
+  updated_at: '2014-06-16 13:55:40.839044'
+routes_118:
+  id: '495'
+  code: '6120'
+  end_area: Bhandup West
+  start_stop: Bhandup Stn.(W)
+  start_area: Bhandup West
+  display_name: '612'
+  url: "/route/6120/"
+  slug: '612'
+  end_stop: Hanuman Ngr.
+  created_at: '2013-11-25 21:19:24.728784'
+  updated_at: '2014-06-16 13:55:41.970223'
+routes_119:
+  id: '497'
+  code: '6184'
+  end_area: Santacruz East
+  start_stop: Santacruz Stn (E)
+  start_area: Santacruz East
+  display_name: '618'
+  url: "/route/6184/"
+  slug: 618RING
+  end_stop: Santacruz Stn (E)
+  created_at: '2013-11-25 21:19:24.736746'
+  updated_at: '2014-06-16 13:55:43.625954'
+routes_120:
+  id: '500'
+  code: '6240'
+  end_area: Malad East
+  start_stop: Malad Stn-E(Poddar Park)
+  start_area: Malad East
+  display_name: '624'
+  url: "/route/6240/"
+  slug: '624'
+  end_stop: Anand Nagar (Appapada Malad-E)
+  created_at: '2013-11-25 21:19:24.748108'
+  updated_at: '2014-06-16 13:55:51.304572'
+routes_121:
+  id: '503'
+  code: '6284'
+  end_area: Borivli East
+  start_stop: Borivli Stn(E)
+  start_area: Borivli East
+  display_name: '628'
+  url: "/route/6284/"
+  slug: 628 RING
+  end_stop: Borivli Stn(E)
+  created_at: '2013-11-25 21:19:24.758249'
+  updated_at: '2014-06-16 13:55:58.504725'
+routes_122:
+  id: '506'
+  code: '6310'
+  end_area: Kurla West
+  start_stop: Kurla Stn (W)
+  start_area: Kurla West
+  display_name: '631'
+  url: "/route/6310/"
+  slug: '631'
+  end_stop: Masrani Est.
+  created_at: '2013-11-25 21:19:24.769071'
+  updated_at: '2014-06-16 13:56:00.229621'
+routes_123:
+  id: '507'
+  code: '6320'
+  end_area: Kamani
+  start_stop: Kurla Stn (W)
+  start_area: Kurla West
+  display_name: '632'
+  url: "/route/6320/"
+  slug: '6320'
+  end_stop: Sunder Baug (Kamani)
+  created_at: '2013-11-25 21:19:24.77266'
+  updated_at: '2014-06-16 13:56:06.106966'
+routes_124:
+  id: '513'
+  code: '7021'
+  end_area: Bhayander East
+  start_stop: Magathane Depot
+  start_area: Borivli East
+  display_name: 702 Ltd
+  url: "/route/7021/"
+  slug: 702LTD
+  end_stop: Ghodbunder Village
+  created_at: '2013-11-25 21:19:24.793289'
+  updated_at: '2014-06-16 13:56:21.176836'
+routes_125:
+  id: '515'
+  code: '7051'
+  end_area: Kashi Village
+  start_stop: Jay Maharashtrangr.
+  start_area: Borivli East
+  display_name: 705 Ltd
+  url: "/route/7051/"
+  slug: 705LTD
+  end_stop: Western Park
+  created_at: '2013-11-25 21:19:24.800877'
+  updated_at: '2014-06-16 13:56:25.757961'
+routes_126:
+  id: '521'
+  code: '7101'
+  end_area: Bhayander West
+  start_stop: Jay Maharashtrangr.
+  start_area: Borivli East
+  display_name: 710 Ltd
+  url: "/route/7101/"
+  slug: 710LTD
+  end_stop: Bhayander Rly.Stn.(W)
+  created_at: '2013-11-25 21:19:24.864714'
+  updated_at: '2014-06-16 13:56:42.894827'
+routes_127:
+  id: '524'
+  code: '8011'
+  end_area: Mantralaya
+  start_stop: Chh. Shivaji Terminus(Bhatia)
+  start_area: Fort
+  display_name: 801 Ltd
+  url: "/route/8011/"
+  slug: SPL-1
+  end_stop: N.C.P.A.
+  created_at: '2013-11-25 21:19:24.87406'
+  updated_at: '2014-06-16 13:56:47.754173'
+routes_128:
+  id: '525'
+  code: '8021'
+  end_area: Backbay
+  start_stop: Chh. Shivaji Terminus(Bhatia)
+  start_area: Fort
+  display_name: 802 Ltd
+  url: "/route/8021/"
+  slug: SPL-2
+  end_stop: World Trade Centre
+  created_at: '2013-11-25 21:19:24.877475'
+  updated_at: '2014-06-16 13:56:48.451088'
+routes_129:
+  id: '527'
+  code: '8041'
+  end_area: Mantralaya
+  start_stop: Chh. Shivaji Terminus(Bhatia)
+  start_area: Fort
+  display_name: 804 Ltd
+  url: "/route/8041/"
+  slug: SPL-12
+  end_stop: Free Press House
+  created_at: '2013-11-25 21:19:24.883873'
+  updated_at: '2014-06-16 13:56:49.893959'
+routes_130:
+  id: '529'
+  code: '8091'
+  end_area: Churchgate
+  start_stop: Ahilyabai Holkar Chk.
+  start_area: Churchgate
+  display_name: 809 Ltd
+  url: "/route/8091/"
+  slug: SPL-9
+  end_stop: Ahilyabai Holkar Chk.
+  created_at: '2013-11-25 21:19:24.89008'
+  updated_at: '2014-06-16 13:56:50.94246'
+routes_131:
+  id: '1'
+  code: '0010'
+  end_area: Bandra West
+  start_stop: R.C.Church
+  start_area: Colaba
+  display_name: '1'
+  url: "/route/0010/"
+  slug: '1'
+  end_stop: Bnd Reclamation Bus Stn.
+  created_at: '2013-11-25 21:19:23.058245'
+  updated_at: '2014-06-16 13:25:31.092165'
+routes_132:
+  id: '2'
+  code: '0011'
+  end_area: Santacruz West
+  start_stop: Colaba Bus Stn.
+  start_area: Colaba
+  display_name: 1 Ltd
+  url: "/route/0011/"
+  slug: 1LTD
+  end_stop: Santacruz Depot
+  created_at: '2013-11-25 21:19:23.074193'
+  updated_at: '2014-06-16 13:26:37.967894'
+routes_133:
+  id: '3'
+  code: '0017'
+  end_area: Thane West
+  start_stop: Backbay Depot
+  start_area: Backbay
+  display_name: AS-1
+  url: "/route/0017/"
+  slug: AS-1
+  end_stop: Cadbury Jn.(Thane)
+  created_at: '2013-11-25 21:19:23.077227'
+  updated_at: '2014-06-16 13:26:44.970165'
+routes_134:
+  id: '58'
+  code: '0446'
+  end_area: Thane West
+  start_stop: Marol Depot
+  start_area: Andheri East
+  display_name: C-44 Exp
+  url: "/route/0446/"
+  slug: C-44
+  end_stop: Pawar Ngr.Bus Stn.(Thane)
+  created_at: '2013-11-25 21:19:23.234356'
+  updated_at: '2014-06-16 13:30:00.65189'
+routes_135:
+  id: '4'
+  code: '0021'
+  end_area: Andheri East
+  start_stop: R.C.Church
+  start_area: Colaba
+  display_name: 2 Ltd
+  url: "/route/0021/"
+  slug: 2LTD
+  end_stop: Marol Depot
+  created_at: '2013-11-25 21:19:23.08439'
+  updated_at: '2014-06-16 13:26:48.527392'
+routes_136:
+  id: '5'
+  code: '0027'
+  end_area: Dahisar East
+  start_stop: Backbay Depot
+  start_area: Backbay
+  display_name: AS-2
+  url: "/route/0027/"
+  slug: AS-2
+  end_stop: Dahisar Bus Stn.
+  created_at: '2013-11-25 21:19:23.088835'
+  updated_at: '2014-06-16 13:26:51.687822'
+routes_137:
+  id: '6'
+  code: '0030'
+  end_area: Byculla East
+  start_stop: Navy Ngr.
+  start_area: Colaba
+  display_name: '3'
+  url: "/route/0030/"
+  slug: '3'
+  end_stop: Jijamata Udn.
+  created_at: '2013-11-25 21:19:23.092945'
+  updated_at: '2014-06-16 13:26:53.982033'
+routes_138:
+  id: '148'
+  code: '1560'
+  end_area: Byculla West
+  start_stop: Simla House
+  start_area: Nepean Sea Road
+  display_name: '156'
+  url: "/route/1560/"
+  slug: '156'
+  end_stop: Byculla Stn.(W)
+  created_at: '2013-11-25 21:19:23.538094'
+  updated_at: '2014-06-16 13:36:36.291074'
+routes_139:
+  id: '533'
+  code: '8127'
+  end_area: Fort
+  start_stop: Chh. Shivaji Terminus
+  start_area: Fort
+  display_name: AS-812
+  url: "/route/8127/"
+  slug: FORT FERI-AS
+  end_stop: Chh. Shivaji Terminus
+  created_at: '2013-11-25 21:19:24.902355'
+  updated_at: '2014-06-16 13:56:53.841831'
+routes_140:
+  id: '535'
+  code: '8161'
+  end_area: Borivli East
+  start_stop: Borivli Stn(E)
+  start_area: Borivli East
+  display_name: 816 Ltd
+  url: "/route/8161/"
+  slug: MAHASHIV RASTRI(CC)
+  end_stop: Kanheri Caves
+  created_at: '2013-11-25 21:19:24.908546'
+  updated_at: '2014-06-16 13:56:55.030063'
+routes_141:
+  id: '538'
+  code: '9020'
+  end_area: Deonar
+  start_stop: Shivaji Ngr.Depot
+  start_area: Shivaji Nagar
+  display_name: '902'
+  url: "/route/9020/"
+  slug: WORKMAN SPL-23
+  end_stop: Deonar Depot
+  created_at: '2013-11-25 21:19:24.918048'
+  updated_at: '2014-06-16 13:56:57.882685'
+routes_142:
+  id: '8'
+  code: '0037'
+  end_area: Thane West
+  start_stop: Nehru Planetarium
+  start_area: Worli
+  display_name: AS-3
+  url: "/route/0037/"
+  slug: AS-3
+  end_stop: Cadbury Jn.(Thane)
+  created_at: '2013-11-25 21:19:23.099782'
+  updated_at: '2014-06-16 13:27:03.476827'
+routes_143:
+  id: '9'
+  code: '0041'
+  end_area: Oshiwara
+  start_stop: Hutatma Chk./Mumbai University
+  start_area: Fort
+  display_name: 4 Ltd
+  url: "/route/0041/"
+  slug: 4LTD
+  end_stop: Oshiwara Depot
+  created_at: '2013-11-25 21:19:23.103577'
+  updated_at: '2014-06-16 13:27:06.31038'
+routes_144:
+  id: '10'
+  code: '0043'
+  end_area: Versova
+  start_stop: Hutatma Chk./Mumbai University
+  start_area: Fort
+  display_name: 4 Ltd
+  url: "/route/0043/"
+  slug: 4LTD-EXTRA
+  end_stop: Vesava-Yari Rd.Bus Stn.
+  created_at: '2013-11-25 21:19:23.107569'
+  updated_at: '2014-06-16 13:27:09.112617'
+routes_145:
+  id: '11'
+  code: '0047'
+  end_area: Oshiwara
+  start_stop: Backbay Depot
+  start_area: Backbay
+  display_name: AS-4
+  url: "/route/0047/"
+  slug: AS-4
+  end_stop: Oshiwara Depot
+  created_at: '2013-11-25 21:19:23.111596'
+  updated_at: '2014-06-16 13:27:11.7095'
+routes_146:
+  id: '12'
+  code: '0050'
+  end_area: Kurla East
+  start_stop: Mantralaya
+  start_area: Mantralaya
+  display_name: '5'
+  url: "/route/0050/"
+  slug: '5'
+  end_stop: Kurla Bus Stn (E)
+  created_at: '2013-11-25 21:19:23.115296'
+  updated_at: '2014-06-16 13:27:14.562794'
+routes_147:
+  id: '14'
+  code: '0061'
+  end_area: Chembur East
+  start_stop: Colaba Depot
+  start_area: Colaba
+  display_name: 6 Ltd
+  url: "/route/0061/"
+  slug: 6LTD
+  end_stop: Tata Power Centre(Chembur)
+  created_at: '2013-11-25 21:19:23.120902'
+  updated_at: '2014-06-16 13:27:19.478603'
+routes_148:
+  id: '15'
+  code: '0063'
+  end_area: Mahul
+  start_stop: Colaba Depot
+  start_area: Colaba
+  display_name: 6 Ltd
+  url: "/route/0063/"
+  slug: 6L EXTRA
+  end_stop: Mahul Village
+  created_at: '2013-11-25 21:19:23.123562'
+  updated_at: '2014-06-16 13:27:22.408539'
+routes_149:
+  id: '16'
+  code: '0067'
+  end_area: Oshiwara
+  start_stop: Colaba Depot
+  start_area: Colaba
+  display_name: AS-6
+  url: "/route/0067/"
+  slug: AS-6
+  end_stop: Oshiwara Depot
+  created_at: '2013-11-25 21:19:23.126234'
+  updated_at: '2014-06-16 13:27:25.089825'
+routes_150:
+  id: '65'
+  code: '0500'
+  end_area: Worli
+  start_stop: Ferry Wharf
+  start_area: Mazgaon
+  display_name: '50'
+  url: "/route/0500/"
+  slug: '50'
+  end_stop: Worli Depot
+  created_at: '2013-11-25 21:19:23.252955'
+  updated_at: '2014-06-16 13:31:24.071634'
+routes_151:
+  id: '17'
+  code: '0071'
+  end_area: Vikhroli West
+  start_stop: Dr.Shyamaprasad Mukherji Chk.
+  start_area: Colaba
+  display_name: 7 Ltd
+  url: "/route/0071/"
+  slug: 7LTD
+  end_stop: Vikhroli Park Site
+  created_at: '2013-11-25 21:19:23.128849'
+  updated_at: '2014-06-16 13:27:28.421658'
+routes_152:
+  id: '18'
+  code: 0081
+  end_area: Shivaji Nagar
+  start_stop: Mantralaya
+  start_area: Mantralaya
+  display_name: 8 Ltd
+  url: "/route/0081/"
+  slug: 8LTD
+  end_stop: Shivaji Ngr.Terminus
+  created_at: '2013-11-25 21:19:23.131475'
+  updated_at: '2014-06-16 13:27:36.483033'
+routes_153:
+  id: '19'
+  code: 0090
+  end_area: Wadala East
+  start_stop: Colaba Bus Stn.
+  start_area: Colaba
+  display_name: '9'
+  url: "/route/0090/"
+  slug: '9'
+  end_stop: Nadkarni Park
+  created_at: '2013-11-25 21:19:23.134098'
+  updated_at: '2014-06-16 13:27:39.63249'
+routes_154:
+  id: '21'
+  code: '0101'
+  end_area: Ghatkopar East
+  start_stop: Hutatma Chk. ( O.C.S.)
+  start_area: Fort
+  display_name: 10 Ltd
+  url: "/route/0101/"
+  slug: 10LTD
+  end_stop: Ghatkopar Depot/Casurina
+  created_at: '2013-11-25 21:19:23.139395'
+  updated_at: '2014-06-16 13:27:45.432766'
+routes_155:
+  id: '22'
+  code: '0111'
+  end_area: Bandra East
+  start_stop: Navy Ngr.
+  start_area: Colaba
+  display_name: 11 Ltd
+  url: "/route/0111/"
+  slug: 11LTD
+  end_stop: Bandra Cly.Bus Stn
+  created_at: '2013-11-25 21:19:23.142082'
+  updated_at: '2014-06-16 13:27:48.539205'
+routes_156:
+  id: '23'
+  code: '0116'
+  end_area: Sion East
+  start_stop: Navy Ngr.
+  start_area: Colaba
+  display_name: C-11 Exp
+  url: "/route/0116/"
+  slug: SPASTIC SOCIETY
+  end_stop: Rani Laxmibai Chk.
+  created_at: '2013-11-25 21:19:23.144713'
+  updated_at: '2014-06-16 13:27:50.490707'
+routes_157:
+  id: '24'
+  code: '0126'
+  end_area: Dahisar East
+  start_stop: Santacruz Depot
+  start_area: Santacruz West
+  display_name: C-12 Exp
+  url: "/route/0126/"
+  slug: C-12
+  end_stop: Dahisar Bus Stn.
+  created_at: '2013-11-25 21:19:23.147229'
+  updated_at: '2014-06-16 13:27:52.294143'
+routes_158:
+  id: '25'
+  code: 0138
+  end_area: Thane West
+  start_stop: Backbay Depot
+  start_area: Backbay
+  display_name: A-13 Exp
+  url: "/route/0138/"
+  slug: A-13EXP
+  end_stop: Hiranandani Est.
+  created_at: '2013-11-25 21:19:23.149806'
+  updated_at: '2014-06-16 13:27:55.675923'
+routes_159:
+  id: '129'
+  code: '1114'
+  end_area: Fort
+  start_stop: Chh. Shivaji Terminus(Bhatia)
+  start_area: Fort
+  display_name: '111'
+  url: "/route/1114/"
+  slug: 111RING
+  end_stop: Chh. Shivaji Terminus(Bhatia)
+  created_at: '2013-11-25 21:19:23.481121'
+  updated_at: '2014-06-16 13:35:52.183856'
+routes_160:
+  id: '27'
+  code: '0140'
+  end_area: Pratiksha Nagar
+  start_stop: Dr.Shyamaprasad Mukherji Chk.
+  start_area: Colaba
+  display_name: '14'
+  url: "/route/0140/"
+  slug: '14'
+  end_stop: Pratiksha Ngr.Depot
+  created_at: '2013-11-25 21:19:23.155343'
+  updated_at: '2014-06-16 13:28:00.911268'
+routes_161:
+  id: '28'
+  code: '0150'
+  end_area: Pratiksha Nagar
+  start_stop: Mantralaya
+  start_area: Mantralaya
+  display_name: '15'
+  url: "/route/0150/"
+  slug: '15'
+  end_stop: Pratiksha Ngr.Depot
+  created_at: '2013-11-25 21:19:23.157915'
+  updated_at: '2014-06-16 13:28:03.568587'
+routes_162:
+  id: '29'
+  code: '0161'
+  end_area: Chembur East
+  start_stop: Wadala Depot
+  start_area: Wadala West
+  display_name: 16 Ltd
+  url: "/route/0161/"
+  slug: 16-LTD
+  end_stop: Vashinaka M.M.R.D.A.Cly.
+  created_at: '2013-11-25 21:19:23.160477'
+  updated_at: '2014-06-16 13:28:10.233287'
+routes_163:
+  id: '233'
+  code: '2622'
+  end_area: Goregaon West
+  start_stop: Goregaon Bus Stn(W)
+  start_area: Goregaon West
+  display_name: '262'
+  url: "/route/2622/"
+  slug: 262EXTRA
+  end_stop: Goregaon Bus Stn(W)
+  created_at: '2013-11-25 21:19:23.847341'
+  updated_at: '2014-06-16 13:40:33.630989'
+routes_164:
+  id: '30'
+  code: '0171'
+  end_area: Vidyavihar West
+  start_stop: Backbay Depot
+  start_area: Backbay
+  display_name: 17 Ltd
+  url: "/route/0171/"
+  slug: 17LTD
+  end_stop: Vidya Vihar Bus Stn(W)
+  created_at: '2013-11-25 21:19:23.163301'
+  updated_at: '2014-06-16 13:28:18.522499'
+routes_165:
+  id: '31'
+  code: '0172'
+  end_area: Vidyavihar West
+  start_stop: Backbay Depot
+  start_area: Backbay
+  display_name: '17'
+  url: "/route/0172/"
+  slug: 17 LTD.EXTRA
+  end_stop: Vidya Vihar Bus Stn(W)
+  created_at: '2013-11-25 21:19:23.165841'
+  updated_at: '2014-06-16 13:28:21.710863'
+routes_166:
+  id: '32'
+  code: 0191
+  end_area: Shivaji Nagar
+  start_stop: Mantralaya
+  start_area: Mantralaya
+  display_name: 19 Ltd
+  url: "/route/0191/"
+  slug: 19LTD
+  end_stop: Shivaji Ngr.Depot
+  created_at: '2013-11-25 21:19:23.168424'
+  updated_at: '2014-06-16 13:28:24.560536'
+routes_167:
+  id: '33'
+  code: '0201'
+  end_area: Shivaji Nagar
+  start_stop: Dr.Shyamaprasad Mukherji Chk.
+  start_area: Colaba
+  display_name: 20 Ltd
+  url: "/route/0201/"
+  slug: 20LTD
+  end_stop: Shivaji Ngr.Depot
+  created_at: '2013-11-25 21:19:23.170872'
+  updated_at: '2014-06-16 13:28:27.302302'
+routes_168:
+  id: '35'
+  code: '0221'
+  end_area: Marol
+  start_stop: Colaba Depot
+  start_area: Colaba
+  display_name: 22 Ltd
+  url: "/route/0221/"
+  slug: 22LTD
+  end_stop: Marol Maroshi Bus Stn.
+  created_at: '2013-11-25 21:19:23.175961'
+  updated_at: '2014-06-16 13:28:39.424714'
+routes_169:
+  id: '36'
+  code: '0251'
+  end_area: Vihar
+  start_stop: Backbay Depot
+  start_area: Backbay
+  display_name: 25 Ltd
+  url: "/route/0251/"
+  slug: 25LTD
+  end_stop: Vihar Lake
+  created_at: '2013-11-25 21:19:23.178346'
+  updated_at: '2014-06-16 13:28:41.735298'
+routes_170:
+  id: '37'
+  code: '0270'
+  end_area: Mulund West
+  start_stop: Worli Depot
+  start_area: Worli
+  display_name: '27'
+  url: "/route/0270/"
+  slug: '27'
+  end_stop: Vaishali Ngr.
+  created_at: '2013-11-25 21:19:23.180986'
+  updated_at: '2014-06-16 13:28:46.078122'
+routes_171:
+  id: '280'
+  code: '3110'
+  end_area: Santacruz East
+  start_stop: Kurla Stn (W)
+  start_area: Kurla West
+  display_name: '311'
+  url: "/route/3110/"
+  slug: '311'
+  end_stop: Santacruz Stn (E)
+  created_at: '2013-11-25 21:19:23.971666'
+  updated_at: '2014-06-16 13:42:13.735515'
+routes_172:
+  id: '38'
+  code: 0280
+  end_area: JVPD
+  start_stop: Dr.Shyamaprasad Mukherji Chk.
+  start_area: Colaba
+  display_name: '28'
+  url: "/route/0280/"
+  slug: '28'
+  end_stop: J.V.P.D.Bus Stn.
+  created_at: '2013-11-25 21:19:23.183468'
+  updated_at: '2014-06-16 13:28:49.293712'
+routes_173:
+  id: '39'
+  code: 0282
+  end_area: JVPD
+  start_stop: Swami D.Saraswati Chk.
+  start_area: Fort
+  display_name: '28'
+  url: "/route/0282/"
+  slug: 28-EXTRA
+  end_stop: J.V.P.D.Bus Stn.
+  created_at: '2013-11-25 21:19:23.186061'
+  updated_at: '2014-06-16 13:28:52.353032'
+routes_174:
+  id: '40'
+  code: '0301'
+  end_area: Vikhroli West
+  start_stop: Mumbai Central Depot
+  start_area: Mumbai Central
+  display_name: 30 Ltd
+  url: "/route/0301/"
+  slug: 30LTD
+  end_stop: Vikhroli Depot
+  created_at: '2013-11-25 21:19:23.188621'
+  updated_at: '2014-06-16 13:28:54.821301'
+routes_175:
+  id: '41'
+  code: '0324'
+  end_area: Goregaon West
+  start_stop: Goregaon Bus Stn(W)
+  start_area: Goregaon West
+  display_name: '32'
+  url: "/route/0324/"
+  slug: 32 RING
+  end_stop: Goregaon Bus Stn(W)
+  created_at: '2013-11-25 21:19:23.19119'
+  updated_at: '2014-06-16 13:29:02.191585'
+routes_176:
+  id: '42'
+  code: '0330'
+  end_area: Goregaon West
+  start_stop: Pt.Paluskar Chk.
+  start_area: Opera House
+  display_name: '33'
+  url: "/route/0330/"
+  slug: '33'
+  end_stop: Goregaon Bus Stn(W)
+  created_at: '2013-11-25 21:19:23.193705'
+  updated_at: '2014-06-16 13:29:05.690772'
+routes_177:
+  id: '44'
+  code: '0350'
+  end_area: Andheri East
+  start_stop: Com.P.K.Kurne Chk.
+  start_area: Worli
+  display_name: '35'
+  url: "/route/0350/"
+  slug: '35'
+  end_stop: Marol Depot
+  created_at: '2013-11-25 21:19:23.19891'
+  updated_at: '2014-06-16 13:29:11.893035'
+routes_178:
+  id: '45'
+  code: '0370'
+  end_area: Kurla West
+  start_stop: J.Mehta Marg
+  start_area: Nepean Sea Road
+  display_name: '37'
+  url: "/route/0370/"
+  slug: '37'
+  end_stop: Kurla Stn (W)
+  created_at: '2013-11-25 21:19:23.20147'
+  updated_at: '2014-06-16 13:29:14.924541'
+routes_179:
+  id: '314'
+  code: '3444'
+  end_area: Goregaon East
+  start_stop: Goregaon Stn(E)
+  start_area: Goregaon East
+  display_name: '344'
+  url: "/route/3444/"
+  slug: 344RING
+  end_stop: Goregaon Stn(E)
+  created_at: '2013-11-25 21:19:24.085144'
+  updated_at: '2014-06-16 13:43:38.500875'
+routes_180:
+  id: '46'
+  code: 0380
+  end_area: Oshiwara
+  start_stop: Jijamata Udn.
+  start_area: Byculla East
+  display_name: '38'
+  url: "/route/0380/"
+  slug: '38'
+  end_stop: Goregaon Depot
+  created_at: '2013-11-25 21:19:23.203943'
+  updated_at: '2014-06-16 13:29:17.750557'
+routes_181:
+  id: '47'
+  code: 0390
+  end_area: Andheri East
+  start_stop: Com.P.K.Kurne Chk.
+  start_area: Worli
+  display_name: '39'
+  url: "/route/0390/"
+  slug: '39'
+  end_stop: Seepz Bus Stn.
+  created_at: '2013-11-25 21:19:23.206464'
+  updated_at: '2014-06-16 13:29:20.397492'
+routes_182:
+  id: '48'
+  code: '0401'
+  end_area: Borivli East
+  start_stop: P.Thakre Udn.Bus Stn.
+  start_area: Sewree
+  display_name: 40 Ltd
+  url: "/route/0401/"
+  slug: 40LTD
+  end_stop: Borivli Stn(E)
+  created_at: '2013-11-25 21:19:23.208902'
+  updated_at: '2014-06-16 13:29:23.708177'
+routes_183:
+  id: '50'
+  code: '0412'
+  end_area: Mazgaon
+  start_stop: Ferry Wharf
+  start_area: Mazgaon
+  display_name: '41'
+  url: "/route/0412/"
+  slug: 41EXT
+  end_stop: Ferry Wharf
+  created_at: '2013-11-25 21:19:23.214132'
+  updated_at: '2014-06-16 13:29:31.226322'
+routes_184:
+  id: '51'
+  code: '0420'
+  end_area: Walkeshwar
+  start_stop: Ferry Wharf
+  start_area: Mazgaon
+  display_name: '42'
+  url: "/route/0420/"
+  slug: '42'
+  end_stop: Kamla Nehru Park
+  created_at: '2013-11-25 21:19:23.216768'
+  updated_at: '2014-06-16 13:29:32.662834'
+routes_185:
+  id: '52'
+  code: '0426'
+  end_area: Thane West
+  start_stop: Rani Laxmibai Chk.
+  start_area: Sion East
+  display_name: C-42 Exp
+  url: "/route/0426/"
+  slug: C-42
+  end_stop: Dadlani Park (Thane-W)
+  created_at: '2013-11-25 21:19:23.219208'
+  updated_at: '2014-06-16 13:29:34.362445'
+routes_186:
+  id: '53'
+  code: '0430'
+  end_area: Pratiksha Nagar
+  start_stop: Maharana Pratap Chk.
+  start_area: Mazgaon
+  display_name: '43'
+  url: "/route/0430/"
+  slug: '43'
+  end_stop: Pratiksha Ngr.Depot
+  created_at: '2013-11-25 21:19:23.221824'
+  updated_at: '2014-06-16 13:29:36.092991'
+routes_187:
+  id: '54'
+  code: '0432'
+  end_area: Pratiksha Nagar
+  start_stop: Ferry Wharf
+  start_area: Mazgaon
+  display_name: '43'
+  url: "/route/0432/"
+  slug: 43-EXTRA
+  end_stop: Pratiksha Ngr.Depot
+  created_at: '2013-11-25 21:19:23.224348'
+  updated_at: '2014-06-16 13:29:43.118056'
+routes_188:
+  id: '55'
+  code: '0436'
+  end_area: Mumbra
+  start_stop: Rani Laxmibai Chk.
+  start_area: Sion East
+  display_name: C-43 Exp
+  url: "/route/0436/"
+  slug: C-43
+  end_stop: Mumbra Police Stn.
+  created_at: '2013-11-25 21:19:23.226775'
+  updated_at: '2014-06-16 13:29:45.031384'
+routes_189:
+  id: '57'
+  code: '0442'
+  end_area: Mazgaon
+  start_stop: Colaba Bus Stn.
+  start_area: Colaba
+  display_name: '44'
+  url: "/route/0442/"
+  slug: 44-EXTRA
+  end_stop: Ferry Wharf
+  created_at: '2013-11-25 21:19:23.2319'
+  updated_at: '2014-06-16 13:29:53.524671'
+routes_190:
+  id: '59'
+  code: '0450'
+  end_area: Wadala East
+  start_stop: Mantralaya
+  start_area: Mantralaya
+  display_name: '45'
+  url: "/route/0450/"
+  slug: '45'
+  end_stop: Anik Depot
+  created_at: '2013-11-25 21:19:23.236939'
+  updated_at: '2014-06-16 13:30:09.279552'
+routes_191:
+  id: '60'
+  code: '0456'
+  end_area: Thane West
+  start_stop: Ghatkopar Bus Stn./Gkd
+  start_area: Ghatkopar East
+  display_name: C-45 Exp
+  url: "/route/0456/"
+  slug: C-45
+  end_stop: Brahmand Azad Ngr.Bus Stn
+  created_at: '2013-11-25 21:19:23.239474'
+  updated_at: '2014-06-16 13:30:20.685774'
+routes_192:
+  id: '61'
+  code: '0460'
+  end_area: Dharavi
+  start_stop: Ferry Wharf
+  start_area: Mazgaon
+  display_name: '46'
+  url: "/route/0460/"
+  slug: '46'
+  end_stop: Dharavi Depot
+  created_at: '2013-11-25 21:19:23.242232'
+  updated_at: '2014-06-16 13:30:33.07363'
+routes_193:
+  id: '62'
+  code: '0466'
+  end_area: Thane West
+  start_stop: Marol Depot
+  start_area: Andheri East
+  display_name: C-46 Exp
+  url: "/route/0466/"
+  slug: C-46
+  end_stop: Lodha Paradise (Complex)
+  created_at: '2013-11-25 21:19:23.244846'
+  updated_at: '2014-06-16 13:30:40.100901'
+routes_194:
+  id: '63'
+  code: 0480
+  end_area: Nana Chowk
+  start_stop: Ferry Wharf
+  start_area: Mazgaon
+  display_name: '48'
+  url: "/route/0480/"
+  slug: '48'
+  end_stop: August Kranti Maidan
+  created_at: '2013-11-25 21:19:23.247713'
+  updated_at: '2014-06-16 13:30:56.373921'
+routes_195:
+  id: '64'
+  code: 0490
+  end_area: Wadala East
+  start_stop: Swami D.Saraswati Chk.
+  start_area: Fort
+  display_name: '49'
+  url: "/route/0490/"
+  slug: '49'
+  end_stop: Nadkarni Park
+  created_at: '2013-11-25 21:19:23.250305'
+  updated_at: '2014-06-16 13:31:12.347333'
+routes_196:
+  id: '66'
+  code: '0510'
+  end_area: Santacruz West
+  start_stop: Colaba Bus Stn.
+  start_area: Colaba
+  display_name: '51'
+  url: "/route/0510/"
+  slug: '51'
+  end_stop: Santacruz Depot
+  created_at: '2013-11-25 21:19:23.255387'
+  updated_at: '2014-06-16 13:31:42.677434'
+routes_197:
+  id: '68'
+  code: '0526'
+  end_area: Kalamboli
+  start_stop: Wadala Depot
+  start_area: Wadala West
+  display_name: C-52 Exp
+  url: "/route/0526/"
+  slug: C-52
+  end_stop: Kalamboli Bus Stn
+  created_at: '2013-11-25 21:19:23.26061'
+  updated_at: '2014-06-16 13:32:16.513766'
+routes_198:
+  id: '69'
+  code: '0530'
+  end_area: Tilak Nagar
+  start_stop: Worli Depot
+  start_area: Worli
+  display_name: '53'
+  url: "/route/0530/"
+  slug: '53'
+  end_stop: Lokmanya Tilak Terminus
+  created_at: '2013-11-25 21:19:23.263068'
+  updated_at: '2014-06-16 13:32:28.635087'
+routes_199:
+  id: '70'
+  code: '0536'
+  end_area: Kalamboli
+  start_stop: Ghatkopar Bus Stn./Gkd
+  start_area: Ghatkopar East
+  display_name: C-53 Exp
+  url: "/route/0536/"
+  slug: C-53
+  end_stop: Kalamboli Bus Stn
+  created_at: '2013-11-25 21:19:23.265829'
+  updated_at: '2014-06-16 13:32:30.419091'
+routes_200:
+  id: '71'
+  code: '0541'
+  end_area: Santacruz West
+  start_stop: Colaba Bus Stn.
+  start_area: Colaba
+  display_name: 54 Ltd
+  url: "/route/0541/"
+  slug: 54-LTD
+  end_stop: Santacruz Depot
+  created_at: '2013-11-25 21:19:23.268402'
+  updated_at: '2014-06-16 13:32:38.279271'
+routes_201:
+  id: '73'
+  code: '0560'
+  end_area: Versova
+  start_stop: Worli Village
+  start_area: Worli
+  display_name: '56'
+  url: "/route/0560/"
+  slug: '56'
+  end_stop: Vesava-Yari Rd.Bus Stn.
+  created_at: '2013-11-25 21:19:23.27358'
+  updated_at: '2014-06-16 13:32:41.948434'
+routes_202:
+  id: '74'
+  code: '0570'
+  end_area: Sewree
+  start_stop: Kamla Nehru Park
+  start_area: Walkeshwar
+  display_name: '57'
+  url: "/route/0570/"
+  slug: '57'
+  end_stop: P.Thakre Udn.Bus Stn.
+  created_at: '2013-11-25 21:19:23.276328'
+  updated_at: '2014-06-16 13:32:48.767558'
+routes_203:
+  id: '76'
+  code: 0590
+  end_area: Kurla East
+  start_stop: Veer Kotwal Udn. (Plaza)
+  start_area: Dadar West
+  display_name: '59'
+  url: "/route/0590/"
+  slug: '59'
+  end_stop: Kurla Bus Stn (E)
+  created_at: '2013-11-25 21:19:23.28152'
+  updated_at: '2014-06-16 13:32:50.866692'
+routes_204:
+  id: '77'
+  code: '0600'
+  end_area: Kurla East
+  start_stop: Maharana Pratap Chk.
+  start_area: Mazgaon
+  display_name: '60'
+  url: "/route/0600/"
+  slug: '60'
+  end_stop: Kurla Bus Stn (E)
+  created_at: '2013-11-25 21:19:23.283951'
+  updated_at: '2014-06-16 13:32:57.392564'
+routes_205:
+  id: '78'
+  code: '0606'
+  end_area: Borivli East
+  start_stop: Deonar Depot
+  start_area: Deonar
+  display_name: C-60 Exp
+  url: "/route/0606/"
+  slug: C-60
+  end_stop: Borivli Stn(E)
+  created_at: '2013-11-25 21:19:23.28652'
+  updated_at: '2014-06-16 13:33:05.326171'
+routes_206:
+  id: '79'
+  code: '0610'
+  end_area: Mahim West
+  start_stop: Swami D.Saraswati Chk.
+  start_area: Fort
+  display_name: '61'
+  url: "/route/0610/"
+  slug: '61'
+  end_stop: Mahim Machhimar Ngr.
+  created_at: '2013-11-25 21:19:23.289179'
+  updated_at: '2014-06-16 13:33:12.687433'
+routes_207:
+  id: '81'
+  code: '0620'
+  end_area: Kurla West
+  start_stop: Mumbai Central Depot
+  start_area: Mumbai Central
+  display_name: '62'
+  url: "/route/0620/"
+  slug: '62'
+  end_stop: Kurla Stn (W)
+  created_at: '2013-11-25 21:19:23.294457'
+  updated_at: '2014-06-16 13:33:21.388138'
+routes_208:
+  id: '91'
+  code: 0708
+  end_area: Mira Road East
+  start_stop: Nehru Planetarium
+  start_area: Worli
+  display_name: A-70 Exp
+  url: "/route/0708/"
+  slug: A-70EXP
+  end_stop: Mira Rd.Stn.(E)
+  created_at: '2013-11-25 21:19:23.320918'
+  updated_at: '2014-06-16 13:33:57.212949'
+routes_209:
+  id: '82'
+  code: '0630'
+  end_area: Chunabhatti
+  start_stop: J.Mehta Marg
+  start_area: Nepean Sea Road
+  display_name: '63'
+  url: "/route/0630/"
+  slug: '63'
+  end_stop: Chunabhatti Bus Terminus
+  created_at: '2013-11-25 21:19:23.296994'
+  updated_at: '2014-06-16 13:33:23.908392'
+routes_210:
+  id: '83'
+  code: '0640'
+  end_area: Kings Circle
+  start_stop: Babulnath
+  start_area: Babulnath
+  display_name: '64'
+  url: "/route/0640/"
+  slug: '64'
+  end_stop: Maheshwari Udn.
+  created_at: '2013-11-25 21:19:23.299494'
+  updated_at: '2014-06-16 13:33:25.615105'
+routes_211:
+  id: '84'
+  code: '0650'
+  end_area: Wadala East
+  start_stop: Dr.Shyamaprasad Mukherji Chk.
+  start_area: Colaba
+  display_name: '65'
+  url: "/route/0650/"
+  slug: '65'
+  end_stop: Anik Depot
+  created_at: '2013-11-25 21:19:23.301911'
+  updated_at: '2014-06-16 13:33:38.388791'
+routes_212:
+  id: '85'
+  code: '0660'
+  end_area: Sion East
+  start_stop: Ballard Pier
+  start_area: Fort
+  display_name: '66'
+  url: "/route/0660/"
+  slug: '66'
+  end_stop: Rani Laxmibai Chk.(Bus Stn.)
+  created_at: '2013-11-25 21:19:23.304291'
+  updated_at: '2014-06-16 13:33:40.524127'
+routes_213:
+  id: '86'
+  code: '0661'
+  end_area: Dharavi
+  start_stop: Colaba Depot
+  start_area: Colaba
+  display_name: 66 Ltd
+  url: "/route/0661/"
+  slug: 66LTD
+  end_stop: Dharavi Depot
+  created_at: '2013-11-25 21:19:23.306719'
+  updated_at: '2014-06-16 13:33:48.076496'
+routes_214:
+  id: '143'
+  code: '1374'
+  end_area: Colaba
+  start_stop: Navy Ngr.
+  start_area: Colaba
+  display_name: '137'
+  url: "/route/1374/"
+  slug: 137RING
+  end_stop: Navy Ngr.
+  created_at: '2013-11-25 21:19:23.522863'
+  updated_at: '2014-06-16 13:36:30.974396'
+routes_215:
+  id: '87'
+  code: '0670'
+  end_area: Antop Hill
+  start_stop: Kamla Nehru Park
+  start_area: Walkeshwar
+  display_name: '67'
+  url: "/route/0670/"
+  slug: '67'
+  end_stop: Antop Hill Bus Stn.
+  created_at: '2013-11-25 21:19:23.31101'
+  updated_at: '2014-06-16 13:33:49.609955'
+routes_216:
+  id: '89'
+  code: 0690
+  end_area: Sewree
+  start_stop: Dr.Shyamaprasad Mukherji Chk.
+  start_area: Colaba
+  display_name: '69'
+  url: "/route/0690/"
+  slug: '69'
+  end_stop: P.Thakre Udn.Bus Stn.
+  created_at: '2013-11-25 21:19:23.315911'
+  updated_at: '2014-06-16 13:33:52.784846'
+routes_217:
+  id: '90'
+  code: '0700'
+  end_area: Dharavi
+  start_stop: Colaba Depot
+  start_area: Colaba
+  display_name: '70'
+  url: "/route/0700/"
+  slug: '70'
+  end_stop: Dharavi Depot
+  created_at: '2013-11-25 21:19:23.318357'
+  updated_at: '2014-06-16 13:33:54.778924'
+routes_218:
+  id: '93'
+  code: '0716'
+  end_area: Mira Road East
+  start_stop: Mahim Bus Stn.
+  start_area: Mahim
+  display_name: C-71 Exp
+  url: "/route/0716/"
+  slug: C-71
+  end_stop: Mira Rd.Stn.(E)
+  created_at: '2013-11-25 21:19:23.325958'
+  updated_at: '2014-06-16 13:34:00.223172'
+routes_219:
+  id: '94'
+  code: '0726'
+  end_area: Bhayander East
+  start_stop: Rani Laxmibai Chk.
+  start_area: Sion East
+  display_name: C-72 Exp
+  url: "/route/0726/"
+  slug: C-72
+  end_stop: Bhayander Stn.(E)
+  created_at: '2013-11-25 21:19:23.328369'
+  updated_at: '2014-06-16 13:34:02.862231'
+routes_220:
+  id: '95'
+  code: '0740'
+  end_area: Mahim
+  start_stop: Dr.Shyamaprasad Mukherji Chk.
+  start_area: Colaba
+  display_name: '74'
+  url: "/route/0740/"
+  slug: '74'
+  end_stop: Mahim Bus Stn.
+  created_at: '2013-11-25 21:19:23.330798'
+  updated_at: '2014-06-16 13:34:04.852272'
+routes_221:
+  id: '96'
+  code: 0748
+  end_area: Oshiwara
+  start_stop: Colaba Depot
+  start_area: Colaba
+  display_name: A-74 Exp
+  url: "/route/0748/"
+  slug: A-74EXP
+  end_stop: Goregaon Depot
+  created_at: '2013-11-25 21:19:23.333679'
+  updated_at: '2014-06-16 13:34:07.29837'
+routes_222:
+  id: '98'
+  code: 0758
+  end_area: Powai
+  start_stop: Colaba Depot
+  start_area: Colaba
+  display_name: A-75 Exp
+  url: "/route/0758/"
+  slug: A-75EXP
+  end_stop: Hiranandani Garden
+  created_at: '2013-11-25 21:19:23.338706'
+  updated_at: '2014-06-16 13:34:09.74244'
+routes_223:
+  id: '243'
+  code: '2720'
+  end_area: Malad West
+  start_stop: Malad Stn-W(Kasturba Chky)
+  start_area: Malad West
+  display_name: '272'
+  url: "/route/2720/"
+  slug: '272'
+  end_stop: Marve Beach-Essel World
+  created_at: '2013-11-25 21:19:23.875384'
+  updated_at: '2014-06-16 13:40:59.972419'
+routes_224:
+  id: '99'
+  code: '0760'
+  end_area: Dharavi
+  start_stop: Mantralaya
+  start_area: Mantralaya
+  display_name: '76'
+  url: "/route/0760/"
+  slug: '76'
+  end_stop: Dharavi Depot
+  created_at: '2013-11-25 21:19:23.34122'
+  updated_at: '2014-06-16 13:34:11.232036'
+routes_225:
+  id: '100'
+  code: 0768
+  end_area: Gorai
+  start_stop: Colaba Depot
+  start_area: Colaba
+  display_name: A-76 Exp
+  url: "/route/0768/"
+  slug: A-76EXP
+  end_stop: Gorai Depot
+  created_at: '2013-11-25 21:19:23.343691'
+  updated_at: '2014-06-16 13:34:14.257354'
+routes_226:
+  id: '101'
+  code: '0770'
+  end_area: Wadala West
+  start_stop: J.Mehta Marg
+  start_area: Nepean Sea Road
+  display_name: '77'
+  url: "/route/0770/"
+  slug: '77'
+  end_stop: Wadala Depot
+  created_at: '2013-11-25 21:19:23.346241'
+  updated_at: '2014-06-16 13:34:15.748585'
+routes_227:
+  id: '102'
+  code: 0778
+  end_area: Gorai
+  start_stop: Bkc Tel.Exchange
+  start_area: Bandra-Kurla Complex
+  display_name: A-77 Exp
+  url: "/route/0778/"
+  slug: A-77EXP
+  end_stop: Gorai Depot
+  created_at: '2013-11-25 21:19:23.348816'
+  updated_at: '2014-06-16 13:34:18.233493'
+routes_228:
+  id: '103'
+  code: 0790
+  end_area: Gorai
+  start_stop: Mahim Bus Stn.
+  start_area: Mahim
+  display_name: '79'
+  url: "/route/0790/"
+  slug: '79'
+  end_stop: Gorai Depot
+  created_at: '2013-11-25 21:19:23.392061'
+  updated_at: '2014-06-16 13:34:21.238873'
+routes_229:
+  id: '104'
+  code: 0801
+  end_area: JVPD
+  start_stop: Kamla Nehru Park
+  start_area: Walkeshwar
+  display_name: 80 Ltd
+  url: "/route/0801/"
+  slug: 80LTD
+  end_stop: J.V.P.D.Bus Stn.
+  created_at: '2013-11-25 21:19:23.395316'
+  updated_at: '2014-06-16 13:34:28.936212'
+routes_230:
+  id: '106'
+  code: 0813
+  end_area: Santacruz West
+  start_stop: Swami D.Saraswati Chk.
+  start_area: Fort
+  display_name: 81 Ltd
+  url: "/route/0813/"
+  slug: 81-EXTRA
+  end_stop: Santacruz Depot
+  created_at: '2013-11-25 21:19:23.401487'
+  updated_at: '2014-06-16 13:34:34.952438'
+routes_231:
+  id: '107'
+  code: 0820
+  end_area: Worli
+  start_stop: Mantralaya
+  start_area: Mantralaya
+  display_name: '82'
+  url: "/route/0820/"
+  slug: '82'
+  end_stop: Worli Depot
+  created_at: '2013-11-25 21:19:23.404438'
+  updated_at: '2014-06-16 13:34:36.373859'
+routes_232:
+  id: '145'
+  code: '1510'
+  end_area: Wadala West
+  start_stop: J.Mehta Marg
+  start_area: Nepean Sea Road
+  display_name: '151'
+  url: "/route/1510/"
+  slug: '151'
+  end_stop: Wadala Depot
+  created_at: '2013-11-25 21:19:23.528951'
+  updated_at: '2014-06-16 13:36:33.735292'
+routes_233:
+  id: '108'
+  code: 0830
+  end_area: Santacruz West
+  start_stop: Colaba Bus Stn.
+  start_area: Colaba
+  display_name: '83'
+  url: "/route/0830/"
+  slug: '83'
+  end_stop: Santacruz Depot
+  created_at: '2013-11-25 21:19:23.407459'
+  updated_at: '2014-06-16 13:34:39.505722'
+routes_234:
+  id: '109'
+  code: 0841
+  end_area: Oshiwara
+  start_stop: Pt.Paluskar Chk.
+  start_area: Opera House
+  display_name: 84 Ltd
+  url: "/route/0841/"
+  slug: 84LTD
+  end_stop: Oshiwara Depot
+  created_at: '2013-11-25 21:19:23.410338'
+  updated_at: '2014-06-16 13:34:47.127775'
+routes_235:
+  id: '110'
+  code: 0850
+  end_area: Kurla East
+  start_stop: World Trade Centre
+  start_area: Backbay
+  display_name: '85'
+  url: "/route/0850/"
+  slug: '85'
+  end_stop: Kurla Bus Stn (E)
+  created_at: '2013-11-25 21:19:23.413384'
+  updated_at: '2014-06-16 13:35:01.055'
+routes_236:
+  id: '111'
+  code: 0852
+  end_area: Chunabhatti
+  start_stop: Hutatma Chk./Mumbai University
+  start_area: Fort
+  display_name: '85'
+  url: "/route/0852/"
+  slug: 85-EXTRA
+  end_stop: Chunabhatti Bus Terminus
+  created_at: '2013-11-25 21:19:23.41637'
+  updated_at: '2014-06-16 13:35:04.061347'
+routes_237:
+  id: '112'
+  code: 0860
+  end_area: Bandra West
+  start_stop: Backbay Depot
+  start_area: Backbay
+  display_name: '86'
+  url: "/route/0860/"
+  slug: '86'
+  end_stop: Bandra Bus Stn(W)
+  created_at: '2013-11-25 21:19:23.419277'
+  updated_at: '2014-06-16 13:35:07.475883'
+routes_238:
+  id: '114'
+  code: 0880
+  end_area: Pratiksha Nagar
+  start_stop: Mantralaya
+  start_area: Mantralaya
+  display_name: '88'
+  url: "/route/0880/"
+  slug: '88'
+  end_stop: Pratiksha Ngr.Depot
+  created_at: '2013-11-25 21:19:23.425693'
+  updated_at: '2014-06-16 13:35:13.037975'
+routes_239:
+  id: '115'
+  code: 0890
+  end_area: Worli
+  start_stop: Mantralaya
+  start_area: Mantralaya
+  display_name: '89'
+  url: "/route/0890/"
+  slug: '89'
+  end_stop: Worli Depot
+  created_at: '2013-11-25 21:19:23.428709'
+  updated_at: '2014-06-16 13:35:14.438141'
+routes_240:
+  id: '146'
+  code: '1540'
+  end_area: Worli
+  start_stop: Byculla Stn.(W)
+  start_area: Byculla West
+  display_name: '154'
+  url: "/route/1540/"
+  slug: '154'
+  end_stop: Nehru Planetarium
+  created_at: '2013-11-25 21:19:23.531852'
+  updated_at: '2014-06-16 13:36:34.479659'
+routes_241:
+  id: '337'
+  code: '3670'
+  end_area: Kurla East
+  start_stop: Gadkari Quarry
+  start_area: Chembur West
+  display_name: '367'
+  url: "/route/3670/"
+  slug: '367'
+  end_stop: Kurla Bus Stn (E)
+  created_at: '2013-11-25 21:19:24.160326'
+  updated_at: '2014-06-16 13:44:50.455967'
+routes_242:
+  id: '116'
+  code: 0911
+  end_area: Kurla West
+  start_stop: Mumbai Central Depot
+  start_area: Mumbai Central
+  display_name: 91 Ltd
+  url: "/route/0911/"
+  slug: 91LTD
+  end_stop: Kurla Stn (W)
+  created_at: '2013-11-25 21:19:23.431576'
+  updated_at: '2014-06-16 13:35:17.230121'
+routes_243:
+  id: '117'
+  code: 0921
+  end_area: Anushakti Nagar
+  start_stop: World Trade Centre
+  start_area: Backbay
+  display_name: 92 Ltd
+  url: "/route/0921/"
+  slug: 92LTD
+  end_stop: Anushakti Ngr.Bus Stn.
+  created_at: '2013-11-25 21:19:23.434772'
+  updated_at: '2014-06-16 13:35:20.689528'
+routes_244:
+  id: '118'
+  code: 0931
+  end_area: Govandi East
+  start_stop: Mantralaya
+  start_area: Mantralaya
+  display_name: 93 Ltd
+  url: "/route/0931/"
+  slug: 93LTD
+  end_stop: Govandi Bus Stn
+  created_at: '2013-11-25 21:19:23.439437'
+  updated_at: '2014-06-16 13:35:22.945304'
+routes_245:
+  id: '121'
+  code: '1030'
+  end_area: Walkeshwar
+  start_stop: R.C.Church
+  start_area: Colaba
+  display_name: '103'
+  url: "/route/1030/"
+  slug: '103'
+  end_stop: Kamla Nehru Park
+  created_at: '2013-11-25 21:19:23.451028'
+  updated_at: '2014-06-16 13:35:31.301342'
+routes_246:
+  id: '122'
+  code: '1044'
+  end_area: Nepean Sea Road
+  start_stop: J.Mehta Marg
+  start_area: Nepean Sea Road
+  display_name: '104'
+  url: "/route/1044/"
+  slug: 104RING
+  end_stop: J.Mehta Marg
+  created_at: '2013-11-25 21:19:23.455925'
+  updated_at: '2014-06-16 13:35:32.756361'
+routes_247:
+  id: '123'
+  code: '1054'
+  end_area: Walkeshwar
+  start_stop: Kamla Nehru Park
+  start_area: Walkeshwar
+  display_name: '105'
+  url: "/route/1054/"
+  slug: 105RING
+  end_stop: Kamla Nehru Park
+  created_at: '2013-11-25 21:19:23.45876'
+  updated_at: '2014-06-16 13:35:39.456442'
+routes_248:
+  id: '124'
+  code: '1060'
+  end_area: Walkeshwar
+  start_stop: R.C.Church
+  start_area: Colaba
+  display_name: '106'
+  url: "/route/1060/"
+  slug: '106'
+  end_stop: Kamla Nehru Park
+  created_at: '2013-11-25 21:19:23.463538'
+  updated_at: '2014-06-16 13:35:46.414707'
+routes_249:
+  id: '125'
+  code: '1062'
+  end_area: Churchgate
+  start_stop: R.C.Church
+  start_area: Colaba
+  display_name: '106'
+  url: "/route/1062/"
+  slug: 106-EXTRA
+  end_stop: Ahilyabai Holkar Chk.
+  created_at: '2013-11-25 21:19:23.468444'
+  updated_at: '2014-06-16 13:35:47.58928'
+routes_250:
+  id: '126'
+  code: '1080'
+  end_area: Walkeshwar
+  start_stop: Chh. Shivaji Terminus(Bhatia)
+  start_area: Fort
+  display_name: '108'
+  url: "/route/1080/"
+  slug: '108'
+  end_stop: Kamla Nehru Park
+  created_at: '2013-11-25 21:19:23.471758'
+  updated_at: '2014-06-16 13:35:48.869076'
+routes_251:
+  id: '127'
+  code: '1082'
+  end_area: Walkeshwar
+  start_stop: Chh. Shivaji Terminus(Bhatia)
+  start_area: Fort
+  display_name: '108'
+  url: "/route/1082/"
+  slug: 108-EXTRA
+  end_stop: Kamla Nehru Park
+  created_at: '2013-11-25 21:19:23.475077'
+  updated_at: '2014-06-16 13:35:49.97961'
+routes_252:
+  id: '131'
+  code: '1210'
+  end_area: Nepean Sea Road
+  start_stop: Backbay Depot
+  start_area: Backbay
+  display_name: '121'
+  url: "/route/1210/"
+  slug: '121'
+  end_stop: J.Mehta Marg
+  created_at: '2013-11-25 21:19:23.48698'
+  updated_at: '2014-06-16 13:35:54.500168'
+routes_253:
+  id: '132'
+  code: '1220'
+  end_area: Nepean Sea Road
+  start_stop: Ballard Pier
+  start_area: Fort
+  display_name: '122'
+  url: "/route/1220/"
+  slug: '122'
+  end_stop: J.Mehta Marg
+  created_at: '2013-11-25 21:19:23.490033'
+  updated_at: '2014-06-16 13:35:55.897256'
+routes_254:
+  id: '133'
+  code: '1230'
+  end_area: Tardeo
+  start_stop: R.C.Church
+  start_area: Colaba
+  display_name: '123'
+  url: "/route/1230/"
+  slug: '123'
+  end_stop: Vasantrao Naik Chk.
+  created_at: '2013-11-25 21:19:23.493003'
+  updated_at: '2014-06-16 13:35:57.224721'
+routes_255:
+  id: '134'
+  code: '1240'
+  end_area: Worli
+  start_stop: Colaba Bus Stn.
+  start_area: Colaba
+  display_name: '124'
+  url: "/route/1240/"
+  slug: '124'
+  end_stop: Worli Depot
+  created_at: '2013-11-25 21:19:23.495839'
+  updated_at: '2014-06-16 13:36:09.643852'
+routes_256:
+  id: '135'
+  code: '1250'
+  end_area: Worli
+  start_stop: Navy Ngr.
+  start_area: Colaba
+  display_name: '125'
+  url: "/route/1250/"
+  slug: '125'
+  end_stop: Worli Village
+  created_at: '2013-11-25 21:19:23.498788'
+  updated_at: '2014-06-16 13:36:12.219718'
+routes_257:
+  id: '136'
+  code: '1260'
+  end_area: Byculla East
+  start_stop: Mantralaya
+  start_area: Mantralaya
+  display_name: '126'
+  url: "/route/1260/"
+  slug: '126'
+  end_stop: Jijamata Udn.
+  created_at: '2013-11-25 21:19:23.501834'
+  updated_at: '2014-06-16 13:36:14.121481'
+routes_258:
+  id: '138'
+  code: '1324'
+  end_area: Colaba
+  start_stop: Colaba Bus Stn.
+  start_area: Colaba
+  display_name: '132'
+  url: "/route/1324/"
+  slug: 132RING
+  end_stop: Colaba Bus Stn.
+  created_at: '2013-11-25 21:19:23.50791'
+  updated_at: '2014-06-16 13:36:17.711319'
+routes_259:
+  id: '139'
+  code: '1334'
+  end_area: Colaba
+  start_stop: Colaba Bus Stn.
+  start_area: Colaba
+  display_name: '133'
+  url: "/route/1334/"
+  slug: 133RING
+  end_stop: Colaba Bus Stn.
+  created_at: '2013-11-25 21:19:23.511017'
+  updated_at: '2014-06-16 13:36:20.127648'
+routes_260:
+  id: '140'
+  code: '1340'
+  end_area: Sewree
+  start_stop: Backbay Depot
+  start_area: Backbay
+  display_name: '134'
+  url: "/route/1340/"
+  slug: '134'
+  end_stop: P.Thakre Udn.Bus Stn.
+  created_at: '2013-11-25 21:19:23.513936'
+  updated_at: '2014-06-16 13:36:22.039581'
+routes_261:
+  id: '142'
+  code: '1372'
+  end_area: Colaba
+  start_stop: Navy Ngr.
+  start_area: Colaba
+  display_name: '137'
+  url: "/route/1372/"
+  slug: 137-EXTRA
+  end_stop: Navy Ngr.
+  created_at: '2013-11-25 21:19:23.51988'
+  updated_at: '2014-06-16 13:36:29.633601'
+routes_262:
+  id: '149'
+  code: '1580'
+  end_area: Dadar West
+  start_stop: Byculla Stn.(W)
+  start_area: Byculla West
+  display_name: '158'
+  url: "/route/1580/"
+  slug: '1580'
+  end_stop: Veer Kotwal Udn. (Plaza)
+  created_at: '2013-11-25 21:19:23.542509'
+  updated_at: '2014-06-16 13:36:37.587465'
+routes_263:
+  id: '150'
+  code: '1610'
+  end_area: Wadala East
+  start_stop: Worli Depot
+  start_area: Worli
+  display_name: '161'
+  url: "/route/1610/"
+  slug: '161'
+  end_stop: Nadkarni Park
+  created_at: '2013-11-25 21:19:23.545436'
+  updated_at: '2014-06-16 13:36:39.227801'
+routes_264:
+  id: '152'
+  code: '1634'
+  end_area: Elphinstone Road
+  start_stop: P.Thakre Udn.Bus Stn.
+  start_area: Sewree
+  display_name: '163'
+  url: "/route/1634/"
+  slug: SWR-1
+  end_stop: Parel S.T.Depot/Sant Rohidas Chk
+  created_at: '2013-11-25 21:19:23.551368'
+  updated_at: '2014-06-16 13:36:40.572791'
+routes_265:
+  id: '153'
+  code: '1640'
+  end_area: Dharavi
+  start_stop: Maharana Pratap Chk.
+  start_area: Mazgaon
+  display_name: '164'
+  url: "/route/1640/"
+  slug: '164'
+  end_stop: Dharavi Depot
+  created_at: '2013-11-25 21:19:23.554427'
+  updated_at: '2014-06-16 13:36:42.75574'
+routes_266:
+  id: '212'
+  code: '2424'
+  end_area: Andheri West
+  start_stop: Andheri Bus Stn.(W)
+  start_area: Andheri West
+  display_name: '242'
+  url: "/route/2424/"
+  slug: 242RING
+  end_stop: Andheri Bus Stn.(W)
+  created_at: '2013-11-25 21:19:23.793421'
+  updated_at: '2014-06-16 13:39:26.60913'
+routes_267:
+  id: '154'
+  code: '1650'
+  end_area: Dharavi
+  start_stop: Kasturba Gandhi Chk.
+  start_area: CP Tank
+  display_name: '165'
+  url: "/route/1650/"
+  slug: '165'
+  end_stop: Dharavi Depot
+  created_at: '2013-11-25 21:19:23.557394'
+  updated_at: '2014-06-16 13:36:44.994519'
+routes_268:
+  id: '155'
+  code: '1660'
+  end_area: Antop Hill
+  start_stop: Mumbai Central Depot
+  start_area: Mumbai Central
+  display_name: '166'
+  url: "/route/1660/"
+  slug: '166'
+  end_stop: Antop Hill Bus Stn.
+  created_at: '2013-11-25 21:19:23.560175'
+  updated_at: '2014-06-16 13:36:47.571037'
+routes_269:
+  id: '157'
+  code: '1674'
+  end_area: Worli
+  start_stop: Com.P.K.Kurne Chk.
+  start_area: Worli
+  display_name: '167'
+  url: "/route/1674/"
+  slug: 167RING
+  end_stop: Com.P.K.Kurne Chk.
+  created_at: '2013-11-25 21:19:23.56646'
+  updated_at: '2014-06-16 13:36:49.522763'
+routes_270:
+  id: '158'
+  code: '1680'
+  end_area: Wadala West
+  start_stop: Lal Bahaddur Shastri College
+  start_area: Reay Road East
+  display_name: '168'
+  url: "/route/1680/"
+  slug: '168'
+  end_stop: Wadala Depot
+  created_at: '2013-11-25 21:19:23.569362'
+  updated_at: '2014-06-16 13:36:51.022969'
+routes_271:
+  id: '159'
+  code: '1690'
+  end_area: Pratiksha Nagar
+  start_stop: Worli Village
+  start_area: Worli
+  display_name: '169'
+  url: "/route/1690/"
+  slug: '169'
+  end_stop: Pratiksha Ngr.Depot
+  created_at: '2013-11-25 21:19:23.572165'
+  updated_at: '2014-06-16 13:36:52.65857'
+routes_272:
+  id: '161'
+  code: '1710'
+  end_area: Antop Hill
+  start_stop: Worli Dairy
+  start_area: Worli
+  display_name: '171'
+  url: "/route/1710/"
+  slug: '171'
+  end_stop: Antop Hill Bus Stn.
+  created_at: '2013-11-25 21:19:23.578235'
+  updated_at: '2014-06-16 13:36:55.319917'
+routes_273:
+  id: '209'
+  code: '2390'
+  end_area: Charkop
+  start_stop: Poisar Depot
+  start_area: Kandivli West
+  display_name: '239'
+  url: "/route/2390/"
+  slug: '239'
+  end_stop: Charkop Sec.No.9/Akshara Vidyalaya
+  created_at: '2013-11-25 21:19:23.783619'
+  updated_at: '2014-06-16 13:39:15.248901'
+routes_274:
+  id: '162'
+  code: '1720'
+  end_area: Pratiksha Nagar
+  start_stop: Sant Gadge Maharaj Chk.
+  start_area: Satrasta
+  display_name: '172'
+  url: "/route/1720/"
+  slug: '172'
+  end_stop: Pratiksha Ngr.Depot
+  created_at: '2013-11-25 21:19:23.58099'
+  updated_at: '2014-06-16 13:36:57.274375'
+routes_275:
+  id: '165'
+  code: '1750'
+  end_area: Sion East
+  start_stop: Sangam Ngr.
+  start_area: Antop Hill
+  display_name: '175'
+  url: "/route/1750/"
+  slug: '175'
+  end_stop: Rani Laxmibai Chk.
+  created_at: '2013-11-25 21:19:23.590182'
+  updated_at: '2014-06-16 13:37:00.764619'
+routes_276:
+  id: '176'
+  code: '2030'
+  end_area: Dahisar West
+  start_stop: Juhu Beach
+  start_area: Juhu
+  display_name: '203'
+  url: "/route/2030/"
+  slug: '203'
+  end_stop: Dahisar Bridge
+  created_at: '2013-11-25 21:19:23.629767'
+  updated_at: '2014-06-16 13:37:46.901969'
+routes_277:
+  id: '166'
+  code: '1800'
+  end_area: Malvani
+  start_stop: Rani Laxmibai Chk.(Bus Stn.)
+  start_area: Sion East
+  display_name: '180'
+  url: "/route/1800/"
+  slug: '180'
+  end_stop: Malvani Depot/ Gaikwad Ngr.
+  created_at: '2013-11-25 21:19:23.593043'
+  updated_at: '2014-06-16 13:37:03.694113'
+routes_278:
+  id: '167'
+  code: '1810'
+  end_area: Andheri East
+  start_stop: Antop Hill Extn.
+  start_area: Antop Hill
+  display_name: '181'
+  url: "/route/1810/"
+  slug: '181'
+  end_stop: Seepz Bus Stn.
+  created_at: '2013-11-25 21:19:23.595936'
+  updated_at: '2014-06-16 13:37:06.369441'
+routes_279:
+  id: '168'
+  code: '1824'
+  end_area: Bandra East
+  start_stop: Bandra Rly.Terminus
+  start_area: Bandra East
+  display_name: '182'
+  url: "/route/1824/"
+  slug: BKC-1
+  end_stop: Bandra Rly.Terminus
+  created_at: '2013-11-25 21:19:23.601746'
+  updated_at: '2014-06-16 13:37:12.88145'
+routes_280:
+  id: '171'
+  code: '1850'
+  end_area: Andheri East
+  start_stop: Kannamwar Ngr.No 2
+  start_area: Vikhroli East
+  display_name: '185'
+  url: "/route/1850/"
+  slug: '185'
+  end_stop: Agarkar Chk.
+  created_at: '2013-11-25 21:19:23.614297'
+  updated_at: '2014-06-16 13:37:21.951407'
+routes_281:
+  id: '172'
+  code: '1860'
+  end_area: Vihar
+  start_stop: Agarkar Chk.
+  start_area: Andheri East
+  display_name: '186'
+  url: "/route/1860/"
+  slug: '186'
+  end_stop: Vihar Lake
+  created_at: '2013-11-25 21:19:23.617485'
+  updated_at: '2014-06-16 13:37:23.335678'
+routes_282:
+  id: '173'
+  code: '2000'
+  end_area: Santacruz West
+  start_stop: Shrawan Yeshwante Chk.
+  start_area: Kala Chowky
+  display_name: '200'
+  url: "/route/2000/"
+  slug: '200'
+  end_stop: Santacruz Depot
+  created_at: '2013-11-25 21:19:23.620663'
+  updated_at: '2014-06-16 13:37:25.196571'
+routes_283:
+  id: '174'
+  code: '2010'
+  end_area: Goregaon West
+  start_stop: P.Thakre Udn.Bus Stn.
+  start_area: Sewree
+  display_name: '201'
+  url: "/route/2010/"
+  slug: '201'
+  end_stop: Goregaon Bus Stn(W)
+  created_at: '2013-11-25 21:19:23.623828'
+  updated_at: '2014-06-16 13:37:27.687277'
+routes_284:
+  id: '305'
+  code: '3350'
+  end_area: Chandivli
+  start_stop: Agarkar Chk.
+  start_area: Andheri East
+  display_name: '335'
+  url: "/route/3350/"
+  slug: '335'
+  end_stop: Sangharsh Ngr.(Chandivli)
+  created_at: '2013-11-25 21:19:24.045524'
+  updated_at: '2014-06-16 13:43:11.599628'
+routes_285:
+  id: '175'
+  code: '2021'
+  end_area: Gorai
+  start_stop: Mahim Bus Stn.
+  start_area: Mahim
+  display_name: 202 Ltd
+  url: "/route/2021/"
+  slug: 202LTD
+  end_stop: Gorai Depot
+  created_at: '2013-11-25 21:19:23.626732'
+  updated_at: '2014-06-16 13:37:39.478079'
+routes_286:
+  id: '417'
+  code: '4520'
+  end_area: Goregaon East
+  start_stop: Goregaon Stn(E)
+  start_area: Goregaon East
+  display_name: '452'
+  url: "/route/4520/"
+  slug: '452'
+  end_stop: Mayur Ngr.
+  created_at: '2013-11-25 21:19:24.467823'
+  updated_at: '2014-06-16 13:48:35.468965'
+routes_287:
+  id: '177'
+  code: '2044'
+  end_area: Goregaon West
+  start_stop: Goregaon Bus Stn(W)
+  start_area: Goregaon West
+  display_name: '204'
+  url: "/route/2044/"
+  slug: 204RING
+  end_stop: Goregaon Bus Stn(W)
+  created_at: '2013-11-25 21:19:23.632825'
+  updated_at: '2014-06-16 13:37:50.911076'
+routes_288:
+  id: '178'
+  code: '2054'
+  end_area: Jogeshwari West
+  start_stop: Jogeshwari Bus Stn
+  start_area: Jogeshwari West
+  display_name: '205'
+  url: "/route/2054/"
+  slug: 205RING
+  end_stop: Jogeshwari Bus Stn
+  created_at: '2013-11-25 21:19:23.635915'
+  updated_at: '2014-06-16 13:37:59.727168'
+routes_289:
+  id: '180'
+  code: '2070'
+  end_area: Dahisar East
+  start_stop: Malvani Depot/ Gaikwad Ngr.
+  start_area: Malvani
+  display_name: '207'
+  url: "/route/2070/"
+  slug: '207'
+  end_stop: Dahisar Bus Stn.
+  created_at: '2013-11-25 21:19:23.642207'
+  updated_at: '2014-06-16 13:38:02.73305'
+routes_290:
+  id: '182'
+  code: '2094'
+  end_area: Kandivli East
+  start_stop: Samata Ngr.Bus Stn.(Kandivli-E)
+  start_area: Kandivli East
+  display_name: '209'
+  url: "/route/2094/"
+  slug: 209RING
+  end_stop: Samata Ngr.Bus Stn.(Kandivli-E)
+  created_at: '2013-11-25 21:19:23.648063'
+  updated_at: '2014-06-16 13:38:05.86382'
+routes_291:
+  id: '222'
+  code: '2524'
+  end_area: Andheri West
+  start_stop: Andheri Bus Stn.(W)
+  start_area: Andheri West
+  display_name: '252'
+  url: "/route/2524/"
+  slug: 252RING
+  end_stop: Andheri Bus Stn.(W)
+  created_at: '2013-11-25 21:19:23.819669'
+  updated_at: '2014-06-16 13:39:55.074343'
+routes_292:
+  id: '183'
+  code: '2101'
+  end_area: Dahisar West
+  start_stop: Vesava-Yari Rd.Bus Stn.
+  start_area: Versova
+  display_name: 210 Ltd
+  url: "/route/2101/"
+  slug: 210LTD
+  end_stop: Dahisar Bridge
+  created_at: '2013-11-25 21:19:23.651222'
+  updated_at: '2014-06-16 13:38:08.086172'
+routes_293:
+  id: '184'
+  code: '2106'
+  end_area: Borivli West
+  start_stop: Bnd Reclamation Bus Stn.
+  start_area: Bandra West
+  display_name: C-210 Exp
+  url: "/route/2106/"
+  slug: SPASTIC SOCIETY
+  end_stop: Borivli Stn.(W) Bus Stn.
+  created_at: '2013-11-25 21:19:23.65423'
+  updated_at: '2014-06-16 13:38:16.765408'
+routes_294:
+  id: '185'
+  code: '2114'
+  end_area: Bandra West
+  start_stop: Father Agnel Ashram
+  start_area: Bandra West
+  display_name: '211'
+  url: "/route/2114/"
+  slug: 211RING
+  end_stop: Father Agnel Ashram
+  created_at: '2013-11-25 21:19:23.657318'
+  updated_at: '2014-06-16 13:38:18.307659'
+routes_295:
+  id: '186'
+  code: '2120'
+  end_area: Bandra West
+  start_stop: P.Thakre Udn.Bus Stn.
+  start_area: Sewree
+  display_name: '212'
+  url: "/route/2120/"
+  slug: '212'
+  end_stop: Bandra Bus Stn(W)
+  created_at: '2013-11-25 21:19:23.660201'
+  updated_at: '2014-06-16 13:38:20.194648'
+routes_296:
+  id: '187'
+  code: '2130'
+  end_area: Santacruz East
+  start_stop: P.Thakre Udn.Bus Stn.
+  start_area: Sewree
+  display_name: '213'
+  url: "/route/2130/"
+  slug: '213'
+  end_stop: Santacruz Stn (E)
+  created_at: '2013-11-25 21:19:23.663224'
+  updated_at: '2014-06-16 13:38:27.476126'
+routes_297:
+  id: '190'
+  code: '2154'
+  end_area: Bandra West
+  start_stop: Bnd Reclamation Bus Stn.
+  start_area: Bandra West
+  display_name: '215'
+  url: "/route/2154/"
+  slug: 215RING
+  end_stop: Bnd Reclamation Bus Stn.
+  created_at: '2013-11-25 21:19:23.67221'
+  updated_at: '2014-06-16 13:38:35.719282'
+routes_298:
+  id: '191'
+  code: '2160'
+  end_area: Khar West
+  start_stop: Bandra Bus Stn(W)
+  start_area: Bandra West
+  display_name: '216'
+  url: "/route/2160/"
+  slug: '216'
+  end_stop: Khar Stn (W)
+  created_at: '2013-11-25 21:19:23.675261'
+  updated_at: '2014-06-16 13:38:46.538165'
+routes_299:
+  id: '192'
+  code: '2180'
+  end_area: Bandra East
+  start_stop: Kurla Stn (W)
+  start_area: Kurla West
+  display_name: '218'
+  url: "/route/2180/"
+  slug: '218'
+  end_stop: Bandra Rly.Terminus
+  created_at: '2013-11-25 21:19:23.678253'
+  updated_at: '2014-06-16 13:38:47.821635'
+routes_300:
+  id: '194'
+  code: '2200'
+  end_area: Khar West
+  start_stop: Bandra Bus Stn(W)
+  start_area: Bandra West
+  display_name: '220'
+  url: "/route/2200/"
+  slug: '220'
+  end_stop: Khar Stn (W)
+  created_at: '2013-11-25 21:19:23.684373'
+  updated_at: '2014-06-16 13:38:49.63353'
+routes_301:
+  id: '195'
+  code: '2210'
+  end_area: Versova
+  start_stop: Andheri Stn.(W) (Kumkum)
+  start_area: Andheri West
+  display_name: '221'
+  url: "/route/2210/"
+  slug: '221'
+  end_stop: Vesava-Yari Rd.Bus Stn.
+  created_at: '2013-11-25 21:19:23.687515'
+  updated_at: '2014-06-16 13:38:50.494208'
+routes_302:
+  id: '196'
+  code: '2220'
+  end_area: Versova
+  start_stop: Bandra Bus Stn(W)
+  start_area: Bandra West
+  display_name: '222'
+  url: "/route/2220/"
+  slug: '222'
+  end_stop: Vesava-Yari Rd.Bus Stn.
+  created_at: '2013-11-25 21:19:23.690588'
+  updated_at: '2014-06-16 13:38:52.214517'
+routes_303:
+  id: '197'
+  code: '2231'
+  end_area: Kandivli East
+  start_stop: Seven Bungalows Bus Stn.
+  start_area: Andheri West
+  display_name: 223 Ltd
+  url: "/route/2231/"
+  slug: 223LTD
+  end_stop: Samata Ngr.Bus Stn.(Kandivli-E)
+  created_at: '2013-11-25 21:19:23.693657'
+  updated_at: '2014-06-16 13:38:54.321549'
+routes_304:
+  id: '211'
+  code: '2410'
+  end_area: Malvani
+  start_stop: Wadala Depot
+  start_area: Wadala West
+  display_name: '241'
+  url: "/route/2410/"
+  slug: '241'
+  end_stop: Malvani Depot/ Gaikwad Ngr.
+  created_at: '2013-11-25 21:19:23.789544'
+  updated_at: '2014-06-16 13:39:20.282585'
+routes_305:
+  id: '198'
+  code: '2240'
+  end_area: Borivli West
+  start_stop: Shastri Ngr.
+  start_area: Santacruz West
+  display_name: '224'
+  url: "/route/2240/"
+  slug: '224'
+  end_stop: Borivli Stn.(W) Bus Stn.
+  created_at: '2013-11-25 21:19:23.696845'
+  updated_at: '2014-06-16 13:38:57.324542'
+routes_306:
+  id: '199'
+  code: '2250'
+  end_area: Dahisar East
+  start_stop: Mahim Bus Stn.
+  start_area: Mahim
+  display_name: '225'
+  url: "/route/2250/"
+  slug: '225'
+  end_stop: Dahisar Bus Stn.
+  created_at: '2013-11-25 21:19:23.700012'
+  updated_at: '2014-06-16 13:39:00.506282'
+routes_307:
+  id: '200'
+  code: '2261'
+  end_area: Charkop
+  start_stop: Barve Ngr.
+  start_area: Ghatkopar East
+  display_name: 226 Ltd
+  url: "/route/2261/"
+  slug: 226LTD
+  end_stop: P.Thakre Ngr Bus.Stn.
+  created_at: '2013-11-25 21:19:23.757152'
+  updated_at: '2014-06-16 13:39:03.797933'
+routes_308:
+  id: '201'
+  code: '2290'
+  end_area: Borivli West
+  start_stop: Santacruz Depot
+  start_area: Santacruz West
+  display_name: '229'
+  url: "/route/2290/"
+  slug: '229'
+  end_stop: Shanti Ashram
+  created_at: '2013-11-25 21:19:23.761984'
+  updated_at: '2014-06-16 13:39:06.441264'
+routes_309:
+  id: '204'
+  code: '2330'
+  end_area: Borivli East
+  start_stop: Borivli Stn(E)
+  start_area: Borivli East
+  display_name: '233'
+  url: "/route/2330/"
+  slug: '233'
+  end_stop: Chogle Ngr.
+  created_at: '2013-11-25 21:19:23.769609'
+  updated_at: '2014-06-16 13:39:09.203408'
+routes_310:
+  id: '205'
+  code: '2344'
+  end_area: Jogeshwari West
+  start_stop: Jogeshwari Bus Stn
+  start_area: Jogeshwari West
+  display_name: '234'
+  url: "/route/2344/"
+  slug: 234RING
+  end_stop: Jogeshwari Bus Stn
+  created_at: '2013-11-25 21:19:23.772116'
+  updated_at: '2014-06-16 13:39:11.192468'
+routes_311:
+  id: '206'
+  code: '2354'
+  end_area: Andheri West
+  start_stop: Andheri Bus Stn.(W)
+  start_area: Andheri West
+  display_name: '235'
+  url: "/route/2354/"
+  slug: 235RING
+  end_stop: Andheri Bus Stn.(W)
+  created_at: '2013-11-25 21:19:23.774516'
+  updated_at: '2014-06-16 13:39:12.603556'
+routes_312:
+  id: '332'
+  code: '3620'
+  end_area: Kurla East
+  start_stop: Dr.Ambedkar Garden/Chembur Stn.
+  start_area: Chembur East
+  display_name: '362'
+  url: "/route/3620/"
+  slug: '362'
+  end_stop: Kurla Bus Stn (E)
+  created_at: '2013-11-25 21:19:24.146483'
+  updated_at: '2014-06-16 13:44:39.716159'
+routes_313:
+  id: '210'
+  code: '2404'
+  end_area: Borivli West
+  start_stop: Shanti Ashram
+  start_area: Borivli West
+  display_name: '240'
+  url: "/route/2404/"
+  slug: 240RING
+  end_stop: Shanti Ashram
+  created_at: '2013-11-25 21:19:23.78607'
+  updated_at: '2014-06-16 13:39:16.796418'
+routes_314:
+  id: '214'
+  code: '2444'
+  end_area: Kandivli West
+  start_stop: Kandivli Stn.(W)
+  start_area: Kandivli West
+  display_name: '244'
+  url: "/route/2444/"
+  slug: 244RING
+  end_stop: Kandivli Stn.(W)
+  created_at: '2013-11-25 21:19:23.799358'
+  updated_at: '2014-06-16 13:39:30.393755'
+routes_315:
+  id: '215'
+  code: '2454'
+  end_area: Borivli West
+  start_stop: Borivli Stn.(W) Bus Stn.
+  start_area: Borivli West
+  display_name: '245'
+  url: "/route/2454/"
+  slug: 245RING
+  end_stop: Borivli Stn.(W) Bus Stn.
+  created_at: '2013-11-25 21:19:23.801898'
+  updated_at: '2014-06-16 13:39:36.610225'
+routes_316:
+  id: '216'
+  code: '2464'
+  end_area: Kandivli West
+  start_stop: Kandivli Stn.(W)
+  start_area: Kandivli West
+  display_name: '246'
+  url: "/route/2464/"
+  slug: 246RING
+  end_stop: Kandivli Stn.(W)
+  created_at: '2013-11-25 21:19:23.80444'
+  updated_at: '2014-06-16 13:39:44.535395'
+routes_317:
+  id: '223'
+  code: '2530'
+  end_area: Goregaon West
+  start_stop: Juhu Bus Stn.
+  start_area: Juhu
+  display_name: '253'
+  url: "/route/2530/"
+  slug: '253'
+  end_stop: Goregaon Bus Stn(W)
+  created_at: '2013-11-25 21:19:23.822247'
+  updated_at: '2014-06-16 13:39:56.332731'
+routes_318:
+  id: '225'
+  code: '2551'
+  end_area: Versova
+  start_stop: Pratiksha Ngr.Depot
+  start_area: Pratiksha Nagar
+  display_name: 255 Ltd
+  url: "/route/2551/"
+  slug: 255LTD
+  end_stop: Vesava-Yari Rd.Bus Stn.
+  created_at: '2013-11-25 21:19:23.827276'
+  updated_at: '2014-06-16 13:40:09.635741'
+routes_319:
+  id: '333'
+  code: '3630'
+  end_area: Mahul
+  start_stop: Kurla Bus Stn (E)
+  start_area: Kurla East
+  display_name: '363'
+  url: "/route/3630/"
+  slug: '363'
+  end_stop: Mahul Village
+  created_at: '2013-11-25 21:19:24.149111'
+  updated_at: '2014-06-16 13:44:45.698002'
+routes_320:
+  id: '226'
+  code: '2560'
+  end_area: Malvani
+  start_stop: Juhu Beach
+  start_area: Juhu
+  display_name: '256'
+  url: "/route/2560/"
+  slug: '256'
+  end_stop: Malvani Depot/ Gaikwad Ngr.
+  created_at: '2013-11-25 21:19:23.829793'
+  updated_at: '2014-06-16 13:40:11.755069'
+routes_321:
+  id: '229'
+  code: '2580'
+  end_area: Goregaon West
+  start_stop: Goregaon Bus Stn(W)
+  start_area: Goregaon West
+  display_name: '258'
+  url: "/route/2580/"
+  slug: '258'
+  end_stop: S.R.A.Cly.Extn.
+  created_at: '2013-11-25 21:19:23.837138'
+  updated_at: '2014-06-16 13:40:19.110839'
+routes_322:
+  id: '230'
+  code: '2590'
+  end_area: Gorai
+  start_stop: Andheri Stn.(W) (Kumkum)
+  start_area: Andheri West
+  display_name: '259'
+  url: "/route/2590/"
+  slug: '259'
+  end_stop: Gorai Depot
+  created_at: '2013-11-25 21:19:23.83965'
+  updated_at: '2014-06-16 13:40:20.814957'
+routes_323:
+  id: '231'
+  code: '2604'
+  end_area: Borivli West
+  start_stop: Borivli Stn(W)
+  start_area: Borivli West
+  display_name: '260'
+  url: "/route/2604/"
+  slug: 260RING
+  end_stop: Borivli Stn(W)
+  created_at: '2013-11-25 21:19:23.842217'
+  updated_at: '2014-06-16 13:40:26.697106'
+routes_324:
+  id: '234'
+  code: '2624'
+  end_area: Goregaon West
+  start_stop: Goregaon Bus Stn(W)
+  start_area: Goregaon West
+  display_name: '262'
+  url: "/route/2624/"
+  slug: 262RING
+  end_stop: Goregaon Bus Stn(W)
+  created_at: '2013-11-25 21:19:23.849881'
+  updated_at: '2014-06-16 13:40:40.201389'
+routes_325:
+  id: '235'
+  code: '2630'
+  end_area: Andheri East
+  start_stop: Sadbhakti Mandir
+  start_area: Jogeshwari East
+  display_name: '263'
+  url: "/route/2630/"
+  slug: '263'
+  end_stop: Seepz Bus Stn.
+  created_at: '2013-11-25 21:19:23.852525'
+  updated_at: '2014-06-16 13:40:41.539117'
+routes_326:
+  id: '238'
+  code: '2660'
+  end_area: Oshiwara
+  start_stop: Andheri Bus Stn.(W)
+  start_area: Andheri West
+  display_name: '266'
+  url: "/route/2660/"
+  slug: '266'
+  end_stop: Shree Swami Samarth Ngr.Ext.
+  created_at: '2013-11-25 21:19:23.860601'
+  updated_at: '2014-06-16 13:40:43.52875'
+routes_327:
+  id: '239'
+  code: '2684'
+  end_area: Andheri West
+  start_stop: Andheri Bus Stn.(W)
+  start_area: Andheri West
+  display_name: '268'
+  url: "/route/2684/"
+  slug: 268RING
+  end_stop: Andheri Bus Stn.(W)
+  created_at: '2013-11-25 21:19:23.864654'
+  updated_at: '2014-06-16 13:40:45.0147'
+routes_328:
+  id: '240'
+  code: '2690'
+  end_area: Borivli West
+  start_stop: Madh Jetty
+  start_area: Madh
+  display_name: '269'
+  url: "/route/2690/"
+  slug: '269'
+  end_stop: Borivli Bus Stn(W)
+  created_at: '2013-11-25 21:19:23.866986'
+  updated_at: '2014-06-16 13:40:46.808146'
+routes_329:
+  id: '241'
+  code: '2700'
+  end_area: Malvani
+  start_stop: Malad Stn-W(Sainath Marg Chky)
+  start_area: Malad West
+  display_name: '270'
+  url: "/route/2700/"
+  slug: '2700'
+  end_stop: Mahapalika Pumping Centre (Malvani)
+  created_at: '2013-11-25 21:19:23.869423'
+  updated_at: '2014-06-16 13:40:47.491768'
+routes_330:
+  id: '242'
+  code: '2710'
+  end_area: Madh
+  start_stop: Malad Stn-W(Anand Marg Chky)
+  start_area: Malad West
+  display_name: '271'
+  url: "/route/2710/"
+  slug: '271'
+  end_stop: Madh Jetty
+  created_at: '2013-11-25 21:19:23.87221'
+  updated_at: '2014-06-16 13:40:49.064124'
+routes_331:
+  id: '244'
+  code: '2734'
+  end_area: Malad West
+  start_stop: Malad Stn-W(Sainath Marg Chky)
+  start_area: Malad West
+  display_name: '273'
+  url: "/route/2734/"
+  slug: 273RING
+  end_stop: Malad Stn-W(Sainath Marg Chky)
+  created_at: '2013-11-25 21:19:23.878042'
+  updated_at: '2014-06-16 13:41:01.586942'
+routes_332:
+  id: '246'
+  code: '2770'
+  end_area: Borivli West
+  start_stop: Kandivli Stn.(W)
+  start_area: Kandivli West
+  display_name: '277'
+  url: "/route/2770/"
+  slug: '277'
+  end_stop: Borivli Stn(W)
+  created_at: '2013-11-25 21:19:23.88294'
+  updated_at: '2014-06-16 13:41:03.850373'
+routes_333:
+  id: '247'
+  code: '2784'
+  end_area: Kandivli West
+  start_stop: Poisar Depot
+  start_area: Kandivli West
+  display_name: '278'
+  url: "/route/2784/"
+  slug: 278RING
+  end_stop: Poisar Depot
+  created_at: '2013-11-25 21:19:23.885391'
+  updated_at: '2014-06-16 13:41:05.772152'
+routes_334:
+  id: '248'
+  code: '2790'
+  end_area: Gorai
+  start_stop: Kandivli Stn.(W)
+  start_area: Kandivli West
+  display_name: '279'
+  url: "/route/2790/"
+  slug: '279'
+  end_stop: Gorai Depot
+  created_at: '2013-11-25 21:19:23.887756'
+  updated_at: '2014-06-16 13:41:06.778532'
+routes_335:
+  id: '534'
+  code: '8131'
+  end_area: Fort
+  start_stop: Chh. Shivaji Terminus
+  start_area: Fort
+  display_name: 813 Ltd
+  url: "/route/8131/"
+  slug: FORT FERI-2
+  end_stop: Chh. Shivaji Terminus
+  created_at: '2013-11-25 21:19:24.905353'
+  updated_at: '2014-06-16 13:56:54.679081'
+routes_336:
+  id: '250'
+  code: '2810'
+  end_area: Kandivli West
+  start_stop: Pushpa Park
+  start_area: Malad East
+  display_name: '281'
+  url: "/route/2810/"
+  slug: '281'
+  end_stop: Kandivli Stn.(W)
+  created_at: '2013-11-25 21:19:23.892624'
+  updated_at: '2014-06-16 13:41:09.034441'
+routes_337:
+  id: '252'
+  code: '2830'
+  end_area: Kandivli West
+  start_stop: Kandivli Stn.(W)
+  start_area: Kandivli West
+  display_name: '283'
+  url: "/route/2830/"
+  slug: '283'
+  end_stop: Santosh Ngr.(Kandivali-W)
+  created_at: '2013-11-25 21:19:23.897534'
+  updated_at: '2014-06-16 13:41:10.071095'
+routes_338:
+  id: '253'
+  code: '2844'
+  end_area: Borivli West
+  start_stop: Borivli Stn.(W) Bus Stn.
+  start_area: Borivli West
+  display_name: '284'
+  url: "/route/2844/"
+  slug: 284RING
+  end_stop: Borivli Stn.(W) Bus Stn.
+  created_at: '2013-11-25 21:19:23.899946'
+  updated_at: '2014-06-16 13:41:11.272324'
+routes_339:
+  id: '254'
+  code: '2854'
+  end_area: Kandivli West
+  start_stop: Kandivli Stn.(W)
+  start_area: Kandivli West
+  display_name: '285'
+  url: "/route/2854/"
+  slug: 285RING
+  end_stop: Kandivli Stn.(W)
+  created_at: '2013-11-25 21:19:23.902368'
+  updated_at: '2014-06-16 13:41:12.178945'
+routes_340:
+  id: '256'
+  code: '2870'
+  end_area: Kandivli East
+  start_stop: Kandivli Bus Stn.( E )
+  start_area: Kandivli East
+  display_name: '287'
+  url: "/route/2870/"
+  slug: '287'
+  end_stop: E.S.I.S.Hospital(Thakur Village)
+  created_at: '2013-11-25 21:19:23.907155'
+  updated_at: '2014-06-16 13:41:13.599719'
+routes_341:
+  id: '257'
+  code: '2884'
+  end_area: Kandivli East
+  start_stop: Kandivli Bus Stn.( E )
+  start_area: Kandivli East
+  display_name: '288'
+  url: "/route/2884/"
+  slug: 288RING
+  end_stop: Kandivli Bus Stn.( E )
+  created_at: '2013-11-25 21:19:23.909574'
+  updated_at: '2014-06-16 13:41:14.491777'
+routes_342:
+  id: '259'
+  code: '2901'
+  end_area: Kandivli West
+  start_stop: Seepz Bus Stn.
+  start_area: Andheri East
+  display_name: 290 Ltd
+  url: "/route/2901/"
+  slug: 290LTD
+  end_stop: Poisar Depot
+  created_at: '2013-11-25 21:19:23.914489'
+  updated_at: '2014-06-16 13:41:17.194947'
+routes_343:
+  id: '260'
+  code: '2914'
+  end_area: Kandivli West
+  start_stop: Kandivli Stn.(W)
+  start_area: Kandivli West
+  display_name: '291'
+  url: "/route/2914/"
+  slug: 291-RING
+  end_stop: Kandivli Stn.(W)
+  created_at: '2013-11-25 21:19:23.916941'
+  updated_at: '2014-06-16 13:41:18.571371'
+routes_344:
+  id: '262'
+  code: '2944'
+  end_area: Borivli West
+  start_stop: Borivli Stn.(W) Bus Stn.
+  start_area: Borivli West
+  display_name: '294'
+  url: "/route/2944/"
+  slug: 294RING
+  end_stop: Borivli Stn.(W) Bus Stn.
+  created_at: '2013-11-25 21:19:23.921997'
+  updated_at: '2014-06-16 13:41:20.487097'
+routes_345:
+  id: '264'
+  code: '2964'
+  end_area: Borivli West
+  start_stop: Shanti Ashram
+  start_area: Borivli West
+  display_name: '296'
+  url: "/route/2964/"
+  slug: 296RING
+  end_stop: Shanti Ashram
+  created_at: '2013-11-25 21:19:23.92737'
+  updated_at: '2014-06-16 13:41:33.0229'
+routes_346:
+  id: '266'
+  code: '2980'
+  end_area: Borivli East
+  start_stop: Borivli Stn(E)
+  start_area: Borivli East
+  display_name: '298'
+  url: "/route/2980/"
+  slug: '298'
+  end_stop: Rawal Pada(Borivli-E)
+  created_at: '2013-11-25 21:19:23.932639'
+  updated_at: '2014-06-16 13:41:34.45241'
+routes_347:
+  id: '267'
+  code: '2990'
+  end_area: Borivli East
+  start_stop: Jay Maharashtrangr.
+  start_area: Borivli East
+  display_name: '299'
+  url: "/route/2990/"
+  slug: '299'
+  end_stop: Borivli Market(E)/Carter Rd.
+  created_at: '2013-11-25 21:19:23.935206'
+  updated_at: '2014-06-16 13:41:34.970517'
+routes_348:
+  id: '268'
+  code: '3004'
+  end_area: Kandivli East
+  start_stop: Kandivli Bus Stn.( E )
+  start_area: Kandivli East
+  display_name: '300'
+  url: "/route/3004/"
+  slug: 300RING
+  end_stop: Kandivli Bus Stn.( E )
+  created_at: '2013-11-25 21:19:23.93814'
+  updated_at: '2014-06-16 13:41:40.882817'
+routes_349:
+  id: '296'
+  code: '3250'
+  end_area: Ghatkopar East
+  start_stop: Kurla Stn (W)
+  start_area: Kurla West
+  display_name: '325'
+  url: "/route/3250/"
+  slug: '325'
+  end_stop: Ghatkopar Bus Stn./Gkd
+  created_at: '2013-11-25 21:19:24.019264'
+  updated_at: '2014-06-16 13:42:58.268609'
+routes_350:
+  id: '270'
+  code: '3020'
+  end_area: Mulund West
+  start_stop: Pratiksha Ngr.Depot
+  start_area: Pratiksha Nagar
+  display_name: '302'
+  url: "/route/3020/"
+  slug: '302'
+  end_stop: Maharana Pratap Chk.(Mulund)
+  created_at: '2013-11-25 21:19:23.943228'
+  updated_at: '2014-06-16 13:41:45.172179'
+routes_351:
+  id: '271'
+  code: '3027'
+  end_area: Thane West
+  start_stop: Mahim Bus Stn.
+  start_area: Mahim
+  display_name: AS-302
+  url: "/route/3027/"
+  slug: AS-302
+  end_stop: Cadbury Jn.(Thane)
+  created_at: '2013-11-25 21:19:23.946174'
+  updated_at: '2014-06-16 13:41:47.413788'
+routes_352:
+  id: '272'
+  code: '3030'
+  end_area: Mulund East
+  start_stop: Bandra Rly.Terminus
+  start_area: Bandra East
+  display_name: '303'
+  url: "/route/3030/"
+  slug: '303'
+  end_stop: Mhada Cly.Bus Stn.(Mulund-E)
+  created_at: '2013-11-25 21:19:23.948943'
+  updated_at: '2014-06-16 13:41:51.009298'
+routes_353:
+  id: '273'
+  code: '3050'
+  end_area: Ghatkopar East
+  start_stop: Tardeo Bus Stn/Rushi Mehta Chk.
+  start_area: Tardeo
+  display_name: '305'
+  url: "/route/3050/"
+  slug: '305'
+  end_stop: Ghatkopar Bus Stn./Gkd
+  created_at: '2013-11-25 21:19:23.95139'
+  updated_at: '2014-06-16 13:41:54.58629'
+routes_354:
+  id: '274'
+  code: '3061'
+  end_area: Mulund West
+  start_stop: Santacruz Stn (E)
+  start_area: Santacruz East
+  display_name: 306 Ltd
+  url: "/route/3061/"
+  slug: 306LTD
+  end_stop: Mulund Rly.Stn.(W)
+  created_at: '2013-11-25 21:19:23.953773'
+  updated_at: '2014-06-16 13:41:57.89976'
+routes_355:
+  id: '276'
+  code: '3080'
+  end_area: Jogeshwari East
+  start_stop: Vidya Vihar Bus Stn(W)
+  start_area: Vidyavihar West
+  display_name: '308'
+  url: "/route/3080/"
+  slug: '308'
+  end_stop: Majas Depot/Shyam Ngr.
+  created_at: '2013-11-25 21:19:23.959027'
+  updated_at: '2014-06-16 13:42:07.350999'
+routes_356:
+  id: '277'
+  code: '3082'
+  end_area: Andheri East
+  start_stop: Vidya Vihar Bus Stn(W)
+  start_area: Vidyavihar West
+  display_name: '308'
+  url: "/route/3082/"
+  slug: 308-EXT.
+  end_stop: Sahar Cargo Complex
+  created_at: '2013-11-25 21:19:23.961768'
+  updated_at: '2014-06-16 13:42:08.511479'
+routes_357:
+  id: '278'
+  code: '3091'
+  end_area: Gorai
+  start_stop: Kurla Stn (W)
+  start_area: Kurla West
+  display_name: 309 Ltd
+  url: "/route/3091/"
+  slug: 309LTD
+  end_stop: Gorai Depot
+  created_at: '2013-11-25 21:19:23.964491'
+  updated_at: '2014-06-16 13:42:11.599542'
+routes_358:
+  id: '281'
+  code: '3120'
+  end_area: Andheri East
+  start_stop: Pratiksha Ngr.Depot
+  start_area: Pratiksha Nagar
+  display_name: '312'
+  url: "/route/3120/"
+  slug: '312'
+  end_stop: Seepz Bus Stn.
+  created_at: '2013-11-25 21:19:23.974376'
+  updated_at: '2014-06-16 13:42:21.349004'
+routes_359:
+  id: '283'
+  code: '3132'
+  end_area: Kalina
+  start_stop: Kurla Stn (W)
+  start_area: Kurla West
+  display_name: '313'
+  url: "/route/3132/"
+  slug: 313-EXT.
+  end_stop: Air India Quarters
+  created_at: '2013-11-25 21:19:23.981112'
+  updated_at: '2014-06-16 13:42:23.43786'
+routes_360:
+  id: '284'
+  code: '3140'
+  end_area: Santacruz East
+  start_stop: Wadala Depot
+  start_area: Wadala West
+  display_name: '314'
+  url: "/route/3140/"
+  slug: '314'
+  end_stop: Santacruz Stn (E)
+  created_at: '2013-11-25 21:19:23.98499'
+  updated_at: '2014-06-16 13:42:25.235017'
+routes_361:
+  id: '285'
+  code: '3150'
+  end_area: Santacruz East
+  start_stop: Pratiksha Ngr.Depot
+  start_area: Pratiksha Nagar
+  display_name: '315'
+  url: "/route/3150/"
+  slug: '315'
+  end_stop: Santacruz Stn (E)
+  created_at: '2013-11-25 21:19:23.988031'
+  updated_at: '2014-06-16 13:42:27.393961'
+routes_362:
+  id: '287'
+  code: '3170'
+  end_area: Bandra East
+  start_stop: Bandra Rly.Terminus
+  start_area: Bandra East
+  display_name: '317'
+  url: "/route/3170/"
+  slug: '317'
+  end_stop: Tata Cly.
+  created_at: '2013-11-25 21:19:23.996087'
+  updated_at: '2014-06-16 13:42:28.858497'
+routes_363:
+  id: '289'
+  code: '3190'
+  end_area: Chandivli
+  start_stop: Agarkar Chk.
+  start_area: Andheri East
+  display_name: '319'
+  url: "/route/3190/"
+  slug: '319'
+  end_stop: Mhada Cly.(Chandivli)
+  created_at: '2013-11-25 21:19:24.001147'
+  updated_at: '2014-06-16 13:42:35.991909'
+routes_364:
+  id: '290'
+  code: '3200'
+  end_area: Powai
+  start_stop: Kurla Stn (W)
+  start_area: Kurla West
+  display_name: '320'
+  url: "/route/3200/"
+  slug: '320'
+  end_stop: Filter Pada
+  created_at: '2013-11-25 21:19:24.003728'
+  updated_at: '2014-06-16 13:42:42.426804'
+routes_365:
+  id: '336'
+  code: '3660'
+  end_area: Shivaji Nagar
+  start_stop: Kurla Bus Stn (E)
+  start_area: Kurla East
+  display_name: '366'
+  url: "/route/3660/"
+  slug: '366'
+  end_stop: Shivaji Ngr.Terminus
+  created_at: '2013-11-25 21:19:24.157342'
+  updated_at: '2014-06-16 13:44:49.521279'
+routes_366:
+  id: '291'
+  code: '3211'
+  end_area: Ghatkopar East
+  start_stop: Mahim Bus Stn.
+  start_area: Mahim
+  display_name: 321 Ltd
+  url: "/route/3211/"
+  slug: 321LTD
+  end_stop: Barve Ngr.
+  created_at: '2013-11-25 21:19:24.006324'
+  updated_at: '2014-06-16 13:42:44.499449'
+routes_367:
+  id: '292'
+  code: '3220'
+  end_area: Vile Parle East
+  start_stop: Vidya Vihar Bus Stn(W)
+  start_area: Vidyavihar West
+  display_name: '322'
+  url: "/route/3220/"
+  slug: '322'
+  end_stop: Mahant Rd./Parle(E)
+  created_at: '2013-11-25 21:19:24.008807'
+  updated_at: '2014-06-16 13:42:46.393076'
+routes_368:
+  id: '294'
+  code: '3230'
+  end_area: Chandivli
+  start_stop: Vidya Vihar Bus Stn(W)
+  start_area: Vidyavihar West
+  display_name: '323'
+  url: "/route/3230/"
+  slug: '323'
+  end_stop: Sangharsh Ngr.(Chandivli)
+  created_at: '2013-11-25 21:19:24.013956'
+  updated_at: '2014-06-16 13:42:49.060359'
+routes_369:
+  id: '295'
+  code: '3240'
+  end_area: Marol
+  start_stop: Worli Depot
+  start_area: Worli
+  display_name: '324'
+  url: "/route/3240/"
+  slug: '324'
+  end_stop: Marol Maroshi Bus Stn.
+  created_at: '2013-11-25 21:19:24.01661'
+  updated_at: '2014-06-16 13:42:56.625373'
+routes_370:
+  id: '297'
+  code: '3260'
+  end_area: Dindoshi
+  start_stop: Kurla Stn (W)
+  start_area: Kurla West
+  display_name: '326'
+  url: "/route/3260/"
+  slug: '326'
+  end_stop: Shivshai Prakalp/Mantri Park
+  created_at: '2013-11-25 21:19:24.021959'
+  updated_at: '2014-06-16 13:43:00.467395'
+routes_371:
+  id: '300'
+  code: '3290'
+  end_area: Andheri East
+  start_stop: Shivaji Ngr.Depot
+  start_area: Shivaji Nagar
+  display_name: '329'
+  url: "/route/3290/"
+  slug: '329'
+  end_stop: Agarkar Chk.
+  created_at: '2013-11-25 21:19:24.030475'
+  updated_at: '2014-06-16 13:43:03.954851'
+routes_372:
+  id: '301'
+  code: '3301'
+  end_area: Andheri West
+  start_stop: Kurla Stn (W)
+  start_area: Kurla West
+  display_name: 330 Ltd
+  url: "/route/3301/"
+  slug: 330LTD
+  end_stop: Seven Bungalows Bus Stn.
+  created_at: '2013-11-25 21:19:24.033253'
+  updated_at: '2014-06-16 13:43:05.83899'
+routes_373:
+  id: '302'
+  code: '3320'
+  end_area: Jogeshwari East
+  start_stop: Kurla Stn (W)
+  start_area: Kurla West
+  display_name: '332'
+  url: "/route/3320/"
+  slug: '332'
+  end_stop: Majas Depot/Shyam Ngr.
+  created_at: '2013-11-25 21:19:24.036134'
+  updated_at: '2014-06-16 13:43:08.010753'
+routes_374:
+  id: '303'
+  code: '3330'
+  end_area: Marol
+  start_stop: New Qtrs( Chakala Cigarette Factory
+  start_area: Andheri East
+  display_name: '333'
+  url: "/route/3330/"
+  slug: '333'
+  end_stop: Kondivte Caves/Mahakali Caves
+  created_at: '2013-11-25 21:19:24.039032'
+  updated_at: '2014-06-16 13:43:08.805518'
+routes_375:
+  id: '306'
+  code: '3360'
+  end_area: Vidyavihar West
+  start_stop: J.V.P.D.Bus Stn.
+  start_area: JVPD
+  display_name: '336'
+  url: "/route/3360/"
+  slug: '336'
+  end_stop: Vidya Vihar Bus Stn(W)
+  created_at: '2013-11-25 21:19:24.049603'
+  updated_at: '2014-06-16 13:43:13.270909'
+routes_376:
+  id: '308'
+  code: '3390'
+  end_area: Jogeshwari East
+  start_stop: Juhu Bus Stn.
+  start_area: Juhu
+  display_name: '339'
+  url: "/route/3390/"
+  slug: '339'
+  end_stop: Majas Depot/Shyam Ngr.
+  created_at: '2013-11-25 21:19:24.057716'
+  updated_at: '2014-06-16 13:43:20.589281'
+routes_377:
+  id: '309'
+  code: '3400'
+  end_area: Andheri East
+  start_stop: Ghatkopar Stn.(W)
+  start_area: Ghatkopar East
+  display_name: '340'
+  url: "/route/3400/"
+  slug: '340'
+  end_stop: Agarkar Chk.
+  created_at: '2013-11-25 21:19:24.061619'
+  updated_at: '2014-06-16 13:43:21.980881'
+routes_378:
+  id: '311'
+  code: '3410'
+  end_area: Goregaon East
+  start_stop: Antop Hill Bus Stn.
+  start_area: Antop Hill
+  display_name: '341'
+  url: "/route/3410/"
+  slug: '341'
+  end_stop: Goregaon Stn(E)
+  created_at: '2013-11-25 21:19:24.069743'
+  updated_at: '2014-06-16 13:43:30.689074'
+routes_379:
+  id: '312'
+  code: '3420'
+  end_area: Goregaon East
+  start_stop: Goregaon Stn(E)
+  start_area: Goregaon East
+  display_name: '342'
+  url: "/route/3420/"
+  slug: '342'
+  end_stop: Kokan Vikas
+  created_at: '2013-11-25 21:19:24.073637'
+  updated_at: '2014-06-16 13:43:31.355933'
+routes_380:
+  id: '313'
+  code: '3430'
+  end_area: Dindoshi
+  start_stop: Goregaon Stn(E)
+  start_area: Goregaon East
+  display_name: '343'
+  url: "/route/3430/"
+  slug: '343'
+  end_stop: Dadasaheb Phalhke Chitra Ngry
+  created_at: '2013-11-25 21:19:24.077603'
+  updated_at: '2014-06-16 13:43:37.192075'
+routes_381:
+  id: '315'
+  code: '3450'
+  end_area: Gorai
+  start_stop: Santosh Ngr.Extn.
+  start_area: Dindoshi
+  display_name: '345'
+  url: "/route/3450/"
+  slug: '345'
+  end_stop: Gorai Depot
+  created_at: '2013-11-25 21:19:24.089675'
+  updated_at: '2014-06-16 13:43:40.048399'
+routes_382:
+  id: '317'
+  code: '3474'
+  end_area: Goregaon East
+  start_stop: Goregaon Stn(E)
+  start_area: Goregaon East
+  display_name: '347'
+  url: "/route/3474/"
+  slug: 347RING
+  end_stop: Goregaon Stn(E)
+  created_at: '2013-11-25 21:19:24.096819'
+  updated_at: '2014-06-16 13:43:47.085637'
+routes_383:
+  id: '318'
+  code: '3481'
+  end_area: Dahisar East
+  start_stop: Chunabhatti Bus Terminus
+  start_area: Chunabhatti
+  display_name: 348 Ltd
+  url: "/route/3481/"
+  slug: 348LTD
+  end_stop: Dahisar Bus Stn.
+  created_at: '2013-11-25 21:19:24.099968'
+  updated_at: '2014-06-16 13:43:55.7908'
+routes_384:
+  id: '329'
+  code: '3591'
+  end_area: Malvani
+  start_stop: Jarimari
+  start_area: Kurla West
+  display_name: 359 Ltd
+  url: "/route/3591/"
+  slug: 359LTD
+  end_stop: Malvani Depot/ Gaikwad Ngr.
+  created_at: '2013-11-25 21:19:24.138854'
+  updated_at: '2014-06-16 13:44:36.131162'
+routes_385:
+  id: '319'
+  code: '3483'
+  end_area: Dahisar East
+  start_stop: Anik Depot
+  start_area: Wadala East
+  display_name: 348 Ltd
+  url: "/route/3483/"
+  slug: 348 LTD-EXTRA
+  end_stop: Dahisar Bus Stn.
+  created_at: '2013-11-25 21:19:24.103801'
+  updated_at: '2014-06-16 13:43:59.411332'
+routes_386:
+  id: '320'
+  code: '3490'
+  end_area: Dindoshi
+  start_stop: Kurla Stn (W)
+  start_area: Kurla West
+  display_name: '349'
+  url: "/route/3490/"
+  slug: '349'
+  end_stop: Santosh Ngr.Extn.
+  created_at: '2013-11-25 21:19:24.107785'
+  updated_at: '2014-06-16 13:44:01.414389'
+routes_387:
+  id: '322'
+  code: '3510'
+  end_area: Chembur East
+  start_stop: Mumbai Central Depot
+  start_area: Mumbai Central
+  display_name: '351'
+  url: "/route/3510/"
+  slug: '351'
+  end_stop: Tata Power Centre(Chembur)
+  created_at: '2013-11-25 21:19:24.116058'
+  updated_at: '2014-06-16 13:44:05.557608'
+routes_388:
+  id: '324'
+  code: '3530'
+  end_area: Vikhroli East
+  start_stop: Wadala Depot
+  start_area: Wadala West
+  display_name: '353'
+  url: "/route/3530/"
+  slug: '353'
+  end_stop: Tagore Ngr.No 5
+  created_at: '2013-11-25 21:19:24.123381'
+  updated_at: '2014-06-16 13:44:14.174185'
+routes_389:
+  id: '426'
+  code: '4620'
+  end_area: Dahisar East
+  start_stop: Borivli Stn(E)
+  start_area: Borivli East
+  display_name: '462'
+  url: "/route/4620/"
+  slug: '462'
+  end_stop: Vaishali Ngr.
+  created_at: '2013-11-25 21:19:24.49428'
+  updated_at: '2014-06-16 13:49:11.289384'
+routes_390:
+  id: '325'
+  code: '3540'
+  end_area: Vikhroli East
+  start_stop: Ram Ganesh Gadkari Chk.
+  start_area: Shivaji Park
+  display_name: '354'
+  url: "/route/3540/"
+  slug: '354'
+  end_stop: Kannamwar Ngr.No 2
+  created_at: '2013-11-25 21:19:24.126555'
+  updated_at: '2014-06-16 13:44:21.472583'
+routes_391:
+  id: '326'
+  code: '3551'
+  end_area: Versova
+  start_stop: Trombay
+  start_area: Trombay
+  display_name: 355 Ltd
+  url: "/route/3551/"
+  slug: 355LTD
+  end_stop: Vesava-Yari Rd.Bus Stn.
+  created_at: '2013-11-25 21:19:24.130149'
+  updated_at: '2014-06-16 13:44:29.386695'
+routes_392:
+  id: '328'
+  code: '3570'
+  end_area: Shivaji Nagar
+  start_stop: Mumbai Central Depot
+  start_area: Mumbai Central
+  display_name: '357'
+  url: "/route/3570/"
+  slug: '357'
+  end_stop: Shivaji Ngr.Depot
+  created_at: '2013-11-25 21:19:24.136249'
+  updated_at: '2014-06-16 13:44:34.050827'
+routes_393:
+  id: '330'
+  code: '3600'
+  end_area: Kurla East
+  start_stop: Trombay
+  start_area: Trombay
+  display_name: '360'
+  url: "/route/3600/"
+  slug: '360'
+  end_stop: Kurla Bus Stn (E)
+  created_at: '2013-11-25 21:19:24.141413'
+  updated_at: '2014-06-16 13:44:37.478636'
+routes_394:
+  id: '334'
+  code: '3640'
+  end_area: Trombay
+  start_stop: Mahul Village
+  start_area: Mahul
+  display_name: '364'
+  url: "/route/3640/"
+  slug: '364'
+  end_stop: Trombay
+  created_at: '2013-11-25 21:19:24.151736'
+  updated_at: '2014-06-16 13:44:47.297668'
+routes_395:
+  id: '435'
+  code: '4841'
+  end_area: Thane West
+  start_stop: Mhada Cly.Bus Stn.(Mulund-E)
+  start_area: Mulund East
+  display_name: 484 Ltd
+  url: "/route/4841/"
+  slug: 484LTD
+  end_stop: Pawar Ngr.Bus Stn.(Thane)
+  created_at: '2013-11-25 21:19:24.523007'
+  updated_at: '2014-06-16 13:51:00.741518'
+routes_396:
+  id: '436'
+  code: '4881'
+  end_area: Goregaon East
+  start_stop: Shivaji Ngr.Depot
+  start_area: Shivaji Nagar
+  display_name: 488 Ltd
+  url: "/route/4881/"
+  slug: 488LTD
+  end_stop: Dindoshi Depot
+  created_at: '2013-11-25 21:19:24.52627'
+  updated_at: '2014-06-16 13:51:07.547092'
+routes_397:
+  id: '437'
+  code: '4891'
+  end_area: Dahisar West
+  start_stop: Shivaji Ngr.Depot
+  start_area: Shivaji Nagar
+  display_name: 489 Ltd
+  url: "/route/4891/"
+  slug: 489LTD
+  end_stop: Dahisar Bridge
+  created_at: '2013-11-25 21:19:24.529616'
+  updated_at: '2014-06-16 13:51:21.64691'
+routes_398:
+  id: '501'
+  code: '6250'
+  end_area: Kandivli East
+  start_stop: Malad Stn-E(Poddar Park)
+  start_area: Malad East
+  display_name: '625'
+  url: "/route/6250/"
+  slug: '625'
+  end_stop: Alika Ngr.
+  created_at: '2013-11-25 21:19:24.751926'
+  updated_at: '2014-06-16 13:55:52.062211'
+routes_399:
+  id: '438'
+  code: '4911'
+  end_area: Thane West
+  start_stop: Seepz Bus Stn.
+  start_area: Andheri East
+  display_name: 491 Ltd
+  url: "/route/4911/"
+  slug: 491LTD
+  end_stop: Brahmand Azad Ngr.Bus Stn
+  created_at: '2013-11-25 21:19:24.532925'
+  updated_at: '2014-06-16 13:51:24.837133'
+routes_400:
+  id: '440'
+  code: '4931'
+  end_area: Thane West
+  start_stop: Anushakti Ngr.Bus Stn.
+  start_area: Anushakti Nagar
+  display_name: 493 Ltd
+  url: "/route/4931/"
+  slug: 493LTD
+  end_stop: Dadlani Park (Thane-W)
+  created_at: '2013-11-25 21:19:24.538943'
+  updated_at: '2014-06-16 13:51:44.285323'
+routes_401:
+  id: '448'
+  code: '5011'
+  end_area: Airoli
+  start_stop: Kurla Bus Stn (E)
+  start_area: Kurla East
+  display_name: 501 Ltd
+  url: "/route/5011/"
+  slug: 501LTD
+  end_stop: Airoli Bus Stn.
+  created_at: '2013-11-25 21:19:24.565262'
+  updated_at: '2014-06-16 13:52:50.311889'
+routes_402:
+  id: '466'
+  code: '5151'
+  end_area: Belapur
+  start_stop: Bandra Bus Stn(W)
+  start_area: Bandra West
+  display_name: 515 Ltd
+  url: "/route/5151/"
+  slug: 5151 LTD
+  end_stop: C.B.D. Belapur Bus Stn.
+  created_at: '2013-11-25 21:19:24.630092'
+  updated_at: '2014-06-16 13:54:29.109793'
+routes_403:
+  id: '338'
+  code: '3681'
+  end_area: Mulund West
+  start_stop: P.Thakre Udn.Bus Stn.
+  start_area: Sewree
+  display_name: 368 Ltd
+  url: "/route/3681/"
+  slug: 368LTD
+  end_stop: Mulund Depot
+  created_at: '2013-11-25 21:19:24.163115'
+  updated_at: '2014-06-16 13:44:53.468075'
+routes_404:
+  id: '340'
+  code: '3700'
+  end_area: Mulund East
+  start_stop: Mhada Cly.Bus Stn.(Mulund-E)
+  start_area: Mulund East
+  display_name: '370'
+  url: "/route/3700/"
+  slug: '370'
+  end_stop: Kelkar College
+  created_at: '2013-11-25 21:19:24.168583'
+  updated_at: '2014-06-16 13:44:55.085763'
+routes_405:
+  id: '341'
+  code: '3710'
+  end_area: Anushakti Nagar
+  start_stop: Bandra Bus Stn(W)
+  start_area: Bandra West
+  display_name: '371'
+  url: "/route/3710/"
+  slug: '371'
+  end_stop: Anushakti Ngr.
+  created_at: '2013-11-25 21:19:24.171422'
+  updated_at: '2014-06-16 13:44:56.391351'
+routes_406:
+  id: '343'
+  code: '3731'
+  end_area: Mulund West
+  start_stop: Mahul Village
+  start_area: Mahul
+  display_name: 373 Ltd
+  url: "/route/3731/"
+  slug: 373LTD
+  end_stop: Vaishali Ngr.
+  created_at: '2013-11-25 21:19:24.177192'
+  updated_at: '2014-06-16 13:45:09.757378'
+routes_407:
+  id: '528'
+  code: '8081'
+  end_area: Churchgate
+  start_stop: Ahilyabai Holkar Chk.
+  start_area: Churchgate
+  display_name: 808 Ltd
+  url: "/route/8081/"
+  slug: SPL-8
+  end_stop: Ahilyabai Holkar Chk.
+  created_at: '2013-11-25 21:19:24.887047'
+  updated_at: '2014-06-16 13:56:50.61357'
+routes_408:
+  id: '344'
+  code: '3736'
+  end_area: Mulund East
+  start_stop: Bnd Reclamation Bus Stn.
+  start_area: Bandra West
+  display_name: C-373 Exp
+  url: "/route/3736/"
+  slug: SPASTIC SOCIETY
+  end_stop: Gawanpada
+  created_at: '2013-11-25 21:19:24.180251'
+  updated_at: '2014-06-16 13:45:11.201186'
+routes_409:
+  id: '345'
+  code: '3741'
+  end_area: Goregaon West
+  start_stop: Anushakti Ngr.Bus Stn.
+  start_area: Anushakti Nagar
+  display_name: 374 Ltd
+  url: "/route/3741/"
+  slug: 374LTD
+  end_stop: Goregaon Bus Stn(W)
+  created_at: '2013-11-25 21:19:24.183252'
+  updated_at: '2014-06-16 13:45:19.250144'
+routes_410:
+  id: '347'
+  code: '3760'
+  end_area: Mahim
+  start_stop: Shivaji Ngr.Depot
+  start_area: Shivaji Nagar
+  display_name: '376'
+  url: "/route/3760/"
+  slug: '376'
+  end_stop: Mahim Bus Stn.
+  created_at: '2013-11-25 21:19:24.189172'
+  updated_at: '2014-06-16 13:45:22.13141'
+routes_411:
+  id: '348'
+  code: '3770'
+  end_area: Mankhurd
+  start_stop: Kurla Bus Stn (E)
+  start_area: Kurla East
+  display_name: '377'
+  url: "/route/3770/"
+  slug: '377'
+  end_stop: S.R.A.Cly.,Mankhurd(Lallubhai Com
+  created_at: '2013-11-25 21:19:24.192133'
+  updated_at: '2014-06-16 13:45:22.676581'
+routes_412:
+  id: '350'
+  code: '3790'
+  end_area: Ghatkopar East
+  start_stop: Shivaji Ngr.Terminus
+  start_area: Shivaji Nagar
+  display_name: '379'
+  url: "/route/3790/"
+  slug: '379'
+  end_stop: Ghatkopar Stn.(E)-2
+  created_at: '2013-11-25 21:19:24.198305'
+  updated_at: '2014-06-16 13:45:24.772649'
+routes_413:
+  id: '351'
+  code: '3800'
+  end_area: Vikhroli West
+  start_stop: Trombay
+  start_area: Trombay
+  display_name: '380'
+  url: "/route/3800/"
+  slug: '380'
+  end_stop: Amrut Ngr.
+  created_at: '2013-11-25 21:19:24.200928'
+  updated_at: '2014-06-16 13:45:26.091019'
+routes_414:
+  id: '352'
+  code: '3810'
+  end_area: Chembur East
+  start_stop: Ghatkopar Bus Stn./Gkd
+  start_area: Ghatkopar East
+  display_name: '381'
+  url: "/route/3810/"
+  slug: '381'
+  end_stop: Tata Power Centre(Chembur)
+  created_at: '2013-11-25 21:19:24.203924'
+  updated_at: '2014-06-16 13:45:27.036127'
+routes_415:
+  id: '353'
+  code: '3821'
+  end_area: Andheri East
+  start_stop: Anushakti Ngr.Bus Stn.
+  start_area: Anushakti Nagar
+  display_name: 382 Ltd
+  url: "/route/3821/"
+  slug: 382LTD
+  end_stop: Sahar Cargo Complex
+  created_at: '2013-11-25 21:19:24.207005'
+  updated_at: '2014-06-16 13:45:28.958813'
+routes_416:
+  id: '355'
+  code: '3840'
+  end_area: Ghatkopar East
+  start_stop: Bandra Bus Stn(W)
+  start_area: Bandra West
+  display_name: '384'
+  url: "/route/3840/"
+  slug: '384'
+  end_stop: Ghatkopar Bus Stn./Gkd
+  created_at: '2013-11-25 21:19:24.214632'
+  updated_at: '2014-06-16 13:45:38.050025'
+routes_417:
+  id: '356'
+  code: '3842'
+  end_area: Ghatkopar East
+  start_stop: Bandra Bus Stn(W)
+  start_area: Bandra West
+  display_name: '384'
+  url: "/route/3842/"
+  slug: 384 EXT.BANDRA FAIR
+  end_stop: Ghatkopar Bus Stn./Gkd
+  created_at: '2013-11-25 21:19:24.218417'
+  updated_at: '2014-06-16 13:45:44.910925'
+routes_418:
+  id: '530'
+  code: '8101'
+  end_area: Sewree
+  start_stop: Breach Candy Hospital
+  start_area: Nepean Sea Road
+  display_name: 810 Ltd
+  url: "/route/8101/"
+  slug: MAHALAXMI FAIR 810L
+  end_stop: P.Thakre Udn.Bus Stn.
+  created_at: '2013-11-25 21:19:24.89307'
+  updated_at: '2014-06-16 13:56:51.626209'
+routes_419:
+  id: '357'
+  code: '3850'
+  end_area: Ghatkopar East
+  start_stop: Tardeo Bus Stn/Rushi Mehta Chk.
+  start_area: Tardeo
+  display_name: '385'
+  url: "/route/3850/"
+  slug: '385'
+  end_stop: Ghatkopar Bus Stn./Gkd
+  created_at: '2013-11-25 21:19:24.221952'
+  updated_at: '2014-06-16 13:45:47.477011'
+routes_420:
+  id: '358'
+  code: '3860'
+  end_area: Vikhroli West
+  start_stop: Ghatkopar Stn.(W)
+  start_area: Ghatkopar East
+  display_name: '386'
+  url: "/route/3860/"
+  slug: '386'
+  end_stop: Nagbaba Mandir (Kailas Complex)
+  created_at: '2013-11-25 21:19:24.272651'
+  updated_at: '2014-06-16 13:45:53.936819'
+routes_421:
+  id: '359'
+  code: '3870'
+  end_area: Vikhroli West
+  start_stop: Ghatkopar Stn.(W)
+  start_area: Ghatkopar East
+  display_name: '387'
+  url: "/route/3870/"
+  slug: '387'
+  end_stop: Vikhroli Park Site
+  created_at: '2013-11-25 21:19:24.276535'
+  updated_at: '2014-06-16 13:45:54.739773'
+routes_422:
+  id: '360'
+  code: '3881'
+  end_area: Andheri East
+  start_stop: Kannamwar Ngr.No 2
+  start_area: Vikhroli East
+  display_name: 388 Ltd
+  url: "/route/3881/"
+  slug: 388LTD
+  end_stop: Seepz Bus Stn.
+  created_at: '2013-11-25 21:19:24.279742'
+  updated_at: '2014-06-16 13:45:57.005589'
+routes_423:
+  id: '361'
+  code: '3887'
+  end_area: Kandivli West
+  start_stop: Ghatkopar Bus Stn./Gkd
+  start_area: Ghatkopar East
+  display_name: AS-388
+  url: "/route/3887/"
+  slug: AS-388
+  end_stop: Poisar Depot
+  created_at: '2013-11-25 21:19:24.282864'
+  updated_at: '2014-06-16 13:45:59.562701'
+routes_424:
+  id: '363'
+  code: '3904'
+  end_area: Ghatkopar East
+  start_stop: Ghatkopar Stn.(W)
+  start_area: Ghatkopar East
+  display_name: '390'
+  url: "/route/3904/"
+  slug: 390RING
+  end_stop: Ghatkopar Stn.(W)
+  created_at: '2013-11-25 21:19:24.28898'
+  updated_at: '2014-06-16 13:46:11.2951'
+routes_425:
+  id: '364'
+  code: '3910'
+  end_area: Mulund West
+  start_stop: Mulund Rly.Stn.(W)
+  start_area: Mulund West
+  display_name: '391'
+  url: "/route/3910/"
+  slug: '391'
+  end_stop: Khindipada (Dargh)
+  created_at: '2013-11-25 21:19:24.29207'
+  updated_at: '2014-06-16 13:46:12.061813'
+routes_426:
+  id: '365'
+  code: '3920'
+  end_area: Jogeshwari East
+  start_stop: Vikhroli Depot
+  start_area: Vikhroli West
+  display_name: '392'
+  url: "/route/3920/"
+  slug: '392'
+  end_stop: Majas Depot/Shyam Ngr.
+  created_at: '2013-11-25 21:19:24.295024'
+  updated_at: '2014-06-16 13:46:14.516739'
+routes_427:
+  id: '368'
+  code: '3950'
+  end_area: Marol
+  start_stop: Santacruz Stn (E)
+  start_area: Santacruz East
+  display_name: '395'
+  url: "/route/3950/"
+  slug: '395'
+  end_stop: Bamandaya Pada
+  created_at: '2013-11-25 21:19:24.304162'
+  updated_at: '2014-06-16 13:46:16.774412'
+routes_428:
+  id: '369'
+  code: '3961'
+  end_area: Andheri East
+  start_stop: Mulund-W Check Naka Bus Stn.
+  start_area: Mulund West
+  display_name: 396 Ltd
+  url: "/route/3961/"
+  slug: 396LTD
+  end_stop: Agarkar Chk.
+  created_at: '2013-11-25 21:19:24.307206'
+  updated_at: '2014-06-16 13:46:19.615674'
+routes_429:
+  id: '383'
+  code: '4110'
+  end_area: Chandivli
+  start_stop: Wadala Depot
+  start_area: Wadala West
+  display_name: '411'
+  url: "/route/4110/"
+  slug: '411'
+  end_stop: Sangharsh Ngr.(Chandivli)
+  created_at: '2013-11-25 21:19:24.353464'
+  updated_at: '2014-06-16 13:46:56.9072'
+routes_430:
+  id: '371'
+  code: '3981'
+  end_area: Dindoshi
+  start_stop: Mulund-W Check Naka Bus Stn.
+  start_area: Mulund West
+  display_name: 398 Ltd
+  url: "/route/3981/"
+  slug: 398LTD
+  end_stop: Dindoshi Bus Stn.
+  created_at: '2013-11-25 21:19:24.313239'
+  updated_at: '2014-06-16 13:46:23.438154'
+routes_431:
+  id: '372'
+  code: '3991'
+  end_area: Thane West
+  start_stop: Trombay
+  start_area: Trombay
+  display_name: 399 Ltd
+  url: "/route/3991/"
+  slug: 399LTD
+  end_stop: Marathon Chk.(Teen Hath Naka)
+  created_at: '2013-11-25 21:19:24.316517'
+  updated_at: '2014-06-16 13:46:26.661385'
+routes_432:
+  id: '374'
+  code: '4020'
+  end_area: Mulund West
+  start_stop: Mulund Rly.Stn.(W)
+  start_area: Mulund West
+  display_name: '402'
+  url: "/route/4020/"
+  slug: '402'
+  end_stop: Vaishali Ngr.
+  created_at: '2013-11-25 21:19:24.323045'
+  updated_at: '2014-06-16 13:46:28.193633'
+routes_433:
+  id: '375'
+  code: '4031'
+  end_area: Andheri East
+  start_stop: Mhada Cly.Bus Stn.(Mulund-E)
+  start_area: Mulund East
+  display_name: 403 Ltd
+  url: "/route/4031/"
+  slug: 403LTD
+  end_stop: Agarkar Chk.
+  created_at: '2013-11-25 21:19:24.326424'
+  updated_at: '2014-06-16 13:46:30.113249'
+routes_434:
+  id: '377'
+  code: '4050'
+  end_area: Mulund West
+  start_stop: Mulund Rly.Stn.(W)
+  start_area: Mulund West
+  display_name: '405'
+  url: "/route/4050/"
+  slug: '405'
+  end_stop: Yogi Hills (Mulund-W)
+  created_at: '2013-11-25 21:19:24.333109'
+  updated_at: '2014-06-16 13:46:31.644868'
+routes_435:
+  id: '379'
+  code: '4070'
+  end_area: Mulund West
+  start_stop: Kelkar College
+  start_area: Mulund East
+  display_name: '407'
+  url: "/route/4070/"
+  slug: '407'
+  end_stop: Nimkar Scty.
+  created_at: '2013-11-25 21:19:24.339287'
+  updated_at: '2014-06-16 13:46:42.950479'
+routes_436:
+  id: '380'
+  code: '4080'
+  end_area: Mulund West
+  start_stop: Mahim Bus Stn.
+  start_area: Mahim
+  display_name: '408'
+  url: "/route/4080/"
+  slug: '408'
+  end_stop: Mulund Rly.Stn.(W)
+  created_at: '2013-11-25 21:19:24.343878'
+  updated_at: '2014-06-16 13:46:46.011045'
+routes_437:
+  id: '381'
+  code: '4091'
+  end_area: Andheri East
+  start_stop: Mulund Depot
+  start_area: Mulund West
+  display_name: 409 Ltd
+  url: "/route/4091/"
+  slug: 409LTD
+  end_stop: Sahar Cargo Complex
+  created_at: '2013-11-25 21:19:24.347251'
+  updated_at: '2014-06-16 13:46:53.639897'
+routes_438:
+  id: '382'
+  code: '4100'
+  end_area: Marol
+  start_stop: Vikhroli Depot
+  start_area: Vikhroli West
+  display_name: '410'
+  url: "/route/4100/"
+  slug: '410'
+  end_stop: Kondivte Caves/Mahakali Caves
+  created_at: '2013-11-25 21:19:24.3504'
+  updated_at: '2014-06-16 13:46:54.817533'
+routes_439:
+  id: '386'
+  code: '4141'
+  end_area: Jogeshwari East
+  start_stop: Mumbai Central Depot
+  start_area: Mumbai Central
+  display_name: 414 Ltd
+  url: "/route/4141/"
+  slug: '4141'
+  end_stop: Majas Depot/Shyam Ngr.
+  created_at: '2013-11-25 21:19:24.362889'
+  updated_at: '2014-06-16 13:47:10.488547'
+routes_440:
+  id: '388'
+  code: '4160'
+  end_area: Vikhroli West
+  start_stop: Ghatkopar Stn.(W)
+  start_area: Ghatkopar East
+  display_name: '416'
+  url: "/route/4160/"
+  slug: '416'
+  end_stop: Amrut Ngr.
+  created_at: '2013-11-25 21:19:24.369882'
+  updated_at: '2014-06-16 13:47:12.243876'
+routes_441:
+  id: '390'
+  code: '4190'
+  end_area: Chandivli
+  start_stop: Ghatkopar Bus Stn./Gkd
+  start_area: Ghatkopar East
+  display_name: '419'
+  url: "/route/4190/"
+  slug: '419'
+  end_stop: Sangharsh Ngr.(Chandivli)
+  created_at: '2013-11-25 21:19:24.376488'
+  updated_at: '2014-06-16 13:47:14.401378'
+routes_442:
+  id: '391'
+  code: '4210'
+  end_area: Powai
+  start_stop: Ghatkopar Bus Stn./Gkd
+  start_area: Ghatkopar East
+  display_name: '421'
+  url: "/route/4210/"
+  slug: '421'
+  end_stop: Filter Pada
+  created_at: '2013-11-25 21:19:24.379703'
+  updated_at: '2014-06-16 13:47:15.835416'
+routes_443:
+  id: '392'
+  code: '4214'
+  end_area: Ghatkopar East
+  start_stop: Ghatkopar Bus Stn./Gkd
+  start_area: Ghatkopar East
+  display_name: '421'
+  url: "/route/4214/"
+  slug: 421-EXTRA RING
+  end_stop: Ghatkopar Bus Stn./Gkd
+  created_at: '2013-11-25 21:19:24.383111'
+  updated_at: '2014-06-16 13:47:17.807871'
+routes_444:
+  id: '407'
+  code: '4401'
+  end_area: Borivli East
+  start_stop: Wadala Depot
+  start_area: Wadala West
+  display_name: 440 Ltd
+  url: "/route/4401/"
+  slug: 440LTD
+  end_stop: Borivli Stn(E)
+  created_at: '2013-11-25 21:19:24.433682'
+  updated_at: '2014-06-16 13:47:49.153631'
+routes_445:
+  id: '393'
+  code: '4220'
+  end_area: Bandra West
+  start_stop: Mulund-W Check Naka Bus Stn.
+  start_area: Mulund West
+  display_name: '422'
+  url: "/route/4220/"
+  slug: '422'
+  end_stop: Bandra Bus Stn(W)
+  created_at: '2013-11-25 21:19:24.386674'
+  updated_at: '2014-06-16 13:47:21.928143'
+routes_446:
+  id: '394'
+  code: '4227'
+  end_area: Andheri East
+  start_stop: Mulund-W Check Naka Bus Stn.
+  start_area: Mulund West
+  display_name: AS-422
+  url: "/route/4227/"
+  slug: AS-422
+  end_stop: Agarkar Chk.
+  created_at: '2013-11-25 21:19:24.389897'
+  updated_at: '2014-06-16 13:47:24.317122'
+routes_447:
+  id: '395'
+  code: '4240'
+  end_area: Oshiwara
+  start_stop: Mulund Rly.Stn.(W)
+  start_area: Mulund West
+  display_name: '424'
+  url: "/route/4240/"
+  slug: '424'
+  end_stop: Goregaon Depot
+  created_at: '2013-11-25 21:19:24.393414'
+  updated_at: '2014-06-16 13:47:28.007968'
+routes_448:
+  id: '397'
+  code: '4260'
+  end_area: Powai
+  start_stop: Vidya Vihar Bus Stn(W)
+  start_area: Vidyavihar West
+  display_name: '426'
+  url: "/route/4260/"
+  slug: '426'
+  end_stop: Filter Pada
+  created_at: '2013-11-25 21:19:24.400308'
+  updated_at: '2014-06-16 13:47:31.239922'
+routes_449:
+  id: '398'
+  code: '4270'
+  end_area: Vihar
+  start_stop: Ghatkopar Stn.(W)
+  start_area: Ghatkopar East
+  display_name: '427'
+  url: "/route/4270/"
+  slug: '4270'
+  end_stop: Vihar Lake
+  created_at: '2013-11-25 21:19:24.403591'
+  updated_at: '2014-06-16 13:47:32.308359'
+routes_450:
+  id: '399'
+  code: '4280'
+  end_area: Jogeshwari East
+  start_stop: Mangatram Petrolpump
+  start_area: Bhandup West
+  display_name: '428'
+  url: "/route/4280/"
+  slug: '428'
+  end_stop: Sadbhakti Mandir
+  created_at: '2013-11-25 21:19:24.407028'
+  updated_at: '2014-06-16 13:47:33.756212'
+routes_451:
+  id: '401'
+  code: '4300'
+  end_area: Ghatkopar East
+  start_stop: Mahul Village
+  start_area: Mahul
+  display_name: '430'
+  url: "/route/4300/"
+  slug: '430'
+  end_stop: Ghatkopar Bus Stn./Gkd
+  created_at: '2013-11-25 21:19:24.413748'
+  updated_at: '2014-06-16 13:47:40.73327'
+routes_452:
+  id: '403'
+  code: '4330'
+  end_area: Santacruz East
+  start_stop: Vidya Vihar Bus Stn(W)
+  start_area: Vidyavihar West
+  display_name: '433'
+  url: "/route/4330/"
+  slug: '433'
+  end_stop: Santacruz Stn (E)
+  created_at: '2013-11-25 21:19:24.420242'
+  updated_at: '2014-06-16 13:47:43.170015'
+routes_453:
+  id: '404'
+  code: '4340'
+  end_area: Marol
+  start_stop: Agarkar Chk.
+  start_area: Andheri East
+  display_name: '434'
+  url: "/route/4340/"
+  slug: '434'
+  end_stop: Bamandaya Pada
+  created_at: '2013-11-25 21:19:24.423496'
+  updated_at: '2014-06-16 13:47:44.074168'
+routes_454:
+  id: '406'
+  code: '4380'
+  end_area: Dahisar East
+  start_stop: Dindoshi Bus Stn.
+  start_area: Dindoshi
+  display_name: '438'
+  url: "/route/4380/"
+  slug: '438'
+  end_stop: Dahisar Bus Stn.
+  created_at: '2013-11-25 21:19:24.430302'
+  updated_at: '2014-06-16 13:47:46.590381'
+routes_455:
+  id: '408'
+  code: '4407'
+  end_area: Borivli East
+  start_stop: Wadala Depot
+  start_area: Wadala West
+  display_name: AS-440
+  url: "/route/4407/"
+  slug: AS-440
+  end_stop: Borivli Stn(E)
+  created_at: '2013-11-25 21:19:24.436976'
+  updated_at: '2014-06-16 13:47:56.739632'
+routes_456:
+  id: '410'
+  code: '4420'
+  end_area: Jogeshwari East
+  start_stop: Sadbhakti Mandir
+  start_area: Jogeshwari East
+  display_name: '442'
+  url: "/route/4420/"
+  slug: '442'
+  end_stop: Mhada Cly.(Majas)
+  created_at: '2013-11-25 21:19:24.443685'
+  updated_at: '2014-06-16 13:48:03.833855'
+routes_457:
+  id: '411'
+  code: '4430'
+  end_area: Marol
+  start_stop: Agarkar Chk.
+  start_area: Andheri East
+  display_name: '443'
+  url: "/route/4430/"
+  slug: '443'
+  end_stop: Bamandaya Pada
+  created_at: '2013-11-25 21:19:24.447356'
+  updated_at: '2014-06-16 13:48:04.949204'
+routes_458:
+  id: '412'
+  code: '4441'
+  end_area: Oshiwara
+  start_stop: Ghatkopar Bus Stn./Gkd
+  start_area: Ghatkopar East
+  display_name: 444 Ltd
+  url: "/route/4441/"
+  slug: 444LTD
+  end_stop: Goregaon Depot
+  created_at: '2013-11-25 21:19:24.450738'
+  updated_at: '2014-06-16 13:48:12.284157'
+routes_459:
+  id: '414'
+  code: '4481'
+  end_area: Borivli East
+  start_stop: Pratiksha Ngr.Depot
+  start_area: Pratiksha Nagar
+  display_name: 448 Ltd
+  url: "/route/4481/"
+  slug: 448LTD
+  end_stop: Borivli Stn(E)
+  created_at: '2013-11-25 21:19:24.457662'
+  updated_at: '2014-06-16 13:48:21.713288'
+routes_460:
+  id: '415'
+  code: '4491'
+  end_area: Kandivli East
+  start_stop: Dharavi Depot
+  start_area: Dharavi
+  display_name: 449 Ltd
+  url: "/route/4491/"
+  slug: 449LTD
+  end_stop: Kandivli Bus Stn.( E )
+  created_at: '2013-11-25 21:19:24.461259'
+  updated_at: '2014-06-16 13:48:29.779372'
+routes_461:
+  id: '418'
+  code: '4531'
+  end_area: Thane West
+  start_stop: Wadala Depot
+  start_area: Wadala West
+  display_name: 453 Ltd
+  url: "/route/4531/"
+  slug: 453LTD
+  end_stop: Lokmanya Ngr.(Thane)
+  created_at: '2013-11-25 21:19:24.470935'
+  updated_at: '2014-06-16 13:48:39.1499'
+routes_462:
+  id: '419'
+  code: '4540'
+  end_area: Dindoshi
+  start_stop: Seven Bungalows Bus Stn.
+  start_area: Andheri West
+  display_name: '454'
+  url: "/route/4540/"
+  slug: '454'
+  end_stop: Shivshai Prakalp/Mantri Park
+  created_at: '2013-11-25 21:19:24.47372'
+  updated_at: '2014-06-16 13:48:40.71897'
+routes_463:
+  id: '420'
+  code: '4560'
+  end_area: Malvani
+  start_stop: Shivshai Prakalp/Mantri Park
+  start_area: Dindoshi
+  display_name: '456'
+  url: "/route/4560/"
+  slug: '456'
+  end_stop: Malvani Depot/ Gaikwad Ngr.
+  created_at: '2013-11-25 21:19:24.476881'
+  updated_at: '2014-06-16 13:48:42.295588'
+routes_464:
+  id: '421'
+  code: '4587'
+  end_area: Charkop
+  start_stop: Mulund Depot
+  start_area: Mulund West
+  display_name: AS-458
+  url: "/route/4587/"
+  slug: AS-458
+  end_stop: P.Thakre Ngr Bus.Stn.
+  created_at: '2013-11-25 21:19:24.479811'
+  updated_at: '2014-06-16 13:48:44.496384'
+routes_465:
+  id: '422'
+  code: '4591'
+  end_area: Malvani
+  start_stop: Mulund Rly.Stn.(W)
+  start_area: Mulund West
+  display_name: 459 Ltd
+  url: "/route/4591/"
+  slug: 459LTD
+  end_stop: Malvani Depot/ Gaikwad Ngr.
+  created_at: '2013-11-25 21:19:24.482678'
+  updated_at: '2014-06-16 13:48:48.085661'
+routes_466:
+  id: '423'
+  code: '4601'
+  end_area: Gorai
+  start_stop: Mulund Rly.Stn.(W)
+  start_area: Mulund West
+  display_name: 460 Ltd
+  url: "/route/4601/"
+  slug: 460LTD
+  end_stop: Gorai Depot
+  created_at: '2013-11-25 21:19:24.485579'
+  updated_at: '2014-06-16 13:48:52.115341'
+routes_467:
+  id: '424'
+  code: '4611'
+  end_area: Charkop
+  start_stop: Mulund-W Check Naka Bus Stn.
+  start_area: Mulund West
+  display_name: 461 Ltd
+  url: "/route/4611/"
+  slug: 461LTD
+  end_stop: P.Thakre Ngr Bus.Stn.
+  created_at: '2013-11-25 21:19:24.488559'
+  updated_at: '2014-06-16 13:48:56.983797'
+routes_468:
+  id: '427'
+  code: '4630'
+  end_area: Chembur East
+  start_stop: Worli Depot
+  start_area: Worli
+  display_name: '463'
+  url: "/route/4630/"
+  slug: '463'
+  end_stop: Chembur Cly.
+  created_at: '2013-11-25 21:19:24.497333'
+  updated_at: '2014-06-16 13:49:13.733829'
+routes_469:
+  id: '428'
+  code: '4641'
+  end_area: Charkop
+  start_stop: Marol Depot
+  start_area: Andheri East
+  display_name: 464 Ltd
+  url: "/route/4641/"
+  slug: 464 LTD
+  end_stop: P.Thakre Ngr Bus.Stn.
+  created_at: '2013-11-25 21:19:24.500444'
+  updated_at: '2014-06-16 13:49:27.031721'
+routes_470:
+  id: '429'
+  code: '4691'
+  end_area: Oshiwara
+  start_stop: Mulund-W Check Naka Bus Stn.
+  start_area: Mulund West
+  display_name: 469 Ltd
+  url: "/route/4691/"
+  slug: 469LTD
+  end_stop: Goregaon Depot
+  created_at: '2013-11-25 21:19:24.503719'
+  updated_at: '2014-06-16 13:49:36.65225'
+routes_471:
+  id: '430'
+  code: '4701'
+  end_area: Borivli East
+  start_stop: Ghatkopar Bus Stn./Gkd
+  start_area: Ghatkopar East
+  display_name: 470 Ltd
+  url: "/route/4701/"
+  slug: 470LTD
+  end_stop: Borivli Stn(E)
+  created_at: '2013-11-25 21:19:24.507014'
+  updated_at: '2014-06-16 13:49:52.895637'
+routes_472:
+  id: '433'
+  code: '4781'
+  end_area: Borivli East
+  start_stop: Vikhroli Depot
+  start_area: Vikhroli West
+  display_name: 478 Ltd
+  url: "/route/4781/"
+  slug: 478LTD
+  end_stop: Borivli Stn(E)
+  created_at: '2013-11-25 21:19:24.516545'
+  updated_at: '2014-06-16 13:50:37.875788'
+routes_473:
+  id: '441'
+  code: '4941'
+  end_area: Kalwa
+  start_stop: Ghatkopar Bus Stn./Gkd
+  start_area: Ghatkopar East
+  display_name: 494 Ltd
+  url: "/route/4941/"
+  slug: 494LTD
+  end_stop: Reti Bunder - Kharigaon(Kalwa)
+  created_at: '2013-11-25 21:19:24.54214'
+  updated_at: '2014-06-16 13:51:55.873206'
+routes_474:
+  id: '443'
+  code: '4961'
+  end_area: Thane West
+  start_stop: Agarkar Chk.
+  start_area: Andheri East
+  display_name: 496 Ltd
+  url: "/route/4961/"
+  slug: 496LTD
+  end_stop: Marathon Chk.(Teen Hath Naka)
+  created_at: '2013-11-25 21:19:24.548571'
+  updated_at: '2014-06-16 13:52:09.226898'
+routes_475:
+  id: '444'
+  code: '4971'
+  end_area: Thane West
+  start_stop: Ghatkopar Bus Stn./Gkd
+  start_area: Ghatkopar East
+  display_name: 497 Ltd
+  url: "/route/4971/"
+  slug: 497LTD
+  end_stop: Lokmanya Ngr.(Thane)
+  created_at: '2013-11-25 21:19:24.552019'
+  updated_at: '2014-06-16 13:52:21.34185'
+routes_476:
+  id: '536'
+  code: '8526'
+  end_area: Bandra West
+  start_stop: Bandra Bus Stn(W)
+  start_area: Bandra West
+  display_name: C-852 Exp
+  url: "/route/8526/"
+  slug: BANDRA FAIR
+  end_stop: Hill Rd.Garden/Mehboob Studio
+  created_at: '2013-11-25 21:19:24.911747'
+  updated_at: '2014-06-16 13:56:55.377988'
+routes_477:
+  id: '445'
+  code: '4981'
+  end_area: Borivli East
+  start_stop: Sangharsh Ngr.(Chandivli)
+  start_area: Chandivli
+  display_name: 498 Ltd
+  url: "/route/4981/"
+  slug: 498LTD
+  end_stop: Borivli Stn(E)
+  created_at: '2013-11-25 21:19:24.554933'
+  updated_at: '2014-06-16 13:52:29.315575'
+routes_478:
+  id: '446'
+  code: '4991'
+  end_area: Thane West
+  start_stop: Ghatkopar Bus Stn./Gkd
+  start_area: Ghatkopar East
+  display_name: 499 Ltd
+  url: "/route/4991/"
+  slug: 499LTD
+  end_stop: Vrindavan Scty.(Thane)
+  created_at: '2013-11-25 21:19:24.558293'
+  updated_at: '2014-06-16 13:52:35.740462'
+routes_479:
+  id: '449'
+  code: '5021'
+  end_area: Nerul West
+  start_stop: Wadala Depot
+  start_area: Wadala West
+  display_name: 502 Ltd
+  url: "/route/5021/"
+  slug: 502LTD
+  end_stop: Nerul Sect.-46/48
+  created_at: '2013-11-25 21:19:24.568835'
+  updated_at: '2014-06-16 13:52:52.169486'
+routes_480:
+  id: '450'
+  code: '5031'
+  end_area: Kalamboli
+  start_stop: Rani Laxmibai Chk.
+  start_area: Sion East
+  display_name: 503 Ltd
+  url: "/route/5031/"
+  slug: 503LTD
+  end_stop: Kalamboli Bus Stn
+  created_at: '2013-11-25 21:19:24.572445'
+  updated_at: '2014-06-16 13:52:53.678827'
+routes_481:
+  id: '451'
+  code: '5037'
+  end_area: Kalamboli
+  start_stop: Wadala Depot
+  start_area: Wadala West
+  display_name: AS-503
+  url: "/route/5037/"
+  slug: AS-503
+  end_stop: Kalamboli Bus Stn
+  created_at: '2013-11-25 21:19:24.576014'
+  updated_at: '2014-06-16 13:53:05.260386'
+routes_482:
+  id: '452'
+  code: '5041'
+  end_area: Kharghar
+  start_stop: Wadala Depot
+  start_area: Wadala West
+  display_name: 504 Ltd
+  url: "/route/5041/"
+  slug: 504LTD
+  end_stop: Jalvayu Vihar(Kharghar)
+  created_at: '2013-11-25 21:19:24.579562'
+  updated_at: '2014-06-16 13:53:13.558869'
+routes_483:
+  id: '453'
+  code: '5051'
+  end_area: Belapur
+  start_stop: Bandra Bus Stn(W)
+  start_area: Bandra West
+  display_name: 505 Ltd
+  url: "/route/5051/"
+  slug: 505LTD
+  end_stop: C.B.D. Belapur Bus Stn.
+  created_at: '2013-11-25 21:19:24.582149'
+  updated_at: '2014-06-16 13:53:20.917955'
+routes_484:
+  id: '455'
+  code: '5061'
+  end_area: Nerul West
+  start_stop: Jijamata Udn.
+  start_area: Byculla East
+  display_name: 506 Ltd
+  url: "/route/5061/"
+  slug: 506LTD
+  end_stop: Nerul Rly. Stn.
+  created_at: '2013-11-25 21:19:24.589755'
+  updated_at: '2014-06-16 13:53:36.945409'
+routes_485:
+  id: '456'
+  code: '5063'
+  end_area: Kopar Khairane
+  start_stop: Jijamata Udn.
+  start_area: Byculla East
+  display_name: 506 Ltd
+  url: "/route/5063/"
+  slug: 506-EXTRA
+  end_stop: Kopar Khairane Extn.
+  created_at: '2013-11-25 21:19:24.59375'
+  updated_at: '2014-06-16 13:53:45.170479'
+routes_486:
+  id: '465'
+  code: '5141'
+  end_area: Mahape
+  start_stop: Mulund-W Check Naka Bus Stn.
+  start_area: Mulund West
+  display_name: 514 Ltd
+  url: "/route/5141/"
+  slug: 514LTD
+  end_stop: L & T Infotech(Mahape)
+  created_at: '2013-11-25 21:19:24.626365'
+  updated_at: '2014-06-16 13:54:26.175525'
+routes_487:
+  id: '457'
+  code: '5071'
+  end_area: Nerul East
+  start_stop: Santacruz Stn (E)
+  start_area: Santacruz East
+  display_name: 507 Ltd
+  url: "/route/5071/"
+  slug: 507LTD
+  end_stop: Nerul Bus Stn.
+  created_at: '2013-11-25 21:19:24.597479'
+  updated_at: '2014-06-16 13:53:48.116518'
+routes_488:
+  id: '458'
+  code: '5081'
+  end_area: Nerul West
+  start_stop: Dr.Ambedkar Garden
+  start_area: Chembur East
+  display_name: 508 Ltd
+  url: "/route/5081/"
+  slug: 508 LTD
+  end_stop: Nerul Sect.-46/48
+  created_at: '2013-11-25 21:19:24.601221'
+  updated_at: '2014-06-16 13:53:58.575784'
+routes_489:
+  id: '459'
+  code: '5091'
+  end_area: Mahape
+  start_stop: Antop Hill Bus Stn.
+  start_area: Antop Hill
+  display_name: 509 Ltd
+  url: "/route/5091/"
+  slug: 509LTD
+  end_stop: Millennium Business Park
+  created_at: '2013-11-25 21:19:24.605123'
+  updated_at: '2014-06-16 13:54:04.943465'
+routes_490:
+  id: '460'
+  code: '5101'
+  end_area: Mahape
+  start_stop: Barve Ngr.
+  start_area: Ghatkopar East
+  display_name: 510 Ltd
+  url: "/route/5101/"
+  slug: 510LTD
+  end_stop: M.I.D.C. Electronic Zone
+  created_at: '2013-11-25 21:19:24.608833'
+  updated_at: '2014-06-16 13:54:07.126372'
+routes_491:
+  id: '462'
+  code: '5121'
+  end_area: Nerul East
+  start_stop: Mulund-W Check Naka Bus Stn.
+  start_area: Mulund West
+  display_name: 512 Ltd
+  url: "/route/5121/"
+  slug: 512LTD
+  end_stop: Nerul Bus Stn.
+  created_at: '2013-11-25 21:19:24.615893'
+  updated_at: '2014-06-16 13:54:14.046158'
+routes_492:
+  id: '499'
+  code: '6224'
+  end_area: Malad West
+  start_stop: Malad Stn-W(Sainath Marg Chky)
+  start_area: Malad West
+  display_name: '622'
+  url: "/route/6224/"
+  slug: 622RING
+  end_stop: Malad Stn-W(Sainath Marg Chky)
+  created_at: '2013-11-25 21:19:24.744145'
+  updated_at: '2014-06-16 13:55:50.695066'
+routes_493:
+  id: '463'
+  code: '5127'
+  end_area: Vashi
+  start_stop: Mulund-W Check Naka Bus Stn.
+  start_area: Mulund West
+  display_name: AS-512
+  url: "/route/5127/"
+  slug: AS-512
+  end_stop: Vashi Sect.19
+  created_at: '2013-11-25 21:19:24.619308'
+  updated_at: '2014-06-16 13:54:16.494746'
+routes_494:
+  id: '464'
+  code: '5131'
+  end_area: Vashi
+  start_stop: Gawanpada Fire Brigade(Mulund-E)
+  start_area: Mulund East
+  display_name: 513 Ltd
+  url: "/route/5131/"
+  slug: 513LTD
+  end_stop: Vashi Railway Stn.
+  created_at: '2013-11-25 21:19:24.622734'
+  updated_at: '2014-06-16 13:54:18.739981'
+routes_495:
+  id: '467'
+  code: '5171'
+  end_area: Vashi
+  start_stop: Santacruz Stn (E)
+  start_area: Santacruz East
+  display_name: 517 Ltd
+  url: "/route/5171/"
+  slug: 517LTD
+  end_stop: Vashi Sect.19
+  created_at: '2013-11-25 21:19:24.633781'
+  updated_at: '2014-06-16 13:54:31.904543'
+routes_496:
+  id: '469'
+  code: '5191'
+  end_area: Ghansoli
+  start_stop: Deonar Depot
+  start_area: Deonar
+  display_name: 519 Ltd
+  url: "/route/5191/"
+  slug: 519LTD
+  end_stop: Ghansoli Village
+  created_at: '2013-11-25 21:19:24.641284'
+  updated_at: '2014-06-16 13:54:35.354554'
+routes_497:
+  id: '470'
+  code: '5201'
+  end_area: Airoli
+  start_stop: Deonar Depot
+  start_area: Deonar
+  display_name: 520 Ltd
+  url: "/route/5201/"
+  slug: 520LTD
+  end_stop: Airoli Bus Stn.
+  created_at: '2013-11-25 21:19:24.644525'
+  updated_at: '2014-06-16 13:54:37.513012'
+routes_498:
+  id: '471'
+  code: '5211'
+  end_area: Ghansoli
+  start_stop: Vasantrao Naik Chk.
+  start_area: Tardeo
+  display_name: 521 Ltd
+  url: "/route/5211/"
+  slug: 521LTD
+  end_stop: Ghansoli Village
+  created_at: '2013-11-25 21:19:24.647437'
+  updated_at: '2014-06-16 13:54:41.658772'
+routes_499:
+  id: '472'
+  code: '5221'
+  end_area: Vashi
+  start_stop: Marol Depot
+  start_area: Andheri East
+  display_name: 522 Ltd
+  url: "/route/5221/"
+  slug: 522LTD
+  end_stop: Vashi Railway Stn.
+  created_at: '2013-11-25 21:19:24.650649'
+  updated_at: '2014-06-16 13:54:45.095792'
+routes_500:
+  id: '473'
+  code: '5231'
+  end_area: Mahape
+  start_stop: Dindoshi Bus Stn.
+  start_area: Dindoshi
+  display_name: 523 Ltd
+  url: "/route/5231/"
+  slug: 523LTD
+  end_stop: Millennium Business Park
+  created_at: '2013-11-25 21:19:24.654006'
+  updated_at: '2014-06-16 13:54:53.756974'
+routes_501:
+  id: '474'
+  code: '5241'
+  end_area: Vashi
+  start_stop: Borivli Stn(E)
+  start_area: Borivli East
+  display_name: 524 Ltd
+  url: "/route/5241/"
+  slug: 524LTD
+  end_stop: Vashi Sect.19
+  created_at: '2013-11-25 21:19:24.657171'
+  updated_at: '2014-06-16 13:54:58.265215'
+routes_502:
+  id: '508'
+  code: '6630'
+  end_area: Trombay
+  start_stop: Mahul Village
+  start_area: Mahul
+  display_name: '663'
+  url: "/route/6630/"
+  slug: '663'
+  end_stop: Trombay
+  created_at: '2013-11-25 21:19:24.775967'
+  updated_at: '2014-06-16 13:56:07.523967'
+routes_503:
+  id: '475'
+  code: '5247'
+  end_area: Belapur
+  start_stop: Borivli Stn(E)
+  start_area: Borivli East
+  display_name: AS-524
+  url: "/route/5247/"
+  slug: AS-524
+  end_stop: C.B.D. Belapur Bus Stn.
+  created_at: '2013-11-25 21:19:24.660512'
+  updated_at: '2014-06-16 13:55:02.175821'
+routes_504:
+  id: '476'
+  code: '5251'
+  end_area: Vashi
+  start_stop: Dindoshi Bus Stn.
+  start_area: Dindoshi
+  display_name: 525 Ltd
+  url: "/route/5251/"
+  slug: 525LTD
+  end_stop: Vashi Sect.19
+  created_at: '2013-11-25 21:19:24.663558'
+  updated_at: '2014-06-16 13:55:06.013727'
+routes_505:
+  id: '477'
+  code: '5257'
+  end_area: Mahape
+  start_stop: Dindoshi Bus Stn.
+  start_area: Dindoshi
+  display_name: AS-525
+  url: "/route/5257/"
+  slug: AS-525
+  end_stop: L & T Infotech(Mahape)
+  created_at: '2013-11-25 21:19:24.666842'
+  updated_at: '2014-06-16 13:55:13.070276'
+routes_506:
+  id: '478'
+  code: '5259'
+  end_area: Kopar Khairane
+  start_stop: Dindoshi Bus Stn.
+  start_area: Dindoshi
+  display_name: A-525 Exp
+  url: "/route/5259/"
+  slug: AS-525EXTRA
+  end_stop: Kopar Khairane
+  created_at: '2013-11-25 21:19:24.670285'
+  updated_at: '2014-06-16 13:55:15.356908'
+routes_507:
+  id: '479'
+  code: '5261'
+  end_area: Kharghar
+  start_stop: Jijamata Udn.
+  start_area: Byculla East
+  display_name: 526 Ltd
+  url: "/route/5261/"
+  slug: 526LTD
+  end_stop: Jalvayu Vihar(Kharghar)
+  created_at: '2013-11-25 21:19:24.673435'
+  updated_at: '2014-06-16 13:55:19.056465'
+routes_508:
+  id: '480'
+  code: '5331'
+  end_area: Vashi
+  start_stop: Andheri Bus Stn.(W)
+  start_area: Andheri West
+  display_name: 533 Ltd
+  url: "/route/5331/"
+  slug: 533LTD
+  end_stop: Vashi Sect.19
+  created_at: '2013-11-25 21:19:24.67707'
+  updated_at: '2014-06-16 13:55:21.338262'
+routes_509:
+  id: '482'
+  code: '5517'
+  end_area: Vashi
+  start_stop: Marol Depot
+  start_area: Andheri East
+  display_name: AS-551
+  url: "/route/5517/"
+  slug: AS-551
+  end_stop: Vashi Bus Stn.
+  created_at: '2013-11-25 21:19:24.683466'
+  updated_at: '2014-06-16 13:55:24.763278'
+routes_510:
+  id: '509'
+  code: '6640'
+  end_area: Jogeshwari East
+  start_stop: Agarkar Chk.
+  start_area: Andheri East
+  display_name: '664'
+  url: "/route/6640/"
+  slug: '664'
+  end_stop: Samarth Ngr.
+  created_at: '2013-11-25 21:19:24.779276'
+  updated_at: '2014-06-16 13:56:08.11317'
+routes_511:
+  id: '483'
+  code: '5927'
+  end_area: Mahape
+  start_stop: Vasantrao Naik Chk.
+  start_area: Tardeo
+  display_name: AS-592
+  url: "/route/5927/"
+  slug: AS-592
+  end_stop: L & T Infotech(Mahape)
+  created_at: '2013-11-25 21:19:24.686813'
+  updated_at: '2014-06-16 13:55:26.935924'
+routes_512:
+  id: '484'
+  code: '6010'
+  end_area: Malad East
+  start_stop: Malad Stn-E(Poddar Park)
+  start_area: Malad East
+  display_name: '601'
+  url: "/route/6010/"
+  slug: '601'
+  end_stop: Vadarpada
+  created_at: '2013-11-25 21:19:24.690202'
+  updated_at: '2014-06-16 13:55:27.40138'
+routes_513:
+  id: '486'
+  code: '6034'
+  end_area: Vikhroli West
+  start_stop: Amrut Ngr.
+  start_area: Vikhroli West
+  display_name: '603'
+  url: "/route/6034/"
+  slug: 603RING
+  end_stop: Amrut Ngr.
+  created_at: '2013-11-25 21:19:24.697062'
+  updated_at: '2014-06-16 13:55:36.028309'
+routes_514:
+  id: '488'
+  code: '6050'
+  end_area: Bhandup West
+  start_stop: Bhandup Stn.(W)
+  start_area: Bhandup West
+  display_name: '605'
+  url: "/route/6050/"
+  slug: '605'
+  end_stop: Tembipada
+  created_at: '2013-11-25 21:19:24.704084'
+  updated_at: '2014-06-16 13:55:37.541015'
+routes_515:
+  id: '489'
+  code: '6064'
+  end_area: Bhandup West
+  start_stop: Bhandup Stn.(W)
+  start_area: Bhandup West
+  display_name: '606'
+  url: "/route/6064/"
+  slug: 606RING
+  end_stop: Bhandup Stn.(W)
+  created_at: '2013-11-25 21:19:24.707348'
+  updated_at: '2014-06-16 13:55:38.215031'
+routes_516:
+  id: '491'
+  code: '6080'
+  end_area: Bhandup West
+  start_stop: Kanjur Marg Stn.(W)
+  start_area: Kanjurmarg West
+  display_name: '608'
+  url: "/route/6080/"
+  slug: '608'
+  end_stop: Hanuman Ngr.
+  created_at: '2013-11-25 21:19:24.714571'
+  updated_at: '2014-06-16 13:55:39.627368'
+routes_517:
+  id: '492'
+  code: '6090'
+  end_area: Vidyavihar West
+  start_stop: Vidya Vihar Bus Stn(W)
+  start_area: Vidyavihar West
+  display_name: '609'
+  url: "/route/6090/"
+  slug: '609'
+  end_stop: Kohinoor S.R.A. Colony
+  created_at: '2013-11-25 21:19:24.718202'
+  updated_at: '2014-06-16 13:55:40.272051'
+routes_518:
+  id: '494'
+  code: '6110'
+  end_area: Dindoshi
+  start_stop: Malad Stn-E(Poddar Park)
+  start_area: Malad East
+  display_name: '611'
+  url: "/route/6110/"
+  slug: '611'
+  end_stop: Dindoshi Bus Stn.
+  created_at: '2013-11-25 21:19:24.725301'
+  updated_at: '2014-06-16 13:55:41.401437'
+routes_519:
+  id: '496'
+  code: '6150'
+  end_area: Santacruz East
+  start_stop: Rani Laxmibai Chk.
+  start_area: Sion East
+  display_name: '615'
+  url: "/route/6150/"
+  slug: '615'
+  end_stop: Santacruz Stn (E)
+  created_at: '2013-11-25 21:19:24.732374'
+  updated_at: '2014-06-16 13:55:42.937327'
+routes_520:
+  id: '498'
+  code: '6214'
+  end_area: Malad West
+  start_stop: Malad Stn-W(Anand Marg Chky)
+  start_area: Malad West
+  display_name: '621'
+  url: "/route/6214/"
+  slug: 621RING
+  end_stop: Malad Stn-W(Anand Marg Chky)
+  created_at: '2013-11-25 21:19:24.740176'
+  updated_at: '2014-06-16 13:55:44.385546'
+routes_521:
+  id: '502'
+  code: '6270'
+  end_area: Mora Gaon Juhu
+  start_stop: Andheri Stn.(W) (Kumkum)
+  start_area: Andheri West
+  display_name: '627'
+  url: "/route/6270/"
+  slug: '627'
+  end_stop: Mora Village
+  created_at: '2013-11-25 21:19:24.755013'
+  updated_at: '2014-06-16 13:55:57.814302'
+routes_522:
+  id: '504'
+  code: '6290'
+  end_area: Kandivli East
+  start_stop: Borivli Stn(E)
+  start_area: Borivli East
+  display_name: '629'
+  url: "/route/6290/"
+  slug: '6290'
+  end_stop: Dheeraj Upvan
+  created_at: '2013-11-25 21:19:24.761919'
+  updated_at: '2014-06-16 13:55:59.19302'
+routes_523:
+  id: '505'
+  code: '6300'
+  end_area: Santacruz West
+  start_stop: Khar Stn (W)
+  start_area: Khar West
+  display_name: '630'
+  url: "/route/6300/"
+  slug: '630'
+  end_stop: Santacruz Stn (W)
+  created_at: '2013-11-25 21:19:24.765699'
+  updated_at: '2014-06-16 13:55:59.80926'
+routes_524:
+  id: '510'
+  code: '7001'
+  end_area: Thane East
+  start_stop: Magathane Depot
+  start_area: Borivli East
+  display_name: 700 Ltd
+  url: "/route/7001/"
+  slug: 700LTD
+  end_stop: Thane Stn.(E)
+  created_at: '2013-11-25 21:19:24.782717'
+  updated_at: '2014-06-16 13:56:10.141207'
+routes_525:
+  id: '511'
+  code: '7007'
+  end_area: Thane East
+  start_stop: Magathane Depot
+  start_area: Borivli East
+  display_name: AS-700
+  url: "/route/7007/"
+  slug: AS-700
+  end_stop: Thane Stn.(E)
+  created_at: '2013-11-25 21:19:24.786489'
+  updated_at: '2014-06-16 13:56:16.946468'
+routes_526:
+  id: '512'
+  code: '7015'
+  end_area: Kandivli East
+  start_stop: Kandivli Bus Stn.( E )
+  start_area: Kandivli East
+  display_name: 701 Ltd
+  url: "/route/7015/"
+  slug: 701L RING
+  end_stop: Kandivli Bus Stn.( E )
+  created_at: '2013-11-25 21:19:24.789962'
+  updated_at: '2014-06-16 13:56:20.115339'
+routes_527:
+  id: '514'
+  code: '7035'
+  end_area: Kandivli East
+  start_stop: Samata Ngr.Bus Stn.(Kandivli-E)
+  start_area: Kandivli East
+  display_name: 703 Ltd
+  url: "/route/7035/"
+  slug: 703L RING
+  end_stop: Samata Ngr.Bus Stn.(Kandivli-E)
+  created_at: '2013-11-25 21:19:24.796993'
+  updated_at: '2014-06-16 13:56:24.349972'
+routes_528:
+  id: '516'
+  code: '7061'
+  end_area: Bhayander East
+  start_stop: Marol Depot
+  start_area: Andheri East
+  display_name: 706 Ltd
+  url: "/route/7061/"
+  slug: 706LTD
+  end_stop: Bhayander Stn.(E)
+  created_at: '2013-11-25 21:19:24.848493'
+  updated_at: '2014-06-16 13:56:29.116337'
+routes_529:
+  id: '531'
+  code: '8111'
+  end_area: Byculla West
+  start_stop: Breach Candy Hospital
+  start_area: Nepean Sea Road
+  display_name: 811 Ltd
+  url: "/route/8111/"
+  slug: MAHALAXMI FAIR 811L
+  end_stop: Byculla Stn.(W)
+  created_at: '2013-11-25 21:19:24.896096'
+  updated_at: '2014-06-16 13:56:52.214743'
+routes_530:
+  id: '532'
+  code: '8121'
+  end_area: Fort
+  start_stop: Chh. Shivaji Terminus
+  start_area: Fort
+  display_name: 812 Ltd
+  url: "/route/8121/"
+  slug: FORT FERI-1
+  end_stop: Chh. Shivaji Terminus
+  created_at: '2013-11-25 21:19:24.899304'
+  updated_at: '2014-06-16 13:56:53.036862'
+routes_531:
+  id: '517'
+  code: '7071'
+  end_area: Bhayander East
+  start_stop: Santacruz Depot
+  start_area: Santacruz West
+  display_name: 707 Ltd
+  url: "/route/7071/"
+  slug: 707LDT
+  end_stop: Bhayander Phatak(Police Chky)
+  created_at: '2013-11-25 21:19:24.852524'
+  updated_at: '2014-06-16 13:56:32.392238'
+routes_532:
+  id: '537'
+  code: '9010'
+  end_area: Airoli
+  start_stop: Shivaji Ngr.Depot
+  start_area: Shivaji Nagar
+  display_name: '901'
+  url: "/route/9010/"
+  slug: WORKMAN SPL-21
+  end_stop: Airoli Bus Stn.
+  created_at: '2013-11-25 21:19:24.914915'
+  updated_at: '2014-06-16 13:56:57.418811'
+routes_533:
+  id: '518'
+  code: '7077'
+  end_area: Bhayander West
+  start_stop: Santacruz Depot
+  start_area: Santacruz West
+  display_name: AS-707
+  url: "/route/7077/"
+  slug: AS-707
+  end_stop: Maxus Mall (Bhayander-W)
+  created_at: '2013-11-25 21:19:24.855613'
+  updated_at: '2014-06-16 13:56:34.771055'
+routes_534:
+  id: '519'
+  code: '7085'
+  end_area: Kandivli East
+  start_stop: Damu Nagar. Bus.Stn.
+  start_area: Kandivli East
+  display_name: 708 Ltd
+  url: "/route/7085/"
+  slug: 708L RING
+  end_stop: Damu Nagar. Bus.Stn.
+  created_at: '2013-11-25 21:19:24.858646'
+  updated_at: '2014-06-16 13:56:39.015388'
+routes_535:
+  id: '520'
+  code: '7091'
+  end_area: Bhayander East
+  start_stop: Magathane Depot
+  start_area: Borivli East
+  display_name: 709 Ltd
+  url: "/route/7091/"
+  slug: 709LTD
+  end_stop: Bhayander Stn.(E)
+  created_at: '2013-11-25 21:19:24.861551'
+  updated_at: '2014-06-16 13:56:41.012825'
+routes_536:
+  id: '522'
+  code: '7181'
+  end_area: Bhayander East
+  start_stop: Dindoshi Bus Stn.
+  start_area: Dindoshi
+  display_name: 718 Ltd
+  url: "/route/7181/"
+  slug: 718LTD
+  end_stop: Bhayander Stn.(E)
+  created_at: '2013-11-25 21:19:24.867839'
+  updated_at: '2014-06-16 13:56:45.033515'
+routes_537:
+  id: '523'
+  code: '7201'
+  end_area: Bhayander East
+  start_stop: P.Thakre Ngr Bus.Stn.
+  start_area: Charkop
+  display_name: 720 Ltd
+  url: "/route/7201/"
+  slug: 720LTD
+  end_stop: Bhayander Stn.(E)
+  created_at: '2013-11-25 21:19:24.870763'
+  updated_at: '2014-06-16 13:56:47.155445'
+routes_538:
+  id: '526'
+  code: '8031'
+  end_area: Bhendi Bazaar
+  start_stop: Colaba Bus Stn.
+  start_area: Colaba
+  display_name: 803 Ltd
+  url: "/route/8031/"
+  slug: SPL-3
+  end_stop: Mahatma Phule Market
+  created_at: '2013-11-25 21:19:24.880777'
+  updated_at: '2014-06-16 13:56:49.453435'
+routes_539:
+  id: '539'
+  code: '9030'
+  end_area: Vikhroli West
+  start_stop: Vikhroli Depot
+  start_area: Vikhroli West
+  display_name: '903'
+  url: "/route/9030/"
+  slug: WORKMAN-28
+  end_stop: Vikhroli Depot
+  created_at: '2013-11-25 21:19:24.921176'
+  updated_at: '2014-06-16 13:57:00.025414'
+routes_540:
+  id: '540'
+  code: '9040'
+  end_area: Vikhroli West
+  start_stop: Vikhroli Park Site
+  start_area: Vikhroli West
+  display_name: '904'
+  url: "/route/9040/"
+  slug: WORKMAN-28 EXTRA
+  end_stop: Vikhroli Depot
+  created_at: '2013-11-25 21:19:24.924499'
+  updated_at: '2014-06-16 13:57:03.066017'
+routes_541:
+  id: '541'
+  code: '9050'
+  end_area: Vikhroli West
+  start_stop: Vikhroli Park Site
+  start_area: Vikhroli West
+  display_name: '905'
+  url: "/route/9050/"
+  slug: WORKMAN SPL-67
+  end_stop: Vikhroli Depot
+  created_at: '2013-11-25 21:19:24.927661'
+  updated_at: '2014-06-16 13:57:05.45762'
