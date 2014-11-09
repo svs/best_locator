@@ -11,4 +11,11 @@ class Api::V1::BusStopsController < Api::V1::BaseController
     render json: @bus_stop
   end
 
+  def arrivals
+    stop = Stop.find(params[:id])
+    arrivals = stop.arrivals
+    render json: {arrivals: arrivals}
+  end
+
+
 end

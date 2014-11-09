@@ -11,12 +11,13 @@ class LocationReport < ActiveRecord::Base
   def mark_arrivals
     return true if (stop.nil? || route.nil? || heading.nil?)
     subsequent_stops.each do |s|
-      Arrival.create(stop_id: s.stop_id,
+      a = Arrival.create(stop_id: s.stop_id,
                      route_id: route.id,
                      stops_away: (s.order - this_stop.order).abs,
                      report_time: self.created_at,
                      report_id: self.id,
                      heading: self.heading)
+      #Pusher.trigger_async("stop-#{s.stop_id}","arrival",a.attributes)
     end
   end
 

@@ -20,6 +20,7 @@
 //= require moment.min
 //= require angular-google-maps.min.js
 //= require ngAutocomplete.js
+//= require angular-pusher.js
 //= require ui-bs.js
 
 //= require home.js

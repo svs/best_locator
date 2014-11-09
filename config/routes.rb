@@ -6,7 +6,11 @@ BestLocator::Application.routes.draw do
     namespace 'v1' do
       resources :routes
       resources :location_reports
-      resources :bus_stops
+      resources :bus_stops do
+        member do
+          get 'arrivals'
+        end
+      end
       resources :trips do
         member do
           put 'stop'

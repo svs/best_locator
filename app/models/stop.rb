@@ -7,7 +7,7 @@ class Stop < ActiveRecord::Base
   has_many :end_trips, :foreign_key => :end_stop_id, :class_name => Trip
 
   has_many :location_reports
-  has_many :arrivals
+
 
 
   def as_json(include_root = false)
@@ -59,6 +59,10 @@ class Stop < ActiveRecord::Base
     self.to_s
   end
 
+
+  def arrivals
+    Arrival.where(stop_id: self.id).where('EXTRACT(EPOCH from (now() - report_time)) > (600 * stops_away)').order(:report_time)
+  end
 
 
 end
