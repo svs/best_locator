@@ -37,15 +37,19 @@ script type="text/ng-template" id="chooseRoute.html"
           th To
           th Info
       tbody
-        tr ng-repeat="r in data.chosenStop.routes"
+        tr ng-repeat="r in data.chosenStop.routes "
           td ng-click="open(r, -1)"
             | {{ r.start_stop }}
-            .arrivals ng-show="data.arrivals[r.id][-1]"
-              | {{ data.arrivals[r.id][-1].stops_away }} stops away ({{data.arrivals[r.id][-1].secondsAgo}})
+            .arrivals
+              ul
+                li ng-repeat="d in data.arrivals[r.id]['-1']"
+                  | {{ d.stops_away }} stops away ({{d.secondsAgo}})
           td ng-click="open(r, 1)"
             | {{ r.end_stop }}
-            .arrivals ng-show="data.arrivals[r.id][1]"
-              | {{ data.arrivals[r.id][1].stops_away }} stops away ({{data.arrivals[r.id][1].secondsAgo}})
+            .arrivals
+              ul
+                li ng-repeat="d in data.arrivals[r.id]['1']"
+                  | {{ d.stops_away }} stops away ({{d.secondsAgo}})
           td
             a ui-sref="show_route({id: r.id})"
               | {{ r.display_name }}

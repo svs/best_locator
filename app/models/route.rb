@@ -40,7 +40,6 @@ class Route < ActiveRecord::Base
   end
 
   def points
-    binding.pry
   end
 
   def self.near(lat, lon, dist = 100)

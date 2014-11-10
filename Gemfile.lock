@@ -188,6 +188,7 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    redis (3.1.0)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rgeo (0.3.20)
@@ -301,6 +302,7 @@ DEPENDENCIES
   puma
   pusher (~> 0.14.2)
   rails (= 4.0.0)
+  redis
   rest-client
   rspec-rails
   sass-rails (~> 4.0.0)

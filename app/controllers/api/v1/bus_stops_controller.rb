@@ -13,8 +13,7 @@ class Api::V1::BusStopsController < Api::V1::BaseController
 
   def arrivals
     stop = Stop.find(params[:id])
-    arrivals = stop.arrivals
-    render json: {arrivals: arrivals}
+    render json: {arrivals: stop.redis_arrivals}
   end
 
 

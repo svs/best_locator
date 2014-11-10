@@ -25,13 +25,16 @@ bestLocatorApp.config(["$stateProvider", "$urlRouterProvider", function($statePr
 
 bestLocatorApp.factory('State', ["Restangular", function(Restangular) {
     var _data = {
-	desiredLocation: null
+	desiredLocation: null,
+	arrivalsData: {},
+	arrivals: {}
     };
-    var arrivals = {};
+
     var service = {};
     service.setPosition = function(p) {
 	_data.actualPosition = angular.copy(p);
 	service.setDesiredLocation(p);
+	console.log('position is ', p);
     };
 
     service.setDesiredLocation = function(p) {
@@ -39,20 +42,32 @@ bestLocatorApp.factory('State', ["Restangular", function(Restangular) {
 	service.loadStops();
     };
 
+
+    service.parseArrivals = function() {
+	var _a = {};
+	var arri = {};
+	_.each(_data.arrivalsData, function(a) {
+	    if (_.isUndefined(arri[a.route_id])) {
+		arri[a.route_id] = {"1": [], "-1": []};
+	    }
+	    _a = angular.copy(a);
+	    _a.secondsAgo = moment(a.report_time).fromNow();
+	    console.log(_a);
+	    arri[a.route_id][a.heading + ""].push(_a);
+	});
+	_data.arrivals = arri;
+	console.log(_data.arrivals);
+    };
+
     service.loadArrivals = function(stop_id) {
+	console.log('loading arrivals');
 	Restangular.one('api/v1/bus_stops/'  + stop_id + '/arrivals').get().then(function(d) {
-	    _.each(d.arrivals, function(a) {
-		a.secondsAgo = moment(a.report_time).fromNow();
-		if (_.isUndefined(arrivals[a.route_id])) {
-		    arrivals[a.route_id] = {"1": null, "-1": null};
-		}
-		arrivals[a.route_id][a.heading + ""] = a;
-	    });
-	    console.log(arrivals);
-	    _data.arrivals = arrivals;
+	    _data.arrivalsData = d.arrivals;
+	    service.parseArrivals();
 	});
 
     };
+
 
     service.loadStops = function(reset) {
 	var rBusStops = Restangular.all('api/v1/bus_stops');
@@ -74,6 +89,14 @@ bestLocatorApp.factory('State', ["Restangular", function(Restangular) {
 	} else {
 	    console.log('loading Bus Stop');
 	    Restangular.one('api/v1/bus_stops/' +  id).get().then(function (d) {
+		d.routes = _.sortBy(
+		    _.map(
+			d.routes,
+			function(r) {
+			    r.order = parseInt(r.display_name.match('[0-9]')[0]);
+			    return r;
+			}
+		    ), 'order');
 		_data.chosenStop = d;
 	    });
 	}
@@ -124,15 +147,19 @@ angular.module('bestLocatorApp').controller('indexController',["$scope", "State"
 }]);
 
 
-angular.module('bestLocatorApp').controller('chooseRouteController',["$scope", "State", "$stateParams", "$modal", "Pusher",
-								     function($scope, State, $stateParams, $modal, Pusher) {
+angular.module('bestLocatorApp').controller('chooseRouteController',
+					    ["$scope", "State", "$stateParams", "$modal", "Pusher","$interval",
+					     function($scope, State, $stateParams, $modal, Pusher, $interval) {
     $scope.data = State.data;
     console.log('setting BusStop');
     State.setBusStop($stateParams.id);
     State.loadArrivals($stateParams.id);
+    $scope.arrivals = State.arrivals;
     Pusher.subscribe('stop-' + $stateParams.id, 'arrival', function(item) {
 	State.loadArrivals($stateParams.id);
     });
+    $interval(function() {State.parseArrivals()}, 10000);
+
     $scope.open = function (route,direction) {
 	$scope.spottedRoute = route;
 	console.log(route);
@@ -187,8 +214,12 @@ angular.module('bestLocatorApp').controller('ModalInstanceCtrl',["$scope", "$mod
     $scope.spotBus = function() {
 	console.log('bus Spotted! at ', $scope.position, ' going', $scope.x.spottedDirection);
 
-	var c = $scope.position.coords;
-	if (c.accuracy > 1000000) {
+	if ($scope.position) {
+	    var c = $scope.position.coords;
+	} else {
+	    c = {latitude: 0, longitude: 0}
+	};
+	if (false) {
 	    $scope.geocodeAccurate = false;
 	    console.log("Accuracy is poor (" + c.accuracy + "). Ignoring");
 	} else {

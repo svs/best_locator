@@ -11,13 +11,16 @@ class LocationReport < ActiveRecord::Base
   def mark_arrivals
     return true if (stop.nil? || route.nil? || heading.nil?)
     subsequent_stops.each do |s|
-      a = Arrival.create(stop_id: s.stop_id,
-                     route_id: route.id,
-                     stops_away: (s.order - this_stop.order).abs,
-                     report_time: self.created_at,
-                     report_id: self.id,
-                     heading: self.heading)
-      #Pusher.trigger_async("stop-#{s.stop_id}","arrival",a.attributes)
+      stops_away = (s.order - this_stop.order).abs
+      a = {stop_id: s.stop_id,
+        route_id: route.id,
+        stops_away: stops_away,
+        report_time: self.created_at,
+        report_id: self.id,
+        heading: self.heading
+      }
+      $redis.setex("#{s.stop_id}:#{route.id}:#{self.id}", 600 * stops_away, a.to_json )
+      Pusher.trigger_async("stop-#{s.stop_id}","arrival",a)
     end
   end
 

@@ -61,7 +61,14 @@ class Stop < ActiveRecord::Base
 
 
   def arrivals
-    Arrival.where(stop_id: self.id).where('EXTRACT(EPOCH from (now() - report_time)) > (600 * stops_away)').order(:report_time)
+    Arrival.where(stop_id: self.id).where('EXTRACT(EPOCH from (now() - report_time)) < (600 * stops_away)').order(:report_time)
+  end
+
+  def redis_arrivals
+    keys = $redis.scan_each({match: "#{self.id}:*"}).to_a
+    keys.empty? ? [] : $redis.mget(keys).compact.map{|j| JSON.parse(j)}
+
+
   end
 
 
