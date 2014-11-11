@@ -6,7 +6,7 @@ class Api::V1::LocationReportsController < Api::V1::BaseController
   def create
     @route = Route.find(params[:location_report][:route_id])
     raise ActiveRecord::RecordNotFound unless @route
-    @lr = LocationReport.create(location_report_params)
+    @lr = LocationReport.create(location_report_params.merge("user_id" => current_user.id))
     render json: @lr.to_json
   end
 

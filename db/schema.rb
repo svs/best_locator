@@ -11,22 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141108060221) do
+ActiveRecord::Schema.define(version: 20141111175936) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "postgis"
-
-  create_table "arrivals", force: true do |t|
-    t.integer  "stop_id"
-    t.integer  "route_id"
-    t.integer  "heading"
-    t.integer  "stops_away"
-    t.datetime "report_time"
-    t.integer  "report_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "location_reports", force: true do |t|
     t.integer  "trip_id"
@@ -41,6 +30,7 @@ ActiveRecord::Schema.define(version: 20141108060221) do
     t.integer  "route_id"
     t.string   "bus_id"
     t.integer  "stop_id"
+    t.integer  "user_id"
   end
 
   create_table "map_squares", force: true do |t|
@@ -65,7 +55,6 @@ ActiveRecord::Schema.define(version: 20141108060221) do
     t.string   "end_stop"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.spatial  "geometry",     limit: {:srid=>0, :type=>"geometry"}
   end
 
   create_table "routes_stops", force: true do |t|

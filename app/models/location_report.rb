@@ -2,7 +2,7 @@ class LocationReport < ActiveRecord::Base
 
   belongs_to :route
   belongs_to :stop
-
+  belongs_to :user
   after_save :mark_arrivals
 
 
