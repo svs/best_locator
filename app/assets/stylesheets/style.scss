@@ -2,7 +2,10 @@
   background: #FFF182;
 }
 
-html, body { height: 100%; }
+html, body {
+    height: 100%;
+    background: #f6f6f6;
+ }
 
 #content, .container-fluid, .span9
 {
@@ -127,8 +130,14 @@ html, body { height: 100%; }
       padding: 0px 3px;
       border-radius: 3px;
       margin: 2px;
-      font-weight: bold;
     }
+    .warning {
+      background: orange;
+    }
+    .danger {
+	background: red;
+    }
+
 }
 
 .band {

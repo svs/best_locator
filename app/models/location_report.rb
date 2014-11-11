@@ -19,7 +19,7 @@ class LocationReport < ActiveRecord::Base
         report_id: self.id,
         heading: self.heading
       }
-      $redis.setex("#{s.stop_id}:#{route.id}:#{self.id}", 600 * stops_away, a.to_json )
+      $redis.setex("#{s.stop_id}:#{route.id}:#{self.id}", 300 * stops_away, a.to_json )
       Pusher.trigger_async("stop-#{s.stop_id}","arrival",a)
     end
   end

@@ -28,13 +28,14 @@
 script type="text/ng-template" id="chooseRoute.html"
   div ng-controller="chooseRouteController" style="position: relative; top: -20px"
     div.band
-      h3
+      h3 style="margin-bottom: 0px"
         | {{ data.chosenStop.display_name }}
+    div style="background: lightgrey; font-weight: bold; padding: 3px; color: purple; padding-left: 10px"
       | press the &nbsp;
       i.glyphicon.glyphicon-eye-open
       | &nbsp; when you see the bus
 
-    table.table
+    table.table.table-bordered
       thead
         tr
           th From
@@ -42,26 +43,25 @@ script type="text/ng-template" id="chooseRoute.html"
           th Info
       tbody
         tr ng-repeat="r in data.chosenStop.routes "
-          td ng-click="open(r, -1)"
+          td ng-click="open(r, -1)" style="position: relative"
             | {{ r.start_stop }}
+            i.glyphicon.glyphicon-eye-open style="position: absolute; top:10px; right:3px;"
             .arrivals
               ul
                 li ng-repeat="d in data.arrivals[r.id]['-1']"
                   span.hl
                     | {{ d.stops_away }}
                   | stops ({{d.secondsAgo}})
-          td ng-click="open(r, -1)"
-            i.glyphicon.glyphicon-eye-open.pull-right
-          td ng-click="open(r, 1)"
+          td ng-click="open(r, 1)" style="position: relative"
             | {{ r.end_stop }}
+            i.glyphicon.glyphicon-eye-open style="position: absolute; top:10px; right:3px;"
             .arrivals
               ul
                 li ng-repeat="d in data.arrivals[r.id]['1']"
-                  span.hl
-                    | {{ d.stops_away }} stops ({{d.secondsAgo}})
-                    |
-          td ng-click="open(r, 1)"
-            i.glyphicon.glyphicon-eye-open.pull-right
+                  span.hl ng-class="{{d.class}}"
+                    | {{ d.stops_away }} stops
+                    |  ({{d.minutesAgo | number:0}} mins)
+
           td style="vertical-align: top"
             h4 style="margin: 0px"
               a ui-sref="show_route({id: r.id})"

@@ -51,8 +51,10 @@ bestLocatorApp.factory('State', ["Restangular", function(Restangular) {
 		arri[a.route_id] = {"1": [], "-1": []};
 	    }
 	    _a = angular.copy(a);
-	    _a.secondsAgo = moment(a.report_time).fromNow(true);
-	    console.log(_a);
+	    _a.minutesAgo = (moment() - moment(a.report_time))/60000;
+	    var staleness = _a.minutesAgo < 5 ? "success" : (_a.minutesAgo < 15 ? "warning" : "danger");
+	    _a.class = staleness;
+	    console.log(_a.class);
 	    arri[a.route_id][a.heading + ""].push(_a);
 	});
 	_data.arrivals = arri;
@@ -160,7 +162,7 @@ angular.module('bestLocatorApp').controller('chooseRouteController',
     Pusher.subscribe('stop-' + $stateParams.id, 'arrival', function(item) {
 	State.loadArrivals($stateParams.id);
     });
-    $interval(function() {State.parseArrivals()}, 10000);
+    //$interval(function() {State.parseArrivals()}, 10000);
 
     $scope.open = function (route,direction) {
 	$scope.spottedRoute = route;
