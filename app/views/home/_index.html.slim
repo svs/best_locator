@@ -1,14 +1,18 @@
 script type="text/ng-template" id="index.html"
   div ng-controller="indexController"
     #choose_stop
-      .title
+      .band
         h3
           | Which bus stop are you at?
           button.btn.btn-primary ng-click="getPosition()"
             i.glyphicon.glyphicon-refresh
-        input type="text" ng-autocomplete="true" ng-model="startAutocomplete" options="options" details="startDetails"
-      table.table
-        tr ng-repeat="s in state.data.busStops"
-          td
-            a ui-sref="choose_route({id: s.id})"
-              | {{ s.display_name }}
+        p
+          | choose from the list or &nbsp;
+          input type="text" ng-autocomplete="true" ng-model="startAutocomplete" options="options" details="startDetails"
+      .container
+        table.table
+          tr ng-repeat="s in state.data.busStops"
+            td
+              h4
+                a ui-sref="choose_route({id: s.id})"
+                  | {{ s.display_name }}
