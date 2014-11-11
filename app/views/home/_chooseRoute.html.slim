@@ -26,9 +26,13 @@
 
 
 script type="text/ng-template" id="chooseRoute.html"
-  div ng-controller="chooseRouteController"
-    h3
-      | {{ data.chosenStop.display_name }}
+  div ng-controller="chooseRouteController" style="position: relative; top: -20px"
+    div style="padding: 10px; background: #9EBF4F; color: lightyellow"
+      h3
+        | {{ data.chosenStop.display_name }}
+      | press the &nbsp;
+      i.glyphicon.glyphicon-eye-open
+      | &nbsp; when you see the bus
 
     table.table
       thead
@@ -40,19 +44,26 @@ script type="text/ng-template" id="chooseRoute.html"
         tr ng-repeat="r in data.chosenStop.routes "
           td ng-click="open(r, -1)"
             | {{ r.start_stop }}
+            i.glyphicon.glyphicon-eye-open.pull-right
             .arrivals
               ul
                 li ng-repeat="d in data.arrivals[r.id]['-1']"
-                  | {{ d.stops_away }} stops away ({{d.secondsAgo}})
+                  span.hl
+                    | {{ d.stops_away }}
+                  | stops ({{d.secondsAgo}})
           td ng-click="open(r, 1)"
             | {{ r.end_stop }}
+            i.glyphicon.glyphicon-eye-open.pull-right
             .arrivals
               ul
                 li ng-repeat="d in data.arrivals[r.id]['1']"
-                  | {{ d.stops_away }} stops away ({{d.secondsAgo}})
-          td
-            a ui-sref="show_route({id: r.id})"
-              | {{ r.display_name }}
+                  span.hl
+                    | {{ d.stops_away }} stops ({{d.secondsAgo}})
+                    |
+          td style="vertical-align: top"
+            h4 style="margin: 0px"
+              a ui-sref="show_route({id: r.id})"
+                | {{ r.display_name }}
 
 script type="text/ng-template" id="showRoute.html"
   div ng-controller="showRouteController"

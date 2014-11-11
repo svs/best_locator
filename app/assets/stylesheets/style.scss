@@ -1,5 +1,5 @@
 @mixin bluebg {
-  background: white;
+  background: #FFF182;
 }
 
 html, body { height: 100%; }
@@ -112,4 +112,19 @@ html, body { height: 100%; }
 
 .highlight {
   color: darkorange;
+}
+
+.arrivals {
+    ul {
+	list-style-type: none;
+	padding: 2px;
+    }
+    .hl {
+      background: #9EBF4F;
+      color: white;
+      padding: 0px 3px;
+      border-radius: 3px;
+      margin: 2px;
+      font-weight: bold;
+    }
 }

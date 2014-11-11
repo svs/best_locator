@@ -51,7 +51,7 @@ bestLocatorApp.factory('State', ["Restangular", function(Restangular) {
 		arri[a.route_id] = {"1": [], "-1": []};
 	    }
 	    _a = angular.copy(a);
-	    _a.secondsAgo = moment(a.report_time).fromNow();
+	    _a.secondsAgo = moment(a.report_time).fromNow(true);
 	    console.log(_a);
 	    arri[a.route_id][a.heading + ""].push(_a);
 	});
