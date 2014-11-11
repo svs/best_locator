@@ -51,7 +51,7 @@ script type="text/ng-template" id="chooseRoute.html"
                 li ng-repeat="d in data.arrivals[r.id]['-1']"
                   span.hl
                     | {{ d.stops_away }}
-                  | stops ({{d.secondsAgo}})
+                    |  ({{d.minutesAgo | number:0}} mins)
           td ng-click="open(r, 1)" style="position: relative"
             | {{ r.end_stop }}
             i.glyphicon.glyphicon-eye-open style="position: absolute; top:10px; right:3px;"
