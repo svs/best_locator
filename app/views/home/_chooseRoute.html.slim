@@ -50,7 +50,7 @@ script type="text/ng-template" id="chooseRoute.html"
               ul
                 li ng-repeat="d in data.arrivals[r.id]['-1']"
                   span.hl
-                    | {{ d.stops_away }}
+                    | {{ d.stops_away }} stops
                     |  ({{d.minutesAgo | number:0}} mins)
           td ng-click="open(r, 1)" style="position: relative"
             | {{ r.end_stop }}
