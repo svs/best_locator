@@ -26,11 +26,11 @@
 
 
 script type="text/ng-template" id="chooseRoute.html"
-  div ng-controller="chooseRouteController" style="position: relative; top: -20px"
+  .main ng-controller="chooseRouteController"
     div.band
-      h3 style="margin-bottom: 0px"
+      h3
         | {{ data.chosenStop.display_name }}
-    div style="background: lightgrey; font-weight: bold; padding: 3px; color: purple; padding-left: 10px"
+    div.info
       | press the &nbsp;
       i.glyphicon.glyphicon-eye-open
       | &nbsp; when you see the bus
@@ -69,12 +69,12 @@ script type="text/ng-template" id="chooseRoute.html"
 
 script type="text/ng-template" id="showRoute.html"
   div ng-controller="showRouteController"
-    .row
-      .col-xs-3
+    .row#route-details
+      .col-xs-3#route-name
         h3 style="margin: 5px"
           | {{ data.chosenRoute.display_name }}
-      .col-xs-6
-        h4 style="line-height: 0.8em"
+      .col-xs-8
+        h4
           | {{ data.chosenRoute.start_stop }} to {{ data.chosenRoute.end_stop }}
     table.table
       tbody

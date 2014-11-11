@@ -144,4 +144,27 @@ html, body {
     padding: 10px;
     background: #9EBF4F;
     color: lightyellow;
+    h3 {
+	margin-bottom: 0px;
+    }
+}
+
+.main {
+    position: relative; top: -20px;
+}
+
+.info {
+    background: lightgrey; font-weight: bold; padding: 3px; color: purple; padding-left: 10px;
+}
+
+#route-name {
+   background: #9EBF4F;
+   color: lightyellow;
+}
+
+#route-details {
+  background: lightgrey;
+  font-weight: bold;
+  color: purple;
+  padding-left: 10px;
 }

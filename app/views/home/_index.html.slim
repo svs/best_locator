@@ -1,11 +1,12 @@
 script type="text/ng-template" id="index.html"
-  div ng-controller="indexController"
+  .main ng-controller="indexController"
     #choose_stop
       .band
         h3
           | Which bus stop are you at?
-          button.btn.btn-primary ng-click="getPosition()"
+          button.btn ng-click="getPosition()"
             i.glyphicon.glyphicon-refresh
+      .info
         p
           | choose from the list or &nbsp;
           input type="text" ng-autocomplete="true" ng-model="startAutocomplete" options="options" details="startDetails"
