@@ -44,22 +44,24 @@ script type="text/ng-template" id="chooseRoute.html"
         tr ng-repeat="r in data.chosenStop.routes "
           td ng-click="open(r, -1)"
             | {{ r.start_stop }}
-            i.glyphicon.glyphicon-eye-open.pull-right
             .arrivals
               ul
                 li ng-repeat="d in data.arrivals[r.id]['-1']"
                   span.hl
                     | {{ d.stops_away }}
                   | stops ({{d.secondsAgo}})
+          td ng-click="open(r, -1)"
+            i.glyphicon.glyphicon-eye-open.pull-right
           td ng-click="open(r, 1)"
             | {{ r.end_stop }}
-            i.glyphicon.glyphicon-eye-open.pull-right
             .arrivals
               ul
                 li ng-repeat="d in data.arrivals[r.id]['1']"
                   span.hl
                     | {{ d.stops_away }} stops ({{d.secondsAgo}})
                     |
+          td ng-click="open(r, 1)"
+            i.glyphicon.glyphicon-eye-open.pull-right
           td style="vertical-align: top"
             h4 style="margin: 0px"
               a ui-sref="show_route({id: r.id})"

@@ -18,8 +18,10 @@ html, body { height: 100%; }
 }
 .navbar-default {
     .navbar-brand {
-	color: #ccc;
-	font-weight: bold;
+	a {
+	    color: darkbrown;
+	    font-weight: bold;
+	}
 	padding: 0px;
     }
 }

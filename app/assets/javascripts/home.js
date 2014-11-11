@@ -152,8 +152,10 @@ angular.module('bestLocatorApp').controller('chooseRouteController',
 					     function($scope, State, $stateParams, $modal, Pusher, $interval) {
     $scope.data = State.data;
     console.log('setting BusStop');
+    $scope.stop_id = $stateParams.id;
     State.setBusStop($stateParams.id);
     State.loadArrivals($stateParams.id);
+
     $scope.arrivals = State.arrivals;
     Pusher.subscribe('stop-' + $stateParams.id, 'arrival', function(item) {
 	State.loadArrivals($stateParams.id);
